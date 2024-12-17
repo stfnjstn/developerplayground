@@ -22,7 +22,7 @@ Welcome to my new SWIFT tutorial. Today I'll show you how to implement social me
 
 My latest [game](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8) in the AppStore contains a sample:
 
-[![](/assets/wp-content/uploads/2015/04/IMG_8919-300x169.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
+[![](/assets/wp-content/uploads/2015/04/IMG_8919.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
 
 The four buttons at the bottom of the screen trigger the social actions:
 

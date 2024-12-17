@@ -47,7 +47,7 @@ Welcome to part 8 of my swift programming tutorial. Today I'll show how to imple
 
 
 
-[![InApp01](/assets/wp-content/uploads/2015/04/InApp01-1-300x179.jpg)](/assets/wp-content/uploads/2015/04/InApp01-1.jpg) ![InApp02](/assets/wp-content/uploads/2015/04/InApp02-300x166.png)
+[![InApp01](/assets/wp-content/uploads/2015/04/InApp01-1.jpg)](/assets/wp-content/uploads/2015/04/InApp01-1.jpg) ![InApp02](/assets/wp-content/uploads/2015/04/InApp02.png)
 
  
 
@@ -59,11 +59,11 @@ As a starting point you can download the sample project from my GitHub [reposito
 
 You need a paid Apple Developer Account to execute the next steps. For details about the process to upload Apps to iTunes Connect check tutorial [part 6](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-6-game-center-integration).
 
-Browse to [iTunes Connect](https://itunesconnect.apple.com) and open your App: [![InApp2](/assets/wp-content/uploads/2015/04/InApp2-1-300x149.jpg)](/assets/wp-content/uploads/2015/04/InApp2-1.jpg) Choose **In-App Purchases** and click on **Create New** : [![InApp3](/assets/wp-content/uploads/2015/04/InApp3-300x67.png)](/assets/wp-content/uploads/2015/04/InApp3.png) You see several different types of possible purchases. In this tutorial I'll show a '**Consumable** ' and a '**Non-Consumable** ' purchase. [![InApp4](/assets/wp-content/uploads/2015/04/InApp4-300x235.png)](/assets/wp-content/uploads/2015/04/InApp4.png) Create the **Consumable** purchase: [![InApp5](/assets/wp-content/uploads/2015/04/InApp5-300x46.png)](/assets/wp-content/uploads/2015/04/InApp5.png) Enter **Reference Name** , **Product ID** and **Price Tier** : [![InApp6](/assets/wp-content/uploads/2015/04/InApp6-300x174.png)](/assets/wp-content/uploads/2015/04/InApp6.png) Add **Display Name** and **Description** at least for one language: [![InApp7](/assets/wp-content/uploads/2015/04/InApp7-300x98.png)](/assets/wp-content/uploads/2015/04/InApp7.png) Additionally a screenshot is needed for the review team: [![InApp8](/assets/wp-content/uploads/2015/04/InApp8-300x74.png)](/assets/wp-content/uploads/2015/04/InApp8.png) Now do the same for the **Non-Consumable** purchase: [![InApp9](/assets/wp-content/uploads/2015/04/InApp9-300x43.png)](/assets/wp-content/uploads/2015/04/InApp9.png) [![InApp14](/assets/wp-content/uploads/2015/04/InApp14-300x164.png)](/assets/wp-content/uploads/2015/04/InApp14.png) The final result should look like this: [![InApp15](/assets/wp-content/uploads/2015/04/InApp15-300x173.png)](/assets/wp-content/uploads/2015/04/InApp15.png)
+Browse to [iTunes Connect](https://itunesconnect.apple.com) and open your App: [![InApp2](/assets/wp-content/uploads/2015/04/InApp2-1.jpg)](/assets/wp-content/uploads/2015/04/InApp2-1.jpg) Choose **In-App Purchases** and click on **Create New** : [![InApp3](/assets/wp-content/uploads/2015/04/InApp3.png)](/assets/wp-content/uploads/2015/04/InApp3.png) You see several different types of possible purchases. In this tutorial I'll show a '**Consumable** ' and a '**Non-Consumable** ' purchase. [![InApp4](/assets/wp-content/uploads/2015/04/InApp4.png)](/assets/wp-content/uploads/2015/04/InApp4.png) Create the **Consumable** purchase: [![InApp5](/assets/wp-content/uploads/2015/04/InApp5.png)](/assets/wp-content/uploads/2015/04/InApp5.png) Enter **Reference Name** , **Product ID** and **Price Tier** : [![InApp6](/assets/wp-content/uploads/2015/04/InApp6.png)](/assets/wp-content/uploads/2015/04/InApp6.png) Add **Display Name** and **Description** at least for one language: [![InApp7](/assets/wp-content/uploads/2015/04/InApp7.png)](/assets/wp-content/uploads/2015/04/InApp7.png) Additionally a screenshot is needed for the review team: [![InApp8](/assets/wp-content/uploads/2015/04/InApp8.png)](/assets/wp-content/uploads/2015/04/InApp8.png) Now do the same for the **Non-Consumable** purchase: [![InApp9](/assets/wp-content/uploads/2015/04/InApp9.png)](/assets/wp-content/uploads/2015/04/InApp9.png) [![InApp14](/assets/wp-content/uploads/2015/04/InApp14.png)](/assets/wp-content/uploads/2015/04/InApp14.png) The final result should look like this: [![InApp15](/assets/wp-content/uploads/2015/04/InApp15.png)](/assets/wp-content/uploads/2015/04/InApp15.png)
 
 ### 2\. Implement In-App Purchases
 
-Open your project in XCode (sample project is available [here](https://github.com/stfnjstn/MySecondGame/releases/tag/v0.7)), navigate to the **Capabilities** configuration page and enable **In-App Purchases** : [![InApp12](/assets/wp-content/uploads/2015/04/InApp12-300x124.png)](/assets/wp-content/uploads/2015/04/InApp12.png) Xcode will include the **StoreKit** framework and add the **In-App Purchase** entitlement automatically.
+Open your project in XCode (sample project is available [here](https://github.com/stfnjstn/MySecondGame/releases/tag/v0.7)), navigate to the **Capabilities** configuration page and enable **In-App Purchases** : [![InApp12](/assets/wp-content/uploads/2015/04/InApp12.png)](/assets/wp-content/uploads/2015/04/InApp12.png) Xcode will include the **StoreKit** framework and add the **In-App Purchase** entitlement automatically.
 
 #### 2.1. Add a button to trigger the purchases:
 
@@ -345,7 +345,7 @@ heroSprite.colorBlendFactor=0.8
 
 ### Test and upload to iTunes Connect
 
-You need a Sandbox Test User to test the purchases. I've described the steps to create one in [part 6](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-6-game-center-integration). [![InApp16](/assets/wp-content/uploads/2015/04/InApp16-300x149.png)](/assets/wp-content/uploads/2015/04/InApp16.png)
+You need a Sandbox Test User to test the purchases. I've described the steps to create one in [part 6](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-6-game-center-integration). [![InApp16](/assets/wp-content/uploads/2015/04/InApp16.png)](/assets/wp-content/uploads/2015/04/InApp16.png)
 
 Testing is only possible on a real device. If you try a purchase in the simulator, you'll receive an error message: AppStore is not available. And don't forget to set the checkmarks on your purchases to include them to your them to your application bundle, before submitting a new version in iTunesConnect. 
 

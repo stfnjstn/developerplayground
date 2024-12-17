@@ -90,13 +90,13 @@ The worldNode will be moved to implement the scrolling.
 
 #### Create a new Sprite Kit project:
 
-[![SpriteKit Scrolling Tutorial 9](/assets/wp-content/uploads/2015/11/Screen-Shot-2015-11-13-at-18.13.14-300x214.png)](/assets/wp-content/uploads/2015/11/Screen-Shot-2015-11-13-at-18.13.14.png)
+[![SpriteKit Scrolling Tutorial 9](/assets/wp-content/uploads/2015/11/Screen-Shot-2015-11-13-at-18.13.14.png)](/assets/wp-content/uploads/2015/11/Screen-Shot-2015-11-13-at-18.13.14.png)
 
-[![SpriteKit Scrolling Tutorial 10](/assets/wp-content/uploads/2015/11/Screen-Shot-2015-11-13-at-18.14.00-300x215.png)](/assets/wp-content/uploads/2015/11/Screen-Shot-2015-11-13-at-18.14.00.png)
+[![SpriteKit Scrolling Tutorial 10](/assets/wp-content/uploads/2015/11/Screen-Shot-2015-11-13-at-18.14.00.png)](/assets/wp-content/uploads/2015/11/Screen-Shot-2015-11-13-at-18.14.00.png)
 
 #### Open Asset Catalogue and add three images (Background, LeftTile, rightTile)
 
-[![SpriteKit Scrolling Tutorial 11](/assets/wp-content/uploads/2015/11/Screen-Shot-2015-11-13-at-18.27.58-1-300x82.jpg)](/assets/wp-content/uploads/2015/11/Screen-Shot-2015-11-13-at-18.27.58-1.jpg)
+[![SpriteKit Scrolling Tutorial 11](/assets/wp-content/uploads/2015/11/Screen-Shot-2015-11-13-at-18.27.58-1.jpg)](/assets/wp-content/uploads/2015/11/Screen-Shot-2015-11-13-at-18.27.58-1.jpg)
 
 #### Open GameScene.swift:
 

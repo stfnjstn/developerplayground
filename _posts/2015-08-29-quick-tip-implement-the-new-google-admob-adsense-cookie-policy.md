@@ -35,7 +35,7 @@ In this tutorial I'll show how you can implement an information alert about the 
 
 **IMPORTANT:** I'm not a lawyer. So no guarantees. You have to decide on your own if this is sufficient.
 
-[caption id="attachment_1045" align="aligncenter" width="169"][![Google Cookie Policy](/assets/wp-content/uploads/2015/08/iOS-Simulator-Screen-Shot-29-Aug-2015-19.02.15-169x300.png)](/assets/wp-content/uploads/2015/08/iOS-Simulator-Screen-Shot-29-Aug-2015-19.02.15.png) AdMob Cookie Usage [/caption] 
+[caption id="attachment_1045" align="aligncenter" width="169"][![Google Cookie Policy](/assets/wp-content/uploads/2015/08/iOS-Simulator-Screen-Shot-29-Aug-2015-19.02.15.png)](/assets/wp-content/uploads/2015/08/iOS-Simulator-Screen-Shot-29-Aug-2015-19.02.15.png) AdMob Cookie Usage [/caption] 
 
 The Code snippet for showing the AdMob Cookie usage is simple:
 

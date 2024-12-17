@@ -50,15 +50,9 @@ This sample needs Xcode 6.
 That was easy. Now let's test it:
 
   * iPhone:
-
-
-
 [![](/assets/wp-content/uploads/2014/09/Foto-1-1.jpg)](/assets/wp-content/uploads/2014/09/Foto-1-1.jpg)
 
   * iPad:
-
-
-
 [![](/assets/wp-content/uploads/2014/09/IMG_0002_2.jpg)](/assets/wp-content/uploads/2014/09/IMG_0002_2.jpg)
 
 Hmmmh. We must have missed something.
@@ -66,22 +60,21 @@ Hmmmh. We must have missed something.
 ### Adding Auto Layout Constraints and Size Classes:
 
 We have used the iPhone Storyboard as the new main Storyboard, with a per pixel positioning of the views and UI elements. Therefore it's not surprising, that the iPad layout looks weird. 
-
 Let's have a look on the view structure. For all elements we have to specify positions and size independent from the form factor or orientation:
 
 [![](/assets/wp-content/uploads/2014/09/Bildschirmfoto%2B2014-08-14%2Bum%2B00.59.08.png)](/assets/wp-content/uploads/2014/09/Bildschirmfoto%2B2014-08-14%2Bum%2B00.59.08.png)[![usb1](/assets/wp-content/uploads/2014/09/usb1.png)](/assets/wp-content/uploads/2014/09/usb1.png)
 
 To address this I've added several AutoLayout constraints:
 
-[![usb2](/assets/wp-content/uploads/2014/09/usb2-1-300x210.jpg)](/assets/wp-content/uploads/2014/09/usb2-1.jpg)
+[![usb2](/assets/wp-content/uploads/2014/09/usb2-1.jpg)](/assets/wp-content/uploads/2014/09/usb2-1.jpg)
 
 To model a different layout for iPhone and iPad Size Classes can used. Click at the bottom of the Xcode screen to select a special size class (for example for phone landscape). All new constraints will be limited to the chosen Size Class. Be aware that Size Classes are only working on iOS 8 devices.
 
-[![usb3](/assets/wp-content/uploads/2014/09/usb3-1-221x300.jpg)](/assets/wp-content/uploads/2014/09/usb3-1.jpg)
+[![usb3](/assets/wp-content/uploads/2014/09/usb3-1.jpg)](/assets/wp-content/uploads/2014/09/usb3-1.jpg)
 
 Constraints which are limited to a special Size Class are grayed out. The Size Classes are only working on iOS 8 devices.
 
-[![usb4](/assets/wp-content/uploads/2014/09/usb4-1-300x205.jpg)](/assets/wp-content/uploads/2014/09/usb4-1.jpg)
+[![usb4](/assets/wp-content/uploads/2014/09/usb4-1.jpg)](/assets/wp-content/uploads/2014/09/usb4-1.jpg)
 
 If you need further information here are two excellent articles about Auto Layout and Size Classes:
 
@@ -89,30 +82,27 @@ If you need further information here are two excellent articles about Auto Layou
   * [Adaptive Layout](http://www.shinobicontrols.com/blog/posts/2014/07/28/ios8-day-by-day-day-7-adaptive-layout-and-uitraitcollection)
 
 
-
 ### Auto Layout and dynamic view manipulation
 
-OK, let's test it. At a first glance everything looks great, but the parallax effect from the sample project is no longer working. If you think about it, the cause is obvious: I've manipulated the size and the behavior of the UI elements in the ViewDidLoad method. After executing this method the Autolayout Constrains are evaluated and the manual changes are overridden.
+OK, let's test it. At a first glance everything looks great, but the parallax effect from the sample project is no longer working. If you think about it, the cause is obvious: I've manipulated the size and the behavior of the UI elements in the ``ViewDidLoad`` method. After executing this method the Autolayout Constrains are evaluated and the manual changes are overridden.
 
-To solve this move the code which manipulates UIViews to the viewDidLayoutSubviews method:
+To solve this move the code which manipulates UIViews to the ``viewDidLayoutSubviews`` method:
 
-Remove from viewDidLoad:
-
+Remove from ``viewDidLoad``:
+```objectivec
 [UITools assignBackgroundParallaxBehavior:self.backgroundView];
-
 [UITools assignForegroundParallaxBehavior:self.foregroundViews];
+```
 
-Create viewDidLayoutSubviews:
+Create ``viewDidLayoutSubviews``:
 
+```objectivec
 -(void)viewDidLayoutSubviews {
-
-[super viewDidLayoutSubviews];
-
-[UITools assignBackgroundParallaxBehavior:self.backgroundView];
-
-[UITools assignForegroundParallaxBehavior:self.foregroundViews];
-
+  [super viewDidLayoutSubviews];
+  [UITools assignBackgroundParallaxBehavior:self.backgroundView];
+  [UITools assignForegroundParallaxBehavior:self.foregroundViews];
 }
+```
 
 The other screens/view controllers of my sample project must be updated the same way.
 

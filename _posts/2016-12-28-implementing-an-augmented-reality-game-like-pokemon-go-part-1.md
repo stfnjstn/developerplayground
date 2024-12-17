@@ -42,7 +42,7 @@ Basically you just need to show the camera content together with an overlay of 3
 
 Open Xcode and create a new project:
 
-[![ardefender1](/assets/wp-content/uploads/2016/11/ARDefender1-300x210.jpg)](/assets/wp-content/uploads/2016/11/ARDefender1.jpg) [![ardefender2](/assets/wp-content/uploads/2016/11/ARDefender2-300x214.jpg)](/assets/wp-content/uploads/2016/11/ARDefender2.jpg)
+[![ardefender1](/assets/wp-content/uploads/2016/11/ARDefender1.jpg)](/assets/wp-content/uploads/2016/11/ARDefender1.jpg) [![ardefender2](/assets/wp-content/uploads/2016/11/ARDefender2.jpg)](/assets/wp-content/uploads/2016/11/ARDefender2.jpg)
 
 Xcode has already generated code to initialize a scene with a 3D object (`viewDidLoad`) and a touch interface to handle user interactions (`handleTap`). If you start the project, you'll see a spaceship which can be manipulated by touch and swipe events:
 
@@ -50,7 +50,7 @@ Xcode has already generated code to initialize a scene with a 3D object (`viewDi
 
 Now limit the project to portrait mode, to keep this tutorial simple:
 
-[![](/assets/wp-content/uploads/2016/12/ARDefender9-300x91.jpg)](/assets/wp-content/uploads/2016/12/ARDefender9.jpg)
+[![](/assets/wp-content/uploads/2016/12/ARDefender9.jpg)](/assets/wp-content/uploads/2016/12/ARDefender9.jpg)
 
 ## 2\. Create the camera view and the scene kit objects
 
@@ -60,7 +60,7 @@ Open the Storyboard ...
 
 Change the SceneKitView to an UIView by dragging an new UIView into the GameViewController
 
-[![Add an UIView in XCode Storyboard](/assets/wp-content/uploads/2016/07/Blog3-300x114.jpg)](/assets/wp-content/uploads/2016/07/Blog4.jpg)
+[![Add an UIView in XCode Storyboard](/assets/wp-content/uploads/2016/07/Blog3.jpg)](/assets/wp-content/uploads/2016/07/Blog4.jpg)
 
 ![Change UIView](/assets/wp-content/uploads/2016/07/Blog5.jpg)
 
@@ -70,15 +70,15 @@ Add another UIView and a SceneKit View below the top UIView:
 
 Change the UIConstraints of the cameraView and scnView to full screen size:
 
-[![ardefender5](/assets/wp-content/uploads/2016/11/ARDefender5-300x253.jpg)](/assets/wp-content/uploads/2016/11/ARDefender5.jpg)
+[![ardefender5](/assets/wp-content/uploads/2016/11/ARDefender5.jpg)](/assets/wp-content/uploads/2016/11/ARDefender5.jpg)
 
 If you see warnings like this one: Choose "Update frames" to correct them automatically:
 
-[![ardefender6](/assets/wp-content/uploads/2016/11/ARDefender6-300x117.jpg)](/assets/wp-content/uploads/2016/11/ARDefender6.jpg)
+[![ardefender6](/assets/wp-content/uploads/2016/11/ARDefender6.jpg)](/assets/wp-content/uploads/2016/11/ARDefender6.jpg)
 
 Create an IBOutlet for the scnView and the cameraView:
 
-[![](/assets/wp-content/uploads/2016/12/ARDefender11-300x80.jpg)](/assets/wp-content/uploads/2016/12/ARDefender11.jpg)
+[![](/assets/wp-content/uploads/2016/12/ARDefender11.jpg)](/assets/wp-content/uploads/2016/12/ARDefender11.jpg)
 
 That's all in the Storyboard. Now it's time for real code.
 
@@ -188,14 +188,14 @@ Here's the full source code of the two methods:
 
 Add the AVFoundation Framework to Linked Frameworks and Libraries
 
-[![augmented8](/assets/wp-content/uploads/2016/11/Augmented8-300x261.jpg)](/assets/wp-content/uploads/2016/11/Augmented8.jpg)
+[![augmented8](/assets/wp-content/uploads/2016/11/Augmented8.jpg)](/assets/wp-content/uploads/2016/11/Augmented8.jpg)
 
 Add an import statement for the AVFoundation on top of the `ViewController` class:
     
     
     import AVFoundation
 
-Add the key "Privacy - Camera Usage Description" to the plist file: [![](/assets/wp-content/uploads/2016/12/ARDefender8-1-1-300x17.jpg)](/assets/wp-content/uploads/2016/12/ARDefender8-1-1.jpg)
+Add the key "Privacy - Camera Usage Description" to the plist file: [![](/assets/wp-content/uploads/2016/12/ARDefender8-1-1.jpg)](/assets/wp-content/uploads/2016/12/ARDefender8-1-1.jpg)
 
 Otherwise you will see this error, when you start the App:
 

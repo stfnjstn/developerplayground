@@ -38,11 +38,11 @@ tags: []
 
 I'll add several enemy sprites. These will automatically follow and orient to the hero sprite. You can download the code from Part 1 [here](https://github.com/stfnjstn/MySecondGame/releases/tag/v0.1).
 
-[![part2-1](/assets/wp-content/uploads/2014/11/part2-1-1-300x181.jpg)](/assets/wp-content/uploads/2014/11/part2-1-1.jpg)
+[![part2-1](/assets/wp-content/uploads/2014/11/part2-1-1.jpg)](/assets/wp-content/uploads/2014/11/part2-1-1.jpg)
 
 #### 1\. Add a new class EnemySpriteController:
 
-[![part2-2](/assets/wp-content/uploads/2014/11/part2-2-300x176.png)](/assets/wp-content/uploads/2014/11/part2-2.png)
+[![part2-2](/assets/wp-content/uploads/2014/11/part2-2.png)](/assets/wp-content/uploads/2014/11/part2-2.png)
 
 [![part2-3](/assets/wp-content/uploads/2014/11/part2-3-1.jpg)](/assets/wp-content/uploads/2014/11/part2-3-1.jpg)
 
@@ -142,7 +142,7 @@ self.addChild(enemySprites.spawnEnemy(heroSprite))
 
 Result are three red enemy sprites which will follow the white spaceship. Next steps are adding bullets and shooting. 
 
-[![SKConstraint Tutorial 1](/assets/wp-content/uploads/2014/11/IMG_8379-1-300x169.jpg)](/assets/wp-content/uploads/2014/11/IMG_8379-1.jpg)
+[![SKConstraint Tutorial 1](/assets/wp-content/uploads/2014/11/IMG_8379-1.jpg)](/assets/wp-content/uploads/2014/11/IMG_8379-1.jpg)
 
 #### 6\. Add a shoot method inside EnemySpriteController.swift:
 
@@ -200,7 +200,7 @@ _dLastShootTime=currentTime
 
 }
 
-[![SKConstraint Tutorial](/assets/wp-content/uploads/2014/11/IMG_8379-300x169.jpg)](/assets/wp-content/uploads/2014/11/IMG_8379.jpg)
+[![SKConstraint Tutorial](/assets/wp-content/uploads/2014/11/IMG_8379.jpg)](/assets/wp-content/uploads/2014/11/IMG_8379.jpg)
 
 That's all for today. In my next part I'll add a HUD, implement a basic game loging and add collision detection. You can download the code from GitHub: [Part 2](https://github.com/stfnjstn/MySecondGame/releases/tag/v0.2) or the latest version [here](https://github.com/stfnjstn/MySecondGame/tree/master). You can also download my prototyping App for this tutorial series:
 

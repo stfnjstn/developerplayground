@@ -50,77 +50,80 @@ The most complex part is doing configuration stuff in [iTunes Connect](https://i
 
 Check, if XCode is set up properly with your Apple account data:
 
-[![GC1](/assets/wp-content/uploads/2015/01/GC1-1-300x107.jpg)](/assets/wp-content/uploads/2015/01/GC1-1.jpg)
+[![GC1](/assets/wp-content/uploads/2015/01/GC1-1.jpg)](/assets/wp-content/uploads/2015/01/GC1-1.jpg)
 
 Before submitting your app add appropriate app icons to your project. Otherwise iTunes Connect will reject your upload: 
 
-[![gc2](/assets/wp-content/uploads/2015/01/gc2-1-300x102.jpg)](/assets/wp-content/uploads/2015/01/gc2-1.jpg)
+[![gc2](/assets/wp-content/uploads/2015/01/gc2-1.jpg)](/assets/wp-content/uploads/2015/01/gc2-1.jpg)
 
 Enable Game Center in the Capabilities Tab of your project. Select your team profile and wait a few seconds till XCode has updated the project settings. 
 
-[![gc3](/assets/wp-content/uploads/2015/01/gc3-1-300x62.jpg)](/assets/wp-content/uploads/2015/01/gc3-1.jpg)
+[![gc3](/assets/wp-content/uploads/2015/01/gc3-1.jpg)](/assets/wp-content/uploads/2015/01/gc3-1.jpg)
 
 Create an Archive of your app: 
 
-[![gc4](/assets/wp-content/uploads/2015/01/gc4-1-195x300.jpg)](/assets/wp-content/uploads/2015/01/gc4-1.jpg)
+[![gc4](/assets/wp-content/uploads/2015/01/gc4-1.jpg)](/assets/wp-content/uploads/2015/01/gc4-1.jpg)
 
 Open the Organizer window: 
 
-[![gc5](/assets/wp-content/uploads/2015/01/gc5-1-300x197.jpg)](/assets/wp-content/uploads/2015/01/gc5-1.jpg)
+[![gc5](/assets/wp-content/uploads/2015/01/gc5-1.jpg)](/assets/wp-content/uploads/2015/01/gc5-1.jpg)
 
-[![gc6](/assets/wp-content/uploads/2015/01/gc6-1-300x171.jpg)](/assets/wp-content/uploads/2015/01/gc6-1.jpg)
+[![gc6](/assets/wp-content/uploads/2015/01/gc6-1.jpg)](/assets/wp-content/uploads/2015/01/gc6-1.jpg)
 
 Click Submit choose your profile and submit your application to iTunesConnect
 
-[![gc7](/assets/wp-content/uploads/2015/01/gc7-300x186.png)](/assets/wp-content/uploads/2015/01/gc7.png)
+[![gc7](/assets/wp-content/uploads/2015/01/gc7.png)](/assets/wp-content/uploads/2015/01/gc7.png)
 
 If you see this error message you haven't created an AppId for your app in iTunesConnect: 
 
-[![gc8](/assets/wp-content/uploads/2015/01/gc8-300x181.png)](/assets/wp-content/uploads/2015/01/gc8.png)
+[![gc8](/assets/wp-content/uploads/2015/01/gc8.png)](/assets/wp-content/uploads/2015/01/gc8.png)
 
 Open [iTunesConnect](https://itunesconnect.apple.com/) in your browser, select MyApps, add a new app and fill out the required fields: 
 
-[![gc9](/assets/wp-content/uploads/2015/01/gc9-1.jpg)](/assets/wp-content/uploads/2015/01/gc9-1.jpg) [![gc10](/assets/wp-content/uploads/2015/01/gc10.png)](/assets/wp-content/uploads/2015/01/gc10.png) [![gc11](/assets/wp-content/uploads/2015/01/gc11-300x145.png)](/assets/wp-content/uploads/2015/01/gc11.png) [![gc12](/assets/wp-content/uploads/2015/01/gc12-300x95.png)](/assets/wp-content/uploads/2015/01/gc12.png)
+[![gc9](/assets/wp-content/uploads/2015/01/gc9-1.jpg)](/assets/wp-content/uploads/2015/01/gc9-1.jpg) 
+[![gc10](/assets/wp-content/uploads/2015/01/gc10.png)](/assets/wp-content/uploads/2015/01/gc10.png) 
+[![gc11](/assets/wp-content/uploads/2015/01/gc11.png)](/assets/wp-content/uploads/2015/01/gc11.png) 
+[![gc12](/assets/wp-content/uploads/2015/01/gc12.png)](/assets/wp-content/uploads/2015/01/gc12.png)
 
 Go back to XCode, open the Organizer window and submit your app again:
 
-[![gc13](/assets/wp-content/uploads/2015/01/gc13-300x180.png)](/assets/wp-content/uploads/2015/01/gc13.png)
+[![gc13](/assets/wp-content/uploads/2015/01/gc13.png)](/assets/wp-content/uploads/2015/01/gc13.png)
 
-[![gc14](/assets/wp-content/uploads/2015/01/gc14-300x184.png)](/assets/wp-content/uploads/2015/01/gc14.png)
+[![gc14](/assets/wp-content/uploads/2015/01/gc14.png)](/assets/wp-content/uploads/2015/01/gc14.png)
 
 ### 2\. Create a Leaderboard in iTunesConnect 
 
 Open [iTunesConnect](https://itunesconnect.apple.com/) and select your app: 
 
-[![gc15](/assets/wp-content/uploads/2015/01/gc15-210x300.png)](/assets/wp-content/uploads/2015/01/gc15.png)
+[![gc15](/assets/wp-content/uploads/2015/01/gc15.png)](/assets/wp-content/uploads/2015/01/gc15.png)
 
 Click on Game Center: 
 
-[![gc16](/assets/wp-content/uploads/2015/01/gc16-1-300x94.jpg)](/assets/wp-content/uploads/2015/01/gc16-1.jpg)
+[![gc16](/assets/wp-content/uploads/2015/01/gc16-1.jpg)](/assets/wp-content/uploads/2015/01/gc16-1.jpg)
 
 Select Single Game: 
 
-[![gc17](/assets/wp-content/uploads/2015/01/gc17-300x118.png)](/assets/wp-content/uploads/2015/01/gc17.png)
+[![gc17](/assets/wp-content/uploads/2015/01/gc17.png)](/assets/wp-content/uploads/2015/01/gc17.png)
 
 Select Add Leaderboard: 
 
-[![gc18](/assets/wp-content/uploads/2015/01/gc18-300x172.png)](/assets/wp-content/uploads/2015/01/gc18.png)
+[![gc18](/assets/wp-content/uploads/2015/01/gc18.png)](/assets/wp-content/uploads/2015/01/gc18.png)
 
 Choose Single Leaderboard: 
 
-[![gc19](/assets/wp-content/uploads/2015/01/gc19-300x96.png)](/assets/wp-content/uploads/2015/01/gc19.png)
+[![gc19](/assets/wp-content/uploads/2015/01/gc19.png)](/assets/wp-content/uploads/2015/01/gc19.png)
 
 Configure your Leaderboard: 
 
-[![gc20](/assets/wp-content/uploads/2015/01/gc20-300x122.png)](/assets/wp-content/uploads/2015/01/gc20.png)
+[![gc20](/assets/wp-content/uploads/2015/01/gc20.png)](/assets/wp-content/uploads/2015/01/gc20.png)
 
 Add at least one language: 
 
-[![gc21](/assets/wp-content/uploads/2015/01/gc21-300x140.png)](/assets/wp-content/uploads/2015/01/gc21.png)
+[![gc21](/assets/wp-content/uploads/2015/01/gc21.png)](/assets/wp-content/uploads/2015/01/gc21.png)
 
-[![gc22](/assets/wp-content/uploads/2015/01/gc22-300x90.png)](/assets/wp-content/uploads/2015/01/gc22.png)
+[![gc22](/assets/wp-content/uploads/2015/01/gc22.png)](/assets/wp-content/uploads/2015/01/gc22.png)
 
-[![gc23](/assets/wp-content/uploads/2015/01/gc23-300x103.png)](/assets/wp-content/uploads/2015/01/gc23.png)
+[![gc23](/assets/wp-content/uploads/2015/01/gc23.png)](/assets/wp-content/uploads/2015/01/gc23.png)
 
 Confirm your changes by selecting Done. Now back to XCode. 
 
@@ -132,13 +135,13 @@ To test the Game Center integration inside your App you need to create one or mo
 
 Choose the Sandbox Testers tab at the right and create at least one: 
 
-[![gc25](/assets/wp-content/uploads/2015/01/gc25-300x55.png)](/assets/wp-content/uploads/2015/01/gc25.png)
+[![gc25](/assets/wp-content/uploads/2015/01/gc25.png)](/assets/wp-content/uploads/2015/01/gc25.png)
 
 Fill out the required fields. You need a valid email account for this: 
 
-[![gc26](/assets/wp-content/uploads/2015/01/gc26-300x178.png)](/assets/wp-content/uploads/2015/01/gc26.png)
+[![gc26](/assets/wp-content/uploads/2015/01/gc26.png)](/assets/wp-content/uploads/2015/01/gc26.png)
 
-[![gc27](/assets/wp-content/uploads/2015/01/gc27-300x76.png)](/assets/wp-content/uploads/2015/01/gc27.png)
+[![gc27](/assets/wp-content/uploads/2015/01/gc27.png)](/assets/wp-content/uploads/2015/01/gc27.png)
 
 ### 4\. Coding 
 
@@ -148,7 +151,7 @@ import GameKit
 
 The next image shows the control flow of my game center integration: 
 
-[![gc28](/assets/wp-content/uploads/2015/01/gc28-1-195x300.jpg)](/assets/wp-content/uploads/2015/01/gc28-1.jpg)
+[![gc28](/assets/wp-content/uploads/2015/01/gc28-1.jpg)](/assets/wp-content/uploads/2015/01/gc28-1.jpg)
 
 #### Game Center initialization: 
 

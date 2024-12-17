@@ -25,11 +25,11 @@ There are already dozens of 'Hello world' tutorials published for the new Apple 
 
 ### 1\. Download the XCode 7.1 Beta from the [Apple Developer Portal](https://developer.apple.com/xcode/download/):
 
-[![Download XCode 7.1 Beta](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.01.17-1-300x116.jpg)](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.01.17-1.jpg)
+[![Download XCode 7.1 Beta](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.01.17-1.jpg)](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.01.17-1.jpg)
 
 #### 2\. Create a new project:
 
-[![tvOS Create new project](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-10-at-23.59.18-300x212.png)](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-10-at-23.59.18.png) [![Create tvOS project](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.06.33-300x214.png)](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.06.33.png)
+[![tvOS Create new project](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-10-at-23.59.18.png)](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-10-at-23.59.18.png) [![Create tvOS project](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.06.33.png)](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.06.33.png)
 
 #### 3\. Open GameScene.swift:
 
@@ -121,7 +121,7 @@ override func update(currentTime: CFTimeInterval) {
 
 #### 5\. Start the Simulator:
 
-[![Start tvOS Simulator](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.06.44-300x38.png)](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.06.44.png)
+[![Start tvOS Simulator](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.06.44.png)](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.06.44.png)
 
 #### 6\. Show the remote control:
 
@@ -131,7 +131,7 @@ override func update(currentTime: CFTimeInterval) {
 
 This was the most confusing part and costs me some minutes. You have to press the option key (alt) on you Mac keyboard and move the mouse around on the touch area of the remote control window. No mouse clicks!!!
 
-[![tvOS Simulator and Remote Control](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.08.58-1-300x181.jpg)](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.08.58-1.jpg)
+[![tvOS Simulator and Remote Control](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.08.58-1.jpg)](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.08.58-1.jpg)
 
 That's all for today.
 

@@ -17,8 +17,6 @@ tags: []
 
 I've been busy the last weeks with watching WWDC videos. So much new stuff and so little time ;-).  My favorites are Swift, Playground, Sprite Kit enhancements like the new level editor and especially this new Interface Builder Feature: It is possible to use ONE Storyboard to target both: iPad and iPhone/iPod. Luckily Apple lifted the [NDA](http://oleb.net/blog/2014/06/apple-lifted-beta-nda/) a little bit, so it's allowed to talk about the new stuff. But step by step... First of all I'm planning to implement new parts of my game in SWIFT!
 
-####
-
 #### **What does this mean?**
 
 One of the first things I've to figure out is how to call Objective C code from SWIFT and vice versa. I'll show this in one of my next posts.

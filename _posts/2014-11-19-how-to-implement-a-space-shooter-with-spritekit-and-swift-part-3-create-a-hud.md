@@ -82,7 +82,7 @@ skView.presentScene(scene)
 
 Now let's create the HUD: 
 
-[![3-1](/assets/wp-content/uploads/2014/11/3-1-300x9.png)](/assets/wp-content/uploads/2014/11/3-1-1.jpg)
+[![3-1](/assets/wp-content/uploads/2014/11/3-1.png)](/assets/wp-content/uploads/2014/11/3-1-1.jpg)
 
 It contains 3 different elements :
 
@@ -206,7 +206,7 @@ createHUD()
 
 Here we are:
 
-[![3-5](/assets/wp-content/uploads/2014/11/3-5-300x170.png)](/assets/wp-content/uploads/2014/11/3-5-1.jpg)
+[![3-5](/assets/wp-content/uploads/2014/11/3-5-1.png)](/assets/wp-content/uploads/2014/11/3-5-1.jpg)
 
 That's all for today. In my next part I'll add collision detection and a basic game logic for life lost, game over, pause, score behavior.
 

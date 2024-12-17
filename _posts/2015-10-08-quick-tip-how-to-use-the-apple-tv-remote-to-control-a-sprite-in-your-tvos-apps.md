@@ -25,7 +25,7 @@ tags:
 
 Since my Apple TV Developer kit arrived one week ago I had plenty of time to try certain things. I will blog about some of my prototypes in the next days.
 
-[![Swift Tutorial Apple TV remote 1](/assets/wp-content/uploads/2015/10/Screen-Shot-2015-10-01-at-20.12.48-1-300x199.jpg)](/assets/wp-content/uploads/2015/10/Screen-Shot-2015-10-01-at-20.12.48-1.jpg)
+[![Swift Tutorial Apple TV remote 1](/assets/wp-content/uploads/2015/10/Screen-Shot-2015-10-01-at-20.12.48-1.jpg)](/assets/wp-content/uploads/2015/10/Screen-Shot-2015-10-01-at-20.12.48-1.jpg)
 
 Today I'll will focus again on the remote control. It provides, especially in combination with SpriteKit, a simple and very natural way to control a sprite on the screen. For a natural sprite movement the approach of my todays post is much better, the my [article about gesture recognition](/quick-tip-how-to-use-the-remote-control-in-your-tvos-apps-for-apple-tv-in-swift) on the AppleTV.
 
@@ -33,13 +33,13 @@ Let's start...
 
 ### 1\. Download the XCode 7.1 Beta from the [Apple Developer Portal](https://developer.apple.com/xcode/download/):
 
-[![Swift Tutorial Apple TV remote 2](/assets/wp-content/uploads/2015/10/2-1-300x116.jpg)](/assets/wp-content/uploads/2015/10/2-1.jpg)
+[![Swift Tutorial Apple TV remote 2](/assets/wp-content/uploads/2015/10/2-1.jpg)](/assets/wp-content/uploads/2015/10/2-1.jpg)
 
 #### 2\. Create a new project:
 
-[![Swift Tutorial Apple TV remote 3](/assets/wp-content/uploads/2015/10/3-300x212.png)](/assets/wp-content/uploads/2015/10/3.png)
+[![Swift Tutorial Apple TV remote 3](/assets/wp-content/uploads/2015/10/3.png)](/assets/wp-content/uploads/2015/10/3.png)
 
-[![Swift Tutorial Apple TV remote 4](/assets/wp-content/uploads/2015/10/4-300x214.png)](/assets/wp-content/uploads/2015/10/4.png)
+[![Swift Tutorial Apple TV remote 4](/assets/wp-content/uploads/2015/10/4.png)](/assets/wp-content/uploads/2015/10/4.png)
 
 #### 3\. Open GameViewController.swift
 
@@ -161,7 +161,7 @@ touchPositionX = location.x
 
 #### 6\. Now let's move the sprite around and start the App
 
-[![Swift Tutorial Apple TV remote 7](/assets/wp-content/uploads/2015/10/7-1-300x181.jpg)](/assets/wp-content/uploads/2015/10/7-1.jpg)
+[![Swift Tutorial Apple TV remote 7](/assets/wp-content/uploads/2015/10/7-1.jpg)](/assets/wp-content/uploads/2015/10/7-1.jpg)
 
 If you try this in the Simulator you have to press the option key (alt) on you Mac keyboard and move the mouse around on the touch area of the remote control window. No mouse clicks!!!
 

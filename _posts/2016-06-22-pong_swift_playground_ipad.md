@@ -35,7 +35,7 @@ So here we are: My first game SWIFT Playground completely written on an iPad: [P
 
 2\. Create a new SWIFT Playground:
 
-[![IMG_2575](/assets/wp-content/uploads/2016/06/IMG_2575-300x225.jpg)](/assets/wp-content/uploads/2016/06/IMG_2575.jpg)[![iPad Create a new Playground](/assets/wp-content/uploads/2016/06/IMG_2574-300x225.jpg)](/assets/wp-content/uploads/2016/06/IMG_2574.jpg)
+[![IMG_2575](/assets/wp-content/uploads/2016/06/IMG_2575.jpg)](/assets/wp-content/uploads/2016/06/IMG_2575.jpg)[![iPad Create a new Playground](/assets/wp-content/uploads/2016/06/IMG_2574.jpg)](/assets/wp-content/uploads/2016/06/IMG_2574.jpg)
 
  
 
@@ -260,7 +260,7 @@ So here we are: My first game SWIFT Playground completely written on an iPad: [P
 
 You can also download the sample directly from my [GitHub](https://github.com/stfnjstn/iPadSwiftPlayground) repository.
 
-![PongPlayground](/assets/wp-content/uploads/2016/06/PongPlayground-300x225.jpg)
+![PongPlayground](/assets/wp-content/uploads/2016/06/PongPlayground.jpg)
 
 My personal conclusion: You can really write advanced Playground Apps completely on your iPad. The editor offers some intelligent solutions to choose the next needed code snippet without typing, but for bigger projects an external keypad improves the coding experience a lot. A possibility to upload the playgrounds as an App to the AppStore is missing. So a kind of Swift Playground Store would be nice for the future. Maybe this will come with the final release of iOS 10.
 

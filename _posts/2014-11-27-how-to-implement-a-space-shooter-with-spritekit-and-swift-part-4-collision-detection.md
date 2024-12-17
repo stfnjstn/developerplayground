@@ -89,7 +89,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 
 We have to add a physics body to our hero and bullet sprites. After that the built in physics engine of SpriteKit will handle the collision detection automatically. SpriteKit provides several possibilities to define the shape of the SKPhysicsBody. The easiest is a rectangle. This is not accurate enough for bullets, but not for the Hero sprite. A triangle would be better. Perfect in this scenario is to use the ship texture. That means SpriteKit will use all non transparent pixels to detect the shape by itself:
 
-[![4-1](/assets/wp-content/uploads/2014/11/4-1-1-300x110.jpg)](/assets/wp-content/uploads/2014/11/4-1-1.jpg)
+[![4-1](/assets/wp-content/uploads/2014/11/4-1-1.jpg)](/assets/wp-content/uploads/2014/11/4-1-1.jpg)
 
 Inside of didMoveToView in GameScene.swift add this code snippet after the sprite creation: 
 
@@ -219,7 +219,7 @@ func didBeginContact(contact: SKPhysicsContact) {  if !self.gamePaused {
 
 }
 
-[![4-4](/assets/wp-content/uploads/2014/11/4-4-1-300x168.jpg)](/assets/wp-content/uploads/2014/11/4-4-1.jpg)
+[![4-4](/assets/wp-content/uploads/2014/11/4-4-1.jpg)](/assets/wp-content/uploads/2014/11/4-4-1.jpg)
 
 #### 2.3. LifeLost & GameOver
 
@@ -315,7 +315,7 @@ self.view?.window?.rootViewController?.presentViewController(alert, animated: tr
 
 }
 
-[![4-6](/assets/wp-content/uploads/2014/11/4-6-1-300x167.jpg)](/assets/wp-content/uploads/2014/11/4-6-1.jpg)
+[![4-6](/assets/wp-content/uploads/2014/11/4-6-1.jpg)](/assets/wp-content/uploads/2014/11/4-6-1.jpg)
 
 That's all for today. In my next part I'll add particle and sound effects.
 

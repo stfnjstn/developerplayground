@@ -31,7 +31,7 @@ My goal is to implement a complete space shooter with SpriteKit and SWIFT.
 * [Part 7](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-7-iad-integration): iAd integration
 * [Part 8](/how-to-implement-in-app-purchase-for-your-ios-app-in-swift): In-App Purchases
 
-[![iOS Simulator Screen Shot 08 Feb 2015 22.43.20](/assets/wp-content/uploads/2014/10/iOS-Simulator-Screen-Shot-08-Feb-2015-22.43.20-1-300x200.jpg)](/assets/wp-content/uploads/2014/10/iOS-Simulator-Screen-Shot-08-Feb-2015-22.43.20-1.jpg)
+[![iOS Simulator Screen Shot 08 Feb 2015 22.43.20](/assets/wp-content/uploads/2014/10/iOS-Simulator-Screen-Shot-08-Feb-2015-22.43.20-1.jpg)](/assets/wp-content/uploads/2014/10/iOS-Simulator-Screen-Shot-08-Feb-2015-22.43.20-1.jpg)
 
 ### Here's a short teaser video:
 

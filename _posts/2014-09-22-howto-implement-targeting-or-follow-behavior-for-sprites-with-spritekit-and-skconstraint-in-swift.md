@@ -25,9 +25,9 @@ At the developer conference WWDC, in June this year, Apple showed a new class in
 
 ## 1\. Create a new Project
 
-[![follow1](/assets/wp-content/uploads/2014/09/follow1-300x176.png)](/assets/wp-content/uploads/2014/09/follow1.png)
+[![follow1](/assets/wp-content/uploads/2014/09/follow1.png)](/assets/wp-content/uploads/2014/09/follow1.png)
 
-[![follow2](/assets/wp-content/uploads/2014/09/follow2-300x176.png)](/assets/wp-content/uploads/2014/09/follow2.png)
+[![follow2](/assets/wp-content/uploads/2014/09/follow2.png)](/assets/wp-content/uploads/2014/09/follow2.png)
 
 [![follow3](/assets/wp-content/uploads/2014/09/follow3-1.jpg)](/assets/wp-content/uploads/2014/09/follow3-1.jpg)
 

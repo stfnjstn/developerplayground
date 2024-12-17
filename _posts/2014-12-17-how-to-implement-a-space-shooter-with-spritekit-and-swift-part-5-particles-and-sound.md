@@ -50,7 +50,7 @@ First me need some sound effects in WAV format, which is supported out of the bo
 
 To keep your project structure clean, create a new group and name it 'resources':
 
-[![5-1](/assets/wp-content/uploads/2014/12/5-1-1-300x116.jpg)](/assets/wp-content/uploads/2014/12/5-1-1.jpg)
+[![5-1](/assets/wp-content/uploads/2014/12/5-1-1.jpg)](/assets/wp-content/uploads/2014/12/5-1-1.jpg)
 
 Once you have a wav file add it to your project:
 
@@ -72,11 +72,11 @@ The video at the top shows two different kind of particle effects. One for explo
 
 #### Add a new 'SpriteKit Particle File' to your project:
 
-[![5-3](/assets/wp-content/uploads/2014/12/5-3-1-300x176.jpg)](/assets/wp-content/uploads/2014/12/5-3-1.jpg)
+[![5-3](/assets/wp-content/uploads/2014/12/5-3-1.jpg)](/assets/wp-content/uploads/2014/12/5-3-1.jpg)
 
 Choose template type 'fire' and name it 'ExplosionParticle'
 
-[![5-4](/assets/wp-content/uploads/2014/12/5-4-300x177.png)](/assets/wp-content/uploads/2014/12/5-4.png)
+[![5-4](/assets/wp-content/uploads/2014/12/5-4.png)](/assets/wp-content/uploads/2014/12/5-4.png)
 
 [![5-5](/assets/wp-content/uploads/2014/12/5-5-1.jpg)](/assets/wp-content/uploads/2014/12/5-5-1.jpg)
 
@@ -116,7 +116,7 @@ To create a starfield with a parallax effect I'll combine multiple emitter nodes
 
 [![](/assets/wp-content/uploads/2014/12/Star-1.jpg)](/assets/wp-content/uploads/2014/12/Star-1.jpg)
 
-[![5-11](/assets/wp-content/uploads/2014/12/5-11-1-300x123.jpg)](/assets/wp-content/uploads/2014/12/5-11-1.jpg)
+[![5-11](/assets/wp-content/uploads/2014/12/5-11-1.jpg)](/assets/wp-content/uploads/2014/12/5-11-1.jpg)
 
 Add a new method starfieldEmitter to GameScene.swift:
 

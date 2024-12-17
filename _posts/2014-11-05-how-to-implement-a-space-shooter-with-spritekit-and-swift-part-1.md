@@ -36,9 +36,9 @@ tags: []
 
 ## 1\. Create a new universal project (template: game; language: Swift)
 
-[![part1-1](/assets/wp-content/uploads/2014/11/part1-1-300x177.png)](/assets/wp-content/uploads/2014/11/part1-1.png)
+[![part1-1](/assets/wp-content/uploads/2014/11/part1-1.png)](/assets/wp-content/uploads/2014/11/part1-1.png)
 
-[![part1-2](/assets/wp-content/uploads/2014/11/part1-2-300x177.png)](/assets/wp-content/uploads/2014/11/part1-2.png)
+[![part1-2](/assets/wp-content/uploads/2014/11/part1-2.png)](/assets/wp-content/uploads/2014/11/part1-2.png)
 
 ### 2\. Remove the GameScene.sks file
 
@@ -108,7 +108,7 @@ return Int(UIInterfaceOrientationMask.LandscapeLeft.rawValue)
 
 I'll add a spaceship sprite. The sprite will automatically orient and move to a touch location on the screen:
 
-[![part1-4](/assets/wp-content/uploads/2014/11/part1-4-1-300x185.jpg)](/assets/wp-content/uploads/2014/11/part1-4-1.jpg)
+[![part1-4](/assets/wp-content/uploads/2014/11/part1-4-1.jpg)](/assets/wp-content/uploads/2014/11/part1-4-1.jpg)
 
 The automated orienting of the spaceship is implemented with a little trick. I'll add a SKConstraint to an invisible sprite. I case of a touch event, the invisible sprite is moved to the touch location and the spaceship is automatically oriented to this invisible sprite/touch location.
 

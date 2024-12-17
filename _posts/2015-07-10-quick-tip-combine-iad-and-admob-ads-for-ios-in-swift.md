@@ -23,7 +23,7 @@ tags:
 
 Today I'll show how to use iAd together with AdMob ads. If you use the interstitial ads provided by Apples iAd frequently, you might have seen that the fill rate is not always 100 percent:
 
-[![AdMob tutorial](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.20.17-300x56.png)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.20.17.png)
+[![AdMob tutorial](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.20.17.png)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.20.17.png)
 
 One reason could be that there was just not enough time to load the new content. This tutorial shows how to improve the fill rate by requesting a Google AdMob ad in parallel. Depending on the availability, the iAd or the AdMob ad will be shown.
 
@@ -37,47 +37,47 @@ One reason could be that there was just not enough time to load the new content.
 
 ### 1\. Let's create a sample project:
 
-[![AdMob 1](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.28.16-300x174.png)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.28.16.png)
+[![AdMob 1](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.28.16.png)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.28.16.png)
 
-[![AdMob 2](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.28.35-300x175.png)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.28.35.png)
+[![AdMob 2](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.28.35.png)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.28.35.png)
 
 ### 2\. Ad the iAD framework to your project:
 
-[![AdMob 3](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-08-at-21.57.041-1-300x151.jpg)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-08-at-21.57.041-1.jpg)
+[![AdMob 3](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-08-at-21.57.041-1.jpg)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-08-at-21.57.041-1.jpg)
 
-[![AdMob 4](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-08-at-21.57.191-258x300.png)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-08-at-21.57.191.png)
+[![AdMob 4](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-08-at-21.57.191.png)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-08-at-21.57.191.png)
 
-[![5](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-08-at-21.57.291-300x132.png)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-08-at-21.57.291.png)
+[![5](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-08-at-21.57.291.png)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-08-at-21.57.291.png)
 
 ### 3\. Ad the Google AdMob SDK to your project:
 
-[![AdMob 6](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.33.12-1-300x91.jpg)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.33.12-1.jpg)
+[![AdMob 6](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.33.12-1.jpg)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.33.12-1.jpg)
 
-[![AdMob 7](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.33.51-1-278x300.jpg)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.33.51-1.jpg)
+[![AdMob 7](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.33.51-1.jpg)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.33.51-1.jpg)
 
-[![AdMob 8](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.34.03-300x50.png)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.34.03.png)
+[![AdMob 8](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.34.03.png)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.34.03.png)
 
 ### 4\. Create the UI:
 
 #### Open the storyboard and add a button to the screen:
 
-[![AdMob 9](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.36.02-300x168.png)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.36.02.png)
+[![AdMob 9](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.36.02.png)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.36.02.png)
 
 #### Use Autolayout to center the button on the screen:
 
-[![AdMob 10](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.36.21-300x221.png)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.36.21.png)
+[![AdMob 10](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.36.21.png)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.36.21.png)
 
 #### Create an IBAction method to handle touch events for the button:
 
-[![AdMob 11](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.41.05-300x110.png)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.41.05.png)
+[![AdMob 11](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.41.05.png)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.41.05.png)
 
 ### 5\. Create the AdHelper class
 
-[![AdMob 12](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.51.05-1-300x56.jpg)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.51.05-1.jpg)
+[![AdMob 12](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.51.05-1.jpg)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.51.05-1.jpg)
 
-[![AdMob 13](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.51.14-300x175.png)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.51.14.png)
+[![AdMob 13](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.51.14.png)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.51.14.png)
 
-[![AdMob 14](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.51.26-300x177.png)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.51.26.png)
+[![AdMob 14](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.51.26.png)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.51.26.png)
 
 #### Paste this code snippet into the newly created file:
 
@@ -213,7 +213,7 @@ UIViewController.prepareInterstitialAds()
 
 #### Open ViewController.swift:
 
-#### [![AdMob 11](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-15.01.41-1-300x142.jpg)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-15.01.41-1.jpg)
+#### [![AdMob 11](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-15.01.41-1.jpg)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-15.01.41-1.jpg)
 
 #### Add a property which hold the instance of AdHelper and initialise it in the ViewDidLoad method:
 
@@ -243,7 +243,7 @@ adHelper.showAds(self)
 
 #### Now you can test this on a device:
 
-[![AdMob 14](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-15.14.21-1-300x170.jpg)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-15.14.21-1.jpg)
+[![AdMob 14](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-15.14.21-1.jpg)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-15.14.21-1.jpg)
 
 That's all for today. You can download the Sample from my GitHub [repository](https://github.com/stfnjstn/iAdAdMobDemo). Further details about the Google AdMob SDK can be found [here](https://developers.google.com/admob/ios/interstitial).
 
