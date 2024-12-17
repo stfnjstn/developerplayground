@@ -29,7 +29,7 @@ I'll share my workflow for creating these videos in this post:
 
 #### 1\. Create an XCUI Automation Test:
 
-The test should cover all areas which should be part of the video. It can run longer than the allowed 30 seconds. We will cut it in a later step. More about XCUI tests [here](https://developerplayground.net/xcui-tests-scenekit/).
+The test should cover all areas which should be part of the video. It can run longer than the allowed 30 seconds. We will cut it in a later step. More about XCUI tests [here](/xcui-tests-scenekit).
 
 ![UITestSample](/assets/wp-content/uploads/2020/05/UITestSample.png)
 

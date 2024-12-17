@@ -39,5 +39,6 @@ After that you can start scrolling again.
 [![](/assets/wp-content/uploads/2014/03/Scrolling5.jpg)](/assets/wp-content/uploads/2014/03/Scrolling5.jpg)
 
 I've created a small video to demonstrate this:
+[![Video](/assets/wp-content/uploads/2014/03/Video.png)](https://youtu.be/-FX-tFks5pg)
 
 That's all for today. In my next post I'll show how to implement this in Objective C and I'll add some nice parallax effects. Cheers, Stefan

@@ -17,7 +17,7 @@ tags: []
 ---
 ### Welcome to Part 9 of my blog series about game development: pragma mark directive
 
-Todays post is very short. I'll only show how the '#pragma mark' directive can help you to organize your code. The navigation bar on top of the code window provides the possibility to navigate in your code. Just click on the last entry:
+Todays post is very short. I'll only show how the ``#pragma mark`` directive can help you to organize your code. The navigation bar on top of the code window provides the possibility to navigate in your code. Just click on the last entry:
 
 [![](/assets/wp-content/uploads/2014/05/Bildschirmfoto-2014-05-28-um-22.55.06-1.jpg)](/assets/wp-content/uploads/2014/05/Bildschirmfoto-2014-05-28-um-22.55.06-1.jpg)
 
@@ -25,10 +25,10 @@ This will open a drop down list of all available constants, properties and metho
 
 [![](/assets/wp-content/uploads/2014/05/Bildschirmfoto-2014-05-28-um-22.55.18-1.jpg)](/assets/wp-content/uploads/2014/05/Bildschirmfoto-2014-05-28-um-22.55.18-1.jpg)
 
-A better way to organize your code would be grouping elements by their context. For example all methods which belongs to the HUD should be grouped together. Luckily Objective C provides a solution for that: The '#pragma mark' directive.
+A better way to organize your code would be grouping elements by their context. For example all methods which belongs to the HUD should be grouped together. Luckily Objective C provides a solution for that: The ``#pragma mark`` directive.
 
 Just enter some #pragma marks to your code:
-
+```objectivec
 ...
 
 #pragma mark - Init
@@ -36,6 +36,7 @@ Just enter some #pragma marks to your code:
 ....
 
 #pragma mark - HUD handling
+```
 
 You can see the result, if your click again in the navigation bar to open the drop down list:
 

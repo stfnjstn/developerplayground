@@ -25,8 +25,8 @@ tags:
 
 Welcome to my tutorial series about scrolling:
 
-  * [Part 1](https://developerplayground.net/?p=1143): Endless scrolling with background tiles
-  * [Part 2](https://developerplayground.net/?p=1186): Natural endless scrolling with easing
+  * [Part 1](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-4-collision-detection43): Endless scrolling with background tiles
+  * [Part 2](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-4-collision-detection86): Natural endless scrolling with easing
 
 
 
@@ -284,7 +284,7 @@ override func update(currentTime: CFTimeInterval) {
 
 You can download the complete sample from my [Github repository](https://github.com/stfnjstn/EndlessScrollingDemo).
 
-I'll show an improved version with a smoother scrolling in [part 2](https://developerplayground.net/?p=1186). You can support me by downloading my Apps from the Apple AppStore:
+I'll show an improved version with a smoother scrolling in [part 2](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-4-collision-detection86). You can support me by downloading my Apps from the Apple AppStore:
 
 [![AppStore Stefan Josten](/assets/wp-content/uploads/2015/11/AppStore1.png)](https://itunes.apple.com/developer/stefan-josten/id949662361)   
   

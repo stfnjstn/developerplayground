@@ -22,14 +22,14 @@ My goal is to implement a complete space shooter with SpriteKit and SWIFT.
 
 ### Content is:
 
-* [Part 1](https://developerplayground.net/?p=14): Initial project setup, sprite creation and movement using SKAction and SKConstraint
-* [Part 2](https://developerplayground.net/?p=13): Adding enemies, bullets and shooting with SKAction and SKConstraint
-* [Part 3](https://developerplayground.net/?p=12): Adding a HUD with SKLabelNode and SKSpriteNode
-* [Part 4](https://developerplayground.net/?p=11): Adding basic game logic and collision detection
-* [Part 5](https://developerplayground.net/?p=10): Adding particles and sound
-* [Part 6](https://developerplayground.net/?p=9): GameCenter integration
-* [Part 7](https://developerplayground.net/?p=8): iAd integration
-* [Part 8](https://developerplayground.net/?p=5): In-App Purchases
+* [Part 1](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-1): Initial project setup, sprite creation and movement using SKAction and SKConstraint
+* [Part 2](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-2): Adding enemies, bullets and shooting with SKAction and SKConstraint
+* [Part 3](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-3-create-a-hud): Adding a HUD with SKLabelNode and SKSpriteNode
+* [Part 4](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-4-collision-detection): Adding basic game logic and collision detection
+* [Part 5](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-5-particles-and-sound): Adding particles and sound
+* [Part 6](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-6-game-center-integration): GameCenter integration
+* [Part 7](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-7-iad-integration): iAd integration
+* [Part 8](/how-to-implement-in-app-purchase-for-your-ios-app-in-swift): In-App Purchases
 
 [![iOS Simulator Screen Shot 08 Feb 2015 22.43.20](/assets/wp-content/uploads/2014/10/iOS-Simulator-Screen-Shot-08-Feb-2015-22.43.20-1-300x200.jpg)](/assets/wp-content/uploads/2014/10/iOS-Simulator-Screen-Shot-08-Feb-2015-22.43.20-1.jpg)
 

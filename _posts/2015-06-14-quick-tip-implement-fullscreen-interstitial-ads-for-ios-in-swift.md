@@ -21,7 +21,7 @@ Today I'll show how to implement a often used pattern in free games: Usually you
 
  
 
-For details how to subscribe for the Apple iAds program, please check my previous article about [iAD integration](https://developerplayground.net/?p=8).
+For details how to subscribe for the Apple iAds program, please check my previous article about [iAD integration](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-7-iad-integration).
 
 ### 1\. Create the sample project:
 
@@ -99,7 +99,7 @@ As a result you see a segue under each ViewController:
 
 [![iAD13](/assets/wp-content/uploads/2015/06/iAD13-285x300.png)](/assets/wp-content/uploads/2015/06/iAD13.png)
 
-More on segues in my previous tutorial about [View Navigation](https://developerplayground.net/?p=29).
+More on segues in my previous tutorial about [View Navigation](/howto-add-view-controllers-to-the-game-storyboard-and-use-segues-to-navigate-between-them).
 
 ### 3\. Implement the iAd Integration
 

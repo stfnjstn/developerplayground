@@ -21,7 +21,7 @@ tags:
 
 Today I'll show a very simple way to integrate an ad banner to your iOS app. Most tutorials (including mine) explain the complex way by implementing the ADBannerViewDelegate protocol. If you don't care about error handling, animations, positioning or the maximum number of allowed banner instances (10!): There is a much easier way which requires only two lines of code in SWIFT to integrate iAD.
 
-For details how to subscribe for the Apple iAds program, please check my previous article about[iAD integration](https://developerplayground.net/?p=8 " iAD integration").
+For details how to subscribe for the Apple iAds program, please check my previous article about [iAD integration](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-7-iad-integration " iAD integration").
 
 ### 1\. Create the sample project:
 

@@ -19,9 +19,9 @@ tags: []
 ---
 ### Welcome to Part 5 of my blog series about game development: Endless Scrolling
 
-Today I'll create a component which implements the endless scrolling and adds some parallax effects. I'll use SpriteKit for that. A nice tutorial about SpriteKit can be found here and [here](http://www.raywenderlich.com/42699/spritekit-tutorial-for-beginners) and [here](https://developer.apple.com/library/ios/documentation/GraphicsAnimation/Conceptual/SpriteKit_PG/Introduction/Introduction.html).
+Today I'll create a component which implements the endless scrolling and adds some parallax effects. I'll use SpriteKit for that. A nice tutorial about SpriteKit can be found [here](http://www.raywenderlich.com/42699/spritekit-tutorial-for-beginners) and [here](https://developer.apple.com/library/ios/documentation/GraphicsAnimation/Conceptual/SpriteKit_PG/Introduction/Introduction.html).
 
-### If you haven't completed[ part 3 or 4](https://developerplayground.net/?p=27), you can [download the project from GitHub: v0.3](https://github.com/stfnjstn/MyFirstGame/releases/tag/v0.3)
+If you haven't completed part [3](/howto-add-splash-screen-application-icons) or [4](/howto-implement-endless-scrolling), you can [download the project from GitHub: v0.3](https://github.com/stfnjstn/MyFirstGame/releases/tag/v0.3)
 
 First of all we need some background images to show the infinite parallax scrolling. I've created four layers:
 
@@ -44,6 +44,8 @@ First of all we need some background images to show the infinite parallax scroll
 #### Combining all images together looks like this:
 
 [![](/assets/wp-content/uploads/2014/03/BackgroundPara-1.jpg)](/assets/wp-content/uploads/2014/03/BackgroundPara-1.jpg)
+
+[![Video](/assets/wp-content/uploads/2014/03/Parallax1.png)](https://youtu.be/_gBs_p5s98A)
 
 ### Adding the images to out XCode project:
 
@@ -110,19 +112,15 @@ This file must be a subtype of [SKNode](https://developer.apple.com/library/ios/
 This class is derived from SKNode. It is the root element for all backgrounds/tiles which are created for the endless scrolling:
 
 ParallaxHandlerNode.h:
-
+```objectivec
 #import <SpriteKit/SpriteKit.h>
 
 @interface ParallaxHandlerNode : SKNode
-
--(id)initWithSize:(CGSize)Size;
-
--(void)addBackgroundLayer:(NSArray*)tiles;
-
--(void)scroll:(float)speed;
-
+  -(id)initWithSize:(CGSize)Size;
+  -(void)addBackgroundLayer:(NSArray*)tiles;
+  -(void)scroll:(float)speed; 
 @end
-
+```
 The ParallaxHandlerNode class implements three methods:
 
   * initWithSize \- initializes the object
@@ -132,143 +130,84 @@ The ParallaxHandlerNode class implements three methods:
 
 
 ParallaxHandlerNode.m:
-```
+```objectivec
 #import "ParallaxHandlerNode.h"
 
 @implementation ParallaxHandlerNode
-
-CGSize _containerSize;
-
--(id)initWithSize:(CGSize)size {
-
-_containerSize=size;
-
-return [self init];
-
-}
-
-// Add a background layer.
-
--(void)addBackgroundLayer:(NSArray*)tiles {
-
-// Create static background
-
-if ([tiles count]==1 ) {
-
-SKSpriteNode *background=[SKSpriteNode spriteNodeWithImageNamed:(NSString*)[tiles objectAtIndex:0]];
-
-background.position=CGPointMake(_containerSize.width/2, _containerSize.height/2);
-
-[self addChild:background];
-
-} else {
-
-// Create a background for infinite scrolling
-
-// Create a SKNode a root element
-
-SKNode *background=[[SKNode alloc]init];
-
-[self addChild:background];
-
-// Create and add tiles to the node
-
-for (int i=0; i<[tiles count]; i++) {
-
-NSString *item = [tiles objectAtIndex:i];
-
-SKSpriteNode *tile;
-
-if (![item isEqualToString: @""]) {
-
-// Add an emtpy screen
-
-tile=[SKSpriteNode spriteNodeWithImageNamed:item];
-
-tile.position=CGPointMake(_containerSize.width/2+(i*_containerSize.width), 0);
-
-} else {
-
-tile=[[SKSpriteNode alloc] init];
-
-tile.size=_containerSize;
-
-tile.position=CGPointMake(_containerSize.width/2+(i*_containerSize.width), _containerSize.height/2);
-
-}
-
-[background addChild:tile];
-
-}
-
-// position background at the second screen
-
-background.position=CGPointMake(-_containerSize.width, _containerSize.height/2);
-
-}
-
-}
-
-// Infinite scrolling:
-
-// - Scroll the backgrounds and switch back if the end or the start screen is reached
-
-// - Speed depends on layer to simulare deepth
-
--(void)scroll:(float)speed {
-
-for (int i=0; i<self.children.count;i++) {
-
-SKNode *node = [self.children objectAtIndex:i];
-
-// If more than one screen => Scrolling
-
-if (node.children.count>0) {
-
-float parallaxPos=node.position.x;
-
-NSLog(@"x: %f", parallaxPos);
-
-if (speed>0) {
-
-parallaxPos+=speed*i;
-
-if (parallaxPos>=0) {
-
-// switch between first and last screen
-
-parallaxPos=-_containerSize.width*(node.children.count-1);
-
-}
-
-} else if (speed<0) {
-
-parallaxPos+=speed*i;
-
-if (parallaxPos<-_containerSize.width*(node.children.count-1)) {
-
-// switch between last and first screen
-
-parallaxPos=0;
-
-}
-
-}
-
-// Set new node position. Position can't be set directly, therefore tempPos is used.
-
-CGPoint tmpPos=node.position;
-
-tmpPos.x = parallaxPos;
-
-node.position = tmpPos;
-
-}
-
-}
-
-}
-
+  CGSize _containerSize;
+  -(id)initWithSize:(CGSize)size {
+    _containerSize=size;
+    return [self init];
+  }
+
+  // Add a background layer.
+  -(void)addBackgroundLayer:(NSArray*)tiles {
+
+    // Create static background
+    if ([tiles count]==1 ) {
+      SKSpriteNode *background=[SKSpriteNode spriteNodeWithImageNamed:(NSString*)[tiles objectAtIndex:0]];
+      background.position=CGPointMake(_containerSize.width/2, _containerSize.height/2);
+      [self addChild:background];
+    } else {
+      // Create a background for infinite scrolling
+      // Create a SKNode a root element
+      SKNode *background=[[SKNode alloc]init];
+      [self addChild:background];
+    
+      // Create and add tiles to the node
+      for (int i=0; i<[tiles count]; i++) {
+        NSString *item = [tiles objectAtIndex:i];
+        SKSpriteNode *tile;
+        if (![item isEqualToString: @""]) {
+          // Add an emtpy screen
+          tile=[SKSpriteNode spriteNodeWithImageNamed:item];
+          tile.position=CGPointMake(_containerSize.width/2+(i*_containerSize.width), 0);
+        } else {
+          tile=[[SKSpriteNode alloc] init];
+          tile.size=_containerSize;
+          tile.position=CGPointMake(_containerSize.width/2+(i*_containerSize.width), _containerSize.height/2);
+        }
+        [background addChild:tile];
+      }
+
+      // position background at the second screen
+      background.position=CGPointMake(-_containerSize.width, _containerSize.height/2);
+    }
+  }
+
+  // Infinite scrolling:
+  // - Scroll the backgrounds and switch back if the end or the start screen is reached
+  // - Speed depends on layer to simulare deepth
+
+  -(void)scroll:(float)speed {
+    for (int i=0; i<self.children.count;i++) {
+      SKNode *node = [self.children objectAtIndex:i];
+
+      // If more than one screen => Scrolling
+      if (node.children.count>0) {
+        float parallaxPos=node.position.x;
+        NSLog(@"x: %f", parallaxPos);
+        if (speed>0) {
+          parallaxPos+=speed*i;
+          if (parallaxPos>=0) {
+            // switch between first and last screen
+            parallaxPos=-_containerSize.width*(node.children.count-1);
+          }
+        } else if (speed<0) {
+          parallaxPos+=speed*i;
+          if (parallaxPos<-_containerSize.width*(node.children.count-1)) {
+            // switch between last and first screen
+            parallaxPos=0;
+          }
+        }
+        
+        // Set new node position. Position can't be set directly, therefore tempPos is used.
+        CGPoint tmpPos=node.position;
+        tmpPos.x = parallaxPos;
+        node.position = tmpPos;
+      }
+    }
+  }
 @end
 ```
 
@@ -276,161 +215,103 @@ node.position = tmpPos;
 
 The GameScene class is inherited from SKScene and implements four methods:
 
-  * initWithSize \- initializes the object
-  * touchesBegan \- reacts on touch events, changes speed and direction
-  * addBackgrounds \- adds the background layers
-  * update \- the game loop
+  * ``initWithSize`` \- initializes the object
+  * ``touchesBegan`` \- reacts on touch events, changes speed and direction
+  * ``addBackgrounds`` \- adds the background layers
+  * ``update`` \- the game loop
 
 
 
 GameScene.m:
-```
+```objectivec
 #import "GameScene.h"
-
 #import "ParallaxHandlerNode.h"
 
 // Constants
-
 #define cStartSpeed 5
-
 #define cMaxSpeed 80
 
 @implementation GameScene
+  // private properties
+  NSTimeInterval _lastUpdateTime;
+  NSTimeInterval _dt;
+  int _speed=cStartSpeed;
+  ParallaxHandlerNode *background;
 
-// private properties
+  -(id)initWithSize:(CGSize)size {
+    if (self = [super initWithSize:size]) {
+      [self addBackgrounds];
+    }
+    return self;
+  }
 
-NSTimeInterval _lastUpdateTime;
+  // Increase speed after touch event up to 5 times.
+  // After maximum speed is reached the next touch changes the scroll direction
+  -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    if (_speed<cMaxSpeed && _speed>-cMaxSpeed) {
+      _speed=_speed*2;
+    } else {
+      if (_speed<0) {
+        _speed=cStartSpeed;
+      } else {
+        _speed=-cStartSpeed;
+      }
+    }
+  }
 
-NSTimeInterval _dt;
+  // Add the background elements for parallax scrolling
+  -(void)addBackgrounds {
+    // Array contains the name of the background tiles. "" for adding an empty screen
+    NSArray *nameBackground = [NSArray arrayWithObjects: @"Background", nil];
+    NSArray *nameBush = [NSArray arrayWithObjects:@"BackgroundBushLeft", @"BackgroundBushRight", @"", @"BackgroundBushLeft", nil];
+    NSArray *nameTree = [NSArray arrayWithObjects:@"BackgroundTreeLeft", @"BackgroundTreeRight", @"BackgroundTreeLeft" ,nil];
+    NSArray *nameGrass = [NSArray arrayWithObjects:@"", @"BackgroundGrassCenter", @"", nil];
+  
+    // Root node which contains the tree of backgrounds/background tiles
+    background = [[ParallaxHandlerNode alloc] initWithSize:self.size];
+    [self addChild:background];
+    [background addBackgroundLayer:nameBackground];
+    [background addBackgroundLayer:nameBush];
+    [background addBackgroundLayer:nameTree];
+    [background addBackgroundLayer:nameGrass];
+  }
 
-int _speed=cStartSpeed;
+  // The GameLoop
+  -(void)update:(NSTimeInterval)currentTime {
+    // Needed for smooth scrolling. It's not guaranteed, that the update method is not called in fixed intervalls
+    if (_lastUpdateTime) {
+      _dt = currentTime - _lastUpdateTime;
+    } else {
+      _dt = 0;
+    }
+    _lastUpdateTime = currentTime;
 
-ParallaxHandlerNode *background;
-
--(id)initWithSize:(CGSize)size {
-
-if (self = [super initWithSize:size]) {
-
-[self addBackgrounds];
-
-}
-
-return self;
-
-}
-
-// Increase speed after touch event up to 5 times.
-
-// After maximum speed is reached the next touch changes the scroll direction
-
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-
-if (_speed<cMaxSpeed && _speed>-cMaxSpeed) {
-
-_speed=_speed*2;
-
-} else {
-
-if (_speed<0) {
-
-_speed=cStartSpeed;
-
-} else {
-
-_speed=-cStartSpeed;
-
-}
-
-}
-
-}
-
-// Add the background elements for parallax scrolling
-
--(void)addBackgrounds {
-
-// Array contains the name of the background tiles. "" for adding an empty screen
-
-NSArray *nameBackground = [NSArray arrayWithObjects: @"Background", nil];
-
-NSArray *nameBush = [NSArray arrayWithObjects:@"BackgroundBushLeft", @"BackgroundBushRight", @"", @"BackgroundBushLeft", nil];
-
-NSArray *nameTree = [NSArray arrayWithObjects:@"BackgroundTreeLeft", @"BackgroundTreeRight", @"BackgroundTreeLeft" ,nil];
-
-NSArray *nameGrass = [NSArray arrayWithObjects:@"", @"BackgroundGrassCenter", @"", nil];
-
-// Root node which contains the tree of backgrounds/background tiles
-
-background = [[ParallaxHandlerNode alloc] initWithSize:self.size];
-
-[self addChild:background];
-
-[background addBackgroundLayer:nameBackground];
-
-[background addBackgroundLayer:nameBush];
-
-[background addBackgroundLayer:nameTree];
-
-[background addBackgroundLayer:nameGrass];
-
-}
-
-// The GameLoop
-
--(void)update:(NSTimeInterval)currentTime {
-
-// Needed for smooth scrolling. It's not guaranteed, that the update method is not called in fixed intervalls
-
-if (_lastUpdateTime) {
-
-_dt = currentTime - _lastUpdateTime;
-
-} else {
-
-_dt = 0;
-
-}
-
-_lastUpdateTime = currentTime;
-
-// Scroll
-
-[background scroll:_speed*_dt];
-
-}
-
+    // Scroll
+    [background scroll:_speed*_dt];
+  }
 @end
+```
 
 #### 5\. Add the scene to GameViewController:
 
 Add this method to GameViewController.h
-
+```objectivec
 -(void)viewWillAppear:(BOOL)animated{
+  [super viewWillAppear:animated];
+  SKView * skView = [[SKView alloc]initWithFrame:self.view.frame]; //(SKView *)self.view;
+  [self.view addSubview:skView];
+  skView.showsFPS = YES;
+  skView.showsNodeCount = YES;
 
-[super viewWillAppear:animated];
-
-SKView * skView = [[SKView alloc]initWithFrame:self.view.frame]; //(SKView *)self.view;
-
-[self.view addSubview:skView];
-
-skView.showsFPS = YES;
-
-skView.showsNodeCount = YES;
-
-// Create and configure the scene.
-
-GameScene *gameScene = [GameScene sceneWithSize:skView.bounds.size];
-
-gameScene.scaleMode = SKSceneScaleModeResizeFill; //SKSceneScaleModeAspectFill;
-
-// Present the scene.
-
-[skView presentScene:gameScene];
-
+  // Create and configure the scene.
+  GameScene *gameScene = [GameScene sceneWithSize:skView.bounds.size];
+  gameScene.scaleMode = SKSceneScaleModeResizeFill; //SKSceneScaleModeAspectFill;
+  // Present the scene.
+  [skView presentScene:gameScene];
 }
 ```
 #### 6\. Deploy and run
-
+[![Video](/assets/wp-content/uploads/2014/03/Parallax2.png)](https://youtu.be/KS1nRbMJcQc)
 That's all for today.
 
 Cheers,   

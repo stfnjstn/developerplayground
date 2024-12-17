@@ -84,104 +84,78 @@ For the foreground elements choose an Outlet Collection of type UIView:
 [![iOS Motion Effects](/assets/wp-content/uploads/2014/02/Parallax21-1.jpg)](/assets/wp-content/uploads/2014/02/Parallax21-1.jpg)
 
 Now, everything is prepared to add the parallax effect. Therefore we'll create two functions which will handle the device motion and the movement of our UI elements to the StartScreenViewController class:
-
+```objectivec
 -(void)assignBackgroundParallaxBehavior:(UIView*) view {
+  CGRect frameRect = view.frame;
 
-CGRect frameRect = view.frame;
+  // increase size of screen for 20%
+  frameRect.size.width = view.frame.size.width * 1.2;
+  frameRect.size.height = view.frame.size.height * 1.2;
+ 
+  // Set origin to the center of the resized frame
+  frameRect.origin.x=(view.frame.size.width-frameRect.size.width)/2;
+  frameRect.origin.y=(view.frame.size.height-frameRect.size.height)/2;
+  view.frame = frameRect;
 
-// increase size of screen for 20%
+  // Create horizontal motion effect
+  UIInterpolatingMotionEffect *horizontalMotionEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.x" type:UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis];
 
-frameRect.size.width = view.frame.size.width * 1.2;
+  // Limit movement of the motion effect
+  horizontalMotionEffect.minimumRelativeValue = @(frameRect.origin.x);
+  horizontalMotionEffect.maximumRelativeValue = @(-frameRect.origin.x);
+  
+  // Assign horizontal motion effect to view
+  [view addMotionEffect:horizontalMotionEffect];
+  
+  // Create vertical motion effect
+  UIInterpolatingMotionEffect *verticalMotionEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.y" type:UIInterpolatingMotionEffectTypeTiltAlongVerticalAxis];
 
-frameRect.size.height = view.frame.size.height * 1.2;
+  // Limit movement of the motion effect
+  verticalMotionEffect.minimumRelativeValue = @(frameRect.origin.y);
+  verticalMotionEffect.maximumRelativeValue = @(-frameRect.origin.y);
 
-// Set origin to the center of the resized frame
-
-frameRect.origin.x=(view.frame.size.width-frameRect.size.width)/2;
-
-frameRect.origin.y=(view.frame.size.height-frameRect.size.height)/2;
-
-view.frame = frameRect;
-
-// Create horizontal motion effect
-
-UIInterpolatingMotionEffect *horizontalMotionEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.x" type:UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis];
-
-// Limit movement of the motion effect
-
-horizontalMotionEffect.minimumRelativeValue = @(frameRect.origin.x);
-
-horizontalMotionEffect.maximumRelativeValue = @(-frameRect.origin.x);
-
-// Assign horizontal motion effect to view
-
-[view addMotionEffect:horizontalMotionEffect];
-
-// Create vertical motion effect
-
-UIInterpolatingMotionEffect *verticalMotionEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.y" type:UIInterpolatingMotionEffectTypeTiltAlongVerticalAxis];
-
-// Limit movement of the motion effect
-
-verticalMotionEffect.minimumRelativeValue = @(frameRect.origin.y);
-
-verticalMotionEffect.maximumRelativeValue = @(-frameRect.origin.y);
-
-// Assign vertical motion effect to view
-
-[view addMotionEffect:verticalMotionEffect];
-
+  // Assign vertical motion effect to view
+  [view addMotionEffect:verticalMotionEffect];
 }
 
 -(void)assignForegroundParallaxBehavior:(NSArray*) view {
+  int iMotionEffectSteps=20;
 
-int iMotionEffectSteps=20;
+  // Create horizontal motion effect
+  UIInterpolatingMotionEffect *horizontalMotionEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.x" type:UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis];
+  horizontalMotionEffect.minimumRelativeValue = @(iMotionEffectSteps);
+  horizontalMotionEffect.maximumRelativeValue = @(-iMotionEffectSteps);
 
-// Create horizontal motion effect
+  // Create vertical motion effect
+  UIInterpolatingMotionEffect *verticalMotionEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.y" type:UIInterpolatingMotionEffectTypeTiltAlongVerticalAxis];
+  verticalMotionEffect.minimumRelativeValue = @(iMotionEffectSteps);
+  verticalMotionEffect.maximumRelativeValue = @(-iMotionEffectSteps);
 
-UIInterpolatingMotionEffect *horizontalMotionEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.x" type:UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis];
-
-horizontalMotionEffect.minimumRelativeValue = @(iMotionEffectSteps);
-
-horizontalMotionEffect.maximumRelativeValue = @(-iMotionEffectSteps);
-
-// Create vertical motion effect
-
-UIInterpolatingMotionEffect *verticalMotionEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.y" type:UIInterpolatingMotionEffectTypeTiltAlongVerticalAxis];
-
-verticalMotionEffect.minimumRelativeValue = @(iMotionEffectSteps);
-
-verticalMotionEffect.maximumRelativeValue = @(-iMotionEffectSteps);
-
-// Assign motion effects to every view of the outlet collection
-
-for (int i=0; i<view.count; i++) {
-
-[view[i] addMotionEffect:horizontalMotionEffect];
-
-[view[i] addMotionEffect:verticalMotionEffect];
-
+  // Assign motion effects to every view of the outlet collection
+  for (int i=0; i<view.count; i++) {
+    [view[i] addMotionEffect:horizontalMotionEffect];
+    [view[i] addMotionEffect:verticalMotionEffect];
+  }
 }
-
-}
+```
 
 Call these methods at the end off the 'viewDidLoad' function:
+```objectivec
+-(void)viewDidLoad {
+  [super viewDidLoad];
 
-\- (void)viewDidLoad
-
-{
-
-[super viewDidLoad];
-
-// Do any additional setup after loading the view.
-
-[self assignBackgroundParallaxBehavior:self.backgroundView];
-
-[self assignForegroundParallaxBehavior:self.foregroundViews];
-
+  // Do any additional setup after loading the view.
+  [self assignBackgroundParallaxBehavior:self.backgroundView];
+  [self assignForegroundParallaxBehavior:self.foregroundViews];
 }
+```
+Test it on a device 
 
-Test it on a device .... Nice!
+.... Nice!
+
+
+
+[![Video](/assets/wp-content/uploads/2014/02/Video0.png)](https://youtu.be/3FFoO4yUMx0)
 
 Do the same for iPad
 

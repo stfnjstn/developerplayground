@@ -19,7 +19,7 @@ tags: []
 ---
 ### Welcome to Part 2 of my blog series about game development: View Controller
 
-Today I'm creating the basic game infrastructure, not the game itself. If you haven't completed [part 1](https://developerplayground.net/?p=30), you can [download the project from GitHub (version v0.1](https://github.com/stfnjstn/MyFirstGame/releases/tag/v0.1)).
+Today I'm creating the basic game infrastructure, not the game itself. If you haven't completed [part 1](/howto-design-for-depth-creating-a-start-screen-with-parallax-animations-using-ios-7-motion-effects), you can [download the project from GitHub (version v0.1](https://github.com/stfnjstn/MyFirstGame/releases/tag/v0.1)).
 
 #### Basic screens needed for the game:
 
@@ -40,18 +40,18 @@ Today I'm creating the basic game infrastructure, not the game itself. If you ha
 
 #### Reusing the code for the parallax effect
 
-Before we create the corresponding view controllers take a step back and think about the two functions we've added to our StartScreenViewController to perform the parallax effect in [part 1](https://developerplayground.net/?p=30) of this blog series:
-
+Before we create the corresponding view controllers take a step back and think about the two functions we've added to our StartScreenViewController to perform the parallax effect in [part 1](/howto-design-for-depth-creating-a-start-screen-with-parallax-animations-using-ios-7-motion-effects) of this blog series:
+```objectivec
 -(void)assignBackgroundParallaxBehavior:(UIView*) view
 
 -(void)assignForegroundParallaxBehavior:(NSArray*) view
-
+```
 To avoid code duplication I'll create a new helper class: UITools 
 
 [![](/assets/wp-content/uploads/2014/02/ViewControllers3-1.jpg)](/assets/wp-content/uploads/2014/02/ViewControllers3-1.jpg)
 
 Add the declarationof the functions to UITools.m:
-
+```objectivec
 #import <Foundation/Foundation.h>
 
 @interface UITools : NSObject
@@ -61,27 +61,28 @@ Add the declarationof the functions to UITools.m:
 +(void)assignForegroundParallaxBehavior:(NSArray*) view;
 
 @end
+```
 
 I've declared the methods as static class methods ('+' instead of a '-'). That means they can be called directly without creating an instance of UITools.
 
 After that copy the two functions from StartScreenViewController.m to UITools.m. Don't forget to change '-' to '+'.
 
 We also need to import the new tools class in StartScreenViewController.m:
-
+```objectivec
 #import "UITools.h"
-
+```
 and change
-
+```objectivec
 [self assignBackgroundParallaxBehavior:self.backgroundView];
 
 [self assignForegroundParallaxBehavior:self.foregroundViews];
-
+```
 to 
-
+```objectivec
 [UITools assignBackgroundParallaxBehavior:self.backgroundView];
 
 [UITools assignForegroundParallaxBehavior:self.foregroundViews];
-
+```
 #### Create the View Controllers
 
 No let's create 5 new ViewControllers: 
@@ -103,30 +104,25 @@ I'll organize all ViewControllers in a group (File -> New -> Group)
 #### Repeat the following steps for each View Controller:
 
 #### **1.** Add properties to header files:
-
+```objectivec
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundView;
 
 @property (strong, nonatomic) IBOutletCollection(UIView) NSArray *foregroundViews;
-
+```
 #### **2.** Import helper class:
 
 #import "UITools.h"
 
 #### **3.** Assign parallax behavior in ViewDidLoad
+```objectivec
+- (void)viewDidLoad {
+  [super viewDidLoad];
 
-\- (void)viewDidLoad
-
-{
-
-[super viewDidLoad];
-
-// Do any additional setup after loading the view.
-
-[UITools assignBackgroundParallaxBehavior:self.backgroundView];
-
-[UITools assignForegroundParallaxBehavior:self.foregroundViews];
-
+  // Do any additional setup after loading the view.
+  [UITools assignBackgroundParallaxBehavior:self.backgroundView];
+  [UITools assignForegroundParallaxBehavior:self.foregroundViews];
 }
+```
 
 #### **4.** Open the iPhone Storyboard and add a new ViewController
 
@@ -141,12 +137,12 @@ I'll organize all ViewControllers in a group (File -> New -> Group)
 [![](/assets/wp-content/uploads/2014/02/ViewControllers7.png)](/assets/wp-content/uploads/2014/02/ViewControllers7.png)
 
 #### **7.** Add Background image, header label and buttons. Connect them with the outlets from the corresponding ViewController:
-
+```objectivec
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundView;
 
 @property (strong, nonatomic) IBOutletCollection(UIView) NSArray *foregroundViews;
-
-Detailed steps are described in [part 1](https://developerplayground.net/howto-design-for-depth-creating-a-start-screen-with-parallax-animations-using-ios-7-motion-effects/). The result should look like this: 
+```
+Detailed steps are described in [part 1](/howto-design-for-depth-creating-a-start-screen-with-parallax-animations-using-ios-7-motion-effects). The result should look like this: 
 
 [![](/assets/wp-content/uploads/2014/02/ViewControllers9-1.jpg)](/assets/wp-content/uploads/2014/02/ViewControllers9-1.jpg)
 
@@ -158,17 +154,17 @@ To ensure a correct sizing and alignment on the different iPhone screens (4 inch
 
 #### 8\. Create Segues to navigate between the view controllers:
 
-8a: Mark About button on the StartScreenViewController.
+**8a:** Mark About button on the StartScreenViewController.
 
 [![](/assets/wp-content/uploads/2014/02/ViewControllers10-1.jpg)](/assets/wp-content/uploads/2014/02/ViewControllers10-1.jpg)
 
-8b: CTRL + Mouse click -> move mouse pointer into AboutViewController -> release 
+**8b:** CTRL + Mouse click -> move mouse pointer into AboutViewController -> release 
 
 [![](/assets/wp-content/uploads/2014/02/ViewControllers11-1.jpg)](/assets/wp-content/uploads/2014/02/ViewControllers11-1.jpg)
 
-8c: Choose modal from the pop up menu 
+**8c:** Choose modal from the pop up menu 
 
-8d: Repeat 8a, 8b, 8c for all transitions between our view controllers, as described in the table at the beginning of this post.
+**8d:** Repeat 8a, 8b, 8c for all transitions between our view controllers, as described in the table at the beginning of this post.
 
 The result should look like this:
 
@@ -178,12 +174,14 @@ The transition type can be changed in the menu at the right (the segue must be s
 
 [![](/assets/wp-content/uploads/2014/02/ViewControllers13.png)](/assets/wp-content/uploads/2014/02/ViewControllers13.png)
 
-#### 
 
-#### 
+[![Video](/assets/wp-content/uploads/2014/02/Video.png)](https://www.youtube.com/watch?v=pBrYeJxmPqk)
+
 
 #### Repeat step 4 till 8 for iPad.
 
-That's all for today Cheers, Stefan
+That's all for today Cheers, 
+
+Stefan
 
 [Download the project from GitHub: v0.2.1](https://github.com/stfnjstn/MyFirstGame/releases/tag/v0.2.1)

@@ -24,18 +24,18 @@ Adding iAd Integration: How to implement a space shooter with SpriteKit and SWIF
 
 #### Tutorial Overview: How to implement a space shooter with SpriteKit and SWIFT
 
-  * [Part 1](https://developerplayground.net/?p=14): Initial project setup, sprite creation and movement using SKAction and SKConstraint
-  * [Part 2](https://developerplayground.net/?p=13): Adding enemies, bullets and shooting with SKAction and SKConstraint
-  * [Part 3](https://developerplayground.net/?p=12): Adding a HUD with SKLabelNode and SKSpriteNode
-  * [Part 4](https://developerplayground.net/?p=11): Adding basic game logic and collision detection
-  * [Part 5](https://developerplayground.net/?p=10): Adding particles and sound 
-  * [Part 6](https://developerplayground.net/?p=9): GameCenter integration
-  * [Part 7](https://developerplayground.net/?p=8): iAd integration
-  * [Part 8](https://developerplayground.net/?p=5): In-App Purchases
+  * [Part 1](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-1): Initial project setup, sprite creation and movement using SKAction and SKConstraint
+  * [Part 2](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-2): Adding enemies, bullets and shooting with SKAction and SKConstraint
+  * [Part 3](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-3-create-a-hud): Adding a HUD with SKLabelNode and SKSpriteNode
+  * [Part 4](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-4-collision-detection): Adding basic game logic and collision detection
+  * [Part 5](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-5-particles-and-sound): Adding particles and sound 
+  * [Part 6](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-6-game-center-integration): GameCenter integration
+  * [Part 7](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-7-iad-integration): iAd integration
+  * [Part 8](/how-to-implement-in-app-purchase-for-your-ios-app-in-swift): In-App Purchases
 
 
 
-Welcome to part 7 of my swift programming tutorial. In the previous parts we've created [sprites, added movement, enemies with a follow behaviour, bullets & shooting](https://developerplayground.net/?p=13), a [HUD](https://developerplayground.net/?p=12), [collision detection](https://developerplayground.net/?p=11), [sound & particle effects](https://developerplayground.net/?p=10) and a global leaderboard using [Game Center](https://developerplayground.net/?p=9). Today I'll show how to integrate the Apple Advertising Framework **iAD** : 
+Welcome to part 7 of my swift programming tutorial. In the previous parts we've created [sprites, added movement, enemies with a follow behaviour, bullets & shooting](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-2), a [HUD](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-3-create-a-hud), [collision detection](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-4-collision-detection), [sound & particle effects](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-5-particles-and-sound) and a global leaderboard using [Game Center](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-6-game-center-integration). Today I'll show how to integrate the Apple Advertising Framework **iAD** : 
 
   * Enable iAd in iTunesConnect
   * Add a Banner Ad (at the bottom of the screen)
@@ -49,7 +49,7 @@ Welcome to part 7 of my swift programming tutorial. In the previous parts we've 
 
 You need a paid Apple Developer Account to execute the next steps. 
 
-**Open[ iTunes Connect](https://itunesconnect.apple.com/) and navigate to the Agreements, Tax and Banking section:**
+**Open [ iTunes Connect](https://itunesconnect.apple.com/) and navigate to the Agreements, Tax and Banking section:**
 
 [![](/assets/wp-content/uploads/2015/02/Screen-2BShot-2B2015-02-05-2Bat-2B22.10.19-1.jpg)](/assets/wp-content/uploads/2015/02/Screen-2BShot-2B2015-02-05-2Bat-2B22.10.19-1.jpg)
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: /?p=1612
+permalink: /implementing-an-augmented-reality-game-like-pokemon-go-part-1
 title: Implement an Augmented Reality game like Pokemon Go (Part 1)
 description: None
 date: 2016-12-28 17:38:37 -0000
@@ -23,7 +23,7 @@ tags:
 ---
 The success of [Pokemon Go™](https://itunes.apple.com/app/pokemon-go/id1094591345?mt=8 "Pokemon Go") inspired me to a new tutorial series about a simple augmented reality (AR) game.
 
-  1. [Part 1](https://developerplayground.net/?p=1612&preview=true): 
+  1. [Part 1](/implementing-an-augmented-reality-game-like-pokemon-go-part-1): 
      * Implement the camera view
      * Create a SceneKit overlay with a moving 3D object.
   2. Part 2: 

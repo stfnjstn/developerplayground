@@ -32,7 +32,7 @@ I’ll show two scenarios:
 
 **Calling SWIFT from Objective-C:**
 
-I’ll reuse my example from part 6 of my blog series: '[HowTo: Use the Device Motion Sensors to control your game](https://developerplayground.net/?p=25)' You can find the complete start project in my GitHub repository [here](https://github.com/stfnjstn/MotionManagerDemo/releases/tag/v0.1). As a prerequisite you'll need Xcode 6 beta 5 which is available for all registered apple developers.
+I’ll reuse my example from part 6 of my blog series: '[HowTo: Use the Device Motion Sensors to control your game](/howto-use-the-device-motion-sensors-to-control-your-game)' You can find the complete start project in my GitHub repository [here](https://github.com/stfnjstn/MotionManagerDemo/releases/tag/v0.1). As a prerequisite you'll need Xcode 6 beta 5 which is available for all registered apple developers.
 
 I’ll migrate the MotionManager class to SWIFT. 
 
