@@ -34,11 +34,11 @@ The success of [Pokemon Go™](https://itunes.apple.com/app/pokemon-go/id1094591
      * SceneKit / Physics
      * Particles
 
-
+TODO CODEFORMATTING
 
 Basically you just need to show the camera content together with an overlay of 3D objects to get an augmented reality effect. If you add interaction and physics effects you have everything in place what is needed to implement something similar as the Pokemon Go™ capture screen.
 
-## 1\. Create a new SceneKit project in Xcode:
+## 1. Create a new SceneKit project in Xcode:
 
 Open Xcode and create a new project:
 
@@ -52,7 +52,7 @@ Now limit the project to portrait mode, to keep this tutorial simple:
 
 [![](/assets/wp-content/uploads/2016/12/ARDefender9.jpg)](/assets/wp-content/uploads/2016/12/ARDefender9.jpg)
 
-## 2\. Create the camera view and the scene kit objects
+## 2. Create the camera view and the scene kit objects
 
 Open the Storyboard ...
 
@@ -82,7 +82,7 @@ Create an IBOutlet for the scnView and the cameraView:
 
 That's all in the Storyboard. Now it's time for real code.
 
-### 3\. Update the generated code:
+### 3. Update the generated code:
 
 We have created a global Outlet for the SceneView in the InterfaceBuilder before. Therefore we have to remove the scnView declaration `viewDidLoad` and `handleTap`:
     
@@ -184,7 +184,7 @@ Here's the full source code of the two methods:
         }
     
 
-### 4\. Create the Augmented Reality Camera Layer:
+### 4. Create the Augmented Reality Camera Layer:
 
 Add the AVFoundation Framework to Linked Frameworks and Libraries
 

@@ -25,17 +25,17 @@ Today I'll include motion detection to control the movement of my game. iOS offe
 
 [![Video](/assets/wp-content/uploads/2014/04/Video0.png)](https://youtu.be/EZGBCia9XJM)
 
-**1\. First create a new SpriteKit project.**
+**1. First create a new SpriteKit project.**
 
 [![](/assets/wp-content/uploads/2014/04/Bildschirmfoto-2014-04-06-um-22.17.57-1.jpg)](/assets/wp-content/uploads/2014/04/Bildschirmfoto-2014-04-06-um-22.17.57-1.jpg)
 
 [![](/assets/wp-content/uploads/2014/04/Bildschirmfoto-2014-04-06-um-22.18.29-1.jpg)](/assets/wp-content/uploads/2014/04/Bildschirmfoto-2014-04-06-um-22.18.29-1.jpg)
 
-**2\. Add the GLKit and the CoreMotion framework to your project.**
+**2. Add the GLKit and the CoreMotion framework to your project.**
 
 [![](/assets/wp-content/uploads/2014/04/Bildschirmfoto-2014-04-06-um-00.05.50.png)](/assets/wp-content/uploads/2014/04/Bildschirmfoto-2014-04-06-um-00.05.50.png)
 
-**3\. Add a new file MotionManagerSingleton of type NSObject:**
+**3. Add a new file MotionManagerSingleton of type NSObject:**
 
 #### **MotionManagerSingleton.h :**
 ```objectivec
@@ -126,7 +126,7 @@ A low pass filter smoothens the measured results of the sensors, to avoid jitter
 
 [![](/assets/wp-content/uploads/2014/04/Bildschirmfoto-2014-04-07-um-19.42.38-1.jpg)](/assets/wp-content/uploads/2014/04/Bildschirmfoto-2014-04-07-um-19.42.38-1.jpg)
 
-**4\. Changes in MyScene class:**
+**4. Changes in MyScene class:**
 
 #### **MyScene.m:**
 

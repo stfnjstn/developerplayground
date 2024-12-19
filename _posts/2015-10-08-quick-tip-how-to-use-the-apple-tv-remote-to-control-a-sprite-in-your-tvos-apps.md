@@ -31,135 +31,100 @@ Today I'll will focus again on the remote control. It provides, especially in co
 
 Let's start...
 
-### 1\. Download the XCode 7.1 Beta from the [Apple Developer Portal](https://developer.apple.com/xcode/download/):
+### 1. Download the XCode 7.1 Beta from the [Apple Developer Portal](https://developer.apple.com/xcode/download/):
 
 [![Swift Tutorial Apple TV remote 2](/assets/wp-content/uploads/2015/10/2-1.jpg)](/assets/wp-content/uploads/2015/10/2-1.jpg)
 
-#### 2\. Create a new project:
+#### 2. Create a new project:
 
 [![Swift Tutorial Apple TV remote 3](/assets/wp-content/uploads/2015/10/3.png)](/assets/wp-content/uploads/2015/10/3.png)
 
 [![Swift Tutorial Apple TV remote 4](/assets/wp-content/uploads/2015/10/4.png)](/assets/wp-content/uploads/2015/10/4.png)
 
-#### 3\. Open GameViewController.swift
+#### 3. Open GameViewController.swift
 
 [![Swift Tutorial Apple TV remote 5](/assets/wp-content/uploads/2015/10/5-1.jpg)](/assets/wp-content/uploads/2015/10/5-1.jpg)
 
-****
 
 Change the scale mode from in viewDidLoad from
-
-scene.scaleMode = .AspectFill
-
+``scene.scaleMode = .AspectFill``
 to
+``scene.scaleMode = .ResizeFill``
 
-scene.scaleMode = .ResizeFill
-
-#### 4\. Open GameScene.swift
+#### 4. Open GameScene.swift
 
 Override the didMoveToView method with this snippet to create a sprite in the middle of the screen:
 
 [![Swift Tutorial Apple TV remote 6](/assets/wp-content/uploads/2015/10/6-1.jpg)](/assets/wp-content/uploads/2015/10/6-1.jpg)
 
+```swift
 // Global property to store the sprite object
-
 let sprite = SKSpriteNode(imageNamed:"Spaceship")
 
 override func didMoveToView(view: SKView) {
-
-sprite.yScale = 0.2
-
-sprite.xScale = 0.2
-
-sprite.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
-
-self.addChild(sprite)
-
+  sprite.yScale = 0.2
+  sprite.xScale = 0.2
+  sprite.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
+  self.addChild(sprite)
 }
+```
 
-#### 5\. Add the code to handle the sprite movement
+#### 5. Add the code to handle the sprite movement
 
 Replace the touchesBegan method with this snippet to persist the initial touch position:
 
+```swift
 // Persist the initial touch position of the remote
-
 var touchPositionX: CGFloat = 0.0
-
 var touchPositionY: CGFloat = 0.0
 
 override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-
-for touch in touches {
-
-touchPositionX = touch.locationInNode(self).x
-
-touchPositionY = touch.locationInNode(self).y
-
+  for touch in touches {
+    touchPositionX = touch.locationInNode(self).x
+    touchPositionY = touch.locationInNode(self).y
+  }
 }
-
-}
+```
 
 The touchedMoved method implements the logic to move the sprite on the screen:
 
+```swift
 override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+  for touch in touches {
+    let location = touch.locationInNode(self)
+    if touchPositionX != 0.0 && touchPositionY != 0.0 {
+      // Calculate the movement on the remote
+      let deltaX = touchPositionX \- location.x
+      let deltaY = touchPositionY \- location.y
 
-for touch in touches {
+      // Calculate the new Sprite position
+      var x = sprite.position.x \- deltaX
+      var y = sprite.position.y \- deltaY
 
-let location = touch.locationInNode(self)
+      // Check if the sprite will leave the screen
+      if x < 0 {
+        x = 0
+      } else if x > self.frame.width {
+        x = self.frame.width
+      }
+      if y < 0 {
+        y = 0
+      } else if y > self.frame.height {
+        y = self.frame.height
+      }
 
-if touchPositionX != 0.0 && touchPositionY != 0.0 {
+      // Move the sprite
+      sprite.position = CGPoint(x: x, y: y)
+    }
 
-// Calculate the movement on the remote
-
-let deltaX = touchPositionX \- location.x
-
-let deltaY = touchPositionY \- location.y
-
-// Calculate the new Sprite position
-
-var x = sprite.position.x \- deltaX
-
-var y = sprite.position.y \- deltaY
-
-// Check if the sprite will leave the screen
-
-if x < 0 {
-
-x = 0
-
-} else if x > self.frame.width {
-
-x = self.frame.width
-
+    // Persist latest touch position
+    touchPositionY = location.y
+    touchPositionX = location.x
+  }
 }
+```
 
-if y < 0 {
-
-y = 0
-
-} else if y > self.frame.height {
-
-y = self.frame.height
-
-}
-
-// Move the sprite
-
-sprite.position = CGPoint(x: x, y: y)
-
-}
-
-// Persist latest touch position
-
-touchPositionY = location.y
-
-touchPositionX = location.x
-
-}
-
-}
-
-#### 6\. Now let's move the sprite around and start the App
+#### 6. Now let's move the sprite around and start the App
 
 [![Swift Tutorial Apple TV remote 7](/assets/wp-content/uploads/2015/10/7-1.jpg)](/assets/wp-content/uploads/2015/10/7-1.jpg)
 

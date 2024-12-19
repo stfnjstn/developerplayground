@@ -27,7 +27,7 @@ I've just created a few Apple Appstore preview videos for my upcoming Dungeon Cr
 
 I'll share my workflow for creating these videos in this post:
 
-#### 1\. Create an XCUI Automation Test:
+#### 1. Create an XCUI Automation Test:
 
 The test should cover all areas which should be part of the video. It can run longer than the allowed 30 seconds. We will cut it in a later step. More about XCUI tests [here](/xcui-tests-scenekit).
 
@@ -35,7 +35,7 @@ The test should cover all areas which should be part of the video. It can run lo
 
 By the way: I'm using the same automated test for creating and uploading screenshots to the Appstore with [fastlane](https://fastlane.tools). Maybe I'll write a post about this in the future.
 
-#### 2\. Run the test and capture the video
+#### 2. Run the test and capture the video
 
 I recommend adding screen recording to your control center:
 
@@ -43,17 +43,17 @@ I recommend adding screen recording to your control center:
 
 Start the screen recording on the device and then start your automated XCUI test. The test runs and everything is recorded. Once the test is completed, stop the screen recording.
 
-#### 3\. Send the video to your Mac
+#### 3. Send the video to your Mac
 
 Use Mail, Airdrop, Files or something else for this:
 
 ![](/assets/wp-content/uploads/2020/05/ShareRecordedVideo.jpg)
 
-#### 4\. Open iMovie and create a new App Preview:
+#### 4. Open iMovie and create a new App Preview:
 
 ![Create an App Preview in iMovie](/assets/wp-content/uploads/2020/05/CreateAppPreview.jpg)
 
-#### 5\. Choose the right resolution:
+#### 5. Choose the right resolution:
 
 Usually the typical indy developer doesn't own enough iOS devices to record an App Preview Video on every potential device type.
 
@@ -63,17 +63,17 @@ Required resolution per device from Apple:
 
 ![App Preview Video Resolution](/assets/wp-content/uploads/2020/05/AppPreviewResolutions.jpg)From Apple: <https://help.apple.com/app-store-connect/#/dev4e413fcb8>
 
-#### 6\. Add the video material
+#### 6. Add the video material
 
 Now add the video material. iMovie will automatically scale the video during export depending on the black image at the beginning:
 
 ![Scale App Preview Video with iMovie](/assets/wp-content/uploads/2020/05/BlackImageToScale.jpg)
 
-#### 7\. Export the video
+#### 7. Export the video
 
 ![Export App Preview in iMovie](/assets/wp-content/uploads/2020/05/ExportAppStore1.jpg) ![Export App Preview in iMovie](/assets/wp-content/uploads/2020/05/ExportAppStore2.jpg)
 
-#### 8\. Upload the video to [Appstore Connect](https://appstoreconnect.apple.com):
+#### 8. Upload the video to [Appstore Connect](https://appstoreconnect.apple.com):
 
 ![Appstore Connect Preview Video](/assets/wp-content/uploads/2020/05/AppstoreConnect.jpg)
 

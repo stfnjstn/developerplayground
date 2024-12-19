@@ -23,111 +23,81 @@ tags:
 
 There are already dozens of 'Hello world' tutorials published for the new Apple tvOS, so let's do something different. I'll show how to use the remote control to move a sprite on Apple TV. It was surprisingly easy and took me only 10 minutes to implement:
 
-### 1\. Download the XCode 7.1 Beta from the [Apple Developer Portal](https://developer.apple.com/xcode/download/):
+### 1. Download the XCode 7.1 Beta from the [Apple Developer Portal](https://developer.apple.com/xcode/download/):
 
 [![Download XCode 7.1 Beta](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.01.17-1.jpg)](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.01.17-1.jpg)
 
-#### 2\. Create a new project:
+#### 2. Create a new project:
 
 [![tvOS Create new project](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-10-at-23.59.18.png)](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-10-at-23.59.18.png) [![Create tvOS project](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.06.33.png)](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.06.33.png)
 
-#### 3\. Open GameScene.swift:
+#### 3. Open GameScene.swift:
 
 [![Create tvOS SpriteKit scene](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.03.18-1.jpg)](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.03.18-1.jpg)
 
-#### 4\. Replace the complete code with this snippet:
+#### 4. Replace the complete code with this snippet:
 
+```swift
 import SpriteKit
 
 class GameScene: SKScene {
+  let sprite = SKSpriteNode(imageNamed:"Spaceship")
 
-let sprite = SKSpriteNode(imageNamed:"Spaceship")
+  override func didMoveToView(view: SKView) {
+    /* Setup your scene here */
+    // Add Sprite
+    sprite.xScale = 0.5
+    sprite.yScale = 0.5
+    sprite.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
+    self.addChild(sprite)
 
-override func didMoveToView(view: SKView) {
+    // Register Swipe Events
+    let swipeRight:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedRight:"))
+    swipeRight.direction = .Right
+    view.addGestureRecognizer(swipeRight)
+    let swipeLeft:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedLeft:"))
+    swipeLeft.direction = .Left
+    view.addGestureRecognizer(swipeLeft)
+    let swipeUp:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedUp:"))
+    swipeUp.direction = .Up
+    view.addGestureRecognizer(swipeUp)
+    let swipeDown:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedDown:"))
+    swipeDown.direction = .Down
+    view.addGestureRecognizer(swipeDown)
+  }
 
-/*Setup your scene here*/
+  // Handle Swipe Events
+  func swipedRight(sender:UISwipeGestureRecognizer){
+    sprite.position = CGPoint(x: sprite.position.x \+ 10, y: sprite.position.y)
+  }
 
-// Add Sprite
+  func swipedLeft(sender:UISwipeGestureRecognizer){
+    sprite.position = CGPoint(x: sprite.position.x \- 10, y: sprite.position.y)
+  }
 
-sprite.xScale = 0.5
+  func swipedUp(sender:UISwipeGestureRecognizer){
+    sprite.position = CGPoint(x: sprite.position.x, y: sprite.position.y+10)
+  }
 
-sprite.yScale = 0.5
+  func swipedDown(sender:UISwipeGestureRecognizer){
+    sprite.position = CGPoint(x: sprite.position.x, y: sprite.position.y-10)
+  }
 
-sprite.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
-
-self.addChild(sprite)
-
-// Register Swipe Events
-
-let swipeRight:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedRight:"))
-
-swipeRight.direction = .Right
-
-view.addGestureRecognizer(swipeRight)
-
-let swipeLeft:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedLeft:"))
-
-swipeLeft.direction = .Left
-
-view.addGestureRecognizer(swipeLeft)
-
-let swipeUp:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedUp:"))
-
-swipeUp.direction = .Up
-
-view.addGestureRecognizer(swipeUp)
-
-let swipeDown:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedDown:"))
-
-swipeDown.direction = .Down
-
-view.addGestureRecognizer(swipeDown)
-
+  override func update(currentTime: CFTimeInterval) {
+    /*Called before each frame is rendered*/
+  }
 }
+```
 
-// Handle Swipe Events
-
-func swipedRight(sender:UISwipeGestureRecognizer){
-
-sprite.position = CGPoint(x: sprite.position.x \+ 10, y: sprite.position.y)
-
-}
-
-func swipedLeft(sender:UISwipeGestureRecognizer){
-
-sprite.position = CGPoint(x: sprite.position.x \- 10, y: sprite.position.y)
-
-}
-
-func swipedUp(sender:UISwipeGestureRecognizer){
-
-sprite.position = CGPoint(x: sprite.position.x, y: sprite.position.y+10)
-
-}
-
-func swipedDown(sender:UISwipeGestureRecognizer){
-
-sprite.position = CGPoint(x: sprite.position.x, y: sprite.position.y-10)
-
-}
-
-override func update(currentTime: CFTimeInterval) {
-
-/*Called before each frame is rendered*/
-
-}
-
-}
-
-#### 5\. Start the Simulator:
+#### 5. Start the Simulator:
 
 [![Start tvOS Simulator](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.06.44.png)](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.06.44.png)
 
-#### 6\. Show the remote control:
+#### 6. Show the remote control:
 
 [![tvOS Simulator Remote Control](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.08.32-1.jpg)](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.08.32-1.jpg)
 
-#### 7\. Move the sprite around:
+#### 7. Move the sprite around:
 
 This was the most confusing part and costs me some minutes. You have to press the option key (alt) on you Mac keyboard and move the mouse around on the touch area of the remote control window. No mouse clicks!!!
 

@@ -9,8 +9,8 @@ date: 2015-04-08 19:03:11 -0000
 last_modified_at: 2020-04-16 09:01:18 -0000
 publish: true
 pin: false
-categories: []
-tags: []
+categories: [Tutorial]
+tags: [Tutorial]
 ---
 # iOS Game Development Tutorials:
 

@@ -66,7 +66,7 @@ and add an import to the CoreMotion Framework:
 ``
 import CoreMotion
 ``
-#### 2\. The keyword for constants is let. Change ####
+#### 2. The keyword for constants is let. Change ####
 ``
 #define cLowPassFactor 0.95
 ``
@@ -76,7 +76,7 @@ to
 ``
 let cLowPassFactor: Float = 0.95
 ``
-#### 3\. Migrate the class declaration from
+#### 3. Migrate the class declaration from
 ```objectivec
 @implementation MotionManagerSingleton
   ...

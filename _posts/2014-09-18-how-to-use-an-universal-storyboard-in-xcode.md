@@ -27,32 +27,33 @@ This sample needs Xcode 6.
 
 ### Create an universal storyboard:
 
-1\. Delete one of the the existing storyboards. In this example the iPad version:
+1. Delete one of the the existing storyboards. In this example the iPad version:
 
 [![](/assets/wp-content/uploads/2014/09/Bildschirmfoto-2014-08-10-um-23.43.12.png)](/assets/wp-content/uploads/2014/09/Bildschirmfoto-2014-08-10-um-23.43.12.png)
 
-2\. Rename the iPhone Storyboard:
+2. Rename the iPhone Storyboard:
 
 [![](/assets/wp-content/uploads/2014/09/Bildschirmfoto-2014-08-10-um-23.43.54-1.jpg)](/assets/wp-content/uploads/2014/09/Bildschirmfoto-2014-08-10-um-23.43.54-1.jpg)
 
-3\. Select the new storyboard as Main Interface for iPhone and iPad:
+3. Select the new storyboard as Main Interface for iPhone and iPad:
 
 [![](/assets/wp-content/uploads/2014/09/Bildschirmfoto-2014-08-10-um-23.44.29.png)](/assets/wp-content/uploads/2014/09/Bildschirmfoto-2014-08-10-um-23.44.29.png)
 
-4\. Open the storyboard and enable Auto Layout and Size Classes:
+4. Open the storyboard and enable Auto Layout and Size Classes:
 
 [![](/assets/wp-content/uploads/2014/09/Bildschirmfoto-2014-08-10-um-23.47.29.png)](/assets/wp-content/uploads/2014/09/Bildschirmfoto-2014-08-10-um-23.47.29.png)
 
-5\. Confirm to enable size classes:
+5. Confirm to enable size classes:
 
 [![](/assets/wp-content/uploads/2014/09/Bildschirmfoto-2014-08-10-um-23.47.37-1.jpg)](/assets/wp-content/uploads/2014/09/Bildschirmfoto-2014-08-10-um-23.47.37-1.jpg)
 
 That was easy. Now let's test it:
 
-  * iPhone:
+#### iPhone:
+
 [![](/assets/wp-content/uploads/2014/09/Foto-1-1.jpg)](/assets/wp-content/uploads/2014/09/Foto-1-1.jpg)
 
-  * iPad:
+#### iPad:
 [![](/assets/wp-content/uploads/2014/09/IMG_0002_2.jpg)](/assets/wp-content/uploads/2014/09/IMG_0002_2.jpg)
 
 Hmmmh. We must have missed something.

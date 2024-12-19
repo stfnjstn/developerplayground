@@ -152,7 +152,7 @@ To ensure a correct sizing and alignment on the different iPhone screens (4 inch
 
 [![](/assets/wp-content/uploads/2014/02/ViewControllers15-1.jpg)](/assets/wp-content/uploads/2014/02/ViewControllers15-1.jpg)
 
-#### 8\. Create Segues to navigate between the view controllers:
+#### 8. Create Segues to navigate between the view controllers:
 
 **8a:** Mark About button on the StartScreenViewController.
 

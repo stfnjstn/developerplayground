@@ -39,31 +39,22 @@ In this tutorial I'll show how you can implement an information alert about the 
 
 The Code snippet for showing the AdMob Cookie usage is simple:
 
+```swift
 // AdMob Cookie handling:
-
 // Warning: I'm not a lawyer. You have to decide on your own, if this is sufficient
-
 // Google gives more hints on: [http://www.cookiechoices.org](http://www.cookiechoices.org/)
 
 let adMobTitle = "Cookie usage:"
-
 let adMobCookieText = "We use device identifiers to personalise content and ads, to provide social media features and to analyse our traffic. We also share such identifiers and other information from your device with our social media, advertising and analytics partners."
-
 let userDefaults : NSUserDefaults = NSUserDefaults.standardUserDefaults()
-
 if !userDefaults.boolForKey("termsAccepted") {
-
-var alert = UIAlertController(title: adMobTitle, message: adMobCookieText, preferredStyle: UIAlertControllerStyle.Alert)
-
-alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) { _ in
-
-userDefaults.setBool(true, forKey: "termsAccepted")
-
-})
-
-presentingViewController.presentViewController(alert, animated: true, completion: nil)
-
+  var alert = UIAlertController(title: adMobTitle, message: adMobCookieText, preferredStyle: UIAlertControllerStyle.Alert)
+  alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) { _ in
+    userDefaults.setBool(true, forKey: "termsAccepted")
+  })
+  presentingViewController.presentViewController(alert, animated: true, completion: nil)
 }
+```
 
 I've also updated the sample code in my [GitHub repository](https://github.com/stfnjstn/iAdAdMobDemo) from the [iAd & AdMob tutorial.](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-6-game-center-integration70)
 

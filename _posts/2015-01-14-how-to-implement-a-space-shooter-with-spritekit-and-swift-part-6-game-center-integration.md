@@ -18,7 +18,8 @@ categories:
 - SWIFT
 tags: []
 ---
-Adding Game Center Integration: How to implement a space shooter with SpriteKit and SWIFT - Part 6
+## How to implement a space shooter with SpriteKit and SWIFT - Part 6
+### Adding Game Center Integration:
 
 [![](/assets/wp-content/uploads/2015/01/AppStore.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
 
@@ -46,7 +47,7 @@ The most complex part is doing configuration stuff in [iTunes Connect](https://i
 
 **Let's start:**
 
-###  1\. Upload App to iTunes Connect 
+###  1. Upload App to iTunes Connect 
 
 Check, if XCode is set up properly with your Apple account data:
 
@@ -91,7 +92,7 @@ Go back to XCode, open the Organizer window and submit your app again:
 
 [![gc14](/assets/wp-content/uploads/2015/01/gc14.png)](/assets/wp-content/uploads/2015/01/gc14.png)
 
-### 2\. Create a Leaderboard in iTunesConnect 
+### 2. Create a Leaderboard in iTunesConnect 
 
 Open [iTunesConnect](https://itunesconnect.apple.com/) and select your app: 
 
@@ -127,7 +128,7 @@ Add at least one language:
 
 Confirm your changes by selecting Done. Now back to XCode. 
 
-### 3\. Create a Sandbox Test User in iTunes Connect 
+### 3. Create a Sandbox Test User in iTunes Connect 
 
 To test the Game Center integration inside your App you need to create one or more Sandbox Testers in iTunes Connect. More details about creating them can be found in the [Apple Documentation](https://developer.apple.com/library/ios/documentation/LanguagesUtilities/Conceptual/iTunesConnect_Guide/Chapters/SettingUpUserAccounts.html).  Open the Users and Roles section in iTunes Connect: 
 
@@ -143,7 +144,7 @@ Fill out the required fields. You need a valid email account for this:
 
 [![gc27](/assets/wp-content/uploads/2015/01/gc27.png)](/assets/wp-content/uploads/2015/01/gc27.png)
 
-### 4\. Coding 
+### 4. Coding 
 
 Comparing to the iTunes Connect stuff the code changes are simple. I'll implement it in GameViewController.swift and GameScene.swift. As the first code change import the GameKit Framework in both files: 
 
@@ -163,81 +164,62 @@ Check if Game Center is available. Otherwise present the Login Screen:
 
 Move the Scene declaration outside the viewDidAppear method to make it a global property. This is necessary because you need to access the scene outside of viewDidAppear:
 
+```swift
 class GameViewController: UIViewController, GKGameCenterControllerDelegate, GameSceneProtocol {
+  var scene : GameScene?
+  override func viewDidAppear(animated: Bool) {
+  super.viewDidAppear(animated)
+  ...
 
-var scene : GameScene?
-
-override func viewDidAppear(animated: Bool) {
-
-super.viewDidAppear(animated)
-
-...
-
-// Create a fullscreen Scene object
-
-scene = GameScene(size: CGSizeMake(width, height))
-
-scene!.scaleMode = .AspectFill
-
-...
+  // Create a fullscreen Scene object
+  scene = GameScene(size: CGSizeMake(width, height))
+  scene!.scaleMode = .AspectFill
+  ...
+```
 
 To implement this behavior open GameViewController.swift and add a new method initGameCenter: 
 
+```swift
 // Initialize Game Center
-
 func initGameCenter() {
 
-// Check if user is already authenticated in game center
+  // Check if user is already authenticated in game center
+  if GKLocalPlayer.localPlayer().authenticated == false {
+    // Show the Login Prompt for Game Center
+    GKLocalPlayer.localPlayer().authenticateHandler = {(viewController, error) -> Void in
+      if viewController != nil {
+        self.scene!.gamePaused = true
+        self.presentViewController(viewController, animated: true, completion: nil)
 
-if GKLocalPlayer.localPlayer().authenticated == false {
-
-// Show the Login Prompt for Game Center
-
-GKLocalPlayer.localPlayer().authenticateHandler = {(viewController, error) -> Void in
-
-if viewController != nil {
-
-self.scene!.gamePaused = true
-
-self.presentViewController(viewController, animated: true, completion: nil)
-
-// Add an observer which calls 'gameCenterStateChanged' to handle a changed game center state
-
-let notificationCenter = NSNotificationCenter.defaultCenter()
-
-notificationCenter.addObserver(self, selector:"gameCenterStateChanged", name: "GKPlayerAuthenticationDidChangeNotificationName", object: nil)
-
+        // Add an observer which calls 'gameCenterStateChanged' to handle a changed game center state
+        let notificationCenter = NSNotificationCenter.defaultCenter()
+        notificationCenter.addObserver(self, selector:"gameCenterStateChanged", name: "GKPlayerAuthenticationDidChangeNotificationName", object: nil)
+      }
+    }
+  }
 }
-
-}
-
-}
-
-}
+```
 
 Add another method to GameViewController.swift which will be called by the observer created before in case of a changed game center change:
 
+```swift
 // Continue the Game, if GameCenter Authentication state
-
 // has been changed (login dialog is closed)
-
 func gameCenterStateChanged() {
-
-self.scene!.gamePaused = false
-
+  self.scene!.gamePaused = false
 }
+```
 
 Finally call initGameCenter in the viewDidLoad method:
 
+```swift
 override func viewDidLoad() {
+  super.viewDidLoad()
 
-super.viewDidLoad()
-
-// Initialize game center
-
-self.initGameCenter()
-
+  // Initialize game center
+  self.initGameCenter()
 }
+```
 
 You can use your sandbox test user to test this on a device. Go to the Settings Dialog, open Game Center and click on Apple-ID. The current user must logout. Scroll down to the developer section and activate the Sandbox switch. Now start the game and login with your test user.
 
@@ -245,91 +227,73 @@ You can use your sandbox test user to test this on a device. Go to the Settings 
 
 Open GameScene.swift and change the type of the global score property from Integer:
 
+```swift
 var score = 0
+```
 
 to Int64, the type chosen for the leaderboard
 
+```swift
 var score : Int64 = 0
+```
 
 Add another global property to store a game over state:
 
+```swift
 var gameOver = false
+```
 
 Modify the update method to handle the new gameOver property:
 
+```swift
 override func update(currentTime: CFTimeInterval) {
-
-if !self.gamePaused && !self.gameOver {
-
-...
-
+  if !self.gamePaused && !self.gameOver {
+    ...
+  }
 }
-
-}
+```
 
 Add/Remove the red marked lines in the showGameOverAlert method of 
 
+```swift
 func showGameOverAlert() {
+  self.gamePaused = true
+  self.gameOver = true
+  var alert = UIAlertController(title: "Game Over", message: "", preferredStyle: UIAlertControllerStyle.Alert)
+  alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) { _ in
+    // restore lifes in HUD
+    self.remainingLifes=3
+    for(var i = 0; i<3; i++) {
+      self.lifeNodes[i].alpha=1.0
+    }
 
-self.gamePaused = true
-
-self.gameOver = true
-
-var alert = UIAlertController(title: "Game Over", message: "", preferredStyle: UIAlertControllerStyle.Alert)
-
-alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) { _ in
-
-// restore lifes in HUD
-
-self.remainingLifes=3
-
-for(var i = 0; i<3; i++) {
-
-self.lifeNodes[i].alpha=1.0
-
+    // reset score
+    self.addLeaderboardScore(self.score)
+    self.score=0
+    self.scoreNode.text = String(0)
+    self.gamePaused = true
+  })
 }
-
-// reset score
-
-self.addLeaderboardScore(self.score)
-
-self.score=0
-
-self.scoreNode.text = String(0)
-
-self.gamePaused = true
-
-})
+```
 
 Add a new method addLeaderboardScore to submit a new score: 
 
+```swift
 func addLeaderboardScore(score: Int64) {
-
-var newGCScore = GKScore(leaderboardIdentifier: "MySecondGameLeaderboard")
-
-newGCScore.value = score
-
-GKScore.reportScores([newGCScore], withCompletionHandler: {(error) -> Void in
-
-if error != nil {
-
-println("Score not submitted")
-
-// Continue
-
-self.gameOver = false
-
-} else {
-
-// Notify the delegate to show the game center leaderboard:
-
-// Not implemented yet
-
+  var newGCScore = GKScore(leaderboardIdentifier: "MySecondGameLeaderboard")
+  newGCScore.value = score
+  GKScore.reportScores([newGCScore], withCompletionHandler: {(error) -> Void in
+    if error != nil {
+      println("Score not submitted")
+      // Continue
+      self.gameOver = false
+    } else {
+      // Notify the delegate to show the game center leaderboard:
+      // Not implemented yet
+    }
+  })
 }
-
-})
-
-}
+```
 
 #### Show the Game Center leaderboard after game over:
 
@@ -337,99 +301,82 @@ self.gameOver = false
 
 The game center leaderboard can only be called/shown from a ViewController, not inside a SpriteKit Scene. To notify the container ViewController of our scene add a protocol to GameScene.swift:
 
+```swift
 // protocol to inform the delegate (GameViewController) about a game over situation
-
 protocol GameSceneDelegate {
+  func gameOver()
 
-func gameOver()
-
-}
+  }
+```
 
 Don't forget to create a global Delegate Property:
 
+```swift
 var gameCenterDelegate : GameSceneDelegate?
+```
 
 Modify addLeaderboardScore to notify the delegate:
-
+```swift
 func addLeaderboardScore(score: Int64) {
-
-var newGCScore = GKScore(leaderboardIdentifier: "MySecondGameLeaderboard")
-
-newGCScore.value = score
-
-GKScore.reportScores([newGCScore], withCompletionHandler: {(error) -> Void in
-
-if error != nil {
-
-println("Score not submitted")
-
-// Continue
-
-self.gameOver = false
-
-} else {
-
-// Notify the delegate to show the game center leaderboard
-
-self.gameCenterDelegate!.gameOver()
-
+  var newGCScore = GKScore(leaderboardIdentifier: "MySecondGameLeaderboard")
+  newGCScore.value = score
+  GKScore.reportScores([newGCScore], withCompletionHandler: {(error) -> Void in
+    if error != nil {
+      println("Score not submitted")
+      // Continue
+      self.gameOver = false
+    } else {
+      // Notify the delegate to show the game center leaderboard
+      self.gameCenterDelegate!.gameOver()
+    }
+  })
 }
-
-})
-
-}
+```
 
 Open GameViewController.swift and add these protocols to the declaration of GameViewController:
 
+```swift
 class GameViewController: UIViewController, GameSceneDelegate, GKGameCenterControllerDelegate{
+```
 
 The first one is used by our game scene class to notify about a game over event. The second one is provided by GameKit to notify when the leaderboard has been closed.
 
 Now set the Delegate property for the scene class:
 
+```swift
 override func viewDidAppear(animated: Bool) {
+  ...
 
-...
-
-// Create a fullscreen Scene object
-
-scene = GameScene(size: CGSizeMake(width, height))
-
-scene!.scaleMode = .AspectFill
-
-scene!.gameCenterDelegate = self
+  // Create a fullscreen Scene object
+  scene = GameScene(size: CGSizeMake(width, height))
+  scene!.scaleMode = .AspectFill
+  scene!.gameCenterDelegate = self
+```
 
 To show the leaderboard implement the gameOver protocol method:
 
+```swift
 // Show game center leaderboard
-
 func gameOver() {
+  var gcViewController = GKGameCenterViewController()
+  gcViewController.gameCenterDelegate = self
+  gcViewController.viewState = GKGameCenterViewControllerState.Leaderboards
+  gcViewController.leaderboardIdentifier = "MySecondGameLeaderboard"
 
-var gcViewController = GKGameCenterViewController()
-
-gcViewController.gameCenterDelegate = self
-
-gcViewController.viewState = GKGameCenterViewControllerState.Leaderboards
-
-gcViewController.leaderboardIdentifier = "MySecondGameLeaderboard"
-
-// Show leaderboard
-
-self.presentViewController(gcViewController, animated: true, completion: nil)
-
+  // Show leaderboard
+  self.presentViewController(gcViewController, animated: true, completion: nil)
 }
+```
 
 To continue the game implement this protocol method:
 
+```swift
 // Continue the game after GameCenter is closed
-
 func gameCenterViewControllerDidFinish(gameCenterViewController: GKGameCenterViewController!) {
-
-gameCenterViewController.dismissViewControllerAnimated(true, completion: nil)
-
-scene!.gameOver = false
-
+  gameCenterViewController.dismissViewControllerAnimated(true, completion: nil)
+  scene!.gameOver = false
 }
+```
 
 That's all for today. You can download the code from GitHub: [Part 6](https://github.com/stfnjstn/MySecondGame/releases/tag/v0.6) or the [latest version](https://github.com/stfnjstn/MySecondGame/tree/master). In my next tutorial I'll show how to integrate Apples advertising framework iAD.  You can also download my prototyping App for this tutorial series: 
 

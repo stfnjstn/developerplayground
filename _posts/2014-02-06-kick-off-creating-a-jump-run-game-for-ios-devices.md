@@ -8,8 +8,7 @@ date: 2014-02-06 21:27:00 -0000
 last_modified_at: 2020-05-27 16:40:55 -0000
 publish: true
 pin: false
-categories:
-- My Games
+categories: [Tutorial]
 tags: []
 ---
 [![Game Development](/assets/wp-content/uploads/2014/02/Foto-1.jpg)](/assets/wp-content/uploads/2014/02/Foto-1.jpg)

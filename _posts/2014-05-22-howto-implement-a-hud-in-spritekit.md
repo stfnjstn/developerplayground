@@ -25,15 +25,15 @@ Today I'll add a HUD (head up display) to the SpriteKit Scene. The HUD shows the
 
 ## Create the HUD:
 
-### 1\. Create a new SpritKit project in Xcode:
+### 1. Create a new SpritKit project in Xcode:
 
 [![](/assets/wp-content/uploads/2014/05/Bildschirmfoto-2014-05-22-um-19.03.45-1.jpg)](/assets/wp-content/uploads/2014/05/Bildschirmfoto-2014-05-22-um-19.03.45-1.jpg)
 
-### 2\. Hide the status bar: (Add 'View controller-based status bar appearance = No' to the plist file)
+### 2. Hide the status bar: (Add 'View controller-based status bar appearance = No' to the plist file)
 
 [![](/assets/wp-content/uploads/2014/05/Bildschirmfoto-2014-05-22-um-22.30.07.png)](/assets/wp-content/uploads/2014/05/Bildschirmfoto-2014-05-22-um-22.30.07.png)
 
-### 3\. Add properties for current level and score to MyScene.h:
+### 3. Add properties for current level and score to MyScene.h:
 ```objectivec
 #import <SpriteKit/SpriteKit.h>
 
@@ -43,7 +43,7 @@ Today I'll add a HUD (head up display) to the SpriteKit Scene. The HUD shows the
 @end
 ```
 
-### 4\. Add the properties for the UIElements.
+### 4. Add the properties for the UIElements.
 
 #### I've declared them inside the MyScene.m file, because they will only be used inside this class and can be private:
 ```objectivec
@@ -63,7 +63,7 @@ Today I'll add a HUD (head up display) to the SpriteKit Scene. The HUD shows the
 
 ...
 ```
-### 5\. Create the HUD
+### 5. Create the HUD
 ```objectivec
 // Adds the HUD to the scene
 -(void)createHUD {
@@ -123,7 +123,7 @@ Start the Project. The Result should look like this:
 
 Looks nice, but without interactions this is a little boring. Let's add them!
 
-### 6\. Add Interactions:
+### 6. Add Interactions:
 
 #### First of all add two buttons to increase the score and to loose a life:
 ```objectivec
@@ -145,7 +145,7 @@ Looks nice, but without interactions this is a little boring. Let's add them!
 
 [![](/assets/wp-content/uploads/2014/05/Bildschirmfoto-2014-05-22-um-22.53.02.png)](/assets/wp-content/uploads/2014/05/Bildschirmfoto-2014-05-22-um-22.53.02.png)
 
-### 7\. Now, implement the touch handler:
+### 7. Now, implement the touch handler:
 ```objectivec
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent*)event {
   // Get the element which is touched:
@@ -208,7 +208,7 @@ The result will look like this:
 
 Most code of the sample above can be copied directly. I'll only list the differences:
 
-#### 1\. Different Icons
+#### 1. Different Icons
 
 #### [![](/assets/wp-content/uploads/2014/05/Bildschirmfoto-2014-05-20-um-22.43.49-1.jpg)](/assets/wp-content/uploads/2014/05/Bildschirmfoto-2014-05-20-um-22.43.49-1.jpg)
 
@@ -222,7 +222,7 @@ The icons for Retina and Retina-4-inch iPhones are identical:
 
 [![](/assets/wp-content/uploads/2014/05/Bildschirmfoto-2014-05-20-um-23.06.14.png)](/assets/wp-content/uploads/2014/05/Bildschirmfoto-2014-05-20-um-23.06.14.png)
 
-#### 2\. Changes in createHUD method:
+#### 2. Changes in createHUD method:
 ```objectivec
 // Adds the HUD to the scene
 -(void)createHUD {
@@ -243,7 +243,7 @@ The icons for Retina and Retina-4-inch iPhones are identical:
 ...
 ```
 
-#### 3\. Changes in lifeLost method:
+#### 3. Changes in lifeLost method:
 ```objectivec
 -(void)lifeLost {
   if (_Lifes==1) {

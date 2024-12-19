@@ -7,8 +7,8 @@ date: 2015-04-08 19:06:25 -0000
 last_modified_at: 2021-01-05 16:29:32 -0000
 publish: true
 pin: false
-categories: []
-tags: []
+categories: [Blog]
+tags: [Blog]
 ---
 # Terms of Use
 

@@ -75,7 +75,7 @@ Add the images to the Asset Catalog. If you are not familiar with Asset Catalog,
 
 Now after creating many different images let's start coding ...
 
-#### 1\. Add the SpriteKit Library to the project
+#### 1. Add the SpriteKit Library to the project
 
 Press '+' to add a new library
 
@@ -89,7 +89,7 @@ Add an import statement for SpriteKit to the MyFirstGame-Prefix.pch file
 
 [![](/assets/wp-content/uploads/2014/03/Endless7.png)](/assets/wp-content/uploads/2014/03/Endless7.png)
 
-#### 2\. Create a new Scene:
+#### 2. Create a new Scene:
 
 Add a new file with type Objective-c class:
 
@@ -107,7 +107,7 @@ This file must be a subtype of [SKNode](https://developer.apple.com/library/ios/
 
 [![](/assets/wp-content/uploads/2014/03/Endless10-1.jpg)](/assets/wp-content/uploads/2014/03/Endless10-1.jpg)
 
-#### 3\. Implement ParallaxHandlerNode
+#### 3. Implement ParallaxHandlerNode
 
 This class is derived from SKNode. It is the root element for all backgrounds/tiles which are created for the endless scrolling:
 
@@ -211,7 +211,7 @@ ParallaxHandlerNode.m:
 @end
 ```
 
-#### 4\. Create the scene:
+#### 4. Create the scene:
 
 The GameScene class is inherited from SKScene and implements four methods:
 
@@ -292,7 +292,7 @@ GameScene.m:
 @end
 ```
 
-#### 5\. Add the scene to GameViewController:
+#### 5. Add the scene to GameViewController:
 
 Add this method to GameViewController.h
 ```objectivec
@@ -310,7 +310,7 @@ Add this method to GameViewController.h
   [skView presentScene:gameScene];
 }
 ```
-#### 6\. Deploy and run
+#### 6. Deploy and run
 [![Video](/assets/wp-content/uploads/2014/03/Parallax2.png)](https://youtu.be/KS1nRbMJcQc)
 That's all for today.
 

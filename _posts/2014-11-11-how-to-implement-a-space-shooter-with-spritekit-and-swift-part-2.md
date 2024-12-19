@@ -15,7 +15,7 @@ categories:
 - SWIFT
 tags: []
 ---
-### How to implement a space shooter with SpriteKit and SWIFT - Part 2:
+## How to implement a space shooter with SpriteKit and SWIFT - Part 2:
 
 ### Adding enemies, bullets and shooting with SKAction and SKConstraint
 
@@ -40,165 +40,124 @@ I'll add several enemy sprites. These will automatically follow and orient to th
 
 [![part2-1](/assets/wp-content/uploads/2014/11/part2-1-1.jpg)](/assets/wp-content/uploads/2014/11/part2-1-1.jpg)
 
-#### 1\. Add a new class EnemySpriteController:
+#### 1. Add a new class EnemySpriteController:
 
 [![part2-2](/assets/wp-content/uploads/2014/11/part2-2.png)](/assets/wp-content/uploads/2014/11/part2-2.png)
 
 [![part2-3](/assets/wp-content/uploads/2014/11/part2-3-1.jpg)](/assets/wp-content/uploads/2014/11/part2-3-1.jpg)
 
-#### 2\. Import SpriteKit, define the class and add an array which stores all enemies:
+#### 2. Import SpriteKit, define the class and add an array which stores all enemies:
 
+```swift
 import SpriteKit
 
 // Controller class for:
-
 // - creating/destroying enemies,
-
 // - shooting
-
 // - animitaions
-
 class EnemySpriteController {
-
-var enemySprites: [SKSpriteNode] = []
-
+  var enemySprites: [SKSpriteNode] = []
 }
+```
 
-#### 3\. Add a new method spawnEnemy to EnemySpriteController:
+#### 3. Add a new method spawnEnemy to EnemySpriteController:
 
 Nothing magic here. Just create a SKSpriteNode and add it to the enemy collection. Targeting and orientation behavior is implemented with SKConstraints. For details check my post: [HowTo: Implement targeting or follow behavior for sprites with SpriteKit and SKConstraint](/howto-implement-targeting-or-follow-behavior-for-sprites-with-spritekit-and-skconstraint-in-swift).
 
+```swift
 // Return a new enemy sprite which follows the targetSprite node
-
 func spawnEnemy(targetSprite: SKNode) -> SKSpriteNode {
+  // create a new enemy sprite
+  let newEnemy = SKSpriteNode(imageNamed:"Spaceship")
+  enemySprites.append(newEnemy)
+  newEnemy.xScale = 0.08
+  newEnemy.yScale = 0.08
+  newEnemy.color = UIColor.redColor()
+  newEnemy.colorBlendFactor=0.4
 
-// create a new enemy sprite
+  // position new sprite at a random position on the screen
+  var sizeRect = UIScreen.mainScreen().applicationFrame;
+  var posX = arc4random_uniform(UInt32(sizeRect.size.width))
+  var posY = arc4random_uniform(UInt32(sizeRect.size.height))
 
-let newEnemy = SKSpriteNode(imageNamed:"Spaceship")
+  newEnemy.position = CGPoint(x: CGFloat(posX), y: CGFloat(posY))
 
-enemySprites.append(newEnemy)
+  // Define Constraints for orientation/targeting behavior
+  let i = enemySprites.count-1
+  let rangeForOrientation = SKRange(constantValue:CGFloat(M_2_PI*7))
+  let orientConstraint = SKConstraint.orientToNode(targetSprite, offset: rangeForOrientation)
+  let rangeToSprite = SKRange(lowerLimit: 80, upperLimit: 90)
+  var distanceConstraint: SKConstraint
 
-newEnemy.xScale = 0.08
-
-newEnemy.yScale = 0.08
-
-newEnemy.color = UIColor.redColor()
-
-newEnemy.colorBlendFactor=0.4
-
-// position new sprite at a random position on the screen
-
-var sizeRect = UIScreen.mainScreen().applicationFrame;
-
-var posX = arc4random_uniform(UInt32(sizeRect.size.width))
-
-var posY = arc4random_uniform(UInt32(sizeRect.size.height))
-
-newEnemy.position = CGPoint(x: CGFloat(posX), y: CGFloat(posY))
-
-// Define Constraints for orientation/targeting behavior
-
-let i = enemySprites.count-1
-
-let rangeForOrientation = SKRange(constantValue:CGFloat(M_2_PI*7))
-
-let orientConstraint = SKConstraint.orientToNode(targetSprite, offset: rangeForOrientation)
-
-let rangeToSprite = SKRange(lowerLimit: 80, upperLimit: 90)
-
-var distanceConstraint: SKConstraint
-
-// First enemy has to follow spriteToFollow, second enemy has to follow first enemy, ...
-
-if enemySprites.count-1 == 0 {
-
-distanceConstraint = SKConstraint.distance(rangeToSprite, toNode: targetSprite)
-
-} else {
-
-distanceConstraint = SKConstraint.distance(rangeToSprite, toNode: enemySprites[i-1])
-
+  // First enemy has to follow spriteToFollow, second enemy has to follow first enemy, ...
+  if enemySprites.count-1 == 0 {
+    distanceConstraint = SKConstraint.distance(rangeToSprite, toNode: targetSprite)
+  } else {
+    distanceConstraint = SKConstraint.distance(rangeToSprite, toNode: enemySprites[i-1])
+  }
+  newEnemy.constraints = [orientConstraint, distanceConstraint]
+  return newEnemy
 }
+```
 
-newEnemy.constraints = [orientConstraint, distanceConstraint]
+#### 4. Create a property for the EnemySpriteController object inside GameScene.swift:
 
-return newEnemy
-
-}
-
-#### 4\. Create a property for the EnemySpriteController object inside GameScene.swift:
-
+```swift
 var enemySprites = EnemySpriteController()
+```
 
-#### 5\. Create some enemies at the end of didMoveToView method inside GameScene.swift:
+#### 5. Create some enemies at the end of didMoveToView method inside GameScene.swift:
 
+```swift
 // Add enemy sprites
-
 for(var i=0; i<3;i++){
-
-self.addChild(enemySprites.spawnEnemy(heroSprite))
-
+  self.addChild(enemySprites.spawnEnemy(heroSprite))
 }
+```
 
 Result are three red enemy sprites which will follow the white spaceship. Next steps are adding bullets and shooting. 
 
 [![SKConstraint Tutorial 1](/assets/wp-content/uploads/2014/11/IMG_8379-1.jpg)](/assets/wp-content/uploads/2014/11/IMG_8379-1.jpg)
 
-#### 6\. Add a shoot method inside EnemySpriteController.swift:
+#### 6. Add a shoot method inside EnemySpriteController.swift:
 
 The shoot method iterates over each enemy sprite, creates a bullet, determines a vector to the target object and starts a SKAction which moves the bullet.
 
+```swift
 // Shoot in direction of spriteToShoot
-
 func shoot(targetSprite: SKNode) {
+  for enemy in enemySprites {
+    // Create the bullet sprite
+    let bullet = SKSpriteNode()
+    bullet.color = UIColor.greenColor()
+    bullet.size = CGSize(width: 5,height: 5)
+    bullet.position = CGPointMake(enemy.position.x, enemy.position.y)
+    targetSprite.parent?.addChild(bullet)
 
-for enemy in enemySprites {
+    // Determine vector to targetSprite
+    let vector = CGVectorMake((targetSprite.position.x-enemy.position.x), targetSprite.position.y-enemy.position.y)
 
-// Create the bullet sprite
-
-let bullet = SKSpriteNode()
-
-bullet.color = UIColor.greenColor()
-
-bullet.size = CGSize(width: 5,height: 5)
-
-bullet.position = CGPointMake(enemy.position.x, enemy.position.y)
-
-targetSprite.parent?.addChild(bullet)
-
-// Determine vector to targetSprite
-
-let vector = CGVectorMake((targetSprite.position.x-enemy.position.x), targetSprite.position.y-enemy.position.y)
-
-// Create the action to move the bullet. Don't forget to remove the bullet!
-
-let bulletAction = SKAction.sequence([SKAction.repeatAction(SKAction.moveBy(vector, duration: 1), count: 10) , SKAction.waitForDuration(30.0/60.0), SKAction.removeFromParent()])
-
-bullet.runAction(bulletAction)
-
+    // Create the action to move the bullet. Don't forget to remove the bullet!
+    let bulletAction = SKAction.sequence([SKAction.repeatAction(SKAction.moveBy(vector, duration: 1), count: 10) , SKAction.waitForDuration(30.0/60.0), SKAction.removeFromParent()])
+    bullet.runAction(bulletAction)
+  }
 }
+```
 
-}
-
-#### 7\. Call shoot inside the update method of GameScene.swift:
+#### 7. Call shoot inside the update method of GameScene.swift:
 
 SpriteKit cannot guarantee in which time intervals the update method is called. To ensure that the enemies shoot every second, I'll store the time interval when shoot was called in a global property. 
 
+```swift
 var _dLastShootTime: CFTimeInterval = 1
-
 override func update(currentTime: CFTimeInterval) {
-
-/* Called before each frame is rendered */
-
-if currentTime - _dLastShootTime >= 1 {
-
-enemySprites.shoot(heroSprite)
-
-_dLastShootTime=currentTime
-
+  /* Called before each frame is rendered */
+  if currentTime - _dLastShootTime >= 1 {
+    enemySprites.shoot(heroSprite)
+    _dLastShootTime=currentTime
+  }
 }
-
-}
+```
 
 [![SKConstraint Tutorial](/assets/wp-content/uploads/2014/11/IMG_8379.jpg)](/assets/wp-content/uploads/2014/11/IMG_8379.jpg)
 

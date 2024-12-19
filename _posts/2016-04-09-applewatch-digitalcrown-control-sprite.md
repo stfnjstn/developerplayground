@@ -33,7 +33,7 @@ I have a quick calculation for you, if you think 0.99$ is expensive: It took me 
 
 Goal is to create the racket at the left side and use the digital crown to move it up and down.
 
-#### 1\. Open XCode and create a new WatchKit project:
+#### 1. Open XCode and create a new WatchKit project:
 
 [![WatchGame1](/assets/wp-content/uploads/2016/04/WatchGame1.png)](/assets/wp-content/uploads/2016/04/WatchGame1.png)
 
@@ -41,7 +41,7 @@ Disable the checkmark on 'Include Notification Scene':
 
 [![WatchGameBlog2](/assets/wp-content/uploads/2016/04/WatchGameBlog2.png)](/assets/wp-content/uploads/2016/04/WatchGameBlog2.png)
 
-#### 2\. Create the UserInterface:
+#### 2. Create the UserInterface:
 
 Open the WatchKit Storyboard: [![WatchGameBlog3](/assets/wp-content/uploads/2016/04/WatchGameBlog3-1.jpg)](/assets/wp-content/uploads/2016/04/WatchGameBlog3-1.jpg)
 
@@ -61,7 +61,7 @@ Change the radius of the group to 0:
 
 The WKInterfacePicker will only be used to connect our interface with the digital crown. It is not necessary that it is visible on the screen.
 
-### 3\. Connect the UI Classes with the InterfaceController:
+### 3. Connect the UI Classes with the InterfaceController:
 
 Create an IBOutlet for 'Image' and 'Picker':
 
@@ -83,83 +83,58 @@ The result in your code should look like this:
 
 @IBAction func pick(value: Int) {}
 
-### 4\. Implement the logic:
+### 4. Implement the logic:
 
 Now everything is setup and we can start implementing the logic. The picker outlet/action will provide the access to the digital crown. It must be initialized with some values first. Add this code snippet to the method willActivate():
 
- 
-
+```swift 
 override func willActivate() {
+  // This method is called when watch view controller is about to be visible to user
+  super.willActivate()
 
-// This method is called when watch view controller is about to be visible to user
-
-super.willActivate()
-
-// Initialize picker with 10 items to detect state changes of the digital crown
-
-var pickerItems: [WKPickerItem] = []
-
-for _ in 0 ..< 10 {
-
-let pickerItem = WKPickerItem()
-
-pickerItem.title = ""
-
-pickerItem.caption = ""
-
-pickerItems.append(pickerItem)
-
+  // Initialize picker with 10 items to detect state changes of the digital crown
+  var pickerItems: [WKPickerItem] = []
+  for _ in 0 ..< 10 {
+    let pickerItem = WKPickerItem()
+    pickerItem.title = ""
+    pickerItem.caption = ""
+    pickerItems.append(pickerItem)
+  }
+  picker.setItems(pickerItems)
+  picker.setSelectedItemIndex(4)
 }
-
-picker.setItems(pickerItems)
-
-picker.setSelectedItemIndex(4)
-
-}
+```
 
 Move the racket overtime the picker changes:
 
+```swift
 @IBAction func pick(value: Int) {
+  // Create the graphics context
+  let size = CGSizeMake(100, 100)
+  UIGraphicsBeginImageContext(size)
+  let context = UIGraphicsGetCurrentContext()
+  
+  // Setup for the path style
+  CGContextSetStrokeColorWithColor(context, UIColor.whiteColor().CGColor)
+  CGContextSetLineWidth(context, 2.0)
 
-// Create the graphics context
+  // Draw racket
+  CGContextBeginPath (context);
+  CGContextMoveToPoint(context, 80, CGFloat(value + 1) * 10);
+  CGContextAddLineToPoint(context, 80, CGFloat(value) * 10)
+  CGContextStrokePath(context);
 
-let size = CGSizeMake(100, 100)
+  // Convert to an UIImage
+  let cgimage = CGBitmapContextCreateImage(context);
+  let uiimage = UIImage(CGImage: cgimage!)
 
-UIGraphicsBeginImageContext(size)
+  // End the graphics context
+  UIGraphicsEndImageContext()
 
-let context = UIGraphicsGetCurrentContext()
-
-// Setup for the path style
-
-CGContextSetStrokeColorWithColor(context, UIColor.whiteColor().CGColor)
-
-CGContextSetLineWidth(context, 2.0)
-
-// Draw racket
-
-CGContextBeginPath (context);
-
-CGContextMoveToPoint(context, 80, CGFloat(value + 1) * 10);
-
-CGContextAddLineToPoint(context, 80, CGFloat(value) * 10)
-
-CGContextStrokePath(context);
-
-// Convert to an UIImage
-
-let cgimage = CGBitmapContextCreateImage(context);
-
-let uiimage = UIImage(CGImage: cgimage!)
-
-// End the graphics context
-
-UIGraphicsEndImageContext()
-
-// Assign on WKInterfaceImage
-
-image.setImage(uiimage)
-
+  // Assign on WKInterfaceImage
+  image.setImage(uiimage)
 }
+```
 
 Now you can run the App and play with the crown and the racket. The result should look like this:
 

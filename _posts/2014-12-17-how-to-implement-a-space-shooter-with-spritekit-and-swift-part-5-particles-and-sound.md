@@ -17,7 +17,8 @@ categories:
 - SWIFT
 tags: []
 ---
-Adding particles and sound : How to implement a space shooter with SpriteKit and SWIFT - Part 5
+## How to implement a space shooter with SpriteKit and SWIFT - Part 5
+### Adding particles and sound: 
 
 [![](/assets/wp-content/uploads/2014/12/AppStore.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
 
@@ -41,7 +42,7 @@ Welcome to part 5 of my tutorial series. In the previous parts we've created a s
 
 I'll show how to implement this today. As a starting point you can download the code from tutorial part 4 [here](https://github.com/stfnjstn/MySecondGame/releases/tag/v0.4). 
 
-### 1\. Adding sound effects
+### 1. Adding sound effects
 
 First me need some sound effects in WAV format, which is supported out of the box by iOS. There are several ways to get them. For example:
 
@@ -64,7 +65,7 @@ runAction(SKAction.playSoundFileNamed("Explosion.wav", waitForCompletion: false)
 
 That's all!
 
-### 2\. Adding particle effects
+### 2. Adding particle effects
 
 The video at the top shows two different kind of particle effects. One for explosions and one for the background star field. I'll use the built in particle editor from XCode to create these effects. 
 
@@ -96,19 +97,19 @@ The timeframe for the explosion depends on 'Birthrate' and 'Maximum'. A smaller 
 
 Now, add a new method explosion to GameScene.swift:
 
+```swift
 func explosion(pos: CGPoint) { var emitterNode = SKEmitterNode(fileNamed: "ExplosionParticle.sks") emitterNode.particlePosition = pos self.addChild(emitterNode) // Don't forget to remove the emitter node after the explosion
-
-self.runAction(SKAction.waitForDuration(2), completion: { emitterNode.removeFromParent() })
-
+  self.runAction(SKAction.waitForDuration(2), completion: { emitterNode.removeFromParent() })
 }
+```
 
 Call the new method from lifeLost:
 
+```swift
 func lifeLost() {
-
-explosion(self.heroSprite.position)
-
-...
+  explosion(self.heroSprite.position)
+  ...
+```
 
 #### 2.2 Add a startfield:
 
@@ -120,71 +121,49 @@ To create a starfield with a parallax effect I'll combine multiple emitter nodes
 
 Add a new method starfieldEmitter to GameScene.swift:
 
+```swift
 func starfieldEmitter(color: SKColor, starSpeedY: CGFloat, starsPerSecond: CGFloat, starScaleFactor: CGFloat) -> SKEmitterNode {
+  // Determine the time a star is visible on screen
+  let lifetime = frame.size.height * UIScreen.mainScreen().scale / starSpeedY
+  
+  // Create the emitter node
+  let emitterNode = SKEmitterNode()
+  emitterNode.particleTexture = SKTexture(imageNamed: "StarParticle")
+  emitterNode.particleBirthRate = starsPerSecond
+  emitterNode.particleColor = SKColor.lightGrayColor()
+  emitterNode.particleSpeed = starSpeedY * -1
+  emitterNode.particleScale = starScaleFactor
+  emitterNode.particleColorBlendFactor = 1
+  emitterNode.particleLifetime = lifetime
 
-// Determine the time a star is visible on screen
+  // Position in the middle at top of the screen
+  emitterNode.position = CGPoint(x: frame.size.width/2, y: frame.size.height)
+  emitterNode.particlePositionRange = CGVector(dx: frame.size.width, dy: 0)
 
-let lifetime = frame.size.height * UIScreen.mainScreen().scale / starSpeedY
-
-// Create the emitter node
-
-let emitterNode = SKEmitterNode()
-
-emitterNode.particleTexture = SKTexture(imageNamed: "StarParticle")
-
-emitterNode.particleBirthRate = starsPerSecond
-
-emitterNode.particleColor = SKColor.lightGrayColor()
-
-emitterNode.particleSpeed = starSpeedY * -1
-
-emitterNode.particleScale = starScaleFactor
-
-emitterNode.particleColorBlendFactor = 1
-
-emitterNode.particleLifetime = lifetime
-
-// Position in the middle at top of the screen
-
-emitterNode.position = CGPoint(x: frame.size.width/2, y: frame.size.height)
-
-emitterNode.particlePositionRange = CGVector(dx: frame.size.width, dy: 0)
-
-// Fast forward the effect to start with a filled screen
-
-emitterNode.advanceSimulationTime(NSTimeInterval(lifetime))
-
-return emitterNode
-
+  // Fast forward the effect to start with a filled screen
+  emitterNode.advanceSimulationTime(NSTimeInterval(lifetime))
+  return emitterNode
 }
+```
 
 Create three emitter nodes for the starfield at the end of didMoveToView:
 
+```swift
 // Add Starfield with 3 emitterNodes for a parallax effect
-
 // - Stars in top layer: light, fast, big
-
 // - ...
-
 // - Stars in back layer: dark, slow, small
 
 var emitterNode = starfieldEmitter(SKColor.lightGrayColor(), starSpeedY: 50, starsPerSecond: 1, starScaleFactor: 0.2)
-
 emitterNode.zPosition = -10
-
 self.addChild(emitterNode)
-
 emitterNode = starfieldEmitter(SKColor.grayColor(), starSpeedY: 30, starsPerSecond: 2, starScaleFactor: 0.1)
-
 emitterNode.zPosition = -11
-
 self.addChild(emitterNode)
-
 emitterNode = starfieldEmitter(SKColor.darkGrayColor(), starSpeedY: 15, starsPerSecond: 4, starScaleFactor: 0.05)
-
 emitterNode.zPosition = -12
-
 self.addChild(emitterNode)
+```
 
 That's all for today. In my next part I'll show how to integrate game center. You can download the code from GitHub: [Part 5](https://github.com/stfnjstn/MySecondGame/releases/tag/v0.5) or the latest version [here](https://github.com/stfnjstn/MySecondGame/tree/master).
 

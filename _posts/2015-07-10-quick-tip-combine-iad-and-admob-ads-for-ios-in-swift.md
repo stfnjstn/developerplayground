@@ -35,13 +35,13 @@ One reason could be that there was just not enough time to load the new content.
 
 
 
-### 1\. Let's create a sample project:
+### 1. Let's create a sample project:
 
 [![AdMob 1](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.28.16.png)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.28.16.png)
 
 [![AdMob 2](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.28.35.png)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.28.35.png)
 
-### 2\. Ad the iAD framework to your project:
+### 2. Ad the iAD framework to your project:
 
 [![AdMob 3](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-08-at-21.57.041-1.jpg)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-08-at-21.57.041-1.jpg)
 
@@ -49,7 +49,7 @@ One reason could be that there was just not enough time to load the new content.
 
 [![5](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-08-at-21.57.291.png)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-08-at-21.57.291.png)
 
-### 3\. Ad the Google AdMob SDK to your project:
+### 3. Ad the Google AdMob SDK to your project:
 
 [![AdMob 6](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.33.12-1.jpg)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.33.12-1.jpg)
 
@@ -57,7 +57,7 @@ One reason could be that there was just not enough time to load the new content.
 
 [![AdMob 8](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.34.03.png)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.34.03.png)
 
-### 4\. Create the UI:
+### 4. Create the UI:
 
 #### Open the storyboard and add a button to the screen:
 
@@ -71,7 +71,7 @@ One reason could be that there was just not enough time to load the new content.
 
 [![AdMob 11](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.41.05.png)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.41.05.png)
 
-### 5\. Create the AdHelper class
+### 5. Create the AdHelper class
 
 [![AdMob 12](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.51.05-1.jpg)](/assets/wp-content/uploads/2015/07/Screen-Shot-2015-07-10-at-14.51.05-1.jpg)
 
@@ -81,135 +81,83 @@ One reason could be that there was just not enough time to load the new content.
 
 #### Paste this code snippet into the newly created file:
 
+```swift
 // Helper class to show iAd and Google AdMob interstitial ads. Default is the iAd.
-
 // If a new iAD add is not available an Google AdMob ad will be shown
 
 import UIKit
-
 import iAd
-
 import GoogleMobileAds
 
 class AdHelper: NSObject {
+  private var iterationsTillPresentAd = 0 // Can be used to show an ad only after a fixed number of iterations
+  private var adMobKey = "" // Stores the key provided by google
+  private var counter = 0
+  private var adMobInterstitial: GADInterstitial!
 
-private var iterationsTillPresentAd = 0 // Can be used to show an ad only after a fixed number of iterations
+  // Initialize iAd and AdMob interstitials ads
+  init(presentingViewController: UIViewController, googleAdMobKey: String, iterationsTillPresentInterstitialAd: Int) {
+    self.iterationsTillPresentAd = iterationsTillPresentInterstitialAd
+    self.adMobKey = googleAdMobKey
+    self.adMobInterstitial = GADInterstitial(adUnitID: self.adMobKey)
+    presentingViewController.interstitialPresentationPolicy = ADInterstitialPresentationPolicy.Manual 
+  }
 
-private var adMobKey = "" // Stores the key provided by google
+  // Present the interstitial ads
+  func showAds(presentingViewController: UIViewController) {
+    // Check if ad should be shown
+    counter++
+    if counter >= iterationsTillPresentAd {
+      // Try if iAd ad is available
+      if presentingViewController.requestInterstitialAdPresentation() {
+        counter = 0
+        presentingViewController.interstitialPresentationPolicy = ADInterstitialPresentationPolicy.None
 
-private var counter = 0
+        // The ad was used. Prefetch the next one
+        preloadIAdInterstitial(presentingViewController)
+        // Try if the AdMob is available
+      } else {
+        if adMobInterstitial == nil {
+          // In case the disableAd was called
+          adMobInterstitial = GADInterstitial(adUnitID: self.adMobKey)
+      } else {
+          // Present the AdMob ad, if available
+          if (self.adMobInterstitial.isReady) {
+            counter = 0
+            adMobInterstitial!.presentFromRootViewController(presentingViewController)
+            adMobInterstitial = GADInterstitial(adUnitID: self.adMobKey)
+          }
+        }
 
-private var adMobInterstitial: GADInterstitial!
+        // Prefetch the next ads
+        preloadIAdInterstitial(presentingViewController)
+        preloadAdMobInterstitial()
+      }
+    }
+  }
 
-// Initialize iAd and AdMob interstitials ads
+  // Disable ads
+  func disableAd(presentingViewController: UIViewController) {
+    presentingViewController.interstitialPresentationPolicy = ADInterstitialPresentationPolicy.None
+    adMobInterstitial = nil
+  }
 
-init(presentingViewController: UIViewController, googleAdMobKey: String, iterationsTillPresentInterstitialAd: Int) {
+  // Prefetch AdMob ads
+  private func preloadAdMobInterstitial() {
+    var request = GADRequest()
+    request.testDevices = ["kGADSimulatorID"] // Needed to show Ads in the simulator
+    self.adMobInterstitial.loadRequest(request)
+  }
 
-self.iterationsTillPresentAd = iterationsTillPresentInterstitialAd
-
-self.adMobKey = googleAdMobKey
-
-self.adMobInterstitial = GADInterstitial(adUnitID: self.adMobKey)
-
-presentingViewController.interstitialPresentationPolicy = ADInterstitialPresentationPolicy.Manual
-
+  // Prefetch iAd ads
+  private func preloadIAdInterstitial(presentingViewController: UIViewController) {
+    presentingViewController.interstitialPresentationPolicy = ADInterstitialPresentationPolicy.Manual
+    UIViewController.prepareInterstitialAds()
+  }
 }
+```
 
-// Present the interstitial ads
-
-func showAds(presentingViewController: UIViewController) {
-
-// Check if ad should be shown
-
-counter++
-
-if counter >= iterationsTillPresentAd {
-
-// Try if iAd ad is available
-
-if presentingViewController.requestInterstitialAdPresentation() {
-
-counter = 0
-
-presentingViewController.interstitialPresentationPolicy = ADInterstitialPresentationPolicy.None
-
-// The ad was used. Prefetch the next one
-
-preloadIAdInterstitial(presentingViewController)
-
-// Try if the AdMob is available
-
-} else {
-
-if adMobInterstitial == nil {
-
-// In case the disableAd was called
-
-adMobInterstitial = GADInterstitial(adUnitID: self.adMobKey)
-
-} else {
-
-// Present the AdMob ad, if available
-
-if (self.adMobInterstitial.isReady) {
-
-counter = 0
-
-adMobInterstitial!.presentFromRootViewController(presentingViewController)
-
-adMobInterstitial = GADInterstitial(adUnitID: self.adMobKey)
-
-}
-
-}
-
-// Prefetch the next ads
-
-preloadIAdInterstitial(presentingViewController)
-
-preloadAdMobInterstitial()
-
-}
-
-}
-
-}
-
-// Disable ads
-
-func disableAd(presentingViewController: UIViewController) {
-
-presentingViewController.interstitialPresentationPolicy = ADInterstitialPresentationPolicy.None
-
-adMobInterstitial = nil
-
-}
-
-// Prefetch AdMob ads
-
-private func preloadAdMobInterstitial() {
-
-var request = GADRequest()
-
-request.testDevices = ["kGADSimulatorID"] // Needed to show Ads in the simulator
-
-self.adMobInterstitial.loadRequest(request)
-
-}
-
-// Prefetch iAd ads
-
-private func preloadIAdInterstitial(presentingViewController: UIViewController) {
-
-presentingViewController.interstitialPresentationPolicy = ADInterstitialPresentationPolicy.Manual
-
-UIViewController.prepareInterstitialAds()
-
-}
-
-}
-
-### 6\. Call the AdHelper class
+### 6. Call the AdHelper class
 
 #### Open ViewController.swift:
 
@@ -217,29 +165,25 @@ UIViewController.prepareInterstitialAds()
 
 #### Add a property which hold the instance of AdHelper and initialise it in the ViewDidLoad method:
 
+```swift
 import UIKit
 
 class ViewController: UIViewController {
+  var adHelper: AdHelper!
 
-var adHelper: AdHelper!
-
-override func viewDidLoad() {
-
-super.viewDidLoad()
-
-// Do any additional setup after loading the view, typically from a nib.
-
-adHelper = AdHelper(presentingViewController: self, googleAdMobKey: "PASTE YOU ADMOB ID HERE", iterationsTillPresentInterstitialAd: 1)
-
-}
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    adHelper = AdHelper(presentingViewController: self, googleAdMobKey: "PASTE YOU ADMOB ID HERE", iterationsTillPresentInterstitialAd: 1)
+  }
+```
 
 #### Enter the code to call the ad each time the button is pressed:
 
+```swift
 @IBAction func showAd(sender: AnyObject) {
-
-adHelper.showAds(self)
-
+  adHelper.showAds(self)
 }
+```
 
 #### Now you can test this on a device:
 
