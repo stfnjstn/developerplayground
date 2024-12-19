@@ -28,14 +28,12 @@ In the last days Google sent out emails to App developers which uses their AdSen
 In this tutorial I'll show how you can implement an information alert about the cookie usage in SWIFT. The basic idea is to detect, if the app is started the first time:
 
   * If yes show an alert with a message about the cookie usage.
-  * After clicking 'OK' store a key in NSUserDefault.
+  * After clicking _OK_ store a key in NSUserDefault.
   * Next time the application is started, this key will be found and therefore no alert will be shown.
-
-
 
 **IMPORTANT:** I'm not a lawyer. So no guarantees. You have to decide on your own if this is sufficient.
 
-[caption id="attachment_1045" align="aligncenter" width="169"][![Google Cookie Policy](/assets/wp-content/uploads/2015/08/iOS-Simulator-Screen-Shot-29-Aug-2015-19.02.15.png)](/assets/wp-content/uploads/2015/08/iOS-Simulator-Screen-Shot-29-Aug-2015-19.02.15.png) AdMob Cookie Usage [/caption] 
+[![Google Cookie Policy](/assets/wp-content/uploads/2015/08/iOS-Simulator-Screen-Shot-29-Aug-2015-19.02.15.png)](/assets/wp-content/uploads/2015/08/iOS-Simulator-Screen-Shot-29-Aug-2015-19.02.15.png)
 
 The Code snippet for showing the AdMob Cookie usage is simple:
 

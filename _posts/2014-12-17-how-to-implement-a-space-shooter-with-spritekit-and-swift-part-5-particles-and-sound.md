@@ -20,6 +20,8 @@ tags: []
 ## How to implement a space shooter with SpriteKit and SWIFT - Part 5
 ### Adding particles and sound: 
 
+TODO VIDEO https://youtu.be/8d8MH_gXt84
+
 [![](/assets/wp-content/uploads/2014/12/AppStore.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
 
 #### Tutorial Overview: How to implement a space shooter with SpriteKit and SWIFT
@@ -49,7 +51,7 @@ First me need some sound effects in WAV format, which is supported out of the bo
   * GarageBand: An excellent [tutorial](http://www.raywenderlich.com/26341/how-to-make-game-music-with-garage-band) is available on raywenderlich.com.
   * [CFXR](http://thirdcog.eu/apps/cfxr): A very simple tool to create 8Bit sound effects
 
-To keep your project structure clean, create a new group and name it 'resources':
+To keep your project structure clean, create a new group and name it _resources_:
 
 [![5-1](/assets/wp-content/uploads/2014/12/5-1-1.jpg)](/assets/wp-content/uploads/2014/12/5-1-1.jpg)
 
@@ -61,8 +63,6 @@ To play the sound add this line of code to your lifeLost method:
 
 runAction(SKAction.playSoundFileNamed("Explosion.wav", waitForCompletion: false))
 
- 
-
 That's all!
 
 ### 2. Adding particle effects
@@ -71,11 +71,11 @@ The video at the top shows two different kind of particle effects. One for explo
 
 #### 2.1 Add Explosions
 
-#### Add a new 'SpriteKit Particle File' to your project:
+#### Add a new _SpriteKit Particle File_ to your project:
 
 [![5-3](/assets/wp-content/uploads/2014/12/5-3-1.jpg)](/assets/wp-content/uploads/2014/12/5-3-1.jpg)
 
-Choose template type 'fire' and name it 'ExplosionParticle'
+Choose template type _fire_ and name it _ExplosionParticle_
 
 [![5-4](/assets/wp-content/uploads/2014/12/5-4.png)](/assets/wp-content/uploads/2014/12/5-4.png)
 
@@ -85,11 +85,11 @@ The result will look like this:
 
 [![5-6](/assets/wp-content/uploads/2014/12/5-6-1.jpg)](/assets/wp-content/uploads/2014/12/5-6-1.jpg)
 
-Change 'Position Range' to 50 for 'X' and 'Y' to get an particle object with same height and width. Currently the particles are moving upwards. A circle movement from one center into all directions looks more like an explosion. To achieve this set the 'Start Angle' to 0 and change the 'Range' to 360 degrees. You can also play with the 'Speed' values to adjust the explosion effect.
+Change _Position Range_ to 50 for _X_ and _Y_ to get an particle object with same height and width. Currently the particles are moving upwards. A circle movement from one center into all directions looks more like an explosion. To achieve this set the _Start Angle_ to 0 and change the _Range_ to 360 degrees. You can also play with the _Speed_ values to adjust the explosion effect.
 
 [![5-7](/assets/wp-content/uploads/2014/12/5-7.png)](/assets/wp-content/uploads/2014/12/5-7.png)
 
-The timeframe for the explosion depends on 'Birthrate' and 'Maximum'. A smaller maximum together with a high birthrate leads to a short explosion effect. The size can be changed with the 'Lifetime' values. A longer particle lifetime will result in a bigger explosion.
+The timeframe for the explosion depends on _Birthrate_ and _Maximum_. A smaller maximum together with a high birthrate leads to a short explosion effect. The size can be changed with the _Lifetime_ values. A longer particle lifetime will result in a bigger explosion.
 
 [![5-8](/assets/wp-content/uploads/2014/12/5-8.png)](/assets/wp-content/uploads/2014/12/5-8.png)
 
@@ -111,9 +111,11 @@ func lifeLost() {
   ...
 ```
 
+TODO VIDEO https://youtu.be/4DouwA_t-fE
+
 #### 2.2 Add a startfield:
 
-To create a starfield with a parallax effect I'll combine multiple emitter nodes. The node on top will show big, light stars which moves fast. The stars for the middle layer are medium sized and darker with a slower movement. The background layer has the darkest, smallest and slowest stars. To avoid the effort to create 3 different 'sks' files I'll create the particles with code. Add an image with a star to the asset catalog: 
+To create a starfield with a parallax effect I'll combine multiple emitter nodes. The node on top will show big, light stars which moves fast. The stars for the middle layer are medium sized and darker with a slower movement. The background layer has the darkest, smallest and slowest stars. To avoid the effort to create 3 different _sks_ files I'll create the particles with code. Add an image with a star to the asset catalog: 
 
 [![](/assets/wp-content/uploads/2014/12/Star-1.jpg)](/assets/wp-content/uploads/2014/12/Star-1.jpg)
 
@@ -164,6 +166,8 @@ emitterNode = starfieldEmitter(SKColor.darkGrayColor(), starSpeedY: 15, starsPer
 emitterNode.zPosition = -12
 self.addChild(emitterNode)
 ```
+
+TODO VIDEO https://youtu.be/GDazsaYDGjQ
 
 That's all for today. In my next part I'll show how to integrate game center. You can download the code from GitHub: [Part 5](https://github.com/stfnjstn/MySecondGame/releases/tag/v0.5) or the latest version [here](https://github.com/stfnjstn/MySecondGame/tree/master).
 

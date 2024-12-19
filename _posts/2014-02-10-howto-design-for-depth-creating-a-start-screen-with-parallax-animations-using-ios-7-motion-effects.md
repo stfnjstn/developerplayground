@@ -43,7 +43,7 @@ Limit supported orientations to landscape:
 
 [![iOS Motion Effects](/assets/wp-content/uploads/2014/02/Parallax5-1.jpg)](/assets/wp-content/uploads/2014/02/Parallax5-1.jpg)
 
-Create a new _ViewController_ and name it 'StartScreenViewController'.
+Create a new _ViewController_ and name it _StartScreenViewController_.
 
 [![iOS Motion Effects](/assets/wp-content/uploads/2014/02/Parallax6-1.jpg)](/assets/wp-content/uploads/2014/02/Parallax6-1.jpg)
 
@@ -139,7 +139,7 @@ Now, everything is prepared to add the parallax effect. Therefore we'll create t
 }
 ```
 
-Call these methods at the end off the 'viewDidLoad' function:
+Call these methods at the end off the _viewDidLoad_ function:
 ```objectivec
 -(void)viewDidLoad {
   [super viewDidLoad];

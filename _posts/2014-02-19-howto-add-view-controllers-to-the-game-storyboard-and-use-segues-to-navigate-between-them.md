@@ -32,20 +32,17 @@ Today I'm creating the basic game infrastructure, not the game itself. If you ha
   * AddHighScoreScreen: Add a new highscore entry
   * Highscore: List of the highscores
 
-
-
- 
-
 [![](/assets/wp-content/uploads/2014/02/ViewControllers2-1.jpg)](/assets/wp-content/uploads/2014/02/ViewControllers2-1.jpg)
 
 #### Reusing the code for the parallax effect
 
 Before we create the corresponding view controllers take a step back and think about the two functions we've added to our StartScreenViewController to perform the parallax effect in [part 1](/howto-design-for-depth-creating-a-start-screen-with-parallax-animations-using-ios-7-motion-effects) of this blog series:
+
 ```objectivec
 -(void)assignBackgroundParallaxBehavior:(UIView*) view
-
 -(void)assignForegroundParallaxBehavior:(NSArray*) view
 ```
+
 To avoid code duplication I'll create a new helper class: UITools 
 
 [![](/assets/wp-content/uploads/2014/02/ViewControllers3-1.jpg)](/assets/wp-content/uploads/2014/02/ViewControllers3-1.jpg)
@@ -55,11 +52,8 @@ Add the declarationof the functions to UITools.m:
 #import <Foundation/Foundation.h>
 
 @interface UITools : NSObject
-
-+(void)assignBackgroundParallaxBehavior:(UIView*) view;
-
-+(void)assignForegroundParallaxBehavior:(NSArray*) view;
-
+  +(void)assignBackgroundParallaxBehavior:(UIView*) view;
+  +(void)assignForegroundParallaxBehavior:(NSArray*) view;
 @end
 ```
 
@@ -93,8 +87,6 @@ No let's create 5 new ViewControllers:
   * HighScoreViewController
   * GameViewController
 
-
-
 [![](/assets/wp-content/uploads/2014/02/ViewControllers4-1.jpg)](/assets/wp-content/uploads/2014/02/ViewControllers4-1.jpg)
 
 I'll organize all ViewControllers in a group (File -> New -> Group) 
@@ -103,17 +95,20 @@ I'll organize all ViewControllers in a group (File -> New -> Group)
 
 #### Repeat the following steps for each View Controller:
 
-#### **1.** Add properties to header files:
+#### 1. Add properties to header files:
+
 ```objectivec
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundView;
-
 @property (strong, nonatomic) IBOutletCollection(UIView) NSArray *foregroundViews;
 ```
-#### **2.** Import helper class:
 
+#### 2. Import helper class:
+
+```objectivec
 #import "UITools.h"
+```
 
-#### **3.** Assign parallax behavior in ViewDidLoad
+#### 3. Assign parallax behavior in ViewDidLoad
 ```objectivec
 - (void)viewDidLoad {
   [super viewDidLoad];
@@ -124,24 +119,25 @@ I'll organize all ViewControllers in a group (File -> New -> Group)
 }
 ```
 
-#### **4.** Open the iPhone Storyboard and add a new ViewController
+#### 4. Open the iPhone Storyboard and add a new ViewController
 
 [![](/assets/wp-content/uploads/2014/02/ViewControllers6-1.jpg)](/assets/wp-content/uploads/2014/02/ViewControllers6-1.jpg)
 
-#### **5.** Change orientation to landscape and statusbar to none
+#### 5. Change orientation to landscape and statusbar to none
 
 [![](/assets/wp-content/uploads/2014/02/ViewControllers8.png)](/assets/wp-content/uploads/2014/02/ViewControllers8.png)
 
-#### **6.** Change class to one of the just created ViewControllers
+#### 6. Change class to one of the just created ViewControllers
 
 [![](/assets/wp-content/uploads/2014/02/ViewControllers7.png)](/assets/wp-content/uploads/2014/02/ViewControllers7.png)
 
-#### **7.** Add Background image, header label and buttons. Connect them with the outlets from the corresponding ViewController:
+#### 7. Add Background image, header label and buttons. Connect them with the outlets from the corresponding ViewController:
+
 ```objectivec
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundView;
-
 @property (strong, nonatomic) IBOutletCollection(UIView) NSArray *foregroundViews;
 ```
+
 Detailed steps are described in [part 1](/howto-design-for-depth-creating-a-start-screen-with-parallax-animations-using-ios-7-motion-effects). The result should look like this: 
 
 [![](/assets/wp-content/uploads/2014/02/ViewControllers9-1.jpg)](/assets/wp-content/uploads/2014/02/ViewControllers9-1.jpg)

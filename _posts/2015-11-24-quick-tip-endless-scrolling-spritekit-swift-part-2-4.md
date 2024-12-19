@@ -24,12 +24,16 @@ tags:
 
 Welcome to my scrolling tutorial:
 
-  * [Part 1](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-4-collision-detection43): Endless scrolling with background tiles
-  * [Part 2](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-4-collision-detection86): Natural endless scrolling with easing
+  * [Part 1](/quick-tip-endless-scrolling-with-spritekit-and-swift): Endless scrolling with background tiles
+  * [Part 2](/quick-tip-endless-scrolling-spritekit-swift-part-2-4): Natural endless scrolling with easing
 
-In [part one](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-4-collision-detection43) I showed how to implement endless scrolling. This is working fine, but there is still room for improvements. The scrolling starts immediately with full speed and also stops directly after the touch ends. A more natural movement would be to increase and decrease the speed slowly, till the target speed is reached or the movement is stopped. These is also known as [ease in or ease out](https://developers.google.com/web/fundamentals/design-and-ui/animations/the-basics-of-easing) animation. Thank you to hamobi who helped me with my [Stackoverflow question](http://stackoverflow.com/questions/33721183/ease-out-animation-for-skspritenode) for finding the right solution. To give you an impression compare the two videos: **Without Easing:**
+In [part one](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-4-collision-detection43) I showed how to implement endless scrolling. This is working fine, but there is still room for improvements. The scrolling starts immediately with full speed and also stops directly after the touch ends. A more natural movement would be to increase and decrease the speed slowly, till the target speed is reached or the movement is stopped. These is also known as [ease in or ease out](https://developers.google.com/web/fundamentals/design-and-ui/animations/the-basics-of-easing) animation. Thank you to hamobi who helped me with my [Stackoverflow question](http://stackoverflow.com/questions/33721183/ease-out-animation-for-skspritenode) for finding the right solution. To give you an impression compare the two videos: 
+
+**Without Easing:**
+TODO: Video https://youtu.be/uYVqG8Y8rLU
 
 **With Easing:**
+TODO: Video https://youtu.be/k1m1JH7yYAw
 
 ### First repeat the steps from [Part 1 ](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-4-collision-detection43)
 

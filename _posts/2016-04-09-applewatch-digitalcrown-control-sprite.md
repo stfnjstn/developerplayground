@@ -29,7 +29,7 @@ Since WatchKit 2 it is possible to use the Digital Crown for custom apps. This p
 
 I have a quick calculation for you, if you think 0.99$ is expensive: It took me around 30 hours to write the game. 20 downloads generate around 19,80$ earnings. Apple takes one third means 13,20$ remaining for me.  **= > Whoa! I've earned 0,44$ per hour ;-)** Don't get me wrong. I'm not expecting to get rich with my Apps. I'm writing this Blog and and my games only for fun.
 
-### **But now, let's start with the tutorial:**
+### But now, let's start with the tutorial:
 
 Goal is to create the racket at the left side and use the digital crown to move it up and down.
 
@@ -37,7 +37,7 @@ Goal is to create the racket at the left side and use the digital crown to move 
 
 [![WatchGame1](/assets/wp-content/uploads/2016/04/WatchGame1.png)](/assets/wp-content/uploads/2016/04/WatchGame1.png)
 
-Disable the checkmark on 'Include Notification Scene':
+Disable the checkmark on _Include Notification Scene_:
 
 [![WatchGameBlog2](/assets/wp-content/uploads/2016/04/WatchGameBlog2.png)](/assets/wp-content/uploads/2016/04/WatchGameBlog2.png)
 
@@ -63,25 +63,26 @@ The WKInterfacePicker will only be used to connect our interface with the digita
 
 ### 3. Connect the UI Classes with the InterfaceController:
 
-Create an IBOutlet for 'Image' and 'Picker':
+Create an IBOutlet for _Image_ and _Picker_:
 
 [![WatchGameBlog8](/assets/wp-content/uploads/2016/04/WatchGameBlog8.png)](/assets/wp-content/uploads/2016/04/WatchGameBlog8.png)
 
- 
 
 [![WatchGameBlog9](/assets/wp-content/uploads/2016/04/WatchGameBlog9.png)](/assets/wp-content/uploads/2016/04/WatchGameBlog9.png)
 
-Create an IBAction for the 'Picker':
+Create an IBAction for the _Picker_:
 
 [![WatchGameBlog10](/assets/wp-content/uploads/2016/04/WatchGameBlog10.png)](/assets/wp-content/uploads/2016/04/WatchGameBlog10.png)
 
 The result in your code should look like this:
 
+```swift
 @IBOutlet var picker: WKInterfacePicker!
 
 @IBOutlet var image: WKInterfaceImage!
 
 @IBAction func pick(value: Int) {}
+'''
 
 ### 4. Implement the logic:
 

@@ -20,7 +20,7 @@ tags: []
 ---
 ### Welcome to Part 10 of my blog series about game development.
 
-Today I'll show how to use a delegate pattern to communicate with the ViewController which contains our Scene. You can download the [project from GitHub: v0.7](https://github.com/stfnjstn/MyFirstGame/releases/tag/v0.7) if you haven't completed [part 8](/howto-implement-a-hud-in-spritekit). One of the most important characteristics of this pattern is 'Inversion of control'. The goal of this principle is to remove dependencies between objects. The main idea is that a 'delegator' object 'delegates' the execution a task to a 'delegate object'. You can find multiple definitions and tutorials about the [Delegate Pattern](http://en.wikipedia.org/wiki/Delegation_pattern). Therefore I'll not explain the pattern itself, but show how you can use it for the following Situation:
+Today I'll show how to use a delegate pattern to communicate with the ViewController which contains our Scene. You can download the [project from GitHub: v0.7](https://github.com/stfnjstn/MyFirstGame/releases/tag/v0.7) if you haven't completed [part 8](/howto-implement-a-hud-in-spritekit). One of the most important characteristics of this pattern is _Inversion of control_. The goal of this principle is to remove dependencies between objects. The main idea is that a _delegator_ object _delegates_ the execution a task to a _delegate object_. You can find multiple definitions and tutorials about the [Delegate Pattern](http://en.wikipedia.org/wiki/Delegation_pattern). Therefore I'll not explain the pattern itself, but show how you can use it for the following Situation:
 
 
 After creating a new SpriteKit project you typically have a ViewController which has a reference to a SKScene object:
@@ -35,7 +35,7 @@ Here comes the Delegate Pattern:
 
 [![](/assets/wp-content/uploads/2014/06/Bildschirmfoto-2014-06-10-um-23.11.19-1.jpg)](/assets/wp-content/uploads/2014/06/Bildschirmfoto-2014-06-10-um-23.11.19-1.jpg)
 
-First of all you have to specify a protocol with the methods 'gameStop' and 'gameOver' in 'GameScene.h':
+First of all you have to specify a protocol with the methods _gameStop_ and _gameOver_ in _GameScene.h_:
 ```objectivec
 @protocol GameSceneDelegate <NSObject>
 
@@ -47,7 +47,7 @@ First of all you have to specify a protocol with the methods 'gameStop' and 'gam
 
 @end
 ```
-The Scene object needs a property to store the reference of the Delegate in 'GameScene.h':
+The Scene object needs a property to store the reference of the Delegate in _GameScene.h_:
 ```objectivec
 @property (nonatomic,strong)  id<GameSceneDelegate> delegateContainerViewController; The ViewController which will act as Delegate has to implement the protocol:
 
@@ -68,7 +68,7 @@ GameScene and GameViewController have to call/react on the protocol methods:
 
 [![](/assets/wp-content/uploads/2014/06/Bildschirmfoto-2014-06-10-um-23.11.27-1.jpg)](/assets/wp-content/uploads/2014/06/Bildschirmfoto-2014-06-10-um-23.11.27-1.jpg)
 
-Add this method to GameScene.m to notify the GameViewController with 'gameStop' and 'gameOver':
+Add this method to GameScene.m to notify the GameViewController with _gameStop_ and _gameOver_:
 
 ```objectivec
 // React on Alert
@@ -85,7 +85,7 @@ Add this method to GameScene.m to notify the GameViewController with 'gameStop' 
 }
 ```
 
-The GameViewController has to react on 'gameStop' and 'gameOver'. For example by navigating to another ViewController. Add this two methods to GameViewController.m:
+The GameViewController has to react on _gameStop_ and _gameOver_. For example by navigating to another ViewController. Add this two methods to GameViewController.m:
 ```objectivec
 -(void) gameStop {
   [self performSegueWithIdentifier: @"BackToStart" sender: self];

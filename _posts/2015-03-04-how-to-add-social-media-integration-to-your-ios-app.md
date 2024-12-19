@@ -20,9 +20,7 @@ tags:
 ---
 Welcome to my new SWIFT tutorial. Today I'll show you how to implement social media integration for Facebook and Twitter. Additionally I'll explain Email integration and how to embed a direct AppStore link to provide a convenient way for players to rate an app.
 
-My latest [game](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8) in the AppStore contains a sample:
-
-[![](/assets/wp-content/uploads/2015/04/IMG_8919.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
+My latest [game](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8) in the AppStore contains a sample.
 
 The four buttons at the bottom of the screen trigger the social actions:
 

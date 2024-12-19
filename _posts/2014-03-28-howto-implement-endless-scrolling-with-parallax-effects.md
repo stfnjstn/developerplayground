@@ -178,7 +178,6 @@ ParallaxHandlerNode.m:
   // Infinite scrolling:
   // - Scroll the backgrounds and switch back if the end or the start screen is reached
   // - Speed depends on layer to simulare deepth
-
   -(void)scroll:(float)speed {
     for (int i=0; i<self.children.count;i++) {
       SKNode *node = [self.children objectAtIndex:i];

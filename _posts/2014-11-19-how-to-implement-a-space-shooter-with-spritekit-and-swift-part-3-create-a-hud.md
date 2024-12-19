@@ -18,20 +18,20 @@ tags: []
 ## How to implement a space shooter with SpriteKit and SWIFT - Part 3
 ### Adding a HUD with SpriteKit and SWIFT
 
+TODO VIDEO https://youtu.be/8d8MH_gXt84
+
 [![](/assets/wp-content/uploads/2014/11/AppStore2.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
 
 #### Tutorial Overview: How to implement a space shooter with SpriteKit and SWIFT
 
-  * [Part 1](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-1): Initial project setup, sprite creation and movement using SKAction and SKConstraint
-  * [Part 2](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-2): Adding enemies, bullets and shooting with SKAction and SKConstraint
-  * [Part 3](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-3-create-a-hud): Adding a HUD with SKLabelNode and SKSpriteNode
-  * [Part 4](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-4-collision-detection): Adding basic game logic and collision detection
-  * [Part 5](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-5-particles-and-sound): Adding particles and sound 
-  * [Part 6](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-6-game-center-integration): GameCenter integration
-  * [Part 7](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-7-iad-integration): iAd integration
-  * [Part 8](/how-to-implement-in-app-purchase-for-your-ios-app-in-swift): In-App Purchases
-
-
+* [Part 1](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-1): Initial project setup, sprite creation and movement using _SKAction_ and _SKConstraint_
+* [Part 2](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-2): Adding enemies, bullets and shooting with _SKAction_ and _SKConstraint_
+* [Part 3](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-3-create-a-hud): Adding a HUD with _SKLabelNode_ and _SKSpriteNode_
+* [Part 4](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-4-collision-detection): Adding basic game logic and collision detection
+* [Part 5](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-5-particles-and-sound): Adding particles and sound
+* [Part 6](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-6-game-center-integration): _GameCenter_ integration
+* [Part 7](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-7-iad-integration): _iAd_ integration
+* [Part 8](/how-to-implement-in-app-purchase-for-your-ios-app-in-swift): In-App Purchases
 
 ### Add the HUD:
 
@@ -152,16 +152,12 @@ func createHUD() {
 }
 ```
 
-To add the HUD to the screen add this lines at the end of the didMoveToView method of GameScene.swift: 
+To add the HUD to the screen add this line at the end of the didMoveToView method of GameScene.swift: 
 
 ```swift
 // Add HUD
 createHUD()
 ```
-
-Here we are:
-
-[![3-5](/assets/wp-content/uploads/2014/11/3-5-1.png)](/assets/wp-content/uploads/2014/11/3-5-1.jpg)
 
 That's all for today. In my next part I'll add collision detection and a basic game logic for life lost, game over, pause, score behavior.
 You can download the code from GitHub: [Part 3](https://github.com/stfnjstn/MySecondGame/releases/tag/v0.3) or the latest version [here](https://github.com/stfnjstn/MySecondGame/tree/master).

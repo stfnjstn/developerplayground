@@ -18,7 +18,6 @@ categories:
 tags: []
 ---
  
-
 ### Welcome to Part 6 of my blog series about game development: Device Motion Sensors
 
 Today I'll include motion detection to control the movement of my game. iOS offers a powerful API to handle motion detection with the [CMMotionManager](https://developer.apple.com/library/ios/documentation/coremotion/reference/cmmotionmanager_class/Reference/Reference.html) class. Let's start with a small standalone project to show how to use the motion detection:

@@ -21,16 +21,14 @@ tags:
 ---
 ## Endless scrolling with background tiles
 
- 
-
 Welcome to my tutorial series about scrolling:
 
-  * [Part 1](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-4-collision-detection43): Endless scrolling with background tiles
-  * [Part 2](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-4-collision-detection86): Natural endless scrolling with easing
-
-
+  * [Part 1](/quick-tip-endless-scrolling-with-spritekit-and-swift): Endless scrolling with background tiles
+  * [Part 2](/quick-tip-endless-scrolling-spritekit-swift-part-2-4): Natural endless scrolling with easing
 
 This video gives an impression what I'll show today:
+
+TODO: Video https://youtu.be/uYVqG8Y8rLU
 
 ### 1. About the algorithm and the background tiles
 

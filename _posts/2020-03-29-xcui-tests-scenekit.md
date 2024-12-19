@@ -35,29 +35,37 @@ Using screen coordinates to trigger a specific node, would have been one option,
 
 Here is a much better solution:
 
-I subclassed SCNNode and implemented the _UIAccessibilityIdentification_ delegate. Every time I created an instance of _MyNode_  I gave it a unique _accessibilityIdentifier_.
-  
-    class MyNode: SCNNode, UIAccessibilityIdentification {
-        var accessibilityIdentifier: String?
-    }
+I subclassed _SCNNode_ and implemented the _UIAccessibilityIdentification_ delegate. Every time I created an instance of _MyNode_  I gave it a unique _accessibilityIdentifier_.
+
+```swift  
+class MyNode: SCNNode, UIAccessibilityIdentification {
+    var accessibilityIdentifier: String?
+}
+```
 
 Now these nodes can be addressed inside of the test code with:
-  
-    app.otherElements[id].firstMatch
+
+```swift  
+app.otherElements[id].firstMatch
+```
 
 My first try was to get the element and call the _tap_ method directly on the node:
-  
-    app.otherElements[id].firstMatch.tap()
+
+```swift  
+app.otherElements[id].firstMatch.tap()
+```
 
 Unfortunately that didn't work. An _SCNNode_ doesn't react on the _tap_ method in XCUI.
 
 The trick was to find the _SCNNode_ , get the coordinates of the node and call _tap_ on these coordinates:
-  
-    app.otherElements[id].firstMatch.coordinate(withNormalizedOffset: CGVector.zero).tap()
+
+```swift 
+app.otherElements[id].firstMatch.coordinate(withNormalizedOffset: CGVector.zero).tap()
+```
 
 And here is a  video with the automated result. The left button closes the pit and the right opens the door.
 
-https://youtu.be/YtzKKdSh1r0
+todo Video https://youtu.be/YtzKKdSh1r0
 
 That all for today,
 

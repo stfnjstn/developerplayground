@@ -29,7 +29,7 @@ Today I'll add a HUD (head up display) to the SpriteKit Scene. The HUD shows the
 
 [![](/assets/wp-content/uploads/2014/05/Bildschirmfoto-2014-05-22-um-19.03.45-1.jpg)](/assets/wp-content/uploads/2014/05/Bildschirmfoto-2014-05-22-um-19.03.45-1.jpg)
 
-### 2. Hide the status bar: (Add 'View controller-based status bar appearance = No' to the plist file)
+### 2. Hide the status bar: (Add _View controller-based status bar appearance = No_ to the plist file)
 
 [![](/assets/wp-content/uploads/2014/05/Bildschirmfoto-2014-05-22-um-22.30.07.png)](/assets/wp-content/uploads/2014/05/Bildschirmfoto-2014-05-22-um-22.30.07.png)
 
@@ -215,8 +215,8 @@ Most code of the sample above can be copied directly. I'll only list the differe
 
 Instead of the spaceship, I'll use a ball image. In case of loosing a life, this image will be replaced with a crossed ball. To achieve this just add two new image sets to the Asset catalog:
 
-* 'HUD_Ball'
-* 'HUD_Ball_crossed'.
+* _HUD_Ball_
+* _HUD_Ball_crossed_
 
 The icons for Retina and Retina-4-inch iPhones are identical:
 
@@ -259,6 +259,8 @@ The icons for Retina and Retina-4-inch iPhones are identical:
   self.Lifes--;
 }
 ```
+
+TODO VIDEO: https://youtu.be/3NKeYAJc8rQ
 
 As always you can download the complete [project from GitHub: v0.7](https://github.com/stfnjstn/MyFirstGame/releases/tag/v0.7) That's all for today. In my next post I'll show how to organize your code with the ``#pragma mark`` directive.
 

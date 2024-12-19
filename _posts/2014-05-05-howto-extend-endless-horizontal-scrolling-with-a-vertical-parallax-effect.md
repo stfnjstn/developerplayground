@@ -37,19 +37,17 @@ Today I'll extend the parallax effect from [part 5](/howto-implement-endless-scr
     * Move the background image in another direction as the tile backgrounds images
     * Physically this is not correct, but enough to create a good illusion. Otherwise the player is distracted to much by the movements
 
-
-
 ### Here's a video which shows the effect:
 
 [![Video](/assets/wp-content/uploads/2014/05/Video0.png)](https://youtu.be/y5llMUVmZhU)
-
 
 **Now let's integrate this into the MyFirstGame project:**
 
 The code changes should be straight forward: (If you haven't completed [part 6](/howto-use-the-device-motion-sensors-to-control-your-game) you can download the project from GitHub: [v0.5.1](https://github.com/stfnjstn/MyFirstGame/releases/tag/v0.6))
 
 #### Changes in "ParallaxHandlerNode.h":
-s
+
+```objectivec
 -(void)addBackgroundLayer:(NSArray*)tiles DirectionY:(int)directionY StepSize:(float)stepSize ScaleFactorX:(float)scaleFactorX ScaleFactorY:(float)scaleFactorY;
 ```
 #### Complete "ParallaxHandlerNode.m":
@@ -58,7 +56,6 @@ The main changes are done in:
 
   * ``addBackgroundLayer``: Extend the method signature to get the scaling and movement informations. Scale the images.
   * ``scroll``: Implement the additional parallax effects
-
 
 ```objectivec
 #import "ParallaxHandlerNode.h"

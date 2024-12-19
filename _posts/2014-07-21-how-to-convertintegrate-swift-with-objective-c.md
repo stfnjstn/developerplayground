@@ -26,12 +26,12 @@ I’ll show two scenarios:
   * calling SWIFT from Objective-C
   * calling Objective-C from SWIFT
 
-
-
-
 ## Calling SWIFT from Objective-C: ##
 
 I’ll reuse my example from part 6 of my blog series: [HowTo: Use the Device Motion Sensors to control your game](/howto-use-the-device-motion-sensors-to-control-your-game). You can find the complete start project in my GitHub repository [here](https://github.com/stfnjstn/MotionManagerDemo/releases/tag/v0.1). As a prerequisite you'll need Xcode 6 beta 5 which is available for all registered apple developers.
+
+
+TODO VIDEO: https://youtu.be/EZGBCia9XJM
 
 I’ll migrate the MotionManager class to SWIFT. 
 
@@ -121,7 +121,7 @@ override init() {
 ```
 
 #### 6. Now let's convert the singleton. 
-The static keyword can only be used inside a struct with the current SWIFT version. I’ll use this code snippet to migrate the getMotionManager method. Thanks to all contributors on this [stackoverflow](http://stackoverflow.com/questions/24024549/dispatch-once-singleton-model-in-swift)[ discussion](http://stackoverflow.com/questions/24024549/dispatch-once-singleton-model-in-swift) for pointing me in the right direction. The class keyword is needed to specify the method getMotionManager as a 'Type Method' and sharedInstance as a 'Type Property'.
+The static keyword can only be used inside a struct with the current SWIFT version. I’ll use this code snippet to migrate the getMotionManager method. Thanks to all contributors on this [stackoverflow](http://stackoverflow.com/questions/24024549/dispatch-once-singleton-model-in-swift)[ discussion](http://stackoverflow.com/questions/24024549/dispatch-once-singleton-model-in-swift) for pointing me in the right direction. The class keyword is needed to specify the method _getMotionManager_ as a _Type Method_ and sharedInstance as a _Type Property_.
 
 ```swift
 // only one instance of CMMotionManager can be used in your project.
@@ -273,7 +273,7 @@ class func lowPassWithVector(var vector:[Float]) -> [Float] {
 #import <MotionManagerDemo-Swift.h>
 ``
 
-This [article](http://stackoverflow.com/questions/24002369/how-to-call-objective-c-code-from-swift/24005242#24005242) from Stackoverflow gives a nice overview about the details. The short version is that XCode creates the generic header file for all your SWIFT classes for you: 'MotionManagerDemo-Swift.h'. This is done automatically, if your SWIFT class is derived from an Objective-C class. Otherwise mark your classes and methods with the @objc attribute to give XCode a hint. It’s obvious that only public methods can be called from Objective-C (new in XCode 6 Beta 4).
+This [article](http://stackoverflow.com/questions/24002369/how-to-call-objective-c-code-from-swift/24005242#24005242) from Stackoverflow gives a nice overview about the details. The short version is that XCode creates the generic header file for all your SWIFT classes for you: _MotionManagerDemo-Swift.h_. This is done automatically, if your SWIFT class is derived from an Objective-C class. Otherwise mark your classes and methods with the @objc attribute to give XCode a hint. It’s obvious that only public methods can be called from Objective-C (new in XCode 6 Beta 4).
 
 #### 2. Change the update method in MyScene to use the new SWIFT class: ObjectiveC: GLKVector3 motionVector = [MotionManagerSingleton getMotionVectorWithLowPass];
 

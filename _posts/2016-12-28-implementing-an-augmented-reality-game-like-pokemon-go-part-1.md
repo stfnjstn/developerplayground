@@ -34,8 +34,6 @@ The success of [Pokemon Go™](https://itunes.apple.com/app/pokemon-go/id1094591
      * SceneKit / Physics
      * Particles
 
-TODO CODEFORMATTING
-
 Basically you just need to show the camera content together with an overlay of 3D objects to get an augmented reality effect. If you add interaction and physics effects you have everything in place what is needed to implement something similar as the Pokemon Go™ capture screen.
 
 ## 1. Create a new SceneKit project in Xcode:
@@ -86,103 +84,101 @@ That's all in the Storyboard. Now it's time for real code.
 
 We have created a global Outlet for the SceneView in the InterfaceBuilder before. Therefore we have to remove the scnView declaration `viewDidLoad` and `handleTap`:
     
-    
-    // retrieve the SCNView
-    let scnView = self.view as! SCNView
+```swift    
+// retrieve the SCNView
+let scnView = self.view as! SCNView
+```
 
 We also have to change the scene background color in the method `viewDidLoad` to clear. Otherwise augmented reality will not work, because the camera picture will not be visible:
     
-    
-    // configure the view
-    scnView.backgroundColor = UIColor.clear
+```swift    
+// configure the view
+scnView.backgroundColor = UIColor.clear
+```
 
 Here's the full source code of the two methods:
     
-    
-        override func viewDidLoad() {
-            super.viewDidLoad()
+```swift    
+override func viewDidLoad() {
+    super.viewDidLoad()
             
-            // create a new scene
-            let scene = SCNScene(named: "art.scnassets/ship.scn")!
+    // create a new scene
+    let scene = SCNScene(named: "art.scnassets/ship.scn")!
             
-            // create and add a camera to the scene
-            let cameraNode = SCNNode()
-            cameraNode.camera = SCNCamera()
-            scene.rootNode.addChildNode(cameraNode)
+    // create and add a camera to the scene
+    let cameraNode = SCNNode()
+    cameraNode.camera = SCNCamera()
+    scene.rootNode.addChildNode(cameraNode)
             
-            // place the camera
-            cameraNode.position = SCNVector3(x: 0, y: 0, z: 15)
+    // place the camera
+    cameraNode.position = SCNVector3(x: 0, y: 0, z: 15)
             
-            // create and add a light to the scene
-            let lightNode = SCNNode()
-            lightNode.light = SCNLight()
-            lightNode.light!.type = .omni
-            lightNode.position = SCNVector3(x: 0, y: 10, z: 10)
-            scene.rootNode.addChildNode(lightNode)
+    // create and add a light to the scene
+    let lightNode = SCNNode()
+    lightNode.light = SCNLight()
+    lightNode.light!.type = .omni
+    lightNode.position = SCNVector3(x: 0, y: 10, z: 10)
+    scene.rootNode.addChildNode(lightNode)
             
-            // create and add an ambient light to the scene
-            let ambientLightNode = SCNNode()
-            ambientLightNode.light = SCNLight()
-            ambientLightNode.light!.type = .ambient
-            ambientLightNode.light!.color = UIColor.darkGray
-            scene.rootNode.addChildNode(ambientLightNode)
+    // create and add an ambient light to the scene
+    let ambientLightNode = SCNNode()
+    ambientLightNode.light = SCNLight()
+    ambientLightNode.light!.type = .ambient
+    ambientLightNode.light!.color = UIColor.darkGray
+    scene.rootNode.addChildNode(ambientLightNode)
             
-            // retrieve the ship node
-            let ship = scene.rootNode.childNode(withName: "ship", recursively: true)!
+    // retrieve the ship node
+    let ship = scene.rootNode.childNode(withName: "ship", recursively: true)!
             
-            // animate the 3d object
-            ship.runAction(SCNAction.repeatForever(SCNAction.rotateBy(x: 0, y: 2, z: 0, duration: 1)))
+    // animate the 3d object
+    ship.runAction(SCNAction.repeatForever(SCNAction.rotateBy(x: 0, y: 2, z: 0, duration: 1)))
             
-            // set the scene to the view
-            scnView.scene = scene
+    // set the scene to the view
+    scnView.scene = scene
             
-            // allows the user to manipulate the camera
-            scnView.allowsCameraControl = true
+    // allows the user to manipulate the camera
+    scnView.allowsCameraControl = true
             
-            // show statistics such as fps and timing information
-            scnView.showsStatistics = true
+    // show statistics such as fps and timing information
+    scnView.showsStatistics = true
             
-            // configure the view
-            scnView.backgroundColor = UIColor.clear
+    // configure the view
+    scnView.backgroundColor = UIColor.clear
             
-            // add a tap gesture recognizer
-            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
-            scnView.addGestureRecognizer(tapGesture)
-        }
+    // add a tap gesture recognizer
+    let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
+    scnView.addGestureRecognizer(tapGesture)
+}
         
-        func handleTap(_ gestureRecognize: UIGestureRecognizer) {
+func handleTap(_ gestureRecognize: UIGestureRecognizer) {
             
-            // check what nodes are tapped
-            let p = gestureRecognize.location(in: scnView)
-            let hitResults = scnView.hitTest(p, options: [:])
-            // check that we clicked on at least one object
-            if hitResults.count > 0 {
-                // retrieved the first clicked object
-                let result: AnyObject = hitResults[0]
+    // check what nodes are tapped
+    let p = gestureRecognize.location(in: scnView)
+    let hitResults = scnView.hitTest(p, options: [:])
+    // check that we clicked on at least one object
+    if hitResults.count > 0 {
+        // retrieved the first clicked object
+        let result: AnyObject = hitResults[0]
                 
-                // get its material
-                let material = result.node!.geometry!.firstMaterial!
+        // get its material
+        let material = result.node!.geometry!.firstMaterial!
                 
-                // highlight it
-                SCNTransaction.begin()
-                SCNTransaction.animationDuration = 0.5
+        // highlight it
+        SCNTransaction.begin()
+        SCNTransaction.animationDuration = 0.5
                 
-                // on completion - unhighlight
-                SCNTransaction.completionBlock = {
-                    SCNTransaction.begin()
-                    SCNTransaction.animationDuration = 0.5
-                    
-                    material.emission.contents = UIColor.black
-                    
-                    SCNTransaction.commit()
-                }
-                
-                material.emission.contents = UIColor.red
-                
-                SCNTransaction.commit()
-            }
-        }
-    
+        // on completion - unhighlight
+        SCNTransaction.completionBlock = {
+            SCNTransaction.begin()
+            SCNTransaction.animationDuration = 0.5                    
+            material.emission.contents = UIColor.black        
+            SCNTransaction.commit()
+        }        
+        material.emission.contents = UIColor.red        
+        SCNTransaction.commit()
+    }
+}
+```    
 
 ### 4. Create the Augmented Reality Camera Layer:
 
@@ -192,8 +188,9 @@ Add the AVFoundation Framework to Linked Frameworks and Libraries
 
 Add an import statement for the AVFoundation on top of the `ViewController` class:
     
-    
-    import AVFoundation
+```swift    
+import AVFoundation
+```    
 
 Add the key "Privacy - Camera Usage Description" to the plist file: [![](/assets/wp-content/uploads/2016/12/ARDefender8-1-1.jpg)](/assets/wp-content/uploads/2016/12/ARDefender8-1-1.jpg)
 
@@ -207,52 +204,51 @@ This is needed because of the new App privacy policy from [Apple](https://develo
 
 Now the only missing part is the code to capture the camera input and place it below the transparent 3D scene to get the Augmented Reality effect:
     
-    
-        var preview: AVCaptureVideoPreviewLayer?
+```swift    
+var preview: AVCaptureVideoPreviewLayer?
         
-        override func viewWillAppear(_ animated: Bool) {
-            super.viewWillAppear(animated)
+override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
             
-            // create a capture session for the camera input
-            let captureSession = AVCaptureSession()
-            captureSession.sessionPreset = AVCaptureSessionPresetPhoto  
+    // create a capture session for the camera input
+    let captureSession = AVCaptureSession()
+    captureSession.sessionPreset = AVCaptureSessionPresetPhoto  
             
-            // Choose the back camera as input device
-            let backCamera = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
-            var error: NSError?
-            var input: AVCaptureDeviceInput!
-            do {
-                input = try AVCaptureDeviceInput(device: backCamera)
-            } catch let cameraError as NSError {
-                error = cameraError
-                input = nil
-            }
+    // Choose the back camera as input device
+    let backCamera = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
+    var error: NSError?
+    var input: AVCaptureDeviceInput!
+    do {
+        input = try AVCaptureDeviceInput(device: backCamera)
+    } catch let cameraError as NSError {
+        error = cameraError
+        input = nil
+    }
             
-            // check if the camera input is available
-            if error == nil && captureSession.canAddInput(input) {
-                // ad camera input to the capture session
-                captureSession.addInput(input)
-                let photoImageOutput = AVCapturePhotoOutput()
+    // check if the camera input is available
+    if error == nil && captureSession.canAddInput(input) {
+        // ad camera input to the capture session
+        captureSession.addInput(input)
+        let photoImageOutput = AVCapturePhotoOutput()
                 
-                // Create an UIlayer with the capture session output
-                photoImageOutput.photoSettingsForSceneMonitoring = AVCapturePhotoSettings(format: [AVVideoCodecKey: AVVideoCodecJPEG])
-                if captureSession.canAddOutput(photoImageOutput) {
-                    captureSession.addOutput(photoImageOutput)
-                    
-                    preview = AVCaptureVideoPreviewLayer(session: captureSession)
-                    preview?.videoGravity = AVLayerVideoGravityResizeAspectFill
-                    preview?.connection.videoOrientation = AVCaptureVideoOrientation.portrait
-                    preview?.frame = cameraView.frame
-                    cameraView.layer.addSublayer(preview!)
-                    captureSession.startRunning()
-                }
-            }
-            
+        // Create an UIlayer with the capture session output
+        photoImageOutput.photoSettingsForSceneMonitoring = AVCapturePhotoSettings(format: [AVVideoCodecKey: AVVideoCodecJPEG])
+        if captureSession.canAddOutput(photoImageOutput) {
+            captureSession.addOutput(photoImageOutput)        
+            preview = AVCaptureVideoPreviewLayer(session: captureSession)
+            preview?.videoGravity = AVLayerVideoGravityResizeAspectFill
+            preview?.connection.videoOrientation = AVCaptureVideoOrientation.portrait
+            preview?.frame = cameraView.frame
+            cameraView.layer.addSublayer(preview!)
+            captureSession.startRunning()
         }
+    }            
+}
+```
 
 Now start the App on a real iOS Device:
 
-[ecko_youtube]6Q_3TWDBG6U[/ecko_youtube]
+TODO VIDEO https://youtu.be/6Q_3TWDBG6U
 
 You can download the sample code from [GitHub](https://github.com/stfnjstn/ARDefenderTutorial).
 

@@ -16,7 +16,7 @@ categories:
 - Scrolling
 tags: []
 ---
-## Welcome to Part 4 of my blog series about game development: Endless Scrolling
+### Welcome to Part 4 of my blog series about game development: Endless Scrolling
 
 Today I'm showing how to implement an endless scrolling which is typical for Jump & Run games.
 
