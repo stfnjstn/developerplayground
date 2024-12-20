@@ -38,6 +38,7 @@ header_pages:
   - _pages/aboutstefan.md
   - _pages/disclaimer.md
   
+  
 # Build settings
 theme: minima
 #remote_theme: pages-themes/minima
