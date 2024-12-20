@@ -22,8 +22,8 @@ title: Stefans Developer Playground
 email: developerplaygroundnet@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Not much time at the moment, so this blog is in a "keep the lights on" mode. I try to post tutorials from time to time and will mainly use it to present my games.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/developerplayground" # the subpath of your site, e.g. /blog
+url: "https://stfnjstn.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 github_username:  stfnjstn
 
