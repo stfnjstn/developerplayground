@@ -19,24 +19,32 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Stefans Developer Playground
-email: your-email@example.com
+email: developerplaygroundnet@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Not much time at the moment, so this blog is in a "keep the lights on" mode. I try to post tutorials from time to time and will mainly use it to present my games.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+
+github_username:  stfnjstn
+
+collections:
+  pages:
+    output: true
 
 header_pages:
   - about.markdown
+  - _pages/my-games.md
+  - _pages/my-tutorials.md
   - _pages/aboutstefan.md
-
+  - _pages/disclaimer.md
+  
 # Build settings
 theme: minima
+#remote_theme: pages-themes/minima
+
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -46,12 +54,12 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
+exclude:
+   - .sass-cache/
+   - .jekyll-cache/
+   - gemfiles/
+   - Gemfile
+   - Gemfile.lock
 #   - node_modules/
 #   - vendor/bundle/
 #   - vendor/cache/

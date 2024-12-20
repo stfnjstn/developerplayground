@@ -10,4 +10,4 @@ pin: false
 categories: []
 tags: []
 ---
-Stefan Josten Ahornallee 9 Otterberg stefan@developerplayground.net
+Stefan Josten Otterberg developerplaygroundnet@gmail.com
