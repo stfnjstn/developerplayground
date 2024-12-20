@@ -25,11 +25,11 @@ Today I'll extend the parallax effect from [part 5](/howto-implement-endless-scr
 
   * Scale the width and the height of the background image and implement horizontal and vertical movement of the background image:
 
-[![](/assets/wp-content/uploads/2014/05/Parallax-2-1-1.jpg)](/assets/wp-content/uploads/2014/05/Parallax-2-1-1.jpg)
+[![](/developerplayground/assets/2014/05/Parallax-2-1-1.jpg)](/developerplayground/assets/2014/05/Parallax-2-1-1.jpg)
 
   * Scale the height of the background tiles which are used for endless scrolling and implement vertical movement for the background tiles:
 
-[![](/assets/wp-content/uploads/2014/05/Parallax-2-2-1.jpg)](/assets/wp-content/uploads/2014/05/Parallax-2-2-1.jpg)
+[![](/developerplayground/assets/2014/05/Parallax-2-2-1.jpg)](/developerplayground/assets/2014/05/Parallax-2-2-1.jpg)
 
   * Some tricks to get a better effect:
     * Use different scale factors for the backgrounds. Farer away means bigger scale factor
@@ -39,7 +39,7 @@ Today I'll extend the parallax effect from [part 5](/howto-implement-endless-scr
 
 ### Here's a video which shows the effect:
 
-[![Video](/assets/wp-content/uploads/2014/05/Video0.png)](https://youtu.be/y5llMUVmZhU)
+[![Video](/developerplayground/assets/2014/05/Video0.png)](https://youtu.be/y5llMUVmZhU)
 
 **Now let's integrate this into the MyFirstGame project:**
 

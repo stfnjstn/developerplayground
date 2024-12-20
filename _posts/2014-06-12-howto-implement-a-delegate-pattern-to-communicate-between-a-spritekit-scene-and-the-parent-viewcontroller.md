@@ -25,15 +25,15 @@ Today I'll show how to use a delegate pattern to communicate with the ViewContro
 
 After creating a new SpriteKit project you typically have a ViewController which has a reference to a SKScene object:
 
-[![](/assets/wp-content/uploads/2014/06/Bildschirmfoto-2014-06-10-um-23.10.57-1.jpg)](/assets/wp-content/uploads/2014/06/Bildschirmfoto-2014-06-10-um-23.10.57-1.jpg)
+[![](/developerplayground/assets/2014/06/Bildschirmfoto-2014-06-10-um-23.10.57-1.jpg)](/developerplayground/assets/2014/06/Bildschirmfoto-2014-06-10-um-23.10.57-1.jpg)
 
 The ViewController presents the screen and starts the game. This works fine as long as the game lasts. But what can you do, if the game is over?
 
-[![](/assets/wp-content/uploads/2014/06/Bildschirmfoto-2014-06-10-um-23.11.09-1.jpg)](/assets/wp-content/uploads/2014/06/Bildschirmfoto-2014-06-10-um-23.11.09-1.jpg)
+[![](/developerplayground/assets/2014/06/Bildschirmfoto-2014-06-10-um-23.11.09-1.jpg)](/developerplayground/assets/2014/06/Bildschirmfoto-2014-06-10-um-23.11.09-1.jpg)
 
 Here comes the Delegate Pattern:
 
-[![](/assets/wp-content/uploads/2014/06/Bildschirmfoto-2014-06-10-um-23.11.19-1.jpg)](/assets/wp-content/uploads/2014/06/Bildschirmfoto-2014-06-10-um-23.11.19-1.jpg)
+[![](/developerplayground/assets/2014/06/Bildschirmfoto-2014-06-10-um-23.11.19-1.jpg)](/developerplayground/assets/2014/06/Bildschirmfoto-2014-06-10-um-23.11.19-1.jpg)
 
 First of all you have to specify a protocol with the methods _gameStop_ and _gameOver_ in _GameScene.h_:
 ```objectivec
@@ -66,7 +66,7 @@ set the delegateContainerViewController property for the Scene:
 
 GameScene and GameViewController have to call/react on the protocol methods:
 
-[![](/assets/wp-content/uploads/2014/06/Bildschirmfoto-2014-06-10-um-23.11.27-1.jpg)](/assets/wp-content/uploads/2014/06/Bildschirmfoto-2014-06-10-um-23.11.27-1.jpg)
+[![](/developerplayground/assets/2014/06/Bildschirmfoto-2014-06-10-um-23.11.27-1.jpg)](/developerplayground/assets/2014/06/Bildschirmfoto-2014-06-10-um-23.11.27-1.jpg)
 
 Add this method to GameScene.m to notify the GameViewController with _gameStop_ and _gameOver_:
 
@@ -98,7 +98,7 @@ The GameViewController has to react on _gameStop_ and _gameOver_. For example by
 
 ``performSegueWithIdentifier`` navigates to another ViewController as specified in the iPhone and iPad storyboards. The only missing thing is to name the segues in the storyboards with ``BackToStart`` and ``AddHighScore``:
 
-[![](/assets/wp-content/uploads/2014/06/Bildschirmfoto-2014-06-12-um-23.38.33-1.jpg)](/assets/wp-content/uploads/2014/06/Bildschirmfoto-2014-06-12-um-23.38.33-1.jpg)
+[![](/developerplayground/assets/2014/06/Bildschirmfoto-2014-06-12-um-23.38.33-1.jpg)](/developerplayground/assets/2014/06/Bildschirmfoto-2014-06-12-um-23.38.33-1.jpg)
 
 As always you can download the complete [project from GitHub: v0.8](https://github.com/stfnjstn/MyFirstGame/releases/tag/v0.8) That's all for today. In my next post I'll try something with [SWIFT](https://itunes.apple.com/us/book/swift-programming-language/id881256329?mt=11).
 

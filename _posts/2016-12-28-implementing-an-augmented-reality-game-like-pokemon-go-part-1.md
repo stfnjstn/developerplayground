@@ -8,7 +8,7 @@ last_modified_at: 2020-05-27 16:40:55 -0000
 publish: false
 pin: false
 image:
-  path: /assets/wp-content/uploads/2016/11/ARDefender3.jpg
+  path: /developerplayground/assets/2016/11/ARDefender3.jpg
 categories:
 - AR
 - iOS
@@ -40,43 +40,43 @@ Basically you just need to show the camera content together with an overlay of 3
 
 Open Xcode and create a new project:
 
-[![ardefender1](/assets/wp-content/uploads/2016/11/ARDefender1.jpg)](/assets/wp-content/uploads/2016/11/ARDefender1.jpg) [![ardefender2](/assets/wp-content/uploads/2016/11/ARDefender2.jpg)](/assets/wp-content/uploads/2016/11/ARDefender2.jpg)
+[![ardefender1](/developerplayground/assets/2016/11/ARDefender1.jpg)](/developerplayground/assets/2016/11/ARDefender1.jpg) [![ardefender2](/developerplayground/assets/2016/11/ARDefender2.jpg)](/developerplayground/assets/2016/11/ARDefender2.jpg)
 
 Xcode has already generated code to initialize a scene with a 3D object (`viewDidLoad`) and a touch interface to handle user interactions (`handleTap`). If you start the project, you'll see a spaceship which can be manipulated by touch and swipe events:
 
-[![ardefender3](/assets/wp-content/uploads/2016/11/ARDefender3.jpg)](/assets/wp-content/uploads/2016/11/ARDefender3.jpg)
+[![ardefender3](/developerplayground/assets/2016/11/ARDefender3.jpg)](/developerplayground/assets/2016/11/ARDefender3.jpg)
 
 Now limit the project to portrait mode, to keep this tutorial simple:
 
-[![](/assets/wp-content/uploads/2016/12/ARDefender9.jpg)](/assets/wp-content/uploads/2016/12/ARDefender9.jpg)
+[![](/developerplayground/assets/2016/12/ARDefender9.jpg)](/developerplayground/assets/2016/12/ARDefender9.jpg)
 
 ## 2. Create the camera view and the scene kit objects
 
 Open the Storyboard ...
 
-[![Change UIView](/assets/wp-content/uploads/2016/07/Blog4.jpg)](/assets/wp-content/uploads/2016/07/Blog4.jpg)
+[![Change UIView](/developerplayground/assets/2016/07/Blog4.jpg)](/developerplayground/assets/2016/07/Blog4.jpg)
 
 Change the SceneKitView to an UIView by dragging an new UIView into the GameViewController
 
-[![Add an UIView in XCode Storyboard](/assets/wp-content/uploads/2016/07/Blog3.jpg)](/assets/wp-content/uploads/2016/07/Blog4.jpg)
+[![Add an UIView in XCode Storyboard](/developerplayground/assets/2016/07/Blog3.jpg)](/developerplayground/assets/2016/07/Blog4.jpg)
 
-![Change UIView](/assets/wp-content/uploads/2016/07/Blog5.jpg)
+![Change UIView](/developerplayground/assets/2016/07/Blog5.jpg)
 
 Add another UIView and a SceneKit View below the top UIView:
 
-[![](/assets/wp-content/uploads/2016/12/ARDefender10.jpg)](/assets/wp-content/uploads/2016/12/ARDefender10.jpg)
+[![](/developerplayground/assets/2016/12/ARDefender10.jpg)](/developerplayground/assets/2016/12/ARDefender10.jpg)
 
 Change the UIConstraints of the cameraView and scnView to full screen size:
 
-[![ardefender5](/assets/wp-content/uploads/2016/11/ARDefender5.jpg)](/assets/wp-content/uploads/2016/11/ARDefender5.jpg)
+[![ardefender5](/developerplayground/assets/2016/11/ARDefender5.jpg)](/developerplayground/assets/2016/11/ARDefender5.jpg)
 
 If you see warnings like this one: Choose "Update frames" to correct them automatically:
 
-[![ardefender6](/assets/wp-content/uploads/2016/11/ARDefender6.jpg)](/assets/wp-content/uploads/2016/11/ARDefender6.jpg)
+[![ardefender6](/developerplayground/assets/2016/11/ARDefender6.jpg)](/developerplayground/assets/2016/11/ARDefender6.jpg)
 
 Create an IBOutlet for the scnView and the cameraView:
 
-[![](/assets/wp-content/uploads/2016/12/ARDefender11.jpg)](/assets/wp-content/uploads/2016/12/ARDefender11.jpg)
+[![](/developerplayground/assets/2016/12/ARDefender11.jpg)](/developerplayground/assets/2016/12/ARDefender11.jpg)
 
 That's all in the Storyboard. Now it's time for real code.
 
@@ -184,7 +184,7 @@ func handleTap(_ gestureRecognize: UIGestureRecognizer) {
 
 Add the AVFoundation Framework to Linked Frameworks and Libraries
 
-[![augmented8](/assets/wp-content/uploads/2016/11/Augmented8.jpg)](/assets/wp-content/uploads/2016/11/Augmented8.jpg)
+[![augmented8](/developerplayground/assets/2016/11/Augmented8.jpg)](/developerplayground/assets/2016/11/Augmented8.jpg)
 
 Add an import statement for the AVFoundation on top of the `ViewController` class:
     
@@ -192,7 +192,7 @@ Add an import statement for the AVFoundation on top of the `ViewController` clas
 import AVFoundation
 ```    
 
-Add the key "Privacy - Camera Usage Description" to the plist file: [![](/assets/wp-content/uploads/2016/12/ARDefender8-1-1.jpg)](/assets/wp-content/uploads/2016/12/ARDefender8-1-1.jpg)
+Add the key "Privacy - Camera Usage Description" to the plist file: [![](/developerplayground/assets/2016/12/ARDefender8-1-1.jpg)](/developerplayground/assets/2016/12/ARDefender8-1-1.jpg)
 
 Otherwise you will see this error, when you start the App:
 
@@ -250,7 +250,7 @@ Now start the App on a real iOS Device:
 
 **Here is a video to get an impression:**
 
-[![Video](/assets/wp-content/uploads/Videos/6Q_3TWDBG6U.png)](https://youtu.be/6Q_3TWDBG6U)
+[![Video](/developerplayground/assets/Videos/6Q_3TWDBG6U.png)](https://youtu.be/6Q_3TWDBG6U)
 
 You can download the sample code from [GitHub](https://github.com/stfnjstn/ARDefenderTutorial).
 
@@ -258,6 +258,6 @@ That's all for today.
 
 If you want to support me, please download my Apps from the Apple AppStore.
 
-[![AppStore Stefan](/assets/wp-content/uploads/2015/11/AppStore1.png)](https://itunes.apple.com/developer/stefan-josten/id949662361)
+[![AppStore Stefan](/developerplayground/assets/2015/11/AppStore1.png)](https://itunes.apple.com/developer/stefan-josten/id949662361)
 
 Cheers, Stefan

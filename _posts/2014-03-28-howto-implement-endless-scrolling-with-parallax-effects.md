@@ -27,31 +27,31 @@ First of all we need some background images to show the infinite parallax scroll
 
 ### Background:
 
-[![](/assets/wp-content/uploads/2014/03/Background-568h@2xiphone-1.jpg)](/assets/wp-content/uploads/2014/03/Background-568h@2xiphone-1.jpg)
+[![](/developerplayground/assets/2014/03/Background-568h@2xiphone-1.jpg)](/developerplayground/assets/2014/03/Background-568h@2xiphone-1.jpg)
 
 #### BackgroundBush:
 
-[![](/assets/wp-content/uploads/2014/03/BackgroundBushiPad@2x-1.jpg)](/assets/wp-content/uploads/2014/03/BackgroundBushiPad@2x-1.jpg)
+[![](/developerplayground/assets/2014/03/BackgroundBushiPad@2x-1.jpg)](/developerplayground/assets/2014/03/BackgroundBushiPad@2x-1.jpg)
 
 #### BackgroundTree:
 
-[![](/assets/wp-content/uploads/2014/03/BackgroundTree@2xipad-1.jpg)](/assets/wp-content/uploads/2014/03/BackgroundTree@2xipad-1.jpg)
+[![](/developerplayground/assets/2014/03/BackgroundTree@2xipad-1.jpg)](/developerplayground/assets/2014/03/BackgroundTree@2xipad-1.jpg)
 
 #### BackgroundGrass:
 
-[![](/assets/wp-content/uploads/2014/03/BackgroundGrassiPad@2x-1.jpg)](/assets/wp-content/uploads/2014/03/BackgroundGrassiPad@2x-1.jpg)
+[![](/developerplayground/assets/2014/03/BackgroundGrassiPad@2x-1.jpg)](/developerplayground/assets/2014/03/BackgroundGrassiPad@2x-1.jpg)
 
 #### Combining all images together looks like this:
 
-[![](/assets/wp-content/uploads/2014/03/BackgroundPara-1.jpg)](/assets/wp-content/uploads/2014/03/BackgroundPara-1.jpg)
+[![](/developerplayground/assets/2014/03/BackgroundPara-1.jpg)](/developerplayground/assets/2014/03/BackgroundPara-1.jpg)
 
-[![Video](/assets/wp-content/uploads/2014/03/Parallax1.png)](https://youtu.be/_gBs_p5s98A)
+[![Video](/developerplayground/assets/2014/03/Parallax1.png)](https://youtu.be/_gBs_p5s98A)
 
 ### Adding the images to out XCode project:
 
 The size of textures for SKSpriteNode is limited. Therefore I'll slice the background into tiles:
 
-[![](/assets/wp-content/uploads/2014/03/Endless12-1.jpg)](/assets/wp-content/uploads/2014/03/Endless12-1.jpg)
+[![](/developerplayground/assets/2014/03/Endless12-1.jpg)](/developerplayground/assets/2014/03/Endless12-1.jpg)
 
 For example the Background image is only shown fullscreen without scrolling. The Bush background has a size of 4 screens. It is used for scrolling. Remember my last post: The first and the last screen must be identical!
 
@@ -61,15 +61,15 @@ That means we need multiple versions of our images in different resolutions.
 
 (=> 4 versions, if we limit our target platform to iOS 7 or newer.)
 
-[![](/assets/wp-content/uploads/2014/03/Endless15-1.jpg)](/assets/wp-content/uploads/2014/03/Endless15-1.jpg)
+[![](/developerplayground/assets/2014/03/Endless15-1.jpg)](/developerplayground/assets/2014/03/Endless15-1.jpg)
 
 Add the images to the Asset Catalog. If you are not familiar with Asset Catalog, Apple has a nice tutorial [here](https://developer.apple.com/library/ios/recipes/xcode_help-image_catalog-1.0/AddingImageSets/AddingImageSets.html).
 
-[![](/assets/wp-content/uploads/2014/03/Endless2-1.jpg)](/assets/wp-content/uploads/2014/03/Endless2-1.jpg)
+[![](/developerplayground/assets/2014/03/Endless2-1.jpg)](/developerplayground/assets/2014/03/Endless2-1.jpg)
 
-[![](/assets/wp-content/uploads/2014/03/Endless3.png)](/assets/wp-content/uploads/2014/03/Endless3.png)
+[![](/developerplayground/assets/2014/03/Endless3.png)](/developerplayground/assets/2014/03/Endless3.png)
 
-[![](/assets/wp-content/uploads/2014/03/Bildschirmfoto-2014-04-06-um-09.36.43-1.jpg)](/assets/wp-content/uploads/2014/03/Bildschirmfoto-2014-04-06-um-09.36.43-1.jpg)
+[![](/developerplayground/assets/2014/03/Bildschirmfoto-2014-04-06-um-09.36.43-1.jpg)](/developerplayground/assets/2014/03/Bildschirmfoto-2014-04-06-um-09.36.43-1.jpg)
 
 ## Adding a SpriteKit Scene to our ViewController:
 
@@ -79,33 +79,33 @@ Now after creating many different images let's start coding ...
 
 Press '+' to add a new library
 
-[![](/assets/wp-content/uploads/2014/03/Endless5.png)](/assets/wp-content/uploads/2014/03/Endless5.png)
+[![](/developerplayground/assets/2014/03/Endless5.png)](/developerplayground/assets/2014/03/Endless5.png)
 
 Choose SpriteKit.framework
 
-[![](/assets/wp-content/uploads/2014/03/Endless6-1.jpg)](/assets/wp-content/uploads/2014/03/Endless6-1.jpg)
+[![](/developerplayground/assets/2014/03/Endless6-1.jpg)](/developerplayground/assets/2014/03/Endless6-1.jpg)
 
 Add an import statement for SpriteKit to the MyFirstGame-Prefix.pch file
 
-[![](/assets/wp-content/uploads/2014/03/Endless7.png)](/assets/wp-content/uploads/2014/03/Endless7.png)
+[![](/developerplayground/assets/2014/03/Endless7.png)](/developerplayground/assets/2014/03/Endless7.png)
 
 #### 2. Create a new Scene:
 
 Add a new file with type Objective-c class:
 
-[![](/assets/wp-content/uploads/2014/03/Endless8-1.jpg)](/assets/wp-content/uploads/2014/03/Endless8-1.jpg)
+[![](/developerplayground/assets/2014/03/Endless8-1.jpg)](/developerplayground/assets/2014/03/Endless8-1.jpg)
 
 New file must be a subclass of SKScene:
 
 A [SKScene](https://developer.apple.com/library/ios/documentation/SpriteKit/Reference/SKScene_Ref/Reference/Reference.html) represents the content of a scene in Sprite Kit. It is the root node of other Sprite Kit nodes (SKNode)
 
-[![](/assets/wp-content/uploads/2014/03/Endless9-1.jpg)](/assets/wp-content/uploads/2014/03/Endless9-1.jpg)
+[![](/developerplayground/assets/2014/03/Endless9-1.jpg)](/developerplayground/assets/2014/03/Endless9-1.jpg)
 
 Add another file to implement the endless scrolling:
 
 This file must be a subtype of [SKNode](https://developer.apple.com/library/ios/documentation/SpriteKit/Reference/SKNode_Ref/Reference/Reference.html). A SKNode object can be added to our scene. It's also possible to other nodes in a hierarchical order, one for every background.
 
-[![](/assets/wp-content/uploads/2014/03/Endless10-1.jpg)](/assets/wp-content/uploads/2014/03/Endless10-1.jpg)
+[![](/developerplayground/assets/2014/03/Endless10-1.jpg)](/developerplayground/assets/2014/03/Endless10-1.jpg)
 
 #### 3. Implement ParallaxHandlerNode
 
@@ -310,7 +310,7 @@ Add this method to GameViewController.h
 }
 ```
 #### 6. Deploy and run
-[![Video](/assets/wp-content/uploads/2014/03/Parallax2.png)](https://youtu.be/KS1nRbMJcQc)
+[![Video](/developerplayground/assets/2014/03/Parallax2.png)](https://youtu.be/KS1nRbMJcQc)
 That's all for today.
 
 Cheers,   

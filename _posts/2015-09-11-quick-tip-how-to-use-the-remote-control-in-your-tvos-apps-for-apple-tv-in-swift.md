@@ -11,7 +11,7 @@ last_modified_at: 2020-05-27 16:40:56 -0000
 publish: true
 pin: false
 image:
-  path: /assets/wp-content/uploads/2015/10/Screen-Shot-2015-10-01-at-20.12.48-1.jpg
+  path: /developerplayground/assets/2015/10/Screen-Shot-2015-10-01-at-20.12.48-1.jpg
 categories:
 - SpriteKit
 - SWIFT
@@ -25,15 +25,15 @@ There are already dozens of 'Hello world' tutorials published for the new Apple 
 
 ### 1. Download the XCode 7.1 Beta from the [Apple Developer Portal](https://developer.apple.com/xcode/download/):
 
-[![Download XCode 7.1 Beta](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.01.17-1.jpg)](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.01.17-1.jpg)
+[![Download XCode 7.1 Beta](/developerplayground/assets/2015/09/Screen-Shot-2015-09-11-at-00.01.17-1.jpg)](/developerplayground/assets/2015/09/Screen-Shot-2015-09-11-at-00.01.17-1.jpg)
 
 #### 2. Create a new project:
 
-[![tvOS Create new project](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-10-at-23.59.18.png)](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-10-at-23.59.18.png) [![Create tvOS project](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.06.33.png)](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.06.33.png)
+[![tvOS Create new project](/developerplayground/assets/2015/09/Screen-Shot-2015-09-10-at-23.59.18.png)](/developerplayground/assets/2015/09/Screen-Shot-2015-09-10-at-23.59.18.png) [![Create tvOS project](/developerplayground/assets/2015/09/Screen-Shot-2015-09-11-at-00.06.33.png)](/developerplayground/assets/2015/09/Screen-Shot-2015-09-11-at-00.06.33.png)
 
 #### 3. Open GameScene.swift:
 
-[![Create tvOS SpriteKit scene](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.03.18-1.jpg)](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.03.18-1.jpg)
+[![Create tvOS SpriteKit scene](/developerplayground/assets/2015/09/Screen-Shot-2015-09-11-at-00.03.18-1.jpg)](/developerplayground/assets/2015/09/Screen-Shot-2015-09-11-at-00.03.18-1.jpg)
 
 #### 4. Replace the complete code with this snippet:
 
@@ -91,21 +91,21 @@ class GameScene: SKScene {
 
 #### 5. Start the Simulator:
 
-[![Start tvOS Simulator](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.06.44.png)](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.06.44.png)
+[![Start tvOS Simulator](/developerplayground/assets/2015/09/Screen-Shot-2015-09-11-at-00.06.44.png)](/developerplayground/assets/2015/09/Screen-Shot-2015-09-11-at-00.06.44.png)
 
 #### 6. Show the remote control:
 
-[![tvOS Simulator Remote Control](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.08.32-1.jpg)](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.08.32-1.jpg)
+[![tvOS Simulator Remote Control](/developerplayground/assets/2015/09/Screen-Shot-2015-09-11-at-00.08.32-1.jpg)](/developerplayground/assets/2015/09/Screen-Shot-2015-09-11-at-00.08.32-1.jpg)
 
 #### 7. Move the sprite around:
 
 This was the most confusing part and costs me some minutes. You have to press the option key (alt) on you Mac keyboard and move the mouse around on the touch area of the remote control window. No mouse clicks!!!
 
-[![tvOS Simulator and Remote Control](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.08.58-1.jpg)](/assets/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-00.08.58-1.jpg)
+[![tvOS Simulator and Remote Control](/developerplayground/assets/2015/09/Screen-Shot-2015-09-11-at-00.08.58-1.jpg)](/developerplayground/assets/2015/09/Screen-Shot-2015-09-11-at-00.08.58-1.jpg)
 
 That's all for today.
 
 Cheers,  
 Stefan
 
-[![AppStore Stefan Josten](/assets/wp-content/uploads/2015/11/AppStore1.png)](https://itunes.apple.com/us/developer/stefan-josten/id949662361)
+[![AppStore Stefan Josten](/developerplayground/assets/2015/11/AppStore1.png)](https://itunes.apple.com/us/developer/stefan-josten/id949662361)

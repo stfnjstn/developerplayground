@@ -21,7 +21,7 @@ Copyright: Stefan Josten, 04/2016
 
 Current version: 3.2
 
-[![Pong Like Game](/assets/wp-content/uploads/2015/04/WatchPingPongGif.gif)](/assets/wp-content/uploads/2015/04/WatchPingPongGif.gif)
+[![Pong Like Game](/developerplayground/assets/2015/04/WatchPingPongGif.gif)](/developerplayground/assets/2015/04/WatchPingPongGif.gif)
 
 
 ## Save My Spaceship:
@@ -36,10 +36,10 @@ Copyright: Stefan Josten, 10/2015
 
 Current version: 1.4.2
 
-[![AppStore.png](/assets/wp-content/uploads/2015/11/AppStore1.png)](https://itunes.apple.com/us/app/save-my-spaceship/id970195914?mt=8 "Save My Spaceship")
+[![AppStore.png](/developerplayground/assets/2015/11/AppStore1.png)](https://itunes.apple.com/us/app/save-my-spaceship/id970195914?mt=8 "Save My Spaceship")
 
 
-[![sms1](/assets/wp-content/uploads/2015/04/sms1.png)](/assets/wp-content/uploads/2015/04/sms1.png)| [![sms2](/assets/wp-content/uploads/2015/04/sms2.png)](/assets/wp-content/uploads/2015/04/sms2.png) | [![sms3](/assets/wp-content/uploads/2015/04/sms3-1.jpg) ](/assets/wp-content/uploads/2015/04/sms3-1.jpg)
+[![sms1](/developerplayground/assets/2015/04/sms1.png)](/developerplayground/assets/2015/04/sms1.png)| [![sms2](/developerplayground/assets/2015/04/sms2.png)](/developerplayground/assets/2015/04/sms2.png) | [![sms3](/developerplayground/assets/2015/04/sms3-1.jpg) ](/developerplayground/assets/2015/04/sms3-1.jpg)
 
 ## 15 Puzzle Game for Watch, Pad and Phone:
 
@@ -61,14 +61,14 @@ Copyright: Stefan Josten 05/2015
 
 Current version: 3.6
 
-[![AppStore](/assets/wp-content/uploads/2015/04/AppStore1.png)](https://itunes.apple.com/app/yet-another-watch-puzzle-game/id997514879?ls=1&amp;mt=8)
+[![AppStore](/developerplayground/assets/2015/04/AppStore1.png)](https://itunes.apple.com/app/yet-another-watch-puzzle-game/id997514879?ls=1&amp;mt=8)
 
 
 | Apple Watch | iOS |  
 | --- | --- |  
-[![WatchGame2](/assets/wp-content/uploads/2016/04/WatchGame2.png)](/assets/wp-content/uploads/2016/04/WatchGame2.png) | [![iOS Simulator Screen Shot 23 Jun 2015 21.31.50](/assets/wp-content/uploads/2015/04/iOS-Simulator-Screen-Shot-23-Jun-2015-21.31.50.png)](/assets/wp-content/uploads/2015/04/iOS-Simulator-Screen-Shot-23-Jun-2015-21.31.50.png)
-[![WatchGame1](/assets/wp-content/uploads/2016/04/WatchGame1.jpg)](/assets/wp-content/uploads/2016/04/WatchGame1.jpg) | [![500x500bb-80](/assets/wp-content/uploads/2015/04/500x500bb-80-1.jpg)](/assets/wp-content/uploads/2015/04/500x500bb-80-1.jpg)
-[![15 Puzzle](/assets/wp-content/uploads/2016/04/Simulator-Screen-Shot-23-Apr-2016-09.40.13-1.jpg)](/assets/wp-content/uploads/2016/04/Simulator-Screen-Shot-23-Apr-2016-09.40.13-1.jpg) | [![500x500bb-80b](/assets/wp-content/uploads/2015/04/500x500bb-80b-1.jpg)](/assets/wp-content/uploads/2015/04/500x500bb-80b-1.jpg)
+[![WatchGame2](/developerplayground/assets/2016/04/WatchGame2.png)](/developerplayground/assets/2016/04/WatchGame2.png) | [![iOS Simulator Screen Shot 23 Jun 2015 21.31.50](/developerplayground/assets/2015/04/iOS-Simulator-Screen-Shot-23-Jun-2015-21.31.50.png)](/developerplayground/assets/2015/04/iOS-Simulator-Screen-Shot-23-Jun-2015-21.31.50.png)
+[![WatchGame1](/developerplayground/assets/2016/04/WatchGame1.jpg)](/developerplayground/assets/2016/04/WatchGame1.jpg) | [![500x500bb-80](/developerplayground/assets/2015/04/500x500bb-80-1.jpg)](/developerplayground/assets/2015/04/500x500bb-80-1.jpg)
+[![15 Puzzle](/developerplayground/assets/2016/04/Simulator-Screen-Shot-23-Apr-2016-09.40.13-1.jpg)](/developerplayground/assets/2016/04/Simulator-Screen-Shot-23-Apr-2016-09.40.13-1.jpg) | [![500x500bb-80b](/developerplayground/assets/2015/04/500x500bb-80b-1.jpg)](/developerplayground/assets/2015/04/500x500bb-80b-1.jpg)
 
 
 ## Yet Another Spaceshooter:
@@ -83,11 +83,11 @@ Current version: 2.4
 
 Related GameDev Tutorials: [SpriteKit & Swift](https://developerplayground.net)
 
-[![AppStore](/assets/wp-content/uploads/2015/04/AppStore1.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
+[![AppStore](/developerplayground/assets/2015/04/AppStore1.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
 
 
-[![IMG_8533](/assets/wp-content/uploads/2015/04/IMG_8533-1.jpg)](/assets/wp-content/uploads/2015/04/IMG_8533-1.jpg)|[![IMG_8534](/assets/wp-content/uploads/2015/04/IMG_8534-1.jpg)](/assets/wp-content/uploads/2015/04/IMG_8534-1.jpg)|[![IMG_8599](/assets/wp-content/uploads/2015/04/IMG_8599-1.jpg)](/assets/wp-content/uploads/2015/04/IMG_8599-1.jpg)
-[![IMG_8600](/assets/wp-content/uploads/2015/04/IMG_8600-1.jpg)](/assets/wp-content/uploads/2015/04/IMG_8600-1.jpg)|[![IMG_8602](/assets/wp-content/uploads/2015/04/IMG_8602-1.jpg)](/assets/wp-content/uploads/2015/04/IMG_8602-1.jpg)
+[![IMG_8533](/developerplayground/assets/2015/04/IMG_8533-1.jpg)](/developerplayground/assets/2015/04/IMG_8533-1.jpg)|[![IMG_8534](/developerplayground/assets/2015/04/IMG_8534-1.jpg)](/developerplayground/assets/2015/04/IMG_8534-1.jpg)|[![IMG_8599](/developerplayground/assets/2015/04/IMG_8599-1.jpg)](/developerplayground/assets/2015/04/IMG_8599-1.jpg)
+[![IMG_8600](/developerplayground/assets/2015/04/IMG_8600-1.jpg)](/developerplayground/assets/2015/04/IMG_8600-1.jpg)|[![IMG_8602](/developerplayground/assets/2015/04/IMG_8602-1.jpg)](/developerplayground/assets/2015/04/IMG_8602-1.jpg)
 
 
 

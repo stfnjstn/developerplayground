@@ -18,9 +18,9 @@ tags: []
 ## How to implement a space shooter with SpriteKit and SWIFT - Part 3
 ### Adding a HUD with SpriteKit and SWIFT
 
-[![Video](/assets/wp-content/uploads/Videos/8d8MH_gXt84.png)](https://youtu.be/8d8MH_gXt84)
+[![Video](/developerplayground/assets/Videos/8d8MH_gXt84.png)](https://youtu.be/8d8MH_gXt84)
 
-[![](/assets/wp-content/uploads/2014/11/AppStore2.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
+[![](/developerplayground/assets/2014/11/AppStore2.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
 
 #### Tutorial Overview: How to implement a space shooter with SpriteKit and SWIFT
 
@@ -71,7 +71,7 @@ override func viewDidAppear(animated: Bool) {
 
 Now let's create the HUD: 
 
-[![3-1](/assets/wp-content/uploads/2014/11/3-1.png)](/assets/wp-content/uploads/2014/11/3-1-1.jpg)
+[![3-1](/developerplayground/assets/2014/11/3-1.png)](/developerplayground/assets/2014/11/3-1-1.jpg)
 
 It contains 3 different elements :
 
@@ -79,19 +79,19 @@ It contains 3 different elements :
 
 
 
-[![3-2](/assets/wp-content/uploads/2014/11/3-2-1.jpg)](/assets/wp-content/uploads/2014/11/3-2-1.jpg)
+[![3-2](/developerplayground/assets/2014/11/3-2-1.jpg)](/developerplayground/assets/2014/11/3-2-1.jpg)
 
   * Pause button: A SKLabelNode which is placed in a transparent SKSpriteNode to increase the touchable area.
 
 
 
-[![3-3](/assets/wp-content/uploads/2014/11/3-3.png)](/assets/wp-content/uploads/2014/11/3-3.png)
+[![3-3](/developerplayground/assets/2014/11/3-3.png)](/developerplayground/assets/2014/11/3-3.png)
 
   * Score: Must be accessible outside of the createHUD method. Stored in a global SKLabelNode property.
 
 
 
-[![3-4](/assets/wp-content/uploads/2014/11/3-4.png)](/assets/wp-content/uploads/2014/11/3-4.png)
+[![3-4](/developerplayground/assets/2014/11/3-4.png)](/developerplayground/assets/2014/11/3-4.png)
 
 To access the HUD elements add these global properties to GameScene.swift:
 
@@ -163,7 +163,7 @@ That's all for today. In my next part I'll add collision detection and a basic g
 You can download the code from GitHub: [Part 3](https://github.com/stfnjstn/MySecondGame/releases/tag/v0.3) or the latest version [here](https://github.com/stfnjstn/MySecondGame/tree/master).
 You can also download my prototyping App for this tutorial series:
 
-[![](/assets/wp-content/uploads/2014/11/AppStore2.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
+[![](/developerplayground/assets/2014/11/AppStore2.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
 
 Cheers,   
 Stefan

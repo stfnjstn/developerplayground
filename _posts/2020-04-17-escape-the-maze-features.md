@@ -8,7 +8,7 @@ last_modified_at: 2020-06-17 21:59:38 -0000
 publish: true
 pin: false
 image:
-  path: /assets/wp-content/uploads/2020/03/ETMMAC.jpg
+  path: /developerplayground/assets/2020/03/ETMMAC.jpg
 categories:
 - Apple Watch
 - Escape The Dungeon Maze
@@ -41,7 +41,7 @@ Already implemented features:
   * Cure
   * Hidden ways
 
-[![Video](/assets/wp-content/uploads/Videos/a672oe1bfZo.png)](https://youtu.be/a672oe1bfZo)
+[![Video](/developerplayground/assets/Videos/a672oe1bfZo.png)](https://youtu.be/a672oe1bfZo)
 
 That's all for today.
 

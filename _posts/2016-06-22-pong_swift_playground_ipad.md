@@ -9,7 +9,7 @@ last_modified_at: 2020-05-27 16:40:56 -0000
 publish: true
 pin: false
 image:
-  path: /assets/wp-content/uploads/2016/06/PlaygroundLogo.jpg
+  path: /developerplayground/assets/2016/06/PlaygroundLogo.jpg
 categories:
 - Playground
 - SpriteKit
@@ -25,15 +25,15 @@ I was wondering if this can really replace a Mac with XCode to develop for my fa
 
 So here we are: My first game SWIFT Playground completely written on an iPad: [Pong](https://en.wikipedia.org/wiki/Pong) (updated for iOS 10 Beta 5)
 
-[![Video](/assets/wp-content/uploads/Videos/dtoGsfdY9P0.png)](https://youtu.be/dtoGsfdY9P0)
+[![Video](/developerplayground/assets/Videos/dtoGsfdY9P0.png)](https://youtu.be/dtoGsfdY9P0)
  
 ### 1. Open the Playground App on your iPad:
 
-[![PlaygroundLogo](/assets/wp-content/uploads/2016/06/PlaygroundLogo.jpg)](/assets/wp-content/uploads/2016/06/PlaygroundLogo.jpg)
+[![PlaygroundLogo](/developerplayground/assets/2016/06/PlaygroundLogo.jpg)](/developerplayground/assets/2016/06/PlaygroundLogo.jpg)
 
 ### 2. Create a new SWIFT Playground:
 
-[![IMG_2575](/assets/wp-content/uploads/2016/06/IMG_2575.jpg)](/assets/wp-content/uploads/2016/06/IMG_2575.jpg)[![iPad Create a new Playground](/assets/wp-content/uploads/2016/06/IMG_2574.jpg)](/assets/wp-content/uploads/2016/06/IMG_2574.jpg)
+[![IMG_2575](/developerplayground/assets/2016/06/IMG_2575.jpg)](/developerplayground/assets/2016/06/IMG_2575.jpg)[![iPad Create a new Playground](/developerplayground/assets/2016/06/IMG_2574.jpg)](/developerplayground/assets/2016/06/IMG_2574.jpg)
 
 ### 3. Here is the SourceCode. 
 
@@ -257,7 +257,7 @@ PlaygroundPage.current.liveView =  skView
 
 You can also download the sample directly from my [GitHub](https://github.com/stfnjstn/iPadSwiftPlayground) repository.
 
-![PongPlayground](/assets/wp-content/uploads/2016/06/PongPlayground.jpg)
+![PongPlayground](/developerplayground/assets/2016/06/PongPlayground.jpg)
 
 My personal conclusion: You can really write advanced Playground Apps completely on your iPad. The editor offers some intelligent solutions to choose the next needed code snippet without typing, but for bigger projects an external keypad improves the coding experience a lot. A possibility to upload the playgrounds as an App to the AppStore is missing. So a kind of Swift Playground Store would be nice for the future. Maybe this will come with the final release of iOS 10.
 
@@ -265,7 +265,7 @@ That's all for today.
 
 If you want to support me, please download my Apps from the Apple AppStore.
 
-[![AppStore Stefan](/assets/wp-content/uploads/2015/11/AppStore1.png)](https://itunes.apple.com/developer/stefan-josten/id949662361)
+[![AppStore Stefan](/developerplayground/assets/2015/11/AppStore1.png)](https://itunes.apple.com/developer/stefan-josten/id949662361)
 
 Cheers,  
 Stefan

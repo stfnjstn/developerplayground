@@ -10,7 +10,7 @@ last_modified_at: 2020-05-27 16:40:56 -0000
 publish: true
 pin: false
 image:
-  path: /assets/wp-content/uploads/2015/08/iOS-Simulator-Screen-Shot-29-Aug-2015-19.02.15.png
+  path: /developerplayground/assets/2015/08/iOS-Simulator-Screen-Shot-29-Aug-2015-19.02.15.png
 categories:
 - AdSense and Admob
 - iOS
@@ -33,7 +33,7 @@ In this tutorial I'll show how you can implement an information alert about the 
 
 **IMPORTANT:** I'm not a lawyer. So no guarantees. You have to decide on your own if this is sufficient.
 
-[![Google Cookie Policy](/assets/wp-content/uploads/2015/08/iOS-Simulator-Screen-Shot-29-Aug-2015-19.02.15.png)](/assets/wp-content/uploads/2015/08/iOS-Simulator-Screen-Shot-29-Aug-2015-19.02.15.png)
+[![Google Cookie Policy](/developerplayground/assets/2015/08/iOS-Simulator-Screen-Shot-29-Aug-2015-19.02.15.png)](/developerplayground/assets/2015/08/iOS-Simulator-Screen-Shot-29-Aug-2015-19.02.15.png)
 
 The Code snippet for showing the AdMob Cookie usage is simple:
 
@@ -63,6 +63,6 @@ That's all for today.
 Cheers,  
 Stefan
 
-[![AppStore Stefan Josten](/assets/wp-content/uploads/2015/11/AppStore1.png)](https://itunes.apple.com/us/app/yet-another-watch-puzzle-game/id997514879?ls=1&mt=8)
+[![AppStore Stefan Josten](/developerplayground/assets/2015/11/AppStore1.png)](https://itunes.apple.com/us/app/yet-another-watch-puzzle-game/id997514879?ls=1&mt=8)
 
  

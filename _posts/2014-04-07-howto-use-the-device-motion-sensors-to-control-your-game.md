@@ -22,17 +22,17 @@ tags: []
 
 Today I'll include motion detection to control the movement of my game. iOS offers a powerful API to handle motion detection with the [CMMotionManager](https://developer.apple.com/library/ios/documentation/coremotion/reference/cmmotionmanager_class/Reference/Reference.html) class. Let's start with a small standalone project to show how to use the motion detection:
 
-[![Video](/assets/wp-content/uploads/2014/04/Video0.png)](https://youtu.be/EZGBCia9XJM)
+[![Video](/developerplayground/assets/2014/04/Video0.png)](https://youtu.be/EZGBCia9XJM)
 
 **1. First create a new SpriteKit project.**
 
-[![](/assets/wp-content/uploads/2014/04/Bildschirmfoto-2014-04-06-um-22.17.57-1.jpg)](/assets/wp-content/uploads/2014/04/Bildschirmfoto-2014-04-06-um-22.17.57-1.jpg)
+[![](/developerplayground/assets/2014/04/Bildschirmfoto-2014-04-06-um-22.17.57-1.jpg)](/developerplayground/assets/2014/04/Bildschirmfoto-2014-04-06-um-22.17.57-1.jpg)
 
-[![](/assets/wp-content/uploads/2014/04/Bildschirmfoto-2014-04-06-um-22.18.29-1.jpg)](/assets/wp-content/uploads/2014/04/Bildschirmfoto-2014-04-06-um-22.18.29-1.jpg)
+[![](/developerplayground/assets/2014/04/Bildschirmfoto-2014-04-06-um-22.18.29-1.jpg)](/developerplayground/assets/2014/04/Bildschirmfoto-2014-04-06-um-22.18.29-1.jpg)
 
 **2. Add the GLKit and the CoreMotion framework to your project.**
 
-[![](/assets/wp-content/uploads/2014/04/Bildschirmfoto-2014-04-06-um-00.05.50.png)](/assets/wp-content/uploads/2014/04/Bildschirmfoto-2014-04-06-um-00.05.50.png)
+[![](/developerplayground/assets/2014/04/Bildschirmfoto-2014-04-06-um-00.05.50.png)](/developerplayground/assets/2014/04/Bildschirmfoto-2014-04-06-um-00.05.50.png)
 
 **3. Add a new file MotionManagerSingleton of type NSObject:**
 
@@ -123,7 +123,7 @@ Only one instance of CMMotionManager can be used in an iOS project. Therefore I'
 
 A low pass filter smoothens the measured results of the sensors, to avoid jitter and short lived acceleration spikes. With this technique the influence of unintended hand movements can be minimized. Downsize is, that the reaction to orientation changes is slowed down.
 
-[![](/assets/wp-content/uploads/2014/04/Bildschirmfoto-2014-04-07-um-19.42.38-1.jpg)](/assets/wp-content/uploads/2014/04/Bildschirmfoto-2014-04-07-um-19.42.38-1.jpg)
+[![](/developerplayground/assets/2014/04/Bildschirmfoto-2014-04-07-um-19.42.38-1.jpg)](/developerplayground/assets/2014/04/Bildschirmfoto-2014-04-07-um-19.42.38-1.jpg)
 
 **4. Changes in MyScene class:**
 
@@ -236,6 +236,6 @@ NSTimeInterval _dt; // <<<<< New
 ```
 **6.** Deploy to a device and watch how the backgrounds react to the device movement.
 
-[![Video](/assets/wp-content/uploads/2014/04/Video1.png)](https://youtu.be/kZr0TaZZS0w)
+[![Video](/developerplayground/assets/2014/04/Video1.png)](https://youtu.be/kZr0TaZZS0w)
 
 As always you can download the complete [project from GitHub: v0.5.1](https://github.com/stfnjstn/MyFirstGame/releases/tag/v0.5.1) That's all for today. In my next post I'll add an vertical parallax effect to increase the illusion of depth. Cheers, Stefan Short update: A migration to SWIFT is done in [this blog post](/how-to-convertintegrate-swift-with-objective-c).

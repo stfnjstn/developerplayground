@@ -21,10 +21,10 @@ New in version 1.3: Puzzle mode - slide image tiles instead of numbers.
 
  
 
-[![iOS Simulator Screen Shot - Apple Watch 21 May 2015 22.18.26](/assets/wp-content/uploads/2015/04/iOS-Simulator-Screen-Shot-Apple-Watch-21-May-2015-22.18.26.png)](/assets/wp-content/uploads/2015/04/iOS-Simulator-Screen-Shot-Apple-Watch-21-May-2015-22.18.26.png)[![iOS Simulator Screen Shot - Apple Watch 21 May 2015 22.20.20](/assets/wp-content/uploads/2015/04/iOS-Simulator-Screen-Shot-Apple-Watch-21-May-2015-22.20.20-1.jpg)](/assets/wp-content/uploads/2015/04/iOS-Simulator-Screen-Shot-Apple-Watch-21-May-2015-22.20.20-1.jpg)![iOS Simulator Screen Shot - Apple Watch 21 May 2015 22.36.29](/assets/wp-content/uploads/2015/04/iOS-Simulator-Screen-Shot-Apple-Watch-21-May-2015-22.36.29.png)
+[![iOS Simulator Screen Shot - Apple Watch 21 May 2015 22.18.26](/developerplayground/assets/2015/04/iOS-Simulator-Screen-Shot-Apple-Watch-21-May-2015-22.18.26.png)](/developerplayground/assets/2015/04/iOS-Simulator-Screen-Shot-Apple-Watch-21-May-2015-22.18.26.png)[![iOS Simulator Screen Shot - Apple Watch 21 May 2015 22.20.20](/developerplayground/assets/2015/04/iOS-Simulator-Screen-Shot-Apple-Watch-21-May-2015-22.20.20-1.jpg)](/developerplayground/assets/2015/04/iOS-Simulator-Screen-Shot-Apple-Watch-21-May-2015-22.20.20-1.jpg)![iOS Simulator Screen Shot - Apple Watch 21 May 2015 22.36.29](/developerplayground/assets/2015/04/iOS-Simulator-Screen-Shot-Apple-Watch-21-May-2015-22.36.29.png)
 
-[![iOS Simulator Screen Shot 23 Jun 2015 21.31.50](/assets/wp-content/uploads/2015/04/iOS-Simulator-Screen-Shot-23-Jun-2015-21.31.50.png)](/assets/wp-content/uploads/2015/04/iOS-Simulator-Screen-Shot-23-Jun-2015-21.31.50.png)
+[![iOS Simulator Screen Shot 23 Jun 2015 21.31.50](/developerplayground/assets/2015/04/iOS-Simulator-Screen-Shot-23-Jun-2015-21.31.50.png)](/developerplayground/assets/2015/04/iOS-Simulator-Screen-Shot-23-Jun-2015-21.31.50.png)
 
-[![iOS Simulator Screen Shot 01 Jul 2015 23.47.23](/assets/wp-content/uploads/2015/04/iOS-Simulator-Screen-Shot-01-Jul-2015-23.47.23-1.jpg)](/assets/wp-content/uploads/2015/04/iOS-Simulator-Screen-Shot-01-Jul-2015-23.47.23-1.jpg)
+[![iOS Simulator Screen Shot 01 Jul 2015 23.47.23](/developerplayground/assets/2015/04/iOS-Simulator-Screen-Shot-01-Jul-2015-23.47.23-1.jpg)](/developerplayground/assets/2015/04/iOS-Simulator-Screen-Shot-01-Jul-2015-23.47.23-1.jpg)
 
-[![AppStore](/assets/wp-content/uploads/2015/04/AppStore1.png)](https://itunes.apple.com/us/app/yet-another-watch-puzzle-game/id997514879?ls=1&mt=8)
+[![AppStore](/developerplayground/assets/2015/04/AppStore1.png)](https://itunes.apple.com/us/app/yet-another-watch-puzzle-game/id997514879?ls=1&mt=8)

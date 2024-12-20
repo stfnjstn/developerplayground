@@ -10,7 +10,7 @@ last_modified_at: 2020-05-27 16:40:56 -0000
 publish: true
 pin: false
 image:
-  path: /assets/wp-content/uploads/2015/11/Scrolling.jpg
+  path: /developerplayground/assets/2015/11/Scrolling.jpg
   alt: Scrolling tutorial
 categories:
 - Parallax Effect
@@ -30,10 +30,10 @@ Welcome to my scrolling tutorial:
 In [part one](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-4-collision-detection43) I showed how to implement endless scrolling. This is working fine, but there is still room for improvements. The scrolling starts immediately with full speed and also stops directly after the touch ends. A more natural movement would be to increase and decrease the speed slowly, till the target speed is reached or the movement is stopped. These is also known as [ease in or ease out](https://developers.google.com/web/fundamentals/design-and-ui/animations/the-basics-of-easing) animation. Thank you to hamobi who helped me with my [Stackoverflow question](http://stackoverflow.com/questions/33721183/ease-out-animation-for-skspritenode) for finding the right solution. To give you an impression compare the two videos: 
 
 ### Without Easing:
-[![Video](/assets/wp-content/uploads/Videos/uYVqG8Y8rLU.png)](https://youtu.be/uYVqG8Y8rLU)
+[![Video](/developerplayground/assets/Videos/uYVqG8Y8rLU.png)](https://youtu.be/uYVqG8Y8rLU)
 
 ### With Easing:
-[![Video](/assets/wp-content/uploads/Videos/k1m1JH7yYAw.png)](https://youtu.be/k1m1JH7yYAw)
+[![Video](/developerplayground/assets/Videos/k1m1JH7yYAw.png)](https://youtu.be/k1m1JH7yYAw)
 
 ### First repeat the steps from [Part 1 ](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-4-collision-detection43)
 
@@ -46,7 +46,7 @@ let newSpeed = (currentSpeed \+ (speed - currentSpeed) * easeOutfactor)
 
 ### Open GameScene.swift:
 
-[![SpriteKit scrolling tutorial](/assets/wp-content/uploads/2015/11/Screen-Shot-2015-11-13-at-18.14.431-1.jpg)](/assets/wp-content/uploads/2015/11/Screen-Shot-2015-11-13-at-18.14.431-1.jpg)
+[![SpriteKit scrolling tutorial](/developerplayground/assets/2015/11/Screen-Shot-2015-11-13-at-18.14.431-1.jpg)](/developerplayground/assets/2015/11/Screen-Shot-2015-11-13-at-18.14.431-1.jpg)
 
 #### Replace the complete code with this snippet:
 
@@ -186,7 +186,7 @@ You can download the complete sample from my [Github repository](https://github.
 
 If you want to support me, please download my Apps from the Apple AppStore:
 
-[![AppStore Stefan Josten](/assets/wp-content/uploads/2015/11/AppStore1.png)](https://itunes.apple.com/developer/stefan-josten/id949662361)
+[![AppStore Stefan Josten](/developerplayground/assets/2015/11/AppStore1.png)](https://itunes.apple.com/developer/stefan-josten/id949662361)
 
  
 

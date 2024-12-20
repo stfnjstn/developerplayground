@@ -20,9 +20,9 @@ tags:
 ## How to implement a space shooter with SpriteKit and SWIFT - Part 8
 ### In-App Purchases: 
 
-[![Video](/assets/wp-content/uploads/Videos/8d8MH_gXt84.png)](https://youtu.be/8d8MH_gXt84)
+[![Video](/developerplayground/assets/Videos/8d8MH_gXt84.png)](https://youtu.be/8d8MH_gXt84)
 
-[![](/assets/wp-content/uploads/2014/11/AppStore3.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
+[![](/developerplayground/assets/2014/11/AppStore3.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
 
 #### Tutorial Overview: How to implement a space shooter with SpriteKit and SWIFT
 
@@ -45,7 +45,7 @@ Welcome to part 8 of my swift programming tutorial. Today I'll show how to imple
   * Implement In-App Purchases
   * Test and upload to iTunesConnect
 
-[![InApp01](/assets/wp-content/uploads/2015/04/InApp01-1.jpg)](/assets/wp-content/uploads/2015/04/InApp01-1.jpg) ![InApp02](/assets/wp-content/uploads/2015/04/InApp02.png)
+[![InApp01](/developerplayground/assets/2015/04/InApp01-1.jpg)](/developerplayground/assets/2015/04/InApp01-1.jpg) ![InApp02](/developerplayground/assets/2015/04/InApp02.png)
 
 
 As a starting point you can download the sample project from my GitHub [repository](https://github.com/stfnjstn/MySecondGame/releases/tag/v0.7). 
@@ -56,15 +56,15 @@ As a starting point you can download the sample project from my GitHub [reposito
 
 You need a paid Apple Developer Account to execute the next steps. For details about the process to upload Apps to iTunes Connect check tutorial [part 6](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-6-game-center-integration).
 
-Browse to [iTunes Connect](https://itunesconnect.apple.com) and open your App: [![InApp2](/assets/wp-content/uploads/2015/04/InApp2-1.jpg)](/assets/wp-content/uploads/2015/04/InApp2-1.jpg) Choose **In-App Purchases** and click on **Create New** : [![InApp3](/assets/wp-content/uploads/2015/04/InApp3.png)](/assets/wp-content/uploads/2015/04/InApp3.png) You see several different types of possible purchases. In this tutorial I'll show a '**Consumable** ' and a '**Non-Consumable** ' purchase. [![InApp4](/assets/wp-content/uploads/2015/04/InApp4.png)](/assets/wp-content/uploads/2015/04/InApp4.png) Create the **Consumable** purchase: [![InApp5](/assets/wp-content/uploads/2015/04/InApp5.png)](/assets/wp-content/uploads/2015/04/InApp5.png) Enter **Reference Name** , **Product ID** and **Price Tier** : [![InApp6](/assets/wp-content/uploads/2015/04/InApp6.png)](/assets/wp-content/uploads/2015/04/InApp6.png) Add **Display Name** and **Description** at least for one language: [![InApp7](/assets/wp-content/uploads/2015/04/InApp7.png)](/assets/wp-content/uploads/2015/04/InApp7.png) Additionally a screenshot is needed for the review team: [![InApp8](/assets/wp-content/uploads/2015/04/InApp8.png)](/assets/wp-content/uploads/2015/04/InApp8.png) Now do the same for the **Non-Consumable** purchase: [![InApp9](/assets/wp-content/uploads/2015/04/InApp9.png)](/assets/wp-content/uploads/2015/04/InApp9.png) [![InApp14](/assets/wp-content/uploads/2015/04/InApp14.png)](/assets/wp-content/uploads/2015/04/InApp14.png) The final result should look like this: [![InApp15](/assets/wp-content/uploads/2015/04/InApp15.png)](/assets/wp-content/uploads/2015/04/InApp15.png)
+Browse to [iTunes Connect](https://itunesconnect.apple.com) and open your App: [![InApp2](/developerplayground/assets/2015/04/InApp2-1.jpg)](/developerplayground/assets/2015/04/InApp2-1.jpg) Choose **In-App Purchases** and click on **Create New** : [![InApp3](/developerplayground/assets/2015/04/InApp3.png)](/developerplayground/assets/2015/04/InApp3.png) You see several different types of possible purchases. In this tutorial I'll show a '**Consumable** ' and a '**Non-Consumable** ' purchase. [![InApp4](/developerplayground/assets/2015/04/InApp4.png)](/developerplayground/assets/2015/04/InApp4.png) Create the **Consumable** purchase: [![InApp5](/developerplayground/assets/2015/04/InApp5.png)](/developerplayground/assets/2015/04/InApp5.png) Enter **Reference Name** , **Product ID** and **Price Tier** : [![InApp6](/developerplayground/assets/2015/04/InApp6.png)](/developerplayground/assets/2015/04/InApp6.png) Add **Display Name** and **Description** at least for one language: [![InApp7](/developerplayground/assets/2015/04/InApp7.png)](/developerplayground/assets/2015/04/InApp7.png) Additionally a screenshot is needed for the review team: [![InApp8](/developerplayground/assets/2015/04/InApp8.png)](/developerplayground/assets/2015/04/InApp8.png) Now do the same for the **Non-Consumable** purchase: [![InApp9](/developerplayground/assets/2015/04/InApp9.png)](/developerplayground/assets/2015/04/InApp9.png) [![InApp14](/developerplayground/assets/2015/04/InApp14.png)](/developerplayground/assets/2015/04/InApp14.png) The final result should look like this: [![InApp15](/developerplayground/assets/2015/04/InApp15.png)](/developerplayground/assets/2015/04/InApp15.png)
 
 ### 2. Implement In-App Purchases
 
-Open your project in XCode (sample project is available [here](https://github.com/stfnjstn/MySecondGame/releases/tag/v0.7)), navigate to the **Capabilities** configuration page and enable **In-App Purchases** : [![InApp12](/assets/wp-content/uploads/2015/04/InApp12.png)](/assets/wp-content/uploads/2015/04/InApp12.png) Xcode will include the **StoreKit** framework and add the **In-App Purchase** entitlement automatically.
+Open your project in XCode (sample project is available [here](https://github.com/stfnjstn/MySecondGame/releases/tag/v0.7)), navigate to the **Capabilities** configuration page and enable **In-App Purchases** : [![InApp12](/developerplayground/assets/2015/04/InApp12.png)](/developerplayground/assets/2015/04/InApp12.png) Xcode will include the **StoreKit** framework and add the **In-App Purchase** entitlement automatically.
 
 #### 2.1. Add a button to trigger the purchases:
 
-Open the **createHUD** method in **GameScene.swift** and add this code snippet to add a '$$$' button to the header: [![InApp13](/assets/wp-content/uploads/2015/04/InApp13.png)](/assets/wp-content/uploads/2015/04/InApp13.png)
+Open the **createHUD** method in **GameScene.swift** and add this code snippet to add a '$$$' button to the header: [![InApp13](/developerplayground/assets/2015/04/InApp13.png)](/developerplayground/assets/2015/04/InApp13.png)
 
 ```swift
 func createHUD() {
@@ -245,13 +245,13 @@ func checkAndActivateGreenShip() {
 
 ### Test and upload to iTunes Connect
 
-You need a Sandbox Test User to test the purchases. I've described the steps to create one in [part 6](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-6-game-center-integration). [![InApp16](/assets/wp-content/uploads/2015/04/InApp16.png)](/assets/wp-content/uploads/2015/04/InApp16.png)
+You need a Sandbox Test User to test the purchases. I've described the steps to create one in [part 6](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-6-game-center-integration). [![InApp16](/developerplayground/assets/2015/04/InApp16.png)](/developerplayground/assets/2015/04/InApp16.png)
 
 Testing is only possible on a real device. If you try a purchase in the simulator, you'll receive an error message: AppStore is not available. And don't forget to set the checkmarks on your purchases to include them to your them to your application bundle, before submitting a new version in iTunesConnect. 
 
 That's all for today. The SourceCode of this tutorial is available at [GitHub](https://github.com/stfnjstn/MySecondGame/releases/tag/v0.8). To see **In-App Purchase** in action you can download my free [game](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8) in the AppStore. The **In-App Purchase** update will be released in the next days.
 
-![](/assets/wp-content/uploads/2015/04/AppStore.png)
+![](/developerplayground/assets/2015/04/AppStore.png)
 
 Cheers,   
 Stefan

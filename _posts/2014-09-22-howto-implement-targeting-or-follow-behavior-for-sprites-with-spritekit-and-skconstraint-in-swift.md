@@ -21,15 +21,15 @@ tags: []
 
 At the developer conference WWDC, in June this year, Apple showed a new class in SpriteKit: SKConstraint. It can be used to define constraints for the orientation, the distance or the position of SpriteKit nodes. In my todays blog post I'll show how to use SKContraints to implement a follow and targeting behavior. I have updated this tutorial to XCode 6.3 and SWIFT 1.2!
 
-[![](/assets/wp-content/uploads/2014/09/Foto-1.jpg)](/assets/wp-content/uploads/2014/09/Foto-1.jpg)
+[![](/developerplayground/assets/2014/09/Foto-1.jpg)](/developerplayground/assets/2014/09/Foto-1.jpg)
 
 ### 1. Create a new Project
 
-[![follow1](/assets/wp-content/uploads/2014/09/follow1.png)](/assets/wp-content/uploads/2014/09/follow1.png)
+[![follow1](/developerplayground/assets/2014/09/follow1.png)](/developerplayground/assets/2014/09/follow1.png)
 
-[![follow2](/assets/wp-content/uploads/2014/09/follow2.png)](/assets/wp-content/uploads/2014/09/follow2.png)
+[![follow2](/developerplayground/assets/2014/09/follow2.png)](/developerplayground/assets/2014/09/follow2.png)
 
-[![follow3](/assets/wp-content/uploads/2014/09/follow3-1.jpg)](/assets/wp-content/uploads/2014/09/follow3-1.jpg)
+[![follow3](/developerplayground/assets/2014/09/follow3-1.jpg)](/developerplayground/assets/2014/09/follow3-1.jpg)
 
 ### 2. Open the GameScene.swift file and remove the code for creating a label in didMoveToView:
 
@@ -108,7 +108,7 @@ override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
 
 ### 7. Start the project:
 
-[![Video](/assets/wp-content/uploads/Videos/1A3TUvTiJfw.png)](https://youtu.be/1A3TUvTiJfw)
+[![Video](/developerplayground/assets/Videos/1A3TUvTiJfw.png)](https://youtu.be/1A3TUvTiJfw)
 
 The source code can be found in my [GitHub repository](https://github.com/stfnjstn/SpriteKitConstraintDemo).
 
