@@ -15,7 +15,7 @@ tags: []
 
 Sorry, I love writing blog posts, but this time I have written a small game instead of completing my tutorial. Here's another short teaser video:
 
-TODO: Video https://youtu.be/8d8MH_gXt84
+[![Video](/assets/wp-content/uploads/Videos/8d8MH_gXt84.png)](https://youtu.be/8d8MH_gXt84)
 
 That's all for today. The complete code will be available at GitHub soon.
 

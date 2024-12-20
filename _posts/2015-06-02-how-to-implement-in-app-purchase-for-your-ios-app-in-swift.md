@@ -20,13 +20,11 @@ tags:
 ## How to implement a space shooter with SpriteKit and SWIFT - Part 8
 ### In-App Purchases: 
 
-TODO VIDEO https://youtu.be/8d8MH_gXt84
+[![Video](/assets/wp-content/uploads/Videos/8d8MH_gXt84.png)](https://youtu.be/8d8MH_gXt84)
 
 [![](/assets/wp-content/uploads/2014/11/AppStore3.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
 
 #### Tutorial Overview: How to implement a space shooter with SpriteKit and SWIFT
-
-TODO VIDEO https://youtu.be/8d8MH_gXt84
 
   * [Part 1](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-1): Initial project setup, sprite creation and movement using _SKAction_ and _SKConstraint_
   * [Part 2](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-2): Adding enemies, bullets and shooting with _SKAction_ and _SKConstraint_

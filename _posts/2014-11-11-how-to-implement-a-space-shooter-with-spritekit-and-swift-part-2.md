@@ -19,7 +19,7 @@ tags: []
 
 ### Adding enemies, bullets and shooting with SKAction and SKConstraint
 
-TODO VIDEO https://youtu.be/8d8MH_gXt84
+[![Video](/assets/wp-content/uploads/Videos/8d8MH_gXt84.png)](https://youtu.be/8d8MH_gXt84)
 
 [![](/assets/wp-content/uploads/2014/11/AppStore1.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
 

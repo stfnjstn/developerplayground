@@ -21,7 +21,7 @@ tags: []
 ## How to implement a space shooter with SpriteKit and SWIFT - Part 6
 ### Adding Game Center Integration:
 
-TODO Video https://youtu.be/8d8MH_gXt84
+[![Video](/assets/wp-content/uploads/Videos/8d8MH_gXt84.png)](https://youtu.be/8d8MH_gXt84)
 
 [![](/assets/wp-content/uploads/2015/01/AppStore.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
 

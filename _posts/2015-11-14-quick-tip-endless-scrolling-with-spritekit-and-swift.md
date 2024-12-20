@@ -28,11 +28,9 @@ Welcome to my tutorial series about scrolling:
 
 This video gives an impression what I'll show today:
 
-TODO: Video https://youtu.be/uYVqG8Y8rLU
+[![Video](/assets/wp-content/uploads/Videos/uYVqG8Y8rLU.png)](https://youtu.be/uYVqG8Y8rLU)
 
 ### 1. About the algorithm and the background tiles
-
- 
 
 #### Creating the image tiles for the scrolling parts of the background:
 

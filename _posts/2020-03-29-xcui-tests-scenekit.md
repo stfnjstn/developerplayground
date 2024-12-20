@@ -65,7 +65,7 @@ app.otherElements[id].firstMatch.coordinate(withNormalizedOffset: CGVector.zero)
 
 And here is a  video with the automated result. The left button closes the pit and the right opens the door.
 
-todo Video https://youtu.be/YtzKKdSh1r0
+[![Video](/assets/wp-content/uploads/Videos/YtzKKdSh1r0.png)](https://youtu.be/YtzKKdSh1r0)
 
 That all for today,
 

@@ -34,9 +34,8 @@ My goal is to implement a complete space shooter with SpriteKit and SWIFT.
 [![iOS Simulator Screen Shot 08 Feb 2015 22.43.20](/assets/wp-content/uploads/2014/10/iOS-Simulator-Screen-Shot-08-Feb-2015-22.43.20-1.jpg)](/assets/wp-content/uploads/2014/10/iOS-Simulator-Screen-Shot-08-Feb-2015-22.43.20-1.jpg)
 
 ### Here's a short teaser video:
-TODO Video: https://youtu.be/yTAAR9c9pYU
 
-
+[![Video](/assets/wp-content/uploads/Videos/yTAAR9c9pYU.png)](https://youtu.be/yTAAR9c9pYU)
 
 The sample code is available on [GitHub](https://github.com/stfnjstn/MySecondGame). The complete game can be downloaded here:  [![AppStore.png](/assets/wp-content/uploads/2014/12/AppStore.png)](https://itunes.apple.com/us/app/mysecondgame/id956647245?ls=1&mt=8 "AppStore Link")
 

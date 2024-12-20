@@ -248,7 +248,9 @@ override func viewWillAppear(_ animated: Bool) {
 
 Now start the App on a real iOS Device:
 
-TODO VIDEO https://youtu.be/6Q_3TWDBG6U
+**Here is a video to get an impression:**
+
+[![Video](/assets/wp-content/uploads/Videos/6Q_3TWDBG6U.png)](https://youtu.be/6Q_3TWDBG6U)
 
 You can download the sample code from [GitHub](https://github.com/stfnjstn/ARDefenderTutorial).
 

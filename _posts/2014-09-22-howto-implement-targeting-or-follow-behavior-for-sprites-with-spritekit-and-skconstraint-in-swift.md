@@ -21,7 +21,6 @@ tags: []
 
 At the developer conference WWDC, in June this year, Apple showed a new class in SpriteKit: SKConstraint. It can be used to define constraints for the orientation, the distance or the position of SpriteKit nodes. In my todays blog post I'll show how to use SKContraints to implement a follow and targeting behavior. I have updated this tutorial to XCode 6.3 and SWIFT 1.2!
 
-TODO: Reduce Picture Size
 [![](/assets/wp-content/uploads/2014/09/Foto-1.jpg)](/assets/wp-content/uploads/2014/09/Foto-1.jpg)
 
 ### 1. Create a new Project
@@ -108,8 +107,8 @@ override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
 }
 
 ### 7. Start the project:
-TODO VIDEO
-https://youtu.be/1A3TUvTiJfw
+
+[![Video](/assets/wp-content/uploads/Videos/1A3TUvTiJfw.png)](https://youtu.be/1A3TUvTiJfw)
 
 The source code can be found in my [GitHub repository](https://github.com/stfnjstn/SpriteKitConstraintDemo).
 

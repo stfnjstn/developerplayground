@@ -20,7 +20,7 @@ tags: []
 ## How to implement a space shooter with SpriteKit and SWIFT - Part 5
 ### Adding particles and sound: 
 
-TODO VIDEO https://youtu.be/8d8MH_gXt84
+[![Video](/assets/wp-content/uploads/Videos/8d8MH_gXt84.png)](https://youtu.be/8d8MH_gXt84)
 
 [![](/assets/wp-content/uploads/2014/12/AppStore.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
 
@@ -111,7 +111,7 @@ func lifeLost() {
   ...
 ```
 
-TODO VIDEO https://youtu.be/4DouwA_t-fE
+[![Video](/assets/wp-content/uploads/Videos/4DouwA_t-fE.png)](https://youtu.be/4DouwA_t-fE)
 
 #### 2.2 Add a startfield:
 
@@ -167,7 +167,7 @@ emitterNode.zPosition = -12
 self.addChild(emitterNode)
 ```
 
-TODO VIDEO https://youtu.be/GDazsaYDGjQ
+[![Video](/assets/wp-content/uploads/Videos/GDazsaYDGjQ.png)](https://youtu.be/GDazsaYDGjQ)
 
 That's all for today. In my next part I'll show how to integrate game center. You can download the code from GitHub: [Part 5](https://github.com/stfnjstn/MySecondGame/releases/tag/v0.5) or the latest version [here](https://github.com/stfnjstn/MySecondGame/tree/master).
 

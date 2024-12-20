@@ -29,7 +29,8 @@ tags: [iOS, SpriteKit, SWIFT]
 * [Part 8](/how-to-implement-in-app-purchase-for-your-ios-app-in-swift): In-App Purchases
 
 ### Initial project setup, sprite creation and movement using SKAction and SKConstraint
-TODO Video: https://youtu.be/8d8MH_gXt84
+
+[![Video](/assets/wp-content/uploads/Videos/8d8MH_gXt84.png)](https://youtu.be/8d8MH_gXt84)
 
 [![](/assets/wp-content/uploads/2014/11/AppStore.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
 

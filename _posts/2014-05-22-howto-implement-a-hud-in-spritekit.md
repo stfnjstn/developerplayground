@@ -260,7 +260,7 @@ The icons for Retina and Retina-4-inch iPhones are identical:
 }
 ```
 
-TODO VIDEO: https://youtu.be/3NKeYAJc8rQ
+[![Video](/assets/wp-content/uploads/Videos/3NKeYAJc8rQ.png)](https://youtu.be/3NKeYAJc8rQ)
 
 As always you can download the complete [project from GitHub: v0.7](https://github.com/stfnjstn/MyFirstGame/releases/tag/v0.7) That's all for today. In my next post I'll show how to organize your code with the ``#pragma mark`` directive.
 

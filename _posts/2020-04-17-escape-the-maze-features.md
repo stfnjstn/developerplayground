@@ -41,9 +41,7 @@ Already implemented features:
   * Cure
   * Hidden ways
 
-
-
-TODO Video https://youtu.be/a672oe1bfZo 
+[![Video](/assets/wp-content/uploads/Videos/a672oe1bfZo.png)](https://youtu.be/a672oe1bfZo)
 
 That's all for today.
 

@@ -13,16 +13,18 @@ categories:
 - Uncategorized
 tags: []
 ---
-https://twitter.com/StefanJosten/status/1379210757297045504
 
-https://youtu.be/I5XS9GIYqOg
 
-https://twitter.com/StefanJosten/status/1376931233523961861
 
-https://twitter.com/StefanJosten/status/1271904902286016513?s=20
+[![TW](/assets/wp-content/uploads/Videos/TW1.png)](https://twitter.com/StefanJosten/status/1379210757297045504)
 
-https://twitter.com/StefanJosten/status/1269276176016646145?s=20
+[![Video](/assets/wp-content/uploads/Videos/I5XS9GIYqOg.png)](https://youtu.be/I5XS9GIYqOg)
 
-https://twitter.com/StefanJosten/status/1265681100959072256?s=20
+[![TW](/assets/wp-content/uploads/Videos/TW2.png)](https://twitter.com/StefanJosten/status/1376931233523961861)
 
-https://twitter.com/StefanJosten/status/1265394929821519878?s=20
+[![TW](/assets/wp-content/uploads/Videos/TW3.png)](https://twitter.com/StefanJosten/status/1271904902286016513)
+
+[![TW](/assets/wp-content/uploads/Videos/TW4.png)](https://twitter.com/StefanJosten/status/1269276176016646145)
+
+[![TW](/assets/wp-content/uploads/Videos/TW5-1.png)](https://twitter.com/StefanJosten/status/1265394929821519878)
+[![TW](/assets/wp-content/uploads/Videos/TW5-2.png)](https://twitter.com/StefanJosten/status/1265394929821519878)

@@ -25,8 +25,7 @@ I was wondering if this can really replace a Mac with XCode to develop for my fa
 
 So here we are: My first game SWIFT Playground completely written on an iPad: [Pong](https://en.wikipedia.org/wiki/Pong) (updated for iOS 10 Beta 5)
 
-TODO Video https://youtu.be/dtoGsfdY9P0
-
+[![Video](/assets/wp-content/uploads/Videos/dtoGsfdY9P0.png)](https://youtu.be/dtoGsfdY9P0)
  
 ### 1. Open the Playground App on your iPad:
 
