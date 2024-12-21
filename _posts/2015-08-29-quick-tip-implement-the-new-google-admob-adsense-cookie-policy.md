@@ -54,7 +54,7 @@ if !userDefaults.boolForKey("termsAccepted") {
 }
 ```
 
-I've also updated the sample code in my [GitHub repository](https://github.com/stfnjstn/iAdAdMobDemo) from the [iAd & AdMob tutorial.](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-6-game-center-integration70)
+I've also updated the sample code in my [GitHub repository](https://github.com/stfnjstn/iAdAdMobDemo) from the [iAd & AdMob tutorial.](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-6-game-center-integration70)
 
 Google gives more details and shows how to implement this in ObjectiveC at [http://www.cookiechoices.org](http://www.cookiechoices.org/). Further details about the Google AdMob SDK can be found [here](https://developers.google.com/admob/ios/interstitial).
 

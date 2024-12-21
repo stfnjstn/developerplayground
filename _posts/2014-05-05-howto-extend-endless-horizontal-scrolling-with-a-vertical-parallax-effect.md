@@ -19,7 +19,7 @@ tags: []
 ---
 ### Welcome to Part 7 of my blog series about game development: Scrolling with parallax effects
 
-Today I'll extend the parallax effect from [part 5](/howto-implement-endless-scrolling-with-parallax-effects) of my posts with vertical scrolling. This should increase the illusion of depth. To control the movement I'll use the motion sensors as described in [part 6.](/howto-use-the-device-motion-sensors-to-control-your-game)
+Today I'll extend the parallax effect from [part 5](/developerplayground/howto-implement-endless-scrolling-with-parallax-effects) of my posts with vertical scrolling. This should increase the illusion of depth. To control the movement I'll use the motion sensors as described in [part 6.](/developerplayground/howto-use-the-device-motion-sensors-to-control-your-game)
 
 ### Steps to achieve this behavior:
 
@@ -43,7 +43,7 @@ Today I'll extend the parallax effect from [part 5](/howto-implement-endless-scr
 
 **Now let's integrate this into the MyFirstGame project:**
 
-The code changes should be straight forward: (If you haven't completed [part 6](/howto-use-the-device-motion-sensors-to-control-your-game) you can download the project from GitHub: [v0.5.1](https://github.com/stfnjstn/MyFirstGame/releases/tag/v0.6))
+The code changes should be straight forward: (If you haven't completed [part 6](/developerplayground/howto-use-the-device-motion-sensors-to-control-your-game) you can download the project from GitHub: [v0.5.1](https://github.com/stfnjstn/MyFirstGame/releases/tag/v0.6))
 
 #### Changes in "ParallaxHandlerNode.h":
 

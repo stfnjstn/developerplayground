@@ -200,7 +200,7 @@ Looks nice, but without interactions this is a little boring. Let's add them!
 
 ## **Now let's integrate this into the MyFirstGame project:**
 
-If you haven't completed [part 7](/howto-extend-endless-horizontal-scrolling-with-a-vertical-parallax-effect/), you can download the project from GitHub: [v0.6.1](https://github.com/stfnjstn/MyFirstGame/releases/tag/v0.6.1)
+If you haven't completed [part 7](/developerplayground/howto-extend-endless-horizontal-scrolling-with-a-vertical-parallax-effect/), you can download the project from GitHub: [v0.6.1](https://github.com/stfnjstn/MyFirstGame/releases/tag/v0.6.1)
 
 The result will look like this:
 

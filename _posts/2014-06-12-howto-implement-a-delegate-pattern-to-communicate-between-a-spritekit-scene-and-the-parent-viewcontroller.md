@@ -20,7 +20,7 @@ tags: []
 ---
 ### Welcome to Part 10 of my blog series about game development.
 
-Today I'll show how to use a delegate pattern to communicate with the ViewController which contains our Scene. You can download the [project from GitHub: v0.7](https://github.com/stfnjstn/MyFirstGame/releases/tag/v0.7) if you haven't completed [part 8](/howto-implement-a-hud-in-spritekit). One of the most important characteristics of this pattern is _Inversion of control_. The goal of this principle is to remove dependencies between objects. The main idea is that a _delegator_ object _delegates_ the execution a task to a _delegate object_. You can find multiple definitions and tutorials about the [Delegate Pattern](http://en.wikipedia.org/wiki/Delegation_pattern). Therefore I'll not explain the pattern itself, but show how you can use it for the following Situation:
+Today I'll show how to use a delegate pattern to communicate with the ViewController which contains our Scene. You can download the [project from GitHub: v0.7](https://github.com/stfnjstn/MyFirstGame/releases/tag/v0.7) if you haven't completed [part 8](/developerplayground/howto-implement-a-hud-in-spritekit). One of the most important characteristics of this pattern is _Inversion of control_. The goal of this principle is to remove dependencies between objects. The main idea is that a _delegator_ object _delegates_ the execution a task to a _delegate object_. You can find multiple definitions and tutorials about the [Delegate Pattern](http://en.wikipedia.org/wiki/Delegation_pattern). Therefore I'll not explain the pattern itself, but show how you can use it for the following Situation:
 
 
 After creating a new SpriteKit project you typically have a ViewController which has a reference to a SKScene object:

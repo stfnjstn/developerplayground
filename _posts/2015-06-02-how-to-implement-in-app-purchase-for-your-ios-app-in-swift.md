@@ -26,14 +26,14 @@ tags:
 
 #### Tutorial Overview: How to implement a space shooter with SpriteKit and SWIFT
 
-  * [Part 1](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-1): Initial project setup, sprite creation and movement using _SKAction_ and _SKConstraint_
-  * [Part 2](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-2): Adding enemies, bullets and shooting with _SKAction_ and _SKConstraint_
-  * [Part 3](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-3-create-a-hud): Adding a HUD with _SKLabelNode_ and _SKSpriteNode_
-  * [Part 4](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-4-collision-detection): Adding basic game logic and collision detection
-  * [Part 5](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-5-particles-and-sound): Adding particles and sound 
-  * [Part 6](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-6-game-center-integration): _GameCenter integration_
-  * [Part 7](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-7-iad-integration): _iAd_ integration
-  * [Part 8](/how-to-implement-in-app-purchase-for-your-ios-app-in-swift): In-App Purchases
+  * [Part 1](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-1): Initial project setup, sprite creation and movement using _SKAction_ and _SKConstraint_
+  * [Part 2](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-2): Adding enemies, bullets and shooting with _SKAction_ and _SKConstraint_
+  * [Part 3](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-3-create-a-hud): Adding a HUD with _SKLabelNode_ and _SKSpriteNode_
+  * [Part 4](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-4-collision-detection): Adding basic game logic and collision detection
+  * [Part 5](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-5-particles-and-sound): Adding particles and sound 
+  * [Part 6](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-6-game-center-integration): _GameCenter integration_
+  * [Part 7](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-7-iad-integration): _iAd_ integration
+  * [Part 8](/developerplayground/how-to-implement-in-app-purchase-for-your-ios-app-in-swift): In-App Purchases
 
 
 
@@ -54,7 +54,7 @@ As a starting point you can download the sample project from my GitHub [reposito
 
 ### 1. Create In-App Purchases in iTunes Connect
 
-You need a paid Apple Developer Account to execute the next steps. For details about the process to upload Apps to iTunes Connect check tutorial [part 6](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-6-game-center-integration).
+You need a paid Apple Developer Account to execute the next steps. For details about the process to upload Apps to iTunes Connect check tutorial [part 6](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-6-game-center-integration).
 
 Browse to [iTunes Connect](https://itunesconnect.apple.com) and open your App: [![InApp2](/developerplayground/assets/2015/04/InApp2-1.jpg)](/developerplayground/assets/2015/04/InApp2-1.jpg) Choose **In-App Purchases** and click on **Create New** : [![InApp3](/developerplayground/assets/2015/04/InApp3.png)](/developerplayground/assets/2015/04/InApp3.png) You see several different types of possible purchases. In this tutorial I'll show a '**Consumable** ' and a '**Non-Consumable** ' purchase. [![InApp4](/developerplayground/assets/2015/04/InApp4.png)](/developerplayground/assets/2015/04/InApp4.png) Create the **Consumable** purchase: [![InApp5](/developerplayground/assets/2015/04/InApp5.png)](/developerplayground/assets/2015/04/InApp5.png) Enter **Reference Name** , **Product ID** and **Price Tier** : [![InApp6](/developerplayground/assets/2015/04/InApp6.png)](/developerplayground/assets/2015/04/InApp6.png) Add **Display Name** and **Description** at least for one language: [![InApp7](/developerplayground/assets/2015/04/InApp7.png)](/developerplayground/assets/2015/04/InApp7.png) Additionally a screenshot is needed for the review team: [![InApp8](/developerplayground/assets/2015/04/InApp8.png)](/developerplayground/assets/2015/04/InApp8.png) Now do the same for the **Non-Consumable** purchase: [![InApp9](/developerplayground/assets/2015/04/InApp9.png)](/developerplayground/assets/2015/04/InApp9.png) [![InApp14](/developerplayground/assets/2015/04/InApp14.png)](/developerplayground/assets/2015/04/InApp14.png) The final result should look like this: [![InApp15](/developerplayground/assets/2015/04/InApp15.png)](/developerplayground/assets/2015/04/InApp15.png)
 
@@ -245,7 +245,7 @@ func checkAndActivateGreenShip() {
 
 ### Test and upload to iTunes Connect
 
-You need a Sandbox Test User to test the purchases. I've described the steps to create one in [part 6](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-6-game-center-integration). [![InApp16](/developerplayground/assets/2015/04/InApp16.png)](/developerplayground/assets/2015/04/InApp16.png)
+You need a Sandbox Test User to test the purchases. I've described the steps to create one in [part 6](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-6-game-center-integration). [![InApp16](/developerplayground/assets/2015/04/InApp16.png)](/developerplayground/assets/2015/04/InApp16.png)
 
 Testing is only possible on a real device. If you try a purchase in the simulator, you'll receive an error message: AppStore is not available. And don't forget to set the checkmarks on your purchases to include them to your them to your application bundle, before submitting a new version in iTunesConnect. 
 

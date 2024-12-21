@@ -177,7 +177,7 @@ NSTimeInterval _dt; // <<<<< New
 
 **Now let's integrate this into the MyFirstGame project:**
 
-### If you haven't completed [part 5](/howto-implement-endless-scrolling-with-parallax-effects), you can [download the project from GitHub: v0.4.1](https://github.com/stfnjstn/MyFirstGame/releases/tag/v0.4.1)
+### If you haven't completed [part 5](/developerplayground/howto-implement-endless-scrolling-with-parallax-effects), you can [download the project from GitHub: v0.4.1](https://github.com/stfnjstn/MyFirstGame/releases/tag/v0.4.1)
 
 **1.** Add the MotionManagerSingleton files to the project
 
@@ -238,4 +238,4 @@ NSTimeInterval _dt; // <<<<< New
 
 [![Video](/developerplayground/assets/2014/04/Video1.png)](https://youtu.be/kZr0TaZZS0w)
 
-As always you can download the complete [project from GitHub: v0.5.1](https://github.com/stfnjstn/MyFirstGame/releases/tag/v0.5.1) That's all for today. In my next post I'll add an vertical parallax effect to increase the illusion of depth. Cheers, Stefan Short update: A migration to SWIFT is done in [this blog post](/how-to-convertintegrate-swift-with-objective-c).
+As always you can download the complete [project from GitHub: v0.5.1](https://github.com/stfnjstn/MyFirstGame/releases/tag/v0.5.1) That's all for today. In my next post I'll add an vertical parallax effect to increase the illusion of depth. Cheers, Stefan Short update: A migration to SWIFT is done in [this blog post](/developerplayground/how-to-convertintegrate-swift-with-objective-c).

@@ -21,7 +21,7 @@ tags: []
 
 Today I'll create a component which implements the endless scrolling and adds some parallax effects. I'll use SpriteKit for that. A nice tutorial about SpriteKit can be found [here](http://www.raywenderlich.com/42699/spritekit-tutorial-for-beginners) and [here](https://developer.apple.com/library/ios/documentation/GraphicsAnimation/Conceptual/SpriteKit_PG/Introduction/Introduction.html).
 
-If you haven't completed part [3](/howto-add-splash-screen-application-icons) or [4](/howto-implement-endless-scrolling), you can [download the project from GitHub: v0.3](https://github.com/stfnjstn/MyFirstGame/releases/tag/v0.3)
+If you haven't completed part [3](/developerplayground/howto-add-splash-screen-application-icons) or [4](/developerplayground/howto-implement-endless-scrolling), you can [download the project from GitHub: v0.3](https://github.com/stfnjstn/MyFirstGame/releases/tag/v0.3)
 
 First of all we need some background images to show the infinite parallax scrolling. I've created four layers:
 

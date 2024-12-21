@@ -23,8 +23,8 @@ tags:
 
 Welcome to my tutorial series about scrolling:
 
-  * [Part 1](/quick-tip-endless-scrolling-with-spritekit-and-swift): Endless scrolling with background tiles
-  * [Part 2](/quick-tip-endless-scrolling-spritekit-swift-part-2-4): Natural endless scrolling with easing
+  * [Part 1](/developerplayground/quick-tip-endless-scrolling-with-spritekit-and-swift): Endless scrolling with background tiles
+  * [Part 2](/developerplayground/quick-tip-endless-scrolling-spritekit-swift-part-2-4): Natural endless scrolling with easing
 
 This video gives an impression what I'll show today:
 
@@ -210,7 +210,7 @@ class GameScene: SKScene {
 
 You can download the complete sample from my [Github repository](https://github.com/stfnjstn/EndlessScrollingDemo).
 
-I'll show an improved version with a smoother scrolling in [part 2](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-4-collision-detection86). You can support me by downloading my Apps from the Apple AppStore:
+I'll show an improved version with a smoother scrolling in [part 2](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-4-collision-detection86). You can support me by downloading my Apps from the Apple AppStore:
 
 [![AppStore Stefan Josten](/developerplayground/assets/2015/11/AppStore1.png)](https://itunes.apple.com/developer/stefan-josten/id949662361)   
   

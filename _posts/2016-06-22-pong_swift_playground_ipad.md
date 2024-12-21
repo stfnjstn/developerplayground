@@ -37,7 +37,7 @@ So here we are: My first game SWIFT Playground completely written on an iPad: [P
 
 ### 3. Here is the SourceCode. 
 
-Just copy it in your playground and hit start. I'll not introduce the basics of SpriteKit. You can check my other [posts](/my-tutorials/) to get an introduction.
+Just copy it in your playground and hit start. I'll not introduce the basics of SpriteKit. You can check my other [posts](/developerplayground/y-tutorials/) to get an introduction.
   
 ```swift
 import SpriteKit

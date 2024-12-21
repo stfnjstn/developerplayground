@@ -27,7 +27,7 @@ Since my Apple TV Developer kit arrived one week ago I had plenty of time to try
 
 [![Swift Tutorial Apple TV remote 1](/developerplayground/assets/2015/10/Screen-Shot-2015-10-01-at-20.12.48-1.jpg)](/developerplayground/assets/2015/10/Screen-Shot-2015-10-01-at-20.12.48-1.jpg)
 
-Today I'll will focus again on the remote control. It provides, especially in combination with SpriteKit, a simple and very natural way to control a sprite on the screen. For a natural sprite movement the approach of my todays post is much better, the my [article about gesture recognition](/quick-tip-how-to-use-the-remote-control-in-your-tvos-apps-for-apple-tv-in-swift) on the AppleTV.
+Today I'll will focus again on the remote control. It provides, especially in combination with SpriteKit, a simple and very natural way to control a sprite on the screen. For a natural sprite movement the approach of my todays post is much better, the my [article about gesture recognition](/developerplayground/quick-tip-how-to-use-the-remote-control-in-your-tvos-apps-for-apple-tv-in-swift) on the AppleTV.
 
 Let's start...
 

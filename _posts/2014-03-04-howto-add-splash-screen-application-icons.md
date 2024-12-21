@@ -16,7 +16,7 @@ tags: []
 ---
 ### Welcome to Part 3 of my blog series about game development.
 
-Today I'm adding the app icons and a splash screen. I'll use an [asset catalog](https://developer.apple.com/library/ios/recipes/xcode_help-image_catalog-1.0/Recipe.html#//apple_ref/doc/uid/TP40013303-CH1-SW1) for that. If you haven't completed [part 2](/howto-add-view-controllers-to-the-game-storyboard-and-use-segues-to-navigate-between-them) , you can [download the project from GitHub: v0.2.1](https://github.com/stfnjstn/MyFirstGame/releases/tag/v0.2.1)
+Today I'm adding the app icons and a splash screen. I'll use an [asset catalog](https://developer.apple.com/library/ios/recipes/xcode_help-image_catalog-1.0/Recipe.html#//apple_ref/doc/uid/TP40013303-CH1-SW1) for that. If you haven't completed [part 2](/developerplayground/howto-add-view-controllers-to-the-game-storyboard-and-use-segues-to-navigate-between-them) , you can [download the project from GitHub: v0.2.1](https://github.com/stfnjstn/MyFirstGame/releases/tag/v0.2.1)
 
 ### First of all let's hide the annoying header bar:
 

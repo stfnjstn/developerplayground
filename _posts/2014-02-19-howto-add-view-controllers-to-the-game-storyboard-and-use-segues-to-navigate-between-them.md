@@ -19,7 +19,7 @@ tags: []
 ---
 ### Welcome to Part 2 of my blog series about game development: View Controller
 
-Today I'm creating the basic game infrastructure, not the game itself. If you haven't completed [part 1](/howto-design-for-depth-creating-a-start-screen-with-parallax-animations-using-ios-7-motion-effects), you can [download the project from GitHub (version v0.1](https://github.com/stfnjstn/MyFirstGame/releases/tag/v0.1)).
+Today I'm creating the basic game infrastructure, not the game itself. If you haven't completed [part 1](/developerplayground/howto-design-for-depth-creating-a-start-screen-with-parallax-animations-using-ios-7-motion-effects), you can [download the project from GitHub (version v0.1](https://github.com/stfnjstn/MyFirstGame/releases/tag/v0.1)).
 
 #### Basic screens needed for the game:
 
@@ -36,7 +36,7 @@ Today I'm creating the basic game infrastructure, not the game itself. If you ha
 
 #### Reusing the code for the parallax effect
 
-Before we create the corresponding view controllers take a step back and think about the two functions we've added to our StartScreenViewController to perform the parallax effect in [part 1](/howto-design-for-depth-creating-a-start-screen-with-parallax-animations-using-ios-7-motion-effects) of this blog series:
+Before we create the corresponding view controllers take a step back and think about the two functions we've added to our StartScreenViewController to perform the parallax effect in [part 1](/developerplayground/howto-design-for-depth-creating-a-start-screen-with-parallax-animations-using-ios-7-motion-effects) of this blog series:
 
 ```objectivec
 -(void)assignBackgroundParallaxBehavior:(UIView*) view
@@ -138,7 +138,7 @@ I'll organize all ViewControllers in a group (File -> New -> Group)
 @property (strong, nonatomic) IBOutletCollection(UIView) NSArray *foregroundViews;
 ```
 
-Detailed steps are described in [part 1](/howto-design-for-depth-creating-a-start-screen-with-parallax-animations-using-ios-7-motion-effects). The result should look like this: 
+Detailed steps are described in [part 1](/developerplayground/howto-design-for-depth-creating-a-start-screen-with-parallax-animations-using-ios-7-motion-effects). The result should look like this: 
 
 [![](/developerplayground/assets/2014/02/ViewControllers9-1.jpg)](/developerplayground/assets/2014/02/ViewControllers9-1.jpg)
 

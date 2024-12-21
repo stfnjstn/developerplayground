@@ -29,7 +29,7 @@ One reason could be that there was just not enough time to load the new content.
 
 #### Prerequisites for this tutorial:
 
-  * You have a subscription for the Apple iAds program. For details please check my previous article about [iAD integration](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-7-iad-integration).
+  * You have a subscription for the Apple iAds program. For details please check my previous article about [iAD integration](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-7-iad-integration).
   * You are registered for the Google [AdMob](https://www.google.com/admob/) program
   * You have downloaded the Google [AdMob SDK for iOS](https://developers.google.com/admob/ios/download)
 
