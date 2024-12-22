@@ -23,65 +23,65 @@ One highly noticed innovation in iOS 7 was the parallax effect on the home scree
 
 First you need a background which is larger than the screen and some foreground elements like Buttons, Labels, ...:
 
-[![iOS Motion Effects](/developerplayground/assets/2014/02/parallax1-1.jpg)](/developerplayground/assets/2014/02/parallax1-1.jpg)
+[![iOS Motion Effects](/assets/2014/02/parallax1-1.jpg)](/assets/2014/02/parallax1-1.jpg)
 
 When the device is tilted, the background image must move in the opposite direction. In the example _below down_ \- the foreground elements have to move _up_. To enhance the impression of depth, it is also important that the movement of the background image is larger than the movement of the foreground elements like the buttons:
 
-[![iOS Motion Effects](/developerplayground/assets/2014/02/parallax2-1.jpg)](/developerplayground/assets/2014/02/parallax2-1.jpg)
+[![iOS Motion Effects](/assets/2014/02/parallax2-1.jpg)](/assets/2014/02/parallax2-1.jpg)
 
 ### Now let's code
 
 First of all create a new _Single View_ Xcode project.
 
-[![iOS Motion Effects](/developerplayground/assets/2014/02/Parallax3-1.jpg)](/developerplayground/assets/2014/02/Parallax3-1.jpg)
+[![iOS Motion Effects](/assets/2014/02/Parallax3-1.jpg)](/assets/2014/02/Parallax3-1.jpg)
 
 Choose _Universal_ to target iPhone and iPad:
 
-[![iOS Motion Effects](/developerplayground/assets/2014/02/Parallax4-1.jpg)](/developerplayground/assets/2014/02/Parallax4-1.jpg)
+[![iOS Motion Effects](/assets/2014/02/Parallax4-1.jpg)](/assets/2014/02/Parallax4-1.jpg)
 
 Limit supported orientations to landscape:
 
-[![iOS Motion Effects](/developerplayground/assets/2014/02/Parallax5-1.jpg)](/developerplayground/assets/2014/02/Parallax5-1.jpg)
+[![iOS Motion Effects](/assets/2014/02/Parallax5-1.jpg)](/assets/2014/02/Parallax5-1.jpg)
 
 Create a new _ViewController_ and name it _StartScreenViewController_.
 
-[![iOS Motion Effects](/developerplayground/assets/2014/02/Parallax6-1.jpg)](/developerplayground/assets/2014/02/Parallax6-1.jpg)
+[![iOS Motion Effects](/assets/2014/02/Parallax6-1.jpg)](/assets/2014/02/Parallax6-1.jpg)
 
-[![iOS Motion Effects](/developerplayground/assets/2014/02/Parallax7-1.jpg)](/developerplayground/assets/2014/02/Parallax7-1.jpg)
+[![iOS Motion Effects](/assets/2014/02/Parallax7-1.jpg)](/assets/2014/02/Parallax7-1.jpg)
 
 After that delete the generic ViewController which was created automatically by XCode:
 
-[![iOS Motion Effects](/developerplayground/assets/2014/02/Parallax8-1.jpg)](/developerplayground/assets/2014/02/Parallax8-1.jpg)
+[![iOS Motion Effects](/assets/2014/02/Parallax8-1.jpg)](/assets/2014/02/Parallax8-1.jpg)
 
 Open the iPhone Storyboard, change type of the ViewController to our new created StartScreenViewController and select landscape orientation:
 
-[![iOS Motion Effects](/developerplayground/assets/2014/02/Parallax9.png)](/developerplayground/assets/2014/02/Parallax9.png)
+[![iOS Motion Effects](/assets/2014/02/Parallax9.png)](/assets/2014/02/Parallax9.png)
 
-[![iOS Motion Effects](/developerplayground/assets/2014/02/Parallax10.png)](/developerplayground/assets/2014/02/Parallax10.png)
+[![iOS Motion Effects](/assets/2014/02/Parallax10.png)](/assets/2014/02/Parallax10.png)
 
 Because we are building a game, which runs only in landscape mode, we can switch off Auto Layout.
 
-[![iOS Motion Effects](/developerplayground/assets/2014/02/Parallax11.png)](/developerplayground/assets/2014/02/Parallax11.png)
+[![iOS Motion Effects](/assets/2014/02/Parallax11.png)](/assets/2014/02/Parallax11.png)
 
 Now, let's create the Start Screen. Add an _UIImageView_ with a background image, a Label and 4 Buttons to the screen. I've chosen white as background color and an opacity of 0.9. After that, the screen should look like this:
 
-[![iOS Motion Effects](/developerplayground/assets/2014/02/Parallax12.png)](/developerplayground/assets/2014/02/Parallax12.png)
+[![iOS Motion Effects](/assets/2014/02/Parallax12.png)](/assets/2014/02/Parallax12.png)
 
-[![iOS Motion Effects](/developerplayground/assets/2014/02/Parallax13-1.jpg)](/developerplayground/assets/2014/02/Parallax13-1.jpg)
+[![iOS Motion Effects](/assets/2014/02/Parallax13-1.jpg)](/assets/2014/02/Parallax13-1.jpg)
 
-[![iOS Motion Effects](/developerplayground/assets/2014/02/Parallax14.png)](/developerplayground/assets/2014/02/Parallax14.png)
+[![iOS Motion Effects](/assets/2014/02/Parallax14.png)](/assets/2014/02/Parallax14.png)
 
 Now let's create the corresponding outlets to get access to the UIElements from inside of our ViewController. (Use CTRL & Drag and the Split Screen View from XCode to connect the elements).
 
-[![iOS Motion Effects](/developerplayground/assets/2014/02/Parallax15-1.jpg)](/developerplayground/assets/2014/02/Parallax15-1.jpg)
+[![iOS Motion Effects](/assets/2014/02/Parallax15-1.jpg)](/assets/2014/02/Parallax15-1.jpg)
 
  
 
 For the foreground elements choose an Outlet Collection of type UIView:
 
-[![iOS Motion Effects](/developerplayground/assets/2014/02/Parallax20-1.jpg)](/developerplayground/assets/2014/02/Parallax20-1.jpg)
+[![iOS Motion Effects](/assets/2014/02/Parallax20-1.jpg)](/assets/2014/02/Parallax20-1.jpg)
 
-[![iOS Motion Effects](/developerplayground/assets/2014/02/Parallax21-1.jpg)](/developerplayground/assets/2014/02/Parallax21-1.jpg)
+[![iOS Motion Effects](/assets/2014/02/Parallax21-1.jpg)](/assets/2014/02/Parallax21-1.jpg)
 
 Now, everything is prepared to add the parallax effect. Therefore we'll create two functions which will handle the device motion and the movement of our UI elements to the StartScreenViewController class:
 ```objectivec
@@ -155,7 +155,7 @@ Test it on a device
 
 
 
-[![Video](/developerplayground/assets/2014/02/Video0.png)](https://youtu.be/3FFoO4yUMx0)
+[![Video](/assets/2014/02/Video0.png)](https://youtu.be/3FFoO4yUMx0)
 
 Do the same for iPad
 

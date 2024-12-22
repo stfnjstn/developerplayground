@@ -19,32 +19,32 @@ tags: []
 
 ### Adding enemies, bullets and shooting with SKAction and SKConstraint
 
-[![Video](/developerplayground/assets/Videos/8d8MH_gXt84.png)](https://youtu.be/8d8MH_gXt84)
+[![Video](/assets/Videos/8d8MH_gXt84.png)](https://youtu.be/8d8MH_gXt84)
 
-[![](/developerplayground/assets/2014/11/AppStore1.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
+[![](/assets/2014/11/AppStore1.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
 
 #### Tutorial Overview: How to implement a space shooter with SpriteKit and SWIFT
 
-* [Part 1](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-1): Initial project setup, sprite creation and movement using _SKAction_ and _SKConstraint_
-* [Part 2](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-2): Adding enemies, bullets and shooting with _SKAction_ and _SKConstraint_
-* [Part 3](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-3-create-a-hud): Adding a HUD with _SKLabelNode_ and _SKSpriteNode_
-* [Part 4](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-4-collision-detection): Adding basic game logic and collision detection
-* [Part 5](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-5-particles-and-sound): Adding particles and sound
-* [Part 6](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-6-game-center-integration): _GameCenter_ integration
-* [Part 7](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-7-iad-integration): _iAd_ integration
-* [Part 8](/developerplayground/how-to-implement-in-app-purchase-for-your-ios-app-in-swift): In-App Purchases
+* [Part 1](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-1): Initial project setup, sprite creation and movement using _SKAction_ and _SKConstraint_
+* [Part 2](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-2): Adding enemies, bullets and shooting with _SKAction_ and _SKConstraint_
+* [Part 3](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-3-create-a-hud): Adding a HUD with _SKLabelNode_ and _SKSpriteNode_
+* [Part 4](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-4-collision-detection): Adding basic game logic and collision detection
+* [Part 5](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-5-particles-and-sound): Adding particles and sound
+* [Part 6](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-6-game-center-integration): _GameCenter_ integration
+* [Part 7](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-7-iad-integration): _iAd_ integration
+* [Part 8](/how-to-implement-in-app-purchase-for-your-ios-app-in-swift): In-App Purchases
 
 ### Add the enemies:
 
 I'll add several enemy sprites. These will automatically follow and orient to the hero sprite. You can download the code from Part 1 [here](https://github.com/stfnjstn/MySecondGame/releases/tag/v0.1).
 
-[![part2-1](/developerplayground/assets/2014/11/part2-1-1.jpg)](/developerplayground/assets/2014/11/part2-1-1.jpg)
+[![part2-1](/assets/2014/11/part2-1-1.jpg)](/assets/2014/11/part2-1-1.jpg)
 
 #### 1. Add a new class EnemySpriteController:
 
-[![part2-2](/developerplayground/assets/2014/11/part2-2.png)](/developerplayground/assets/2014/11/part2-2.png)
+[![part2-2](/assets/2014/11/part2-2.png)](/assets/2014/11/part2-2.png)
 
-[![part2-3](/developerplayground/assets/2014/11/part2-3-1.jpg)](/developerplayground/assets/2014/11/part2-3-1.jpg)
+[![part2-3](/assets/2014/11/part2-3-1.jpg)](/assets/2014/11/part2-3-1.jpg)
 
 #### 2. Import SpriteKit, define the class and add an array which stores all enemies:
 
@@ -62,7 +62,7 @@ class EnemySpriteController {
 
 #### 3. Add a new method spawnEnemy to EnemySpriteController:
 
-Nothing magic here. Just create a SKSpriteNode and add it to the enemy collection. Targeting and orientation behavior is implemented with SKConstraints. For details check my post: [HowTo: Implement targeting or follow behavior for sprites with SpriteKit and SKConstraint](/developerplayground/howto-implement-targeting-or-follow-behavior-for-sprites-with-spritekit-and-skconstraint-in-swift).
+Nothing magic here. Just create a SKSpriteNode and add it to the enemy collection. Targeting and orientation behavior is implemented with SKConstraints. For details check my post: [HowTo: Implement targeting or follow behavior for sprites with SpriteKit and SKConstraint](/howto-implement-targeting-or-follow-behavior-for-sprites-with-spritekit-and-skconstraint-in-swift).
 
 ```swift
 // Return a new enemy sprite which follows the targetSprite node
@@ -117,7 +117,7 @@ for(var i=0; i<3;i++){
 
 Result are three red enemy sprites which will follow the white spaceship. Next steps are adding bullets and shooting. 
 
-[![SKConstraint Tutorial 1](/developerplayground/assets/2014/11/IMG_8379-1.jpg)](/developerplayground/assets/2014/11/IMG_8379-1.jpg)
+[![SKConstraint Tutorial 1](/assets/2014/11/IMG_8379-1.jpg)](/assets/2014/11/IMG_8379-1.jpg)
 
 #### 6. Add a shoot method inside EnemySpriteController.swift:
 
@@ -159,11 +159,11 @@ override func update(currentTime: CFTimeInterval) {
 }
 ```
 
-[![SKConstraint Tutorial](/developerplayground/assets/2014/11/IMG_8379.jpg)](/developerplayground/assets/2014/11/IMG_8379.jpg)
+[![SKConstraint Tutorial](/assets/2014/11/IMG_8379.jpg)](/assets/2014/11/IMG_8379.jpg)
 
 That's all for today. In my next part I'll add a HUD, implement a basic game loging and add collision detection. You can download the code from GitHub: [Part 2](https://github.com/stfnjstn/MySecondGame/releases/tag/v0.2) or the latest version [here](https://github.com/stfnjstn/MySecondGame/tree/master). You can also download my prototyping App for this tutorial series:
 
-[![](/developerplayground/assets/2014/11/AppStore1.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
+[![](/assets/2014/11/AppStore1.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
 
 Cheers,
 

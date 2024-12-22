@@ -10,7 +10,7 @@ last_modified_at: 2020-05-27 16:40:55 -0000
 publish: true
 pin: false
 image:
-  path: /developerplayground/assets/2015/04/AppStore.png
+  path: /assets/2015/04/AppStore.png
 categories:
 - AdSense and Admob
 - iOS
@@ -21,22 +21,22 @@ tags:
 ## How to implement a space shooter with SpriteKit and SWIFT - Part 7
 ### Adding iAd Integration:
 
-[![Video](/developerplayground/assets/Videos/8d8MH_gXt84.png)](https://youtu.be/8d8MH_gXt84)
+[![Video](/assets/Videos/8d8MH_gXt84.png)](https://youtu.be/8d8MH_gXt84)
 
-[![](/developerplayground/assets/2015/04/AppStore.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
+[![](/assets/2015/04/AppStore.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
 
 #### Tutorial Overview: How to implement a space shooter with SpriteKit and SWIFT
 
-* [Part 1](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-1): Initial project setup, sprite creation and movement using _SKAction_ and _SKConstraint_
-* [Part 2](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-2): Adding enemies, bullets and shooting with _SKAction_ and _SKConstraint_
-* [Part 3](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-3-create-a-hud): Adding a HUD with _SKLabelNode_ and _SKSpriteNode_
-* [Part 4](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-4-collision-detection): Adding basic game logic and collision detection
-* [Part 5](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-5-particles-and-sound): Adding particles and sound
-* [Part 6](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-6-game-center-integration): _GameCenter_ integration
-* [Part 7](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-7-iad-integration): _iAd_ integration
-* [Part 8](/developerplayground/how-to-implement-in-app-purchase-for-your-ios-app-in-swift): In-App Purchases
+* [Part 1](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-1): Initial project setup, sprite creation and movement using _SKAction_ and _SKConstraint_
+* [Part 2](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-2): Adding enemies, bullets and shooting with _SKAction_ and _SKConstraint_
+* [Part 3](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-3-create-a-hud): Adding a HUD with _SKLabelNode_ and _SKSpriteNode_
+* [Part 4](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-4-collision-detection): Adding basic game logic and collision detection
+* [Part 5](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-5-particles-and-sound): Adding particles and sound
+* [Part 6](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-6-game-center-integration): _GameCenter_ integration
+* [Part 7](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-7-iad-integration): _iAd_ integration
+* [Part 8](/how-to-implement-in-app-purchase-for-your-ios-app-in-swift): In-App Purchases
 
-Welcome to part 7 of my swift programming tutorial. In the previous parts we've created [sprites, added movement, enemies with a follow behaviour, bullets & shooting](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-2), a [HUD](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-3-create-a-hud), [collision detection](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-4-collision-detection), [sound & particle effects](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-5-particles-and-sound) and a global leaderboard using [Game Center](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-6-game-center-integration). Today I'll show how to integrate the Apple Advertising Framework **iAD** : 
+Welcome to part 7 of my swift programming tutorial. In the previous parts we've created [sprites, added movement, enemies with a follow behaviour, bullets & shooting](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-2), a [HUD](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-3-create-a-hud), [collision detection](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-4-collision-detection), [sound & particle effects](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-5-particles-and-sound) and a global leaderboard using [Game Center](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-6-game-center-integration). Today I'll show how to integrate the Apple Advertising Framework **iAD** : 
 
   * Enable iAd in iTunesConnect
   * Add a Banner Ad (at the bottom of the screen)
@@ -52,17 +52,17 @@ You need a paid Apple Developer Account to execute the next steps.
 
 **Open [ iTunes Connect](https://itunesconnect.apple.com/) and navigate to the Agreements, Tax and Banking section:**
 
-[![](/developerplayground/assets/2015/02/Screen-2BShot-2B2015-02-05-2Bat-2B22.10.19-1.jpg)](/developerplayground/assets/2015/02/Screen-2BShot-2B2015-02-05-2Bat-2B22.10.19-1.jpg)
+[![](/assets/2015/02/Screen-2BShot-2B2015-02-05-2Bat-2B22.10.19-1.jpg)](/assets/2015/02/Screen-2BShot-2B2015-02-05-2Bat-2B22.10.19-1.jpg)
 
 ### Request an iAd Agreement:
 
-[![](/developerplayground/assets/2015/02/iad.png)](/developerplayground/assets/2015/02/iad.png)
+[![](/assets/2015/02/iad.png)](/assets/2015/02/iad.png)
 
 ### 2. Add a Banner Ad
 
 In this section I'll show how to add a banner add at the bottom of the screen. As a starting point you can download the code from part 6 [here](https://github.com/stfnjstn/MySecondGame/releases/tag/v0.6).
 
-[![](/developerplayground/assets/2015/02/Screen-2BShot-2B2015-02-08-2Bat-2B16.46.48-1.jpg)](/developerplayground/assets/2015/02/Screen-2BShot-2B2015-02-08-2Bat-2B16.46.48-1.jpg)
+[![](/assets/2015/02/Screen-2BShot-2B2015-02-08-2Bat-2B16.46.48-1.jpg)](/assets/2015/02/Screen-2BShot-2B2015-02-08-2Bat-2B16.46.48-1.jpg)
 
 **Import the iAd framework and implement the ADBannerViewDelegate **protocol**:
 
@@ -172,7 +172,7 @@ func openAds(sender: AnyObject) {
   }
 ```
 
-[![](/developerplayground/assets/2015/02/Screen-2BShot-2B2015-02-08-2Bat-2B22.20.11.png)](/developerplayground/assets/2015/02/Screen-2BShot-2B2015-02-08-2Bat-2B22.20.11.png)
+[![](/assets/2015/02/Screen-2BShot-2B2015-02-08-2Bat-2B22.20.11.png)](/assets/2015/02/Screen-2BShot-2B2015-02-08-2Bat-2B22.20.11.png)
 
 **Add the call of the action sheet method in gameOver and gameCenterViewControllerDidFinish **
 
@@ -200,7 +200,7 @@ func gameCenterViewControllerDidFinish(gameCenterViewController: GKGameCenterVie
 }
 ```
 
-[![](/developerplayground/assets/2015/02/Screen-2BShot-2B2015-02-08-2Bat-2B22.20.56-1.jpg)](/developerplayground/assets/2015/02/Screen-2BShot-2B2015-02-08-2Bat-2B22.20.56-1.jpg)
+[![](/assets/2015/02/Screen-2BShot-2B2015-02-08-2Bat-2B22.20.56-1.jpg)](/assets/2015/02/Screen-2BShot-2B2015-02-08-2Bat-2B22.20.56-1.jpg)
 
 That's all for today. You can download the code from GitHub: [Part 7](https://github.com/stfnjstn/MySecondGame/releases/tag/v0.7) or the [latest version](https://github.com/stfnjstn/MySecondGame/tree/master). 
 
@@ -208,7 +208,7 @@ I've submitted this version to the Apple AppStore. In one of my next posts I'll 
 
 A more sophisticated game based on this tutorial series is available in the AppStore: 
 
-[![](/developerplayground/assets/2015/04/AppStore.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
+[![](/assets/2015/04/AppStore.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
 
 Cheers,    
 Stefan

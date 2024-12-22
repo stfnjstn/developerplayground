@@ -19,17 +19,17 @@ tags: []
 ---
 ### Welcome to Part 7 of my blog series about game development: Scrolling with parallax effects
 
-Today I'll extend the parallax effect from [part 5](/developerplayground/howto-implement-endless-scrolling-with-parallax-effects) of my posts with vertical scrolling. This should increase the illusion of depth. To control the movement I'll use the motion sensors as described in [part 6.](/developerplayground/howto-use-the-device-motion-sensors-to-control-your-game)
+Today I'll extend the parallax effect from [part 5](/howto-implement-endless-scrolling-with-parallax-effects) of my posts with vertical scrolling. This should increase the illusion of depth. To control the movement I'll use the motion sensors as described in [part 6.](/howto-use-the-device-motion-sensors-to-control-your-game)
 
 ### Steps to achieve this behavior:
 
   * Scale the width and the height of the background image and implement horizontal and vertical movement of the background image:
 
-[![](/developerplayground/assets/2014/05/Parallax-2-1-1.jpg)](/developerplayground/assets/2014/05/Parallax-2-1-1.jpg)
+[![](/assets/2014/05/Parallax-2-1-1.jpg)](/assets/2014/05/Parallax-2-1-1.jpg)
 
   * Scale the height of the background tiles which are used for endless scrolling and implement vertical movement for the background tiles:
 
-[![](/developerplayground/assets/2014/05/Parallax-2-2-1.jpg)](/developerplayground/assets/2014/05/Parallax-2-2-1.jpg)
+[![](/assets/2014/05/Parallax-2-2-1.jpg)](/assets/2014/05/Parallax-2-2-1.jpg)
 
   * Some tricks to get a better effect:
     * Use different scale factors for the backgrounds. Farer away means bigger scale factor
@@ -39,11 +39,11 @@ Today I'll extend the parallax effect from [part 5](/developerplayground/howto-i
 
 ### Here's a video which shows the effect:
 
-[![Video](/developerplayground/assets/2014/05/Video0.png)](https://youtu.be/y5llMUVmZhU)
+[![Video](/assets/2014/05/Video0.png)](https://youtu.be/y5llMUVmZhU)
 
 **Now let's integrate this into the MyFirstGame project:**
 
-The code changes should be straight forward: (If you haven't completed [part 6](/developerplayground/howto-use-the-device-motion-sensors-to-control-your-game) you can download the project from GitHub: [v0.5.1](https://github.com/stfnjstn/MyFirstGame/releases/tag/v0.6))
+The code changes should be straight forward: (If you haven't completed [part 6](/howto-use-the-device-motion-sensors-to-control-your-game) you can download the project from GitHub: [v0.5.1](https://github.com/stfnjstn/MyFirstGame/releases/tag/v0.6))
 
 #### Changes in "ParallaxHandlerNode.h":
 

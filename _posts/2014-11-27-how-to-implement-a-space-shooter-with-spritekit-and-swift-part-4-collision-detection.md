@@ -19,20 +19,20 @@ tags: []
 ## How to implement a space shooter with SpriteKit and SWIFT - Part 4
 ### Adding basic game logic and collision detection: 
 
-[![Video](/developerplayground/assets/Videos/8d8MH_gXt84.png)](https://youtu.be/8d8MH_gXt84)
+[![Video](/assets/Videos/8d8MH_gXt84.png)](https://youtu.be/8d8MH_gXt84)
 
-[![](/developerplayground/assets/2014/11/AppStore3.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
+[![](/assets/2014/11/AppStore3.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
 
 #### Tutorial Overview: How to implement a space shooter with SpriteKit and SWIFT
 
-* [Part 1](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-1): Initial project setup, sprite creation and movement using _SKAction_ and _SKConstraint_
-* [Part 2](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-2): Adding enemies, bullets and shooting with _SKAction_ and _SKConstraint_
-* [Part 3](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-3-create-a-hud): Adding a HUD with _SKLabelNode_ and _SKSpriteNode_
-* [Part 4](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-4-collision-detection): Adding basic game logic and collision detection
-* [Part 5](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-5-particles-and-sound): Adding particles and sound
-* [Part 6](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-6-game-center-integration): _GameCenter_ integration
-* [Part 7](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-7-iad-integration): _iAd_ integration
-* [Part 8](/developerplayground/how-to-implement-in-app-purchase-for-your-ios-app-in-swift): In-App Purchases
+* [Part 1](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-1): Initial project setup, sprite creation and movement using _SKAction_ and _SKConstraint_
+* [Part 2](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-2): Adding enemies, bullets and shooting with _SKAction_ and _SKConstraint_
+* [Part 3](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-3-create-a-hud): Adding a HUD with _SKLabelNode_ and _SKSpriteNode_
+* [Part 4](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-4-collision-detection): Adding basic game logic and collision detection
+* [Part 5](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-5-particles-and-sound): Adding particles and sound
+* [Part 6](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-6-game-center-integration): _GameCenter_ integration
+* [Part 7](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-7-iad-integration): _iAd_ integration
+* [Part 8](/how-to-implement-in-app-purchase-for-your-ios-app-in-swift): In-App Purchases
 
 
 Welcome to part 4 of my tutorial series. In the previous parts we've created a sprite, added movement, created enemies which follow our sprite, added bullets and a HUD. But, for a real game some essential parts are missing:
@@ -87,7 +87,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 
 We have to add a physics body to our hero and bullet sprites. After that the built in physics engine of SpriteKit will handle the collision detection automatically. SpriteKit provides several possibilities to define the shape of the SKPhysicsBody. The easiest is a rectangle. This is not accurate enough for bullets, but not for the Hero sprite. A triangle would be better. Perfect in this scenario is to use the ship texture. That means SpriteKit will use all non transparent pixels to detect the shape by itself:
 
-[![4-1](/developerplayground/assets/2014/11/4-1-1.jpg)](/developerplayground/assets/2014/11/4-1-1.jpg)
+[![4-1](/assets/2014/11/4-1-1.jpg)](/assets/2014/11/4-1-1.jpg)
 
 Inside of didMoveToView in GameScene.swift add this code snippet after the sprite creation: 
 
@@ -116,7 +116,7 @@ The categoryBitMask defines the sprite category. The contactTestBitMask define w
 
 #### 2.1. Scoring
 
-[![4-2](/developerplayground/assets/2014/11/4-2.png)](/developerplayground/assets/2014/11/4-2.png)
+[![4-2](/assets/2014/11/4-2.png)](/assets/2014/11/4-2.png)
 
 I'll create a very simple scoring mechanism: Everytime an enemy is shooting, the score will increase. Hence the label and the score property have been implemented in the last post, only two additional lines are needed in the update method.
 
@@ -135,7 +135,7 @@ override func update(currentTime: CFTimeInterval) {
 
 #### 2.2. Pause button
 
-[![4-3](/developerplayground/assets/2014/11/4-3.png)](/developerplayground/assets/2014/11/4-3.png)
+[![4-3](/assets/2014/11/4-3.png)](/assets/2014/11/4-3.png)
 
 The pause button was created as part of the HUD in part 3 of my tutorial. To detect if the pause button is touched the button and it's container have an unique name: PauseButton and PauseButtonContainer. Now extend the touchesBegan method to check, if pause has been pressed:
 
@@ -194,11 +194,11 @@ func didBeginContact(contact: SKPhysicsContact) {
 }
 ```
 
-[![4-4](/developerplayground/assets/2014/11/4-4-1.jpg)](/developerplayground/assets/2014/11/4-4-1.jpg)
+[![4-4](/assets/2014/11/4-4-1.jpg)](/assets/2014/11/4-4-1.jpg)
 
 #### 2.3. LifeLost & GameOver
 
-[![4-5](/developerplayground/assets/2014/11/4-5-1.jpg)](/developerplayground/assets/2014/11/4-5-1.jpg)
+[![4-5](/assets/2014/11/4-5-1.jpg)](/assets/2014/11/4-5-1.jpg)
 
 Everytime a collision is detected one life is lost and will be removed from the HUD. This is handled in the new lifeLost new method:
 
@@ -262,13 +262,13 @@ func showGameOverAlert() {
 }
 ```
 
-[![4-6](/developerplayground/assets/2014/11/4-6-1.jpg)](/developerplayground/assets/2014/11/4-6-1.jpg)
+[![4-6](/assets/2014/11/4-6-1.jpg)](/assets/2014/11/4-6-1.jpg)
 
 That's all for today. In my next part I'll add particle and sound effects.
 You can download the code from GitHub: [Part 4](https://github.com/stfnjstn/MySecondGame/releases/tag/v0.4) or the latest version [here](https://github.com/stfnjstn/MySecondGame/tree/master).
 You can also download my prototyping App for this tutorial series:
 
-[![](/developerplayground/assets/2014/11/AppStore3.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
+[![](/assets/2014/11/AppStore3.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
 
 Cheers,   
 Stefan

@@ -9,7 +9,7 @@ last_modified_at: 2020-06-17 21:57:46 -0000
 publish: true
 pin: false
 image:
-  path: /developerplayground/assets/2020/03/ETMWatch.jpg
+  path: /assets/2020/03/ETMWatch.jpg
 categories:
 - Escape The Dungeon Maze
 - My Games
@@ -28,19 +28,19 @@ Grown up with 16 Bit Home Computers like Atari ST & Amiga and being also fan of 
 Surprisingly the biggest challenge was not the 3D Engine, but creating an usable user interface which works on all devices.
 
 #### iPad
-[![](/developerplayground/assets/2020/03/ETMIPAD.jpg)](/developerplayground/assets/2020/03/ETMIPAD.jpg)
+[![](/assets/2020/03/ETMIPAD.jpg)](/assets/2020/03/ETMIPAD.jpg)
 
 #### Mac
-[![](/developerplayground/assets/2020/03/ETMMAC.jpg)](/developerplayground/assets/2020/03/ETMMAC.jpg)
+[![](/assets/2020/03/ETMMAC.jpg)](/assets/2020/03/ETMMAC.jpg)
 
 #### iPhone
-[![](/developerplayground/assets/2020/03/ETMPHONE.jpg)](/developerplayground/assets/2020/03/ETMPHONE.jpg)
+[![](/assets/2020/03/ETMPHONE.jpg)](/assets/2020/03/ETMPHONE.jpg)
 
 #### AppleTV
-[![](/developerplayground/assets/2020/03/ETMTV.jpg)](/developerplayground/assets/2020/03/ETMTV.jpg)
+[![](/assets/2020/03/ETMTV.jpg)](/assets/2020/03/ETMTV.jpg)
 
 #### AppleWatch
-[![](/developerplayground/assets/2020/03/ETMWatch.jpg)](/developerplayground/assets/2020/03/ETMWatch.jpg)
+[![](/assets/2020/03/ETMWatch.jpg)](/assets/2020/03/ETMWatch.jpg)
 
 
 

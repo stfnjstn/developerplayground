@@ -9,7 +9,7 @@ last_modified_at: 2020-05-27 16:40:57 -0000
 publish: true
 pin: false
 image:
-  path: /developerplayground/assets/2020/03/ETMIPAD.jpg
+  path: /assets/2020/03/ETMIPAD.jpg
 categories:
 - Test Automation
 - Uncategorized
@@ -29,9 +29,9 @@ The specific problem I had to solve, was to automate a scenario, where two or mo
 
 Using screen coordinates to trigger a specific node, would have been one option, but this causes a huge overhead. My game runs on iPads and iPhones in Landscape and Portrait format. That means for each combination of screen resolution and orientation I would need different sets of coordinates.
 
-![XCUI Test Automation with SceneKit](/developerplayground/assets/2020/03/PhoneUITestLandscape.jpg)
+![XCUI Test Automation with SceneKit](/assets/2020/03/PhoneUITestLandscape.jpg)
 
-![XCUI Test Automation with SceneKit: Identify a SKNode](/developerplayground/assets/2020/03/iPad.jpg)
+![XCUI Test Automation with SceneKit: Identify a SKNode](/assets/2020/03/iPad.jpg)
 
 Here is a much better solution:
 
@@ -65,7 +65,7 @@ app.otherElements[id].firstMatch.coordinate(withNormalizedOffset: CGVector.zero)
 
 And here is a  video with the automated result. The left button closes the pit and the right opens the door.
 
-[![Video](/developerplayground/assets/Videos/YtzKKdSh1r0.png)](https://youtu.be/YtzKKdSh1r0)
+[![Video](/assets/Videos/YtzKKdSh1r0.png)](https://youtu.be/YtzKKdSh1r0)
 
 That all for today,
 

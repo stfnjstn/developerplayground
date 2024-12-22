@@ -28,29 +28,29 @@ I’ll show two scenarios:
 
 ## Calling SWIFT from Objective-C: ##
 
-I’ll reuse my example from part 6 of my blog series: [HowTo: Use the Device Motion Sensors to control your game](/developerplayground/howto-use-the-device-motion-sensors-to-control-your-game). You can find the complete start project in my GitHub repository [here](https://github.com/stfnjstn/MotionManagerDemo/releases/tag/v0.1). As a prerequisite you'll need Xcode 6 beta 5 which is available for all registered apple developers.
+I’ll reuse my example from part 6 of my blog series: [HowTo: Use the Device Motion Sensors to control your game](/howto-use-the-device-motion-sensors-to-control-your-game). You can find the complete start project in my GitHub repository [here](https://github.com/stfnjstn/MotionManagerDemo/releases/tag/v0.1). As a prerequisite you'll need Xcode 6 beta 5 which is available for all registered apple developers.
 
-[![Video](/developerplayground/assets/Videos/EZGBCia9XJM.png)](https://youtu.be/EZGBCia9XJM)
+[![Video](/assets/Videos/EZGBCia9XJM.png)](https://youtu.be/EZGBCia9XJM)
 
 I’ll migrate the MotionManager class to SWIFT. 
 
-[![](/developerplayground/assets/2014/07/SwiftObjC1.png)](/developerplayground/assets/2014/07/SwiftObjC1.png)
+[![](/assets/2014/07/SwiftObjC1.png)](/assets/2014/07/SwiftObjC1.png)
 
 Open MotionManagerDemo project in XCode 6, add a new file of Type SWIFT and name it MotionManagerSingletonSwift:
 
-[![](/developerplayground/assets/2014/07/Bildschirmfoto-2014-07-15-um-21.40.28-1.jpg)](/developerplayground/assets/2014/07/Bildschirmfoto-2014-07-15-um-21.40.28-1.jpg)
+[![](/assets/2014/07/Bildschirmfoto-2014-07-15-um-21.40.28-1.jpg)](/assets/2014/07/Bildschirmfoto-2014-07-15-um-21.40.28-1.jpg)
 
 Answer yes when XCode prompts a message, if it should configure an Objective-C bridging header. 
 
-[![](/developerplayground/assets/2014/07/SwiftObjC2-1.jpg)](/developerplayground/assets/2014/07/SwiftObjC2-1.jpg)
+[![](/assets/2014/07/SwiftObjC2-1.jpg)](/assets/2014/07/SwiftObjC2-1.jpg)
 
 The result should look like this: 
 
-[![](/developerplayground/assets/2014/07/Bildschirmfoto-2014-07-15-um-21.45.21.png)](/developerplayground/assets/2014/07/Bildschirmfoto-2014-07-15-um-21.45.21.png)
+[![](/assets/2014/07/Bildschirmfoto-2014-07-15-um-21.45.21.png)](/assets/2014/07/Bildschirmfoto-2014-07-15-um-21.45.21.png)
 
 Now copy the complete content from MotionManagerSingleton.m to MotionManagerSingletonSwift.swift. As a result XCode shows something around 38 errors.
 
-[![](/developerplayground/assets/2014/07/Bildschirmfoto-2014-07-15-um-21.48.29.png)](/developerplayground/assets/2014/07/Bildschirmfoto-2014-07-15-um-21.48.29.png)
+[![](/assets/2014/07/Bildschirmfoto-2014-07-15-um-21.48.29.png)](/assets/2014/07/Bildschirmfoto-2014-07-15-um-21.48.29.png)
 
 ### **Now let’s start with the code conversion of the MotionManagerSingleton class:**
 
@@ -300,7 +300,7 @@ NSArray *motionArray = [MotionManagerSingletonSwift getMotionVectorWithLowPass];
 
 This is much easier and I've not prepared a sample for that. Remember, when I've added the first SWIFT file, XCode promoted this message:
 
-[![](/developerplayground/assets/2014/07/SwiftObjC2-1.jpg)](/developerplayground/assets/2014/07/SwiftObjC2-1.jpg)
+[![](/assets/2014/07/SwiftObjC2-1.jpg)](/assets/2014/07/SwiftObjC2-1.jpg)
 
 To access a custom Objective-C class from SWIFT, just add an import statement in the bridging header file like: #import ``YourCustomClass.h``
 

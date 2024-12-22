@@ -10,7 +10,7 @@ last_modified_at: 2020-05-27 16:40:56 -0000
 publish: true
 pin: false
 image:
-  path: /developerplayground/assets/2015/08/iOS-Simulator-Screen-Shot-29-Aug-2015-19.02.15.png
+  path: /assets/2015/08/iOS-Simulator-Screen-Shot-29-Aug-2015-19.02.15.png
 categories:
 - AdSense and Admob
 - iOS
@@ -33,7 +33,7 @@ In this tutorial I'll show how you can implement an information alert about the 
 
 **IMPORTANT:** I'm not a lawyer. So no guarantees. You have to decide on your own if this is sufficient.
 
-[![Google Cookie Policy](/developerplayground/assets/2015/08/iOS-Simulator-Screen-Shot-29-Aug-2015-19.02.15.png)](/developerplayground/assets/2015/08/iOS-Simulator-Screen-Shot-29-Aug-2015-19.02.15.png)
+[![Google Cookie Policy](/assets/2015/08/iOS-Simulator-Screen-Shot-29-Aug-2015-19.02.15.png)](/assets/2015/08/iOS-Simulator-Screen-Shot-29-Aug-2015-19.02.15.png)
 
 The Code snippet for showing the AdMob Cookie usage is simple:
 
@@ -54,7 +54,7 @@ if !userDefaults.boolForKey("termsAccepted") {
 }
 ```
 
-I've also updated the sample code in my [GitHub repository](https://github.com/stfnjstn/iAdAdMobDemo) from the [iAd & AdMob tutorial.](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-6-game-center-integration70)
+I've also updated the sample code in my [GitHub repository](https://github.com/stfnjstn/iAdAdMobDemo) from the [iAd & AdMob tutorial.](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-6-game-center-integration70)
 
 Google gives more details and shows how to implement this in ObjectiveC at [http://www.cookiechoices.org](http://www.cookiechoices.org/). Further details about the Google AdMob SDK can be found [here](https://developers.google.com/admob/ios/interstitial).
 
@@ -63,6 +63,6 @@ That's all for today.
 Cheers,  
 Stefan
 
-[![AppStore Stefan Josten](/developerplayground/assets/2015/11/AppStore1.png)](https://itunes.apple.com/us/app/yet-another-watch-puzzle-game/id997514879?ls=1&mt=8)
+[![AppStore Stefan Josten](/assets/2015/11/AppStore1.png)](https://itunes.apple.com/us/app/yet-another-watch-puzzle-game/id997514879?ls=1&mt=8)
 
  

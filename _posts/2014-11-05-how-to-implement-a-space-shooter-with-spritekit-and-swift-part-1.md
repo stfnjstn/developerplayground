@@ -19,32 +19,32 @@ tags: [iOS, SpriteKit, SWIFT]
 
 #### Tutorial Overview: How to implement a space shooter with SpriteKit and SWIFT
 
-* [Part 1](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-1): Initial project setup, sprite creation and movement using _SKAction_ and _SKConstraint_
-* [Part 2](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-2): Adding enemies, bullets and shooting with _SKAction_ and _SKConstraint_
-* [Part 3](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-3-create-a-hud): Adding a HUD with _SKLabelNode_ and _SKSpriteNode_
-* [Part 4](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-4-collision-detection): Adding basic game logic and collision detection
-* [Part 5](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-5-particles-and-sound): Adding particles and sound
-* [Part 6](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-6-game-center-integration): _GameCenter_ integration
-* [Part 7](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-7-iad-integration): _iAd_ integration
-* [Part 8](/developerplayground/how-to-implement-in-app-purchase-for-your-ios-app-in-swift): In-App Purchases
+* [Part 1](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-1): Initial project setup, sprite creation and movement using _SKAction_ and _SKConstraint_
+* [Part 2](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-2): Adding enemies, bullets and shooting with _SKAction_ and _SKConstraint_
+* [Part 3](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-3-create-a-hud): Adding a HUD with _SKLabelNode_ and _SKSpriteNode_
+* [Part 4](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-4-collision-detection): Adding basic game logic and collision detection
+* [Part 5](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-5-particles-and-sound): Adding particles and sound
+* [Part 6](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-6-game-center-integration): _GameCenter_ integration
+* [Part 7](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-7-iad-integration): _iAd_ integration
+* [Part 8](/how-to-implement-in-app-purchase-for-your-ios-app-in-swift): In-App Purchases
 
 ### Initial project setup, sprite creation and movement using SKAction and SKConstraint
 
-[![Video](/developerplayground/assets/Videos/8d8MH_gXt84.png)](https://youtu.be/8d8MH_gXt84)
+[![Video](/assets/Videos/8d8MH_gXt84.png)](https://youtu.be/8d8MH_gXt84)
 
-[![](/developerplayground/assets/2014/11/AppStore.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
+[![](/assets/2014/11/AppStore.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
 
 ### 1. Create a new universal project (template: game; language: Swift)
 
-[![part1-1](/developerplayground/assets/2014/11/part1-1.png)](/developerplayground/assets/2014/11/part1-1.png)
+[![part1-1](/assets/2014/11/part1-1.png)](/assets/2014/11/part1-1.png)
 
-[![part1-2](/developerplayground/assets/2014/11/part1-2.png)](/developerplayground/assets/2014/11/part1-2.png)
+[![part1-2](/assets/2014/11/part1-2.png)](/assets/2014/11/part1-2.png)
 
 ### 2. Remove the GameScene.sks file
 
 #### I'll not use the internal level editor, so this file is obsolete and can be deleted:
 
-[![part1-3](/developerplayground/assets/2014/11/part1-3-1.jpg)](/developerplayground/assets/2014/11/part1-3-1.jpg)
+[![part1-3](/assets/2014/11/part1-3-1.jpg)](/assets/2014/11/part1-3-1.jpg)
 
 #### Inside GameController.swift remove this code block:
 
@@ -106,7 +106,7 @@ override func supportedInterfaceOrientations() -> Int {
 
 I'll add a spaceship sprite. The sprite will automatically orient and move to a touch location on the screen:
 
-[![part1-4](/developerplayground/assets/2014/11/part1-4-1.jpg)](/developerplayground/assets/2014/11/part1-4-1.jpg)
+[![part1-4](/assets/2014/11/part1-4-1.jpg)](/assets/2014/11/part1-4-1.jpg)
 
 The automated orienting of the spaceship is implemented with a little trick. I'll add a SKConstraint to an invisible sprite. I case of a touch event, the invisible sprite is moved to the touch location and the spaceship is automatically oriented to this invisible sprite/touch location.
 
@@ -175,7 +175,7 @@ That's all for today. In my next part I'll add some enemies and bullets. You can
 
 You can also download my prototyping App for this tutorial series:
 
-[![](/developerplayground/assets/2014/11/AppStore.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
+[![](/assets/2014/11/AppStore.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
 
 Cheers,   
 Stefan

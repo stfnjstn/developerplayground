@@ -10,7 +10,7 @@ last_modified_at: 2020-05-27 16:40:56 -0000
 publish: true
 pin: false
 image:
-  path: /developerplayground/assets/2015/07/Screen-Shot-2015-07-10-at-15.14.21-1.jpg
+  path: /assets/2015/07/Screen-Shot-2015-07-10-at-15.14.21-1.jpg
 categories:
 - AdSense and Admob
 - iOS
@@ -23,13 +23,13 @@ tags:
 
 Today I'll show how to use iAd together with AdMob ads. If you use the interstitial ads provided by Apples iAd frequently, you might have seen that the fill rate is not always 100 percent:
 
-[![AdMob tutorial](/developerplayground/assets/2015/07/Screen-Shot-2015-07-10-at-14.20.17.png)](/developerplayground/assets/2015/07/Screen-Shot-2015-07-10-at-14.20.17.png)
+[![AdMob tutorial](/assets/2015/07/Screen-Shot-2015-07-10-at-14.20.17.png)](/assets/2015/07/Screen-Shot-2015-07-10-at-14.20.17.png)
 
 One reason could be that there was just not enough time to load the new content. This tutorial shows how to improve the fill rate by requesting a Google AdMob ad in parallel. Depending on the availability, the iAd or the AdMob ad will be shown.
 
 #### Prerequisites for this tutorial:
 
-  * You have a subscription for the Apple iAds program. For details please check my previous article about [iAD integration](/developerplayground/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-7-iad-integration).
+  * You have a subscription for the Apple iAds program. For details please check my previous article about [iAD integration](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-7-iad-integration).
   * You are registered for the Google [AdMob](https://www.google.com/admob/) program
   * You have downloaded the Google [AdMob SDK for iOS](https://developers.google.com/admob/ios/download)
 
@@ -37,47 +37,47 @@ One reason could be that there was just not enough time to load the new content.
 
 ### 1. Let's create a sample project:
 
-[![AdMob 1](/developerplayground/assets/2015/07/Screen-Shot-2015-07-10-at-14.28.16.png)](/developerplayground/assets/2015/07/Screen-Shot-2015-07-10-at-14.28.16.png)
+[![AdMob 1](/assets/2015/07/Screen-Shot-2015-07-10-at-14.28.16.png)](/assets/2015/07/Screen-Shot-2015-07-10-at-14.28.16.png)
 
-[![AdMob 2](/developerplayground/assets/2015/07/Screen-Shot-2015-07-10-at-14.28.35.png)](/developerplayground/assets/2015/07/Screen-Shot-2015-07-10-at-14.28.35.png)
+[![AdMob 2](/assets/2015/07/Screen-Shot-2015-07-10-at-14.28.35.png)](/assets/2015/07/Screen-Shot-2015-07-10-at-14.28.35.png)
 
 ### 2. Ad the iAD framework to your project:
 
-[![AdMob 3](/developerplayground/assets/2015/07/Screen-Shot-2015-07-08-at-21.57.041-1.jpg)](/developerplayground/assets/2015/07/Screen-Shot-2015-07-08-at-21.57.041-1.jpg)
+[![AdMob 3](/assets/2015/07/Screen-Shot-2015-07-08-at-21.57.041-1.jpg)](/assets/2015/07/Screen-Shot-2015-07-08-at-21.57.041-1.jpg)
 
-[![AdMob 4](/developerplayground/assets/2015/07/Screen-Shot-2015-07-08-at-21.57.191.png)](/developerplayground/assets/2015/07/Screen-Shot-2015-07-08-at-21.57.191.png)
+[![AdMob 4](/assets/2015/07/Screen-Shot-2015-07-08-at-21.57.191.png)](/assets/2015/07/Screen-Shot-2015-07-08-at-21.57.191.png)
 
-[![5](/developerplayground/assets/2015/07/Screen-Shot-2015-07-08-at-21.57.291.png)](/developerplayground/assets/2015/07/Screen-Shot-2015-07-08-at-21.57.291.png)
+[![5](/assets/2015/07/Screen-Shot-2015-07-08-at-21.57.291.png)](/assets/2015/07/Screen-Shot-2015-07-08-at-21.57.291.png)
 
 ### 3. Ad the Google AdMob SDK to your project:
 
-[![AdMob 6](/developerplayground/assets/2015/07/Screen-Shot-2015-07-10-at-14.33.12-1.jpg)](/developerplayground/assets/2015/07/Screen-Shot-2015-07-10-at-14.33.12-1.jpg)
+[![AdMob 6](/assets/2015/07/Screen-Shot-2015-07-10-at-14.33.12-1.jpg)](/assets/2015/07/Screen-Shot-2015-07-10-at-14.33.12-1.jpg)
 
-[![AdMob 7](/developerplayground/assets/2015/07/Screen-Shot-2015-07-10-at-14.33.51-1.jpg)](/developerplayground/assets/2015/07/Screen-Shot-2015-07-10-at-14.33.51-1.jpg)
+[![AdMob 7](/assets/2015/07/Screen-Shot-2015-07-10-at-14.33.51-1.jpg)](/assets/2015/07/Screen-Shot-2015-07-10-at-14.33.51-1.jpg)
 
-[![AdMob 8](/developerplayground/assets/2015/07/Screen-Shot-2015-07-10-at-14.34.03.png)](/developerplayground/assets/2015/07/Screen-Shot-2015-07-10-at-14.34.03.png)
+[![AdMob 8](/assets/2015/07/Screen-Shot-2015-07-10-at-14.34.03.png)](/assets/2015/07/Screen-Shot-2015-07-10-at-14.34.03.png)
 
 ### 4. Create the UI:
 
 #### Open the storyboard and add a button to the screen:
 
-[![AdMob 9](/developerplayground/assets/2015/07/Screen-Shot-2015-07-10-at-14.36.02.png)](/developerplayground/assets/2015/07/Screen-Shot-2015-07-10-at-14.36.02.png)
+[![AdMob 9](/assets/2015/07/Screen-Shot-2015-07-10-at-14.36.02.png)](/assets/2015/07/Screen-Shot-2015-07-10-at-14.36.02.png)
 
 #### Use Autolayout to center the button on the screen:
 
-[![AdMob 10](/developerplayground/assets/2015/07/Screen-Shot-2015-07-10-at-14.36.21.png)](/developerplayground/assets/2015/07/Screen-Shot-2015-07-10-at-14.36.21.png)
+[![AdMob 10](/assets/2015/07/Screen-Shot-2015-07-10-at-14.36.21.png)](/assets/2015/07/Screen-Shot-2015-07-10-at-14.36.21.png)
 
 #### Create an IBAction method to handle touch events for the button:
 
-[![AdMob 11](/developerplayground/assets/2015/07/Screen-Shot-2015-07-10-at-14.41.05.png)](/developerplayground/assets/2015/07/Screen-Shot-2015-07-10-at-14.41.05.png)
+[![AdMob 11](/assets/2015/07/Screen-Shot-2015-07-10-at-14.41.05.png)](/assets/2015/07/Screen-Shot-2015-07-10-at-14.41.05.png)
 
 ### 5. Create the AdHelper class
 
-[![AdMob 12](/developerplayground/assets/2015/07/Screen-Shot-2015-07-10-at-14.51.05-1.jpg)](/developerplayground/assets/2015/07/Screen-Shot-2015-07-10-at-14.51.05-1.jpg)
+[![AdMob 12](/assets/2015/07/Screen-Shot-2015-07-10-at-14.51.05-1.jpg)](/assets/2015/07/Screen-Shot-2015-07-10-at-14.51.05-1.jpg)
 
-[![AdMob 13](/developerplayground/assets/2015/07/Screen-Shot-2015-07-10-at-14.51.14.png)](/developerplayground/assets/2015/07/Screen-Shot-2015-07-10-at-14.51.14.png)
+[![AdMob 13](/assets/2015/07/Screen-Shot-2015-07-10-at-14.51.14.png)](/assets/2015/07/Screen-Shot-2015-07-10-at-14.51.14.png)
 
-[![AdMob 14](/developerplayground/assets/2015/07/Screen-Shot-2015-07-10-at-14.51.26.png)](/developerplayground/assets/2015/07/Screen-Shot-2015-07-10-at-14.51.26.png)
+[![AdMob 14](/assets/2015/07/Screen-Shot-2015-07-10-at-14.51.26.png)](/assets/2015/07/Screen-Shot-2015-07-10-at-14.51.26.png)
 
 #### Paste this code snippet into the newly created file:
 
@@ -161,7 +161,7 @@ class AdHelper: NSObject {
 
 #### Open ViewController.swift:
 
-#### [![AdMob 11](/developerplayground/assets/2015/07/Screen-Shot-2015-07-10-at-15.01.41-1.jpg)](/developerplayground/assets/2015/07/Screen-Shot-2015-07-10-at-15.01.41-1.jpg)
+#### [![AdMob 11](/assets/2015/07/Screen-Shot-2015-07-10-at-15.01.41-1.jpg)](/assets/2015/07/Screen-Shot-2015-07-10-at-15.01.41-1.jpg)
 
 #### Add a property which hold the instance of AdHelper and initialise it in the ViewDidLoad method:
 
@@ -187,7 +187,7 @@ class ViewController: UIViewController {
 
 #### Now you can test this on a device:
 
-[![AdMob 14](/developerplayground/assets/2015/07/Screen-Shot-2015-07-10-at-15.14.21-1.jpg)](/developerplayground/assets/2015/07/Screen-Shot-2015-07-10-at-15.14.21-1.jpg)
+[![AdMob 14](/assets/2015/07/Screen-Shot-2015-07-10-at-15.14.21-1.jpg)](/assets/2015/07/Screen-Shot-2015-07-10-at-15.14.21-1.jpg)
 
 That's all for today. You can download the Sample from my GitHub [repository](https://github.com/stfnjstn/iAdAdMobDemo). Further details about the Google AdMob SDK can be found [here](https://developers.google.com/admob/ios/interstitial).
 

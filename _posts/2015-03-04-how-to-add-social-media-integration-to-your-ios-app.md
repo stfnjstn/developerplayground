@@ -24,19 +24,19 @@ My latest [game](https://itunes.apple.com/us/app/yet-another-spaceshooter/id9496
 
 The four buttons at the bottom of the screen trigger the social actions:
 
-[![](/developerplayground/assets/2015/03/Screen-2BShot-2B2015-02-26-2Bat-2B23.12.45.png)](/developerplayground/assets/2015/03/Screen-2BShot-2B2015-02-26-2Bat-2B23.12.45.png)
+[![](/assets/2015/03/Screen-2BShot-2B2015-02-26-2Bat-2B23.12.45.png)](/assets/2015/03/Screen-2BShot-2B2015-02-26-2Bat-2B23.12.45.png)
 
 ### 1. Create a sample project:
 
 Start XCode and create a new Single View Application:
 
-[![](/developerplayground/assets/2015/03/Screen-2BShot-2B2015-03-02-2Bat-2B20.32.21.png)](/developerplayground/assets/2015/03/Screen-2BShot-2B2015-03-02-2Bat-2B20.32.21.png)
+[![](/assets/2015/03/Screen-2BShot-2B2015-03-02-2Bat-2B20.32.21.png)](/assets/2015/03/Screen-2BShot-2B2015-03-02-2Bat-2B20.32.21.png)
 
-[![](/developerplayground/assets/2015/03/Screen-2BShot-2B2015-03-02-2Bat-2B20.32.38.png)](/developerplayground/assets/2015/03/Screen-2BShot-2B2015-03-02-2Bat-2B20.32.38.png)
+[![](/assets/2015/03/Screen-2BShot-2B2015-03-02-2Bat-2B20.32.38.png)](/assets/2015/03/Screen-2BShot-2B2015-03-02-2Bat-2B20.32.38.png)
 
 Open the Main.storyboard file and add four buttons to the ViewController:
 
-[![](/developerplayground/assets/2015/03/Screen-2BShot-2B2015-03-02-2Bat-2B20.33.34.png)](/developerplayground/assets/2015/03/Screen-2BShot-2B2015-03-02-2Bat-2B20.33.34.png)
+[![](/assets/2015/03/Screen-2BShot-2B2015-03-02-2Bat-2B20.33.34.png)](/assets/2015/03/Screen-2BShot-2B2015-03-02-2Bat-2B20.33.34.png)
 
 For a proper layout on all form factors and orientations add the needed auto layout constraints:
 
@@ -44,25 +44,25 @@ For a proper layout on all form factors and orientations add the needed auto lay
   * Press the Pin button
   * Enter in the spacing to nearest neighbour section 20 to the bottom and 10 to the right
 
-[![](/developerplayground/assets/2015/03/Screen-2BShot-2B2015-03-02-2Bat-2B20.34.55.png)](/developerplayground/assets/2015/03/Screen-2BShot-2B2015-03-02-2Bat-2B20.34.55.png)
+[![](/assets/2015/03/Screen-2BShot-2B2015-03-02-2Bat-2B20.34.55.png)](/assets/2015/03/Screen-2BShot-2B2015-03-02-2Bat-2B20.34.55.png)
 
 XCode shows a warning, that the current layout does not match the constraints (the yellow lines). To fix this click the Resolve Auto Layout Issues button and choose Update Frames:
 
-[![](/developerplayground/assets/2015/03/Screen-2BShot-2B2015-03-02-2Bat-2B20.35.11.png)](/developerplayground/assets/2015/03/Screen-2BShot-2B2015-03-02-2Bat-2B20.35.11. png)
+[![](/assets/2015/03/Screen-2BShot-2B2015-03-02-2Bat-2B20.35.11.png)](/assets/2015/03/Screen-2BShot-2B2015-03-02-2Bat-2B20.35.11. png)
 
 The result should look like this:
 
-[![](/developerplayground/assets/2015/03/Screen-2BShot-2B2015-03-02-2Bat-2B20.35.22.png)](/developerplayground/assets/2015/03/Screen-2BShot-2B2015-03-02-2Bat-2B20.35.22.png)
+[![](/assets/2015/03/Screen-2BShot-2B2015-03-02-2Bat-2B20.35.22.png)](/assets/2015/03/Screen-2BShot-2B2015-03-02-2Bat-2B20.35.22.png)
 
-[![](/developerplayground/assets/2015/03/Screen-2BShot-2B2015-03-02-2Bat-2B20.36.22.png)](/developerplayground/assets/2015/03/Screen-2BShot-2B2015-03-02-2Bat-2B20.36.22.png)
+[![](/assets/2015/03/Screen-2BShot-2B2015-03-02-2Bat-2B20.36.22.png)](/assets/2015/03/Screen-2BShot-2B2015-03-02-2Bat-2B20.36.22.png)
 
 Change the background colour of the view to black:
 
-[![](/developerplayground/assets/2015/03/Screen-2BShot-2B2015-03-03-2Bat-2B22.32.43.png)](/developerplayground/assets/2015/03/Screen-2BShot-2B2015-03-03-2Bat-2B22.32.43.png)
+[![](/assets/2015/03/Screen-2BShot-2B2015-03-03-2Bat-2B22.32.43.png)](/assets/2015/03/Screen-2BShot-2B2015-03-03-2Bat-2B22.32.43.png)
 
 Add an IBAction method for every button (Select CTRL, press mouse and move the mouse pointer to the view controller file)
 
-[![](/developerplayground/assets/2015/03/Screen-2BShot-2B2015-03-02-2Bat-2B23.12.52.png)](/developerplayground/assets/2015/03/Screen-2BShot-2B2015-03-02-2Bat-2B23.12.52.png)
+[![](/assets/2015/03/Screen-2BShot-2B2015-03-02-2Bat-2B23.12.52.png)](/assets/2015/03/Screen-2BShot-2B2015-03-02-2Bat-2B23.12.52.png)
 
 The ViewController.swift file should look like this:
 
@@ -96,11 +96,11 @@ class ViewController: UIViewController {
 
 Add an image to image.assets which can be attached to the tweets, posts ands mail.
 
-[![](/developerplayground/assets/2015/03/Screen-2BShot-2B2015-03-04-2Bat-2B20.36.33-1.jpg)](/developerplayground/assets/2015/03/Screen-2BShot-2B2015-03-04-2Bat-2B20.36.33-1.jpg)
+[![](/assets/2015/03/Screen-2BShot-2B2015-03-04-2Bat-2B20.36.33-1.jpg)](/assets/2015/03/Screen-2BShot-2B2015-03-04-2Bat-2B20.36.33-1.jpg)
 
 ### 2. Implement AppStore Integration
 
-[![](/developerplayground/assets/2015/03/IMG_8941-1.jpg)](/developerplayground/assets/2015/03/IMG_8941-1.jpg)
+[![](/assets/2015/03/IMG_8941-1.jpg)](/assets/2015/03/IMG_8941-1.jpg)
 
 Implement the handleAppStore method. Show an alert where the user can choose to navigate to the AppStore:
 
@@ -117,11 +117,11 @@ Implement the handleAppStore method. Show an alert where the user can choose to 
 }
 ```
 
-[![](/developerplayground/assets/2015/03/IMG_8942-1.jpg)](/developerplayground/assets/2015/03/IMG_8942-1.jpg)
+[![](/assets/2015/03/IMG_8942-1.jpg)](/assets/2015/03/IMG_8942-1.jpg)
 
 ### 3. Implement Mail Integration
 
-[![](/developerplayground/assets/2015/03/IMG_8948-1.jpg)](/developerplayground/assets/2015/03/IMG_8948-1.jpg)
+[![](/assets/2015/03/IMG_8948-1.jpg)](/assets/2015/03/IMG_8948-1.jpg)
 
 Import MessageUI and add the MFMailComposeViewControllerDelegate to the class definition:
 
@@ -163,7 +163,7 @@ func mailComposeController(controller: MFMailComposeViewController!, didFinishWi
 
 ### 4. Implement Twitter Integration
 
-[![](/developerplayground/assets/2015/03/IMG_8940-1.jpg)](/developerplayground/assets/2015/03/IMG_8940-1.jpg)
+[![](/assets/2015/03/IMG_8940-1.jpg)](/assets/2015/03/IMG_8940-1.jpg)
 
 Import Social:
 
@@ -213,11 +213,11 @@ Implement the handleFacebook method:
 }
 ```
 
-Instead of the text you should show icons. I cannot add them to the SourceCode because of copyright reasons. You can download them from Facebook and Twitter homepage. [![](/developerplayground/assets/2015/03/Screen-2BShot-2B2015-02-26-2Bat-2B23.09.39-1.jpg)](/developerplayground/assets/2015/03/Screen-2BShot-2B2015-02-26-2Bat-2B23.09.39-1.jpg)
+Instead of the text you should show icons. I cannot add them to the SourceCode because of copyright reasons. You can download them from Facebook and Twitter homepage. [![](/assets/2015/03/Screen-2BShot-2B2015-02-26-2Bat-2B23.09.39-1.jpg)](/assets/2015/03/Screen-2BShot-2B2015-02-26-2Bat-2B23.09.39-1.jpg)
 
 That's all for today. The SourceCode of this tutorial is available at [GitHub](https://github.com/stfnjstn/SocialMediaSample). For my next post I'm planning something about In App Purchase. To see the social media integration in action you can download my free game in the AppStore:
 
-[![](/developerplayground/assets/2015/04/AppStore.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
+[![](/assets/2015/04/AppStore.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
 
 Cheers,    
 Stefan 

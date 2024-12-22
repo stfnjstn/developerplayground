@@ -27,16 +27,16 @@ I immediately tried to deploy my prototypes to the Apple Watch, to see how the b
 Luckily XCode can manage the whole process for you.  First you need a sample project like this from NatashaTheRobot: [WatchKitTableDemo](https://github.com/NatashaTheRobot/WatchKitTableDemo) 
 
 #### 1. Deploy the App to your iPhone/iPad
-[![Debug Apple Watch part1](/developerplayground/assets/2015/04/Screen-Shot-2015-04-29-at-22.53.24-1.jpg)](/developerplayground/assets/2015/04/Screen-Shot-2015-04-29-at-22.53.24-1.jpg) 
+[![Debug Apple Watch part1](/assets/2015/04/Screen-Shot-2015-04-29-at-22.53.24-1.jpg)](/assets/2015/04/Screen-Shot-2015-04-29-at-22.53.24-1.jpg) 
 
 #### 2. Start the WatchKit App also on your iPhone/iPad (not in the simulator)
-[![Debug Apple Watch part2](/developerplayground/assets/2015/04/Screen-Shot-2015-04-29-at-22.55.14-1.jpg)](/developerplayground/assets/2015/04/Screen-Shot-2015-04-29-at-22.55.14-1.jpg)
+[![Debug Apple Watch part2](/assets/2015/04/Screen-Shot-2015-04-29-at-22.55.14-1.jpg)](/assets/2015/04/Screen-Shot-2015-04-29-at-22.55.14-1.jpg)
 
 #### 3. Choose Fix Issue, when this error message appears:
-[![WatchKit Error Message](/developerplayground/assets/2015/04/watch1-1.jpg)](/developerplayground/assets/2015/04/watch1-1.jpg) [![Select team from Apple Developer Portal](/developerplayground/assets/2015/04/watch2.png)](/developerplayground/assets/2015/04/watch2.png)
+[![WatchKit Error Message](/assets/2015/04/watch1-1.jpg)](/assets/2015/04/watch1-1.jpg) [![Select team from Apple Developer Portal](/assets/2015/04/watch2.png)](/assets/2015/04/watch2.png)
 
 #### 4. Select your Development Team:
-[![watch3](/developerplayground/assets/2015/04/watch3.png)](/developerplayground/assets/2015/04/watch3.png "XCode Watch Kit select team")
+[![watch3](/assets/2015/04/watch3.png)](/assets/2015/04/watch3.png "XCode Watch Kit select team")
 
 That's all. After a short time XCode has created and downloaded a new profile and added your Apple Watch to the devices section in the Apple Developer Portal.
 
