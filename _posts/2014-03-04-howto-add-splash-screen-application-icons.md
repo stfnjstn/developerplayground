@@ -20,11 +20,11 @@ Today I'm adding the app icons and a splash screen. I'll use an [asset catalog](
 
 ### First of all let's hide the annoying header bar:
 
-[![](/assets/2014/03/Splash1-1.jpg)](/assets/2014/03/Splash1-1.jpg)
+![Splashscreen](/assets/2014/03/Splash1-1.jpg)
 
 You have to add to entries in the ``plist`` file: ``Supporting Files/MyFirstGame-Info.plist``
 
-[![](/assets/2014/03/Splash2.png)](/assets/2014/03/Splash2.png)
+![Splashscreen](/assets/2014/03/Splash2.png)
 
   * ``Status bar is initially hidden = Yes``: Hides the status bar at application start and in the splash screen
   * ``View controller-based status bar appearance = No``: Prevents that the view controller classes show the status bar
@@ -36,27 +36,27 @@ Why an [Asset Catalog](https://developer.apple.com/library/ios/recipes/xcode_hel
 
 If we limit our App to iOS 7 capable devices we need 15 different images sizes. 9 for the App Icon and 6 for SplashScreens. That sounds much, but comparing to Android devices with much more different screen resolutions, this is incredible easy.
 
-[![](/assets/2014/03/Splash3.png)](/assets/2014/03/Splash3.png)
+![Splashscreen](/assets/2014/03/Splash3.png)
 
-[![](/assets/2014/03/Splash4.png)](/assets/2014/03/Splash4.png)
+![Splashscreen](/assets/2014/03/Splash4.png)
 
 Create the images and open the Asset Catalog:
 
-[![](/assets/2014/03/Splash5.png)](/assets/2014/03/Splash5.png)
+![Splashscreen](/assets/2014/03/Splash5.png)
 
 Drag the images into the Asset Catalog:
 
-[![](/assets/2014/03/Splash6-1.jpg)](/assets/2014/03/Splash6-1.jpg)
+![Splashscreen](/assets/2014/03/Splash6-1.jpg)
 
 Unfortunately the current version of XCode contains a Bug. The splash screen stays black, if we support only the landscape screen orientation on iOS 7 phones: ([iPhone landscape-only no launch image for iOS7 R4 image asset](http://stackoverflow.com/questions/19110583/iphone-landscape-only-no-launch-image-for-ios7-r4-image-asset/22106849#22106849)):
 
-[![](/assets/2014/03/Splash7.png)](/assets/2014/03/Splash7.png)
+![Splashscreen](/assets/2014/03/Splash7.png)
 
 You can either wait until Apple fixes this issue or solve it using this workaround:
 
 Go to the project settings and select "Don't use Asset Catalog" in the launch images section. Now we can add the launch images the traditional way. I'll still use the asset catalog for the app icons and other images.
 
-[![](/assets/2014/03/Splash8.png)](/assets/2014/03/Splash8.png)
+![Splashscreen](/assets/2014/03/Splash8.png)
 
 That's all for today
 
