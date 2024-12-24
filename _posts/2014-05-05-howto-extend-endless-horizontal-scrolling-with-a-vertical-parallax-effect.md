@@ -25,11 +25,11 @@ Today I'll extend the parallax effect from [part 5](/howto-implement-endless-scr
 
   * Scale the width and the height of the background image and implement horizontal and vertical movement of the background image:
 
-[![](/assets/2014/05/Parallax-2-1-1.jpg)](/assets/2014/05/Parallax-2-1-1.jpg)
+![Parallax](/assets/2014/05/Parallax-2-1-1.jpg)
 
   * Scale the height of the background tiles which are used for endless scrolling and implement vertical movement for the background tiles:
 
-[![](/assets/2014/05/Parallax-2-2-1.jpg)](/assets/2014/05/Parallax-2-2-1.jpg)
+![Parallax](/assets/2014/05/Parallax-2-2-1.jpg)
 
   * Some tricks to get a better effect:
     * Use different scale factors for the backgrounds. Farer away means bigger scale factor

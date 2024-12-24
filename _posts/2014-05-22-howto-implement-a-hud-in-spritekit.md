@@ -21,17 +21,17 @@ tags: []
 
 Today I'll add a HUD (head up display) to the SpriteKit Scene. The HUD shows the remaining lives, current, level, score and has the option to pause the game:
 
-[![](/assets/2014/05/Bildschirmfoto-2014-05-22-um-22.35.25.png)](/assets/2014/05/Bildschirmfoto-2014-05-22-um-22.35.25.png)
+![HUD](/assets/2014/05/Bildschirmfoto-2014-05-22-um-22.35.25.png)
 
 ## Create the HUD:
 
 ### 1. Create a new SpritKit project in Xcode:
 
-[![](/assets/2014/05/Bildschirmfoto-2014-05-22-um-19.03.45-1.jpg)](/assets/2014/05/Bildschirmfoto-2014-05-22-um-19.03.45-1.jpg)
+![XCode Project](/assets/2014/05/Bildschirmfoto-2014-05-22-um-19.03.45-1.jpg)
 
 ### 2. Hide the status bar: (Add _View controller-based status bar appearance = No_ to the plist file)
 
-[![](/assets/2014/05/Bildschirmfoto-2014-05-22-um-22.30.07.png)](/assets/2014/05/Bildschirmfoto-2014-05-22-um-22.30.07.png)
+![Statusbar](/assets/2014/05/Bildschirmfoto-2014-05-22-um-22.30.07.png)
 
 ### 3. Add properties for current level and score to MyScene.h:
 ```objectivec
@@ -119,7 +119,7 @@ Today I'll add a HUD (head up display) to the SpriteKit Scene. The HUD shows the
 
 Start the Project. The Result should look like this:
 
-[![](/assets/2014/05/Bildschirmfoto-2014-05-22-um-22.35.251.png)](/assets/2014/05/Bildschirmfoto-2014-05-22-um-22.35.251.png)
+![Result](/assets/2014/05/Bildschirmfoto-2014-05-22-um-22.35.251.png)
 
 Looks nice, but without interactions this is a little boring. Let's add them!
 
@@ -143,7 +143,7 @@ Looks nice, but without interactions this is a little boring. Let's add them!
 
 ``[self addMockUpButtons];``
 
-[![](/assets/2014/05/Bildschirmfoto-2014-05-22-um-22.53.02.png)](/assets/2014/05/Bildschirmfoto-2014-05-22-um-22.53.02.png)
+![addMockUpButtons](/assets/2014/05/Bildschirmfoto-2014-05-22-um-22.53.02.png)
 
 ### 7. Now, implement the touch handler:
 ```objectivec
@@ -195,7 +195,7 @@ Looks nice, but without interactions this is a little boring. Let's add them!
 }
 ```
 
-[![](/assets/2014/05/Bildschirmfoto-2014-05-22-um-23.05.07-1.jpg)](/assets/2014/05/Bildschirmfoto-2014-05-22-um-23.05.07-1.jpg)
+![showGameOverAlert](/assets/2014/05/Bildschirmfoto-2014-05-22-um-23.05.07-1.jpg)
 
 
 ## **Now let's integrate this into the MyFirstGame project:**
@@ -204,13 +204,13 @@ If you haven't completed [part 7](/howto-extend-endless-horizontal-scrolling-wit
 
 The result will look like this:
 
-[![](/assets/2014/05/Bildschirmfoto-2014-07-12-um-14.31.29-1.jpg)](/assets/2014/05/Bildschirmfoto-2014-07-12-um-14.31.29-1.jpg)
+![Result](/assets/2014/05/Bildschirmfoto-2014-07-12-um-14.31.29-1.jpg)
 
 Most code of the sample above can be copied directly. I'll only list the differences:
 
 #### 1. Different Icons
 
-#### [![](/assets/2014/05/Bildschirmfoto-2014-05-20-um-22.43.49-1.jpg)](/assets/2014/05/Bildschirmfoto-2014-05-20-um-22.43.49-1.jpg)
+![Different Icons](/assets/2014/05/Bildschirmfoto-2014-05-20-um-22.43.49-1.jpg)
 
 
 Instead of the spaceship, I'll use a ball image. In case of loosing a life, this image will be replaced with a crossed ball. To achieve this just add two new image sets to the Asset catalog:
@@ -220,7 +220,7 @@ Instead of the spaceship, I'll use a ball image. In case of loosing a life, this
 
 The icons for Retina and Retina-4-inch iPhones are identical:
 
-[![](/assets/2014/05/Bildschirmfoto-2014-05-20-um-23.06.14.png)](/assets/2014/05/Bildschirmfoto-2014-05-20-um-23.06.14.png)
+![Icons](/assets/2014/05/Bildschirmfoto-2014-05-20-um-23.06.14.png)
 
 #### 2. Changes in createHUD method:
 ```objectivec

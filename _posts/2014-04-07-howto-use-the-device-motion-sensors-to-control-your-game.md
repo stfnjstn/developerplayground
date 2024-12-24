@@ -26,13 +26,12 @@ Today I'll include motion detection to control the movement of my game. iOS offe
 
 **1. First create a new SpriteKit project.**
 
-[![](/assets/2014/04/Bildschirmfoto-2014-04-06-um-22.17.57-1.jpg)](/assets/2014/04/Bildschirmfoto-2014-04-06-um-22.17.57-1.jpg)
-
-[![](/assets/2014/04/Bildschirmfoto-2014-04-06-um-22.18.29-1.jpg)](/assets/2014/04/Bildschirmfoto-2014-04-06-um-22.18.29-1.jpg)
+![SpriteKit](/assets/2014/04/Bildschirmfoto-2014-04-06-um-22.17.57-1.jpg)
+![SpriteKit](/assets/2014/04/Bildschirmfoto-2014-04-06-um-22.18.29-1.jpg)
 
 **2. Add the GLKit and the CoreMotion framework to your project.**
 
-[![](/assets/2014/04/Bildschirmfoto-2014-04-06-um-00.05.50.png)](/assets/2014/04/Bildschirmfoto-2014-04-06-um-00.05.50.png)
+![CoreMotion](/assets/2014/04/Bildschirmfoto-2014-04-06-um-00.05.50.png)
 
 **3. Add a new file MotionManagerSingleton of type NSObject:**
 
@@ -123,7 +122,7 @@ Only one instance of CMMotionManager can be used in an iOS project. Therefore I'
 
 A low pass filter smoothens the measured results of the sensors, to avoid jitter and short lived acceleration spikes. With this technique the influence of unintended hand movements can be minimized. Downsize is, that the reaction to orientation changes is slowed down.
 
-[![](/assets/2014/04/Bildschirmfoto-2014-04-07-um-19.42.38-1.jpg)](/assets/2014/04/Bildschirmfoto-2014-04-07-um-19.42.38-1.jpg)
+![Low Pass Filter](/assets/2014/04/Bildschirmfoto-2014-04-07-um-19.42.38-1.jpg)
 
 **4. Changes in MyScene class:**
 
