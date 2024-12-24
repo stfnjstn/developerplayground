@@ -11,18 +11,38 @@ pin: false
 categories: [Apps]
 tags: [Games]
 ---
-## Watch Ping Pong:
+## A Ping Pong Game (Lite):
 
 Simple Pong like casual game
 
-Supported platforms: Apple Watch, iOS, AppleTV
+Supported platforms: Apple Watch, iOS, AppleTV, Mac
 
-Copyright: Stefan Josten, 04/2016
+First Release: 04/2016
 
-Current version: 3.2
+Last Update: 11/2024
+
+Current version: 8.0
+
+
+<div style="display: flex; justify-content: space-around; align-items: center;">
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/app/a-ping-pong-game-lite/id1155659319">
+      <img src="/assets/Download.svg" alt="Download">
+    </a>
+    <p>Lite Version</p>
+  </div>
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/app/a-ping-pong-game/id1039082864?">
+      <img src="/assets/Download.svg" alt="Download" >
+    </a>
+    <p>Full Version</p>
+  </div>
+  <div></div>
+</div>
 
 [![Pong Like Game](/assets/2015/04/WatchPingPongGif.gif)](/assets/2015/04/WatchPingPongGif.gif)
 
+---
 
 ## Save My Spaceship:
 
@@ -36,7 +56,11 @@ Copyright: Stefan Josten, 10/2015
 
 Current version: 1.4.2
 
+**Title**
+
 [![AppStore.png](/assets/2015/11/AppStore1.png)](https://itunes.apple.com/us/app/save-my-spaceship/id970195914?mt=8 "Save My Spaceship")
+
+---
 
 
 [![sms1](/assets/2015/04/sms1.png)](/assets/2015/04/sms1.png)| [![sms2](/assets/2015/04/sms2.png)](/assets/2015/04/sms2.png) | [![sms3](/assets/2015/04/sms3-1.jpg) ](/assets/2015/04/sms3-1.jpg)
