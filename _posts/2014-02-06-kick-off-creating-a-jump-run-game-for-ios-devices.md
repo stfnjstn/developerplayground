@@ -11,7 +11,7 @@ pin: false
 categories: [Tutorial]
 tags: []
 ---
-[![Game Development](/assets/2014/02/Foto-1.jpg)](/assets/2014/02/Foto-1.jpg)
+![Game Development](/assets/2014/02/Foto-1.jpg)
 
 ## My new Game Development Blog
 

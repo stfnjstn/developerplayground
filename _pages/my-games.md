@@ -40,7 +40,7 @@ Current version: 8.0
   <div></div>
 </div>
 
-[![Pong Like Game](/assets/2015/04/WatchPingPongGif.gif)](/assets/2015/04/WatchPingPongGif.gif)
+![Pong Like Game](/assets/2015/04/WatchPingPongGif.gif)
 
 ---
 
@@ -63,7 +63,7 @@ Current version: 1.4.2
 ---
 
 
-[![sms1](/assets/2015/04/sms1.png)](/assets/2015/04/sms1.png)| [![sms2](/assets/2015/04/sms2.png)](/assets/2015/04/sms2.png) | [![sms3](/assets/2015/04/sms3-1.jpg) ](/assets/2015/04/sms3-1.jpg)
+![sms1](/assets/2015/04/sms1.png)| ![sms2](/assets/2015/04/sms2.png) | ![sms3](/assets/2015/04/sms3-1.jpg)
 
 ## 15 Puzzle Game for Watch, Pad and Phone:
 
@@ -90,10 +90,9 @@ Current version: 3.6
 
 | Apple Watch | iOS |  
 | --- | --- |  
-[![WatchGame2](/assets/2016/04/WatchGame2.png)](/assets/2016/04/WatchGame2.png) | [![iOS Simulator Screen Shot 23 Jun 2015 21.31.50](/assets/2015/04/iOS-Simulator-Screen-Shot-23-Jun-2015-21.31.50.png)](/assets/2015/04/iOS-Simulator-Screen-Shot-23-Jun-2015-21.31.50.png)
-[![WatchGame1](/assets/2016/04/WatchGame1.jpg)](/assets/2016/04/WatchGame1.jpg) | [![500x500bb-80](/assets/2015/04/500x500bb-80-1.jpg)](/assets/2015/04/500x500bb-80-1.jpg)
-[![15 Puzzle](/assets/2016/04/Simulator-Screen-Shot-23-Apr-2016-09.40.13-1.jpg)](/assets/2016/04/Simulator-Screen-Shot-23-Apr-2016-09.40.13-1.jpg) | [![500x500bb-80b](/assets/2015/04/500x500bb-80b-1.jpg)](/assets/2015/04/500x500bb-80b-1.jpg)
-
+![WatchGame2](/assets/2016/04/WatchGame2.png) | ![Screenshot](/assets/2015/04/iOS-Simulator-Screen-Shot-23-Jun-2015-21.31.50.png)
+![WatchGame1](/assets/2016/04/WatchGame1.jpg) | ![500x500bb-80](/assets/2015/04/500x500bb-80-1.jpg)
+![15 Puzzle](/assets/2016/04/Simulator-Screen-Shot-23-Apr-2016-09.40.13-1.jpg) | ![500x500bb-80b](/assets/2015/04/500x500bb-80b-1.jpg)
 
 ## Yet Another Spaceshooter:
 
@@ -110,8 +109,8 @@ Related GameDev Tutorials: [SpriteKit & Swift](https://developerplayground.net)
 [![AppStore](/assets/2015/04/AppStore1.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
 
 
-[![IMG_8533](/assets/2015/04/IMG_8533-1.jpg)](/assets/2015/04/IMG_8533-1.jpg)|[![IMG_8534](/assets/2015/04/IMG_8534-1.jpg)](/assets/2015/04/IMG_8534-1.jpg)|[![IMG_8599](/assets/2015/04/IMG_8599-1.jpg)](/assets/2015/04/IMG_8599-1.jpg)
-[![IMG_8600](/assets/2015/04/IMG_8600-1.jpg)](/assets/2015/04/IMG_8600-1.jpg)|[![IMG_8602](/assets/2015/04/IMG_8602-1.jpg)](/assets/2015/04/IMG_8602-1.jpg)
+![IMG_8533](/assets/2015/04/IMG_8533-1.jpg) | ![IMG_8534](/assets/2015/04/IMG_8534-1.jpg) | ![IMG_8599](/assets/2015/04/IMG_8599-1.jpg)
+![IMG_8600](/assets/2015/04/IMG_8600-1.jpg) | ![IMG_8602](/assets/2015/04/IMG_8602-1.jpg)
 
 
 
