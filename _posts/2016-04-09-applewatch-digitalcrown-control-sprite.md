@@ -21,11 +21,29 @@ tags:
 
 Welcome to my new WatchKit tutorial. Today I'll show that it is possible to use the Apple Watch as a gaming platform. First let's look back to the first WatchKit versions. They have been very limited in terms of available input controls. Using alternative hardware stuff like the Digital Crown was not supported. A typical game was usually built with a number of WkInterfaceButtons and looked like this:
 
-[![15 Puzzle](/assets/2016/04/Simulator-Screen-Shot-23-Apr-2016-09.40.13-1.jpg)](https://itunes.apple.com/app/15-puzzle-game-for-watch-phone/id997514879?l=en&mt=8)[![15 Puzzle](/assets/2016/04/WatchGame2.png)](https://itunes.apple.com/app/15-puzzle-game-for-watch-phone/id997514879?l=en&mt=8)
+
+| --- | --- |  
+|[![15 Puzzle](/assets/2016/04/Simulator-Screen-Shot-23-Apr-2016-09.40.13-1.jpg)](https://itunes.apple.com/app/15-puzzle-game-for-watch-phone/id997514879?l=en&mt=8)|[![15 Puzzle](/assets/2016/04/WatchGame2.png)](https://itunes.apple.com/app/15-puzzle-game-for-watch-phone/id997514879?l=en&mt=8)
 
 Since WatchKit 2 it is possible to use the Digital Crown for custom apps. This provides way more possibilities for great games, like this [Watch Ping Pong](https://itunes.apple.com/app/watch-ping-pong/id1039082864?l=en&mt=8) version created by me. I'll publish the Source Code as OpenSource in my GitHub repository, once I have reached 1000 downloads. Currently only 980 to go ;-)
 
-[![ Watch Ping Pong](/assets/2016/04/WatchPingPongGif.gif)](https://itunes.apple.com/app/watch-ping-pong/id1039082864?l=en&mt=8)
+![A Ping Pong Game](/assets/2016/04/WatchPingPongGif.gif)
+
+<div style="display: flex; justify-content: space-around; align-items: center;">
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/app/a-ping-pong-game-lite/id1155659319">
+      <img src="/assets/Download.svg" alt="Download">
+    </a>
+    <p>Lite Version</p>
+  </div>
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/app/a-ping-pong-game/id1039082864?">
+      <img src="/assets/Download.svg" alt="Download" >
+    </a>
+    <p>Full Version</p>
+  </div>
+  <div></div>
+</div>
 
 I have a quick calculation for you, if you think 0.99$ is expensive: It took me around 30 hours to write the game. 20 downloads generate around 19,80$ earnings. Apple takes one third means 13,20$ remaining for me.  **= > Whoa! I've earned 0,44$ per hour ;-)** Don't get me wrong. I'm not expecting to get rich with my Apps. I'm writing this Blog and and my games only for fun.
 
