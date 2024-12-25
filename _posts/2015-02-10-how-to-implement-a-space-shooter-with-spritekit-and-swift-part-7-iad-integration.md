@@ -23,7 +23,7 @@ tags:
 
 [![Video](/assets/Videos/8d8MH_gXt84.png)](https://youtu.be/8d8MH_gXt84)
 
-[![](/assets/2015/04/AppStore.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
+[![AppStore](/assets/2015/04/AppStore.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
 
 #### Tutorial Overview: How to implement a space shooter with SpriteKit and SWIFT
 
@@ -50,19 +50,19 @@ Welcome to part 7 of my swift programming tutorial. In the previous parts we've 
 
 You need a paid Apple Developer Account to execute the next steps. 
 
-**Open [ iTunes Connect](https://itunesconnect.apple.com/) and navigate to the Agreements, Tax and Banking section:**
+**Open [iTunes Connect](https://itunesconnect.apple.com/) and navigate to the Agreements, Tax and Banking section:**
 
-[![](/assets/2015/02/Screen-2BShot-2B2015-02-05-2Bat-2B22.10.19-1.jpg)](/assets/2015/02/Screen-2BShot-2B2015-02-05-2Bat-2B22.10.19-1.jpg)
+![iTunes Connect](/assets/2015/02/Screen-2BShot-2B2015-02-05-2Bat-2B22.10.19-1.jpg)
 
 ### Request an iAd Agreement:
 
-[![](/assets/2015/02/iad.png)](/assets/2015/02/iad.png)
+![iAd](/assets/2015/02/iad.png)
 
 ### 2. Add a Banner Ad
 
 In this section I'll show how to add a banner add at the bottom of the screen. As a starting point you can download the code from part 6 [here](https://github.com/stfnjstn/MySecondGame/releases/tag/v0.6).
 
-[![](/assets/2015/02/Screen-2BShot-2B2015-02-08-2Bat-2B16.46.48-1.jpg)](/assets/2015/02/Screen-2BShot-2B2015-02-08-2Bat-2B16.46.48-1.jpg)
+![Banner](/assets/2015/02/Screen-2BShot-2B2015-02-08-2Bat-2B16.46.48-1.jpg)
 
 **Import the iAd framework and implement the ADBannerViewDelegate **protocol**:
 
@@ -172,7 +172,7 @@ func openAds(sender: AnyObject) {
   }
 ```
 
-[![](/assets/2015/02/Screen-2BShot-2B2015-02-08-2Bat-2B22.20.11.png)](/assets/2015/02/Screen-2BShot-2B2015-02-08-2Bat-2B22.20.11.png)
+![Fullscreen](/assets/2015/02/Screen-2BShot-2B2015-02-08-2Bat-2B22.20.11.png)
 
 **Add the call of the action sheet method in gameOver and gameCenterViewControllerDidFinish **
 
@@ -200,7 +200,7 @@ func gameCenterViewControllerDidFinish(gameCenterViewController: GKGameCenterVie
 }
 ```
 
-[![](/assets/2015/02/Screen-2BShot-2B2015-02-08-2Bat-2B22.20.56-1.jpg)](/assets/2015/02/Screen-2BShot-2B2015-02-08-2Bat-2B22.20.56-1.jpg)
+![Sample](/assets/2015/02/Screen-2BShot-2B2015-02-08-2Bat-2B22.20.56-1.jpg)
 
 That's all for today. You can download the code from GitHub: [Part 7](https://github.com/stfnjstn/MySecondGame/releases/tag/v0.7) or the [latest version](https://github.com/stfnjstn/MySecondGame/tree/master). 
 
@@ -208,7 +208,7 @@ I've submitted this version to the Apple AppStore. In one of my next posts I'll 
 
 A more sophisticated game based on this tutorial series is available in the AppStore: 
 
-[![](/assets/2015/04/AppStore.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
+[![AppStore](/assets/2015/04/AppStore.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
 
 Cheers,    
 Stefan

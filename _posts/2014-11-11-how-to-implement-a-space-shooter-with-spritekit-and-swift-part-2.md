@@ -21,7 +21,7 @@ tags: []
 
 [![Video](/assets/Videos/8d8MH_gXt84.png)](https://youtu.be/8d8MH_gXt84)
 
-[![](/assets/2014/11/AppStore1.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
+[![AppStore](/assets/2014/11/AppStore1.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
 
 #### Tutorial Overview: How to implement a space shooter with SpriteKit and SWIFT
 
@@ -38,13 +38,13 @@ tags: []
 
 I'll add several enemy sprites. These will automatically follow and orient to the hero sprite. You can download the code from Part 1 [here](https://github.com/stfnjstn/MySecondGame/releases/tag/v0.1).
 
-[![part2-1](/assets/2014/11/part2-1-1.jpg)](/assets/2014/11/part2-1-1.jpg)
+![Part 1](/assets/2014/11/part2-1-1.jpg)
 
 #### 1. Add a new class EnemySpriteController:
 
-[![part2-2](/assets/2014/11/part2-2.png)](/assets/2014/11/part2-2.png)
+![Part 2](/assets/2014/11/part2-2.png)
 
-[![part2-3](/assets/2014/11/part2-3-1.jpg)](/assets/2014/11/part2-3-1.jpg)
+![Part 3](/assets/2014/11/part2-3-1.jpg)
 
 #### 2. Import SpriteKit, define the class and add an array which stores all enemies:
 
@@ -117,7 +117,7 @@ for(var i=0; i<3;i++){
 
 Result are three red enemy sprites which will follow the white spaceship. Next steps are adding bullets and shooting. 
 
-[![SKConstraint Tutorial 1](/assets/2014/11/IMG_8379-1.jpg)](/assets/2014/11/IMG_8379-1.jpg)
+![SKConstraint Tutorial 1](/assets/2014/11/IMG_8379-1.jpg)
 
 #### 6. Add a shoot method inside EnemySpriteController.swift:
 
@@ -159,11 +159,11 @@ override func update(currentTime: CFTimeInterval) {
 }
 ```
 
-[![SKConstraint Tutorial](/assets/2014/11/IMG_8379.jpg)](/assets/2014/11/IMG_8379.jpg)
+![SKConstraint Tutorial](/assets/2014/11/IMG_8379.jpg)
 
 That's all for today. In my next part I'll add a HUD, implement a basic game loging and add collision detection. You can download the code from GitHub: [Part 2](https://github.com/stfnjstn/MySecondGame/releases/tag/v0.2) or the latest version [here](https://github.com/stfnjstn/MySecondGame/tree/master). You can also download my prototyping App for this tutorial series:
 
-[![](/assets/2014/11/AppStore1.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
+[![AppStore](/assets/2014/11/AppStore1.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
 
 Cheers,
 

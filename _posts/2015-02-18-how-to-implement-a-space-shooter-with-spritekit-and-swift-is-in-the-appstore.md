@@ -16,13 +16,13 @@ tags: []
 ---
 ### My sample game developed in my SpriteKit Tutorial is in the AppStore:
 
-[![](/assets/2015/04/AppStore.png)](https://itunes.apple.com/us/app/mysecondgame/id956647245?ls=1&mt=8)
+[![AppStore](/assets/2015/04/AppStore.png)](https://itunes.apple.com/us/app/mysecondgame/id956647245?ls=1&mt=8)
 
 SourceCode: [here](https://github.com/stfnjstn/MySecondGame)
 
 **A more sophisticate game also based on the tutorial:**
 
-[![](/assets/2015/04/AppStore.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
+[![AppStore](/assets/2015/04/AppStore.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
 
 ### Overview: How to implement a space shooter with SpriteKit and SWIFT
 

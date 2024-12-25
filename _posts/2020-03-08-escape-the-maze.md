@@ -28,19 +28,19 @@ Grown up with 16 Bit Home Computers like Atari ST & Amiga and being also fan of 
 Surprisingly the biggest challenge was not the 3D Engine, but creating an usable user interface which works on all devices.
 
 #### iPad
-[![](/assets/2020/03/ETMIPAD.jpg)](/assets/2020/03/ETMIPAD.jpg)
+![iPad](/assets/2020/03/ETMIPAD.jpg)
 
 #### Mac
-[![](/assets/2020/03/ETMMAC.jpg)](/assets/2020/03/ETMMAC.jpg)
+![Mac](/assets/2020/03/ETMMAC.jpg)
 
 #### iPhone
-[![](/assets/2020/03/ETMPHONE.jpg)](/assets/2020/03/ETMPHONE.jpg)
+![Phone](/assets/2020/03/ETMPHONE.jpg)
 
 #### AppleTV
-[![](/assets/2020/03/ETMTV.jpg)](/assets/2020/03/ETMTV.jpg)
+![TV](/assets/2020/03/ETMTV.jpg)
 
 #### AppleWatch
-[![](/assets/2020/03/ETMWatch.jpg)](/assets/2020/03/ETMWatch.jpg)
+![Watch](/assets/2020/03/ETMWatch.jpg)
 
 
 

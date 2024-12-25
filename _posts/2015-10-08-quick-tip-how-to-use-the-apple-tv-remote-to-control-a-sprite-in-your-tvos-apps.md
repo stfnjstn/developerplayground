@@ -25,7 +25,7 @@ tags:
 
 Since my Apple TV Developer kit arrived one week ago I had plenty of time to try certain things. I will blog about some of my prototypes in the next days.
 
-[![Swift Tutorial Apple TV remote 1](/assets/2015/10/Screen-Shot-2015-10-01-at-20.12.48-1.jpg)](/assets/2015/10/Screen-Shot-2015-10-01-at-20.12.48-1.jpg)
+![Swift Tutorial Apple TV remote 1](/assets/2015/10/Screen-Shot-2015-10-01-at-20.12.48-1.jpg)
 
 Today I'll will focus again on the remote control. It provides, especially in combination with SpriteKit, a simple and very natural way to control a sprite on the screen. For a natural sprite movement the approach of my todays post is much better, the my [article about gesture recognition](/quick-tip-how-to-use-the-remote-control-in-your-tvos-apps-for-apple-tv-in-swift) on the AppleTV.
 
@@ -33,17 +33,17 @@ Let's start...
 
 ### 1. Download the XCode 7.1 Beta from the [Apple Developer Portal](https://developer.apple.com/xcode/download/):
 
-[![Swift Tutorial Apple TV remote 2](/assets/2015/10/2-1.jpg)](/assets/2015/10/2-1.jpg)
+![Swift Tutorial Apple TV remote 2](/assets/2015/10/2-1.jpg)
 
 #### 2. Create a new project:
 
-[![Swift Tutorial Apple TV remote 3](/assets/2015/10/3.png)](/assets/2015/10/3.png)
+![Swift Tutorial Apple TV remote 3](/assets/2015/10/3.png)
 
-[![Swift Tutorial Apple TV remote 4](/assets/2015/10/4.png)](/assets/2015/10/4.png)
+![Swift Tutorial Apple TV remote 4](/assets/2015/10/4.png)
 
 #### 3. Open GameViewController.swift
 
-[![Swift Tutorial Apple TV remote 5](/assets/2015/10/5-1.jpg)](/assets/2015/10/5-1.jpg)
+![Swift Tutorial Apple TV remote 5](/assets/2015/10/5-1.jpg)
 
 
 Change the scale mode from in viewDidLoad from
@@ -55,7 +55,7 @@ to
 
 Override the didMoveToView method with this snippet to create a sprite in the middle of the screen:
 
-[![Swift Tutorial Apple TV remote 6](/assets/2015/10/6-1.jpg)](/assets/2015/10/6-1.jpg)
+![Swift Tutorial Apple TV remote 6](/assets/2015/10/6-1.jpg)
 
 ```swift
 // Global property to store the sprite object
@@ -126,7 +126,7 @@ override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
 
 #### 6. Now let's move the sprite around and start the App
 
-[![Swift Tutorial Apple TV remote 7](/assets/2015/10/7-1.jpg)](/assets/2015/10/7-1.jpg)
+![Swift Tutorial Apple TV remote 7](/assets/2015/10/7-1.jpg)
 
 If you try this in the Simulator you have to press the option key (alt) on you Mac keyboard and move the mouse around on the touch area of the remote control window. No mouse clicks!!!
 
@@ -135,4 +135,4 @@ That's all for today.
 Cheers,  
 Stefan
 
-[![AppStore Stefan](/assets/2015/10/AppStore.png)](https://itunes.apple.com/developer/stefan-josten/id949662361)
+[![AppStore](/assets/2015/10/AppStore.png)](https://itunes.apple.com/developer/stefan-josten/id949662361)

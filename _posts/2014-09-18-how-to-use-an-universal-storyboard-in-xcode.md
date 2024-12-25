@@ -29,32 +29,32 @@ This sample needs Xcode 6.
 
 1. Delete one of the the existing storyboards. In this example the iPad version:
 
-[![](/assets/2014/09/Bildschirmfoto-2014-08-10-um-23.43.12.png)](/assets/2014/09/Bildschirmfoto-2014-08-10-um-23.43.12.png)
+![Delete Storyboards](/assets/2014/09/Bildschirmfoto-2014-08-10-um-23.43.12.png)
 
 2. Rename the iPhone Storyboard:
 
-[![](/assets/2014/09/Bildschirmfoto-2014-08-10-um-23.43.54-1.jpg)](/assets/2014/09/Bildschirmfoto-2014-08-10-um-23.43.54-1.jpg)
+![Rename](/assets/2014/09/Bildschirmfoto-2014-08-10-um-23.43.54-1.jpg)
 
 3. Select the new storyboard as Main Interface for iPhone and iPad:
 
-[![](/assets/2014/09/Bildschirmfoto-2014-08-10-um-23.44.29.png)](/assets/2014/09/Bildschirmfoto-2014-08-10-um-23.44.29.png)
+![Select](/assets/2014/09/Bildschirmfoto-2014-08-10-um-23.44.29.png)
 
 4. Open the storyboard and enable Auto Layout and Size Classes:
 
-[![](/assets/2014/09/Bildschirmfoto-2014-08-10-um-23.47.29.png)](/assets/2014/09/Bildschirmfoto-2014-08-10-um-23.47.29.png)
+![Open](/assets/2014/09/Bildschirmfoto-2014-08-10-um-23.47.29.png)
 
 5. Confirm to enable size classes:
 
-[![](/assets/2014/09/Bildschirmfoto-2014-08-10-um-23.47.37-1.jpg)](/assets/2014/09/Bildschirmfoto-2014-08-10-um-23.47.37-1.jpg)
+![Confirm](/assets/2014/09/Bildschirmfoto-2014-08-10-um-23.47.37-1.jpg)
 
 That was easy. Now let's test it:
 
 #### iPhone:
 
-[![](/assets/2014/09/Foto-1-1.jpg)](/assets/2014/09/Foto-1-1.jpg)
+![iPhone](/assets/2014/09/Foto-1-1.jpg)
 
 #### iPad:
-[![](/assets/2014/09/IMG_0002_2.jpg)](/assets/2014/09/IMG_0002_2.jpg)
+![iPad](/assets/2014/09/IMG_0002_2.jpg)
 
 Hmmmh. We must have missed something.
 
@@ -63,19 +63,19 @@ Hmmmh. We must have missed something.
 We have used the iPhone Storyboard as the new main Storyboard, with a per pixel positioning of the views and UI elements. Therefore it's not surprising, that the iPad layout looks weird. 
 Let's have a look on the view structure. For all elements we have to specify positions and size independent from the form factor or orientation:
 
-[![](/assets/2014/09/Bildschirmfoto%2B2014-08-14%2Bum%2B00.59.08.png)](/assets/2014/09/Bildschirmfoto%2B2014-08-14%2Bum%2B00.59.08.png)[![usb1](/assets/2014/09/usb1.png)](/assets/2014/09/usb1.png)
+![Auto Layout](/assets/2014/09/Bildschirmfoto%2B2014-08-14%2Bum%2B00.59.08.png)
 
 To address this I've added several AutoLayout constraints:
 
-[![usb2](/assets/2014/09/usb2-1.jpg)](/assets/2014/09/usb2-1.jpg)
+![Auto Layout](/assets/2014/09/usb2-1.jpg)
 
 To model a different layout for iPhone and iPad Size Classes can used. Click at the bottom of the Xcode screen to select a special size class (for example for phone landscape). All new constraints will be limited to the chosen Size Class. Be aware that Size Classes are only working on iOS 8 devices.
 
-[![usb3](/assets/2014/09/usb3-1.jpg)](/assets/2014/09/usb3-1.jpg)
+![Auto Layout](/assets/2014/09/usb3-1.jpg)
 
 Constraints which are limited to a special Size Class are grayed out. The Size Classes are only working on iOS 8 devices.
 
-[![usb4](/assets/2014/09/usb4-1.jpg)](/assets/2014/09/usb4-1.jpg)
+![Auto Layout](/assets/2014/09/usb4-1.jpg)
 
 If you need further information here are two excellent articles about Auto Layout and Size Classes:
 

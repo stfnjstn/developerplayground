@@ -23,7 +23,7 @@ tags: []
 
 [![Video](/assets/Videos/8d8MH_gXt84.png)](https://youtu.be/8d8MH_gXt84)
 
-[![](/assets/2015/01/AppStore.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
+[![AppStore](/assets/2015/01/AppStore.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
 
 ### Overview: How to implement a space shooter with SpriteKit and SWIFT
 
@@ -51,80 +51,80 @@ The most complex part is doing configuration stuff in [iTunes Connect](https://i
 
 Check, if XCode is set up properly with your Apple account data:
 
-[![GC1](/assets/2015/01/GC1-1.jpg)](/assets/2015/01/GC1-1.jpg)
+![GC1](/assets/2015/01/GC1-1.jpg)
 
 Before submitting your app add appropriate app icons to your project. Otherwise iTunes Connect will reject your upload: 
 
-[![gc2](/assets/2015/01/gc2-1.jpg)](/assets/2015/01/gc2-1.jpg)
+![gc2](/assets/2015/01/gc2-1.jpg)
 
 Enable Game Center in the Capabilities Tab of your project. Select your team profile and wait a few seconds till XCode has updated the project settings. 
 
-[![gc3](/assets/2015/01/gc3-1.jpg)](/assets/2015/01/gc3-1.jpg)
+![gc3](/assets/2015/01/gc3-1.jpg)
 
 Create an Archive of your app: 
 
-[![gc4](/assets/2015/01/gc4-1.jpg)](/assets/2015/01/gc4-1.jpg)
+![gc4](/assets/2015/01/gc4-1.jpg)
 
 Open the Organizer window: 
 
-[![gc5](/assets/2015/01/gc5-1.jpg)](/assets/2015/01/gc5-1.jpg)
+![gc5](/assets/2015/01/gc5-1.jpg)
 
-[![gc6](/assets/2015/01/gc6-1.jpg)](/assets/2015/01/gc6-1.jpg)
+![gc6](/assets/2015/01/gc6-1.jpg)
 
 Click Submit choose your profile and submit your application to iTunesConnect
 
-[![gc7](/assets/2015/01/gc7.png)](/assets/2015/01/gc7.png)
+![gc7](/assets/2015/01/gc7.png)
 
 If you see this error message you haven't created an AppId for your app in iTunesConnect: 
 
-[![gc8](/assets/2015/01/gc8.png)](/assets/2015/01/gc8.png)
+![gc8](/assets/2015/01/gc8.png)
 
 Open [iTunesConnect](https://itunesconnect.apple.com/) in your browser, select MyApps, add a new app and fill out the required fields: 
 
-[![gc9](/assets/2015/01/gc9-1.jpg)](/assets/2015/01/gc9-1.jpg) 
-[![gc10](/assets/2015/01/gc10.png)](/assets/2015/01/gc10.png) 
-[![gc11](/assets/2015/01/gc11.png)](/assets/2015/01/gc11.png) 
-[![gc12](/assets/2015/01/gc12.png)](/assets/2015/01/gc12.png)
+![gc9](/assets/2015/01/gc9-1.jpg)
+![gc10](/assets/2015/01/gc10.png)
+![gc11](/assets/2015/01/gc11.png)
+![gc12](/assets/2015/01/gc12.png)
 
 Go back to XCode, open the Organizer window and submit your app again:
 
-[![gc13](/assets/2015/01/gc13.png)](/assets/2015/01/gc13.png)
+![gc13](/assets/2015/01/gc13.png)
 
-[![gc14](/assets/2015/01/gc14.png)](/assets/2015/01/gc14.png)
+![gc14](/assets/2015/01/gc14.png)
 
 ### 2. Create a Leaderboard in iTunesConnect 
 
 Open [iTunesConnect](https://itunesconnect.apple.com/) and select your app: 
 
-[![gc15](/assets/2015/01/gc15.png)](/assets/2015/01/gc15.png)
+![gc15](/assets/2015/01/gc15.png)
 
 Click on Game Center: 
 
-[![gc16](/assets/2015/01/gc16-1.jpg)](/assets/2015/01/gc16-1.jpg)
+![gc16](/assets/2015/01/gc16-1.jpg)
 
 Select Single Game: 
 
-[![gc17](/assets/2015/01/gc17.png)](/assets/2015/01/gc17.png)
+![gc17](/assets/2015/01/gc17.png)
 
 Select Add Leaderboard: 
 
-[![gc18](/assets/2015/01/gc18.png)](/assets/2015/01/gc18.png)
+![gc18](/assets/2015/01/gc18.png)
 
 Choose Single Leaderboard: 
 
-[![gc19](/assets/2015/01/gc19.png)](/assets/2015/01/gc19.png)
+![gc19](/assets/2015/01/gc19.png)
 
 Configure your Leaderboard: 
 
-[![gc20](/assets/2015/01/gc20.png)](/assets/2015/01/gc20.png)
+![gc20](/assets/2015/01/gc20.png)
 
 Add at least one language: 
 
-[![gc21](/assets/2015/01/gc21.png)](/assets/2015/01/gc21.png)
+![gc21](/assets/2015/01/gc21.png)
 
-[![gc22](/assets/2015/01/gc22.png)](/assets/2015/01/gc22.png)
+![gc22](/assets/2015/01/gc22.png)
 
-[![gc23](/assets/2015/01/gc23.png)](/assets/2015/01/gc23.png)
+![gc23](/assets/2015/01/gc23.png)
 
 Confirm your changes by selecting Done. Now back to XCode. 
 
@@ -132,17 +132,17 @@ Confirm your changes by selecting Done. Now back to XCode.
 
 To test the Game Center integration inside your App you need to create one or more Sandbox Testers in iTunes Connect. More details about creating them can be found in the [Apple Documentation](https://developer.apple.com/library/ios/documentation/LanguagesUtilities/Conceptual/iTunesConnect_Guide/Chapters/SettingUpUserAccounts.html).  Open the Users and Roles section in iTunes Connect: 
 
-[![gc24](/assets/2015/01/gc24-1.jpg)](/assets/2015/01/gc24-1.jpg)
+![gc24](/assets/2015/01/gc24-1.jpg)
 
 Choose the Sandbox Testers tab at the right and create at least one: 
 
-[![gc25](/assets/2015/01/gc25.png)](/assets/2015/01/gc25.png)
+![gc25](/assets/2015/01/gc25.png)
 
 Fill out the required fields. You need a valid email account for this: 
 
-[![gc26](/assets/2015/01/gc26.png)](/assets/2015/01/gc26.png)
+![gc26](/assets/2015/01/gc26.png)
 
-[![gc27](/assets/2015/01/gc27.png)](/assets/2015/01/gc27.png)
+![gc27](/assets/2015/01/gc27.png)
 
 ### 4. Coding 
 
@@ -152,15 +152,15 @@ import GameKit
 
 The next image shows the control flow of my game center integration: 
 
-[![gc28](/assets/2015/01/gc28-1.jpg)](/assets/2015/01/gc28-1.jpg)
+![gc28](/assets/2015/01/gc28-1.jpg)
 
 #### Game Center initialization: 
 
 Check if Game Center is available. Otherwise present the Login Screen:
 
-[![](/assets/2015/01/IMG_87151-1.jpg)](/assets/2015/01/IMG_87151-1.jpg)
+![](/assets/2015/01/IMG_87151-1.jpg)
 
-[![](/assets/2015/01/IMG_87141-1.jpg)](/assets/2015/01/IMG_87141-1.jpg)
+![](/assets/2015/01/IMG_87141-1.jpg)
 
 Move the Scene declaration outside the viewDidAppear method to make it a global property. This is necessary because you need to access the scene outside of viewDidAppear:
 
@@ -297,7 +297,7 @@ func addLeaderboardScore(score: Int64) {
 
 #### Show the Game Center leaderboard after game over:
 
-[![](/assets/2015/01/IMG_87121-1.jpg)](/assets/2015/01/IMG_87121-1.jpg)
+![GameOver](/assets/2015/01/IMG_87121-1.jpg)
 
 The game center leaderboard can only be called/shown from a ViewController, not inside a SpriteKit Scene. To notify the container ViewController of our scene add a protocol to GameScene.swift:
 
@@ -380,7 +380,7 @@ func gameCenterViewControllerDidFinish(gameCenterViewController: GKGameCenterVie
 
 That's all for today. You can download the code from GitHub: [Part 6](https://github.com/stfnjstn/MySecondGame/releases/tag/v0.6) or the [latest version](https://github.com/stfnjstn/MySecondGame/tree/master). In my next tutorial I'll show how to integrate Apples advertising framework iAD.  You can also download my prototyping App for this tutorial series: 
 
-[![](/assets/2015/01/AppStore.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
+[![AppStore](/assets/2015/01/AppStore.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
 
 Cheers,    
 Stefan 

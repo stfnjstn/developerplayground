@@ -23,7 +23,7 @@ Welcome to my new WatchKit tutorial. Today I'll show that it is possible to use 
 
 
 | --- | --- |  
-|[![15 Puzzle](/assets/2016/04/Simulator-Screen-Shot-23-Apr-2016-09.40.13-1.jpg)](https://itunes.apple.com/app/15-puzzle-game-for-watch-phone/id997514879?l=en&mt=8)|[![15 Puzzle](/assets/2016/04/WatchGame2.png)](https://itunes.apple.com/app/15-puzzle-game-for-watch-phone/id997514879?l=en&mt=8)
+|[![AppStore](/assets/2016/04/Simulator-Screen-Shot-23-Apr-2016-09.40.13-1.jpg)](https://itunes.apple.com/app/15-puzzle-game-for-watch-phone/id997514879?l=en&mt=8)|[![AppStore](/assets/2016/04/WatchGame2.png)](https://itunes.apple.com/app/15-puzzle-game-for-watch-phone/id997514879?l=en&mt=8)
 
 Since WatchKit 2 it is possible to use the Digital Crown for custom apps. This provides way more possibilities for great games, like this [Watch Ping Pong](https://itunes.apple.com/app/watch-ping-pong/id1039082864?l=en&mt=8) version created by me. I'll publish the Source Code as OpenSource in my GitHub repository, once I have reached 1000 downloads. Currently only 980 to go ;-)
 
@@ -53,29 +53,29 @@ Goal is to create the racket at the left side and use the digital crown to move 
 
 #### 1. Open XCode and create a new WatchKit project:
 
-[![WatchGame1](/assets/2016/04/WatchGame1.png)](/assets/2016/04/WatchGame1.png)
+![WatchGame1](/assets/2016/04/WatchGame1.png)
 
 Disable the checkmark on _Include Notification Scene_:
 
-[![WatchGameBlog2](/assets/2016/04/WatchGameBlog2.png)](/assets/2016/04/WatchGameBlog2.png)
+![WatchGameBlog2](/assets/2016/04/WatchGameBlog2.png)
 
 #### 2. Create the UserInterface:
 
-Open the WatchKit Storyboard: [![WatchGameBlog3](/assets/2016/04/WatchGameBlog3-1.jpg)](/assets/2016/04/WatchGameBlog3-1.jpg)
+Open the WatchKit Storyboard: ![WatchGameBlog3](/assets/2016/04/WatchGameBlog3-1.jpg)
 
 Add a WKInterfaceGroup and below a WKInterfaceImage and a WKInterfacePicker to the InterfaceController:
 
-[![WatchGameBlog4](/assets/2016/04/WatchGameBlog4-1.jpg)](/assets/2016/04/WatchGameBlog4-1.jpg)
+![WatchGameBlog4](/assets/2016/04/WatchGameBlog4-1.jpg)
 
 Change the size of the group and the Image to fullscreen:
 
-[![WatchGameBlog5](/assets/2016/04/WatchGameBlog5.png)](/assets/2016/04/WatchGameBlog5.png)
+![WatchGameBlog5](/assets/2016/04/WatchGameBlog5.png)
 
-[![WatchGameBlog6](/assets/2016/04/WatchGameBlog6.png)](/assets/2016/04/WatchGameBlog6.png)
+![WatchGameBlog6](/assets/2016/04/WatchGameBlog6.png)
 
 Change the radius of the group to 0:
 
-[![WatchGameBlog7](/assets/2016/04/WatchGameBlog7.png)](/assets/2016/04/WatchGameBlog7.png)
+![WatchGameBlog7](/assets/2016/04/WatchGameBlog7.png)
 
 The WKInterfacePicker will only be used to connect our interface with the digital crown. It is not necessary that it is visible on the screen.
 
@@ -83,14 +83,14 @@ The WKInterfacePicker will only be used to connect our interface with the digita
 
 Create an IBOutlet for _Image_ and _Picker_:
 
-[![WatchGameBlog8](/assets/2016/04/WatchGameBlog8.png)](/assets/2016/04/WatchGameBlog8.png)
+![WatchGameBlog8](/assets/2016/04/WatchGameBlog8.png)
 
 
-[![WatchGameBlog9](/assets/2016/04/WatchGameBlog9.png)](/assets/2016/04/WatchGameBlog9.png)
+![WatchGameBlog9](/assets/2016/04/WatchGameBlog9.png)
 
 Create an IBAction for the _Picker_:
 
-[![WatchGameBlog10](/assets/2016/04/WatchGameBlog10.png)](/assets/2016/04/WatchGameBlog10.png)
+![WatchGameBlog10](/assets/2016/04/WatchGameBlog10.png)
 
 The result in your code should look like this:
 
@@ -157,13 +157,13 @@ Move the racket overtime the picker changes:
 
 Now you can run the App and play with the crown and the racket. The result should look like this:
 
-[![WatchGameDemoGif](/assets/2016/04/WatchGameDemoGif.gif)](/assets/2016/04/WatchGameDemoGif.gif)
+![WatchGameDemoGif](/assets/2016/04/WatchGameDemoGif.gif)
 
 That's all for today.
 
 If you want to support me, please download my Apps from the Apple AppStore.
 
-[![AppStore Stefan](/assets/2015/11/AppStore1.png)](https://itunes.apple.com/developer/stefan-josten/id949662361)
+[![AppStore](/assets/2015/11/AppStore1.png)](https://itunes.apple.com/developer/stefan-josten/id949662361)
 
 Cheers,
 

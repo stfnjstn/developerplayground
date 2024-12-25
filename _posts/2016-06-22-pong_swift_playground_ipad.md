@@ -29,11 +29,11 @@ So here we are: My first game SWIFT Playground completely written on an iPad: [P
  
 ### 1. Open the Playground App on your iPad:
 
-[![PlaygroundLogo](/assets/2016/06/PlaygroundLogo.jpg)](/assets/2016/06/PlaygroundLogo.jpg)
+![PlaygroundLogo](/assets/2016/06/PlaygroundLogo.jpg)
 
 ### 2. Create a new SWIFT Playground:
 
-[![IMG_2575](/assets/2016/06/IMG_2575.jpg)](/assets/2016/06/IMG_2575.jpg)[![iPad Create a new Playground](/assets/2016/06/IMG_2574.jpg)](/assets/2016/06/IMG_2574.jpg)
+![Playground](/assets/2016/06/IMG_2575.jpg) ![iPad Create a new Playground](/assets/2016/06/IMG_2574.jpg)
 
 ### 3. Here is the SourceCode. 
 
@@ -265,7 +265,7 @@ That's all for today.
 
 If you want to support me, please download my Apps from the Apple AppStore.
 
-[![AppStore Stefan](/assets/2015/11/AppStore1.png)](https://itunes.apple.com/developer/stefan-josten/id949662361)
+[![AppStore](/assets/2015/11/AppStore1.png)](https://itunes.apple.com/developer/stefan-josten/id949662361)
 
 Cheers,  
 Stefan

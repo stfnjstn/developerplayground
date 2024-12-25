@@ -33,7 +33,7 @@ In this tutorial I'll show how you can implement an information alert about the 
 
 **IMPORTANT:** I'm not a lawyer. So no guarantees. You have to decide on your own if this is sufficient.
 
-[![Google Cookie Policy](/assets/2015/08/iOS-Simulator-Screen-Shot-29-Aug-2015-19.02.15.png)](/assets/2015/08/iOS-Simulator-Screen-Shot-29-Aug-2015-19.02.15.png)
+![Google Cookie Policy](/assets/2015/08/iOS-Simulator-Screen-Shot-29-Aug-2015-19.02.15.png)
 
 The Code snippet for showing the AdMob Cookie usage is simple:
 
@@ -63,6 +63,6 @@ That's all for today.
 Cheers,  
 Stefan
 
-[![AppStore Stefan Josten](/assets/2015/11/AppStore1.png)](https://itunes.apple.com/us/app/yet-another-watch-puzzle-game/id997514879?ls=1&mt=8)
+[![AppStore](/assets/2015/11/AppStore1.png)](https://itunes.apple.com/us/app/yet-another-watch-puzzle-game/id997514879?ls=1&mt=8)
 
  

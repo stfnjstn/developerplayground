@@ -25,11 +25,11 @@ For details how to subscribe for the Apple iAds program, please check my previou
 
 ### 1. Create the sample project:
 
-[![iAd Tutorial](/assets/2015/07/Screen-Shot-2015-07-08-at-21.55.35.png)](/assets/2015/07/Screen-Shot-2015-07-08-at-21.55.35.png) [![iAd Tutorial](/assets/2015/07/Screen-Shot-2015-07-08-at-21.55.52.png)](/assets/2015/07/Screen-Shot-2015-07-08-at-21.55.52.png)
+![iAd Tutorial](/assets/2015/07/Screen-Shot-2015-07-08-at-21.55.35.png) ![iAd Tutorial](/assets/2015/07/Screen-Shot-2015-07-08-at-21.55.52.png)
 
 ### 2. Ad the iAD framework to your project:
 
-[![iAd Tutorial](/assets/2015/07/Screen-Shot-2015-07-08-at-21.57.04-1.jpg)](/assets/2015/07/Screen-Shot-2015-07-08-at-21.57.04-1.jpg) [![iAd Tutorial](/assets/2015/07/Screen-Shot-2015-07-08-at-21.57.19.png)](/assets/2015/07/Screen-Shot-2015-07-08-at-21.57.19.png) [![iAd Tutorial](/assets/2015/07/Screen-Shot-2015-07-08-at-21.57.29.png)](/assets/2015/07/Screen-Shot-2015-07-08-at-21.57.29.png)
+![iAd Tutorial](/assets/2015/07/Screen-Shot-2015-07-08-at-21.57.04-1.jpg) ![iAd Tutorial](/assets/2015/07/Screen-Shot-2015-07-08-at-21.57.19.png) ![iAd Tutorial](/assets/2015/07/Screen-Shot-2015-07-08-at-21.57.29.png)
 
 ### 3. Add these two lines of code to your ViewController class:
 
@@ -45,7 +45,7 @@ class ViewController: UIViewController {
 }
 ```
 
-Thats all! Apple takes care about ads loading and error handling and decides, if the ad is ready to show. Apple also handles orientation changes and the different sizes for iPhone and iPad. [![Integrate iAd](/assets/2015/07/Screen-Shot-2015-07-08-at-22.01.17-1.jpg)](/assets/2015/07/Screen-Shot-2015-07-08-at-22.01.17-1.jpg) [![iAd Tutorial](/assets/2015/07/Screen-Shot-2015-07-08-at-22.01.36-1.jpg)](/assets/2015/07/Screen-Shot-2015-07-08-at-22.01.36-1.jpg)
+Thats all! Apple takes care about ads loading and error handling and decides, if the ad is ready to show. Apple also handles orientation changes and the different sizes for iPhone and iPad. ![Integrate iAd](/assets/2015/07/Screen-Shot-2015-07-08-at-22.01.17-1.jpg) ![iAd Tutorial](/assets/2015/07/Screen-Shot-2015-07-08-at-22.01.36-1.jpg)
 
 That's all for today.
 

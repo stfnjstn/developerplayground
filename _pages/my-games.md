@@ -58,7 +58,7 @@ Current version: 1.4.2
 
 **Title**
 
-[![AppStore.png](/assets/2015/11/AppStore1.png)](https://itunes.apple.com/us/app/save-my-spaceship/id970195914?mt=8 "Save My Spaceship")
+[![AppStore](/assets/2015/11/AppStore1.png)](https://itunes.apple.com/us/app/save-my-spaceship/id970195914?mt=8 "Save My Spaceship")
 
 ---
 

@@ -46,7 +46,7 @@ let newSpeed = (currentSpeed \+ (speed - currentSpeed) * easeOutfactor)
 
 ### Open GameScene.swift:
 
-[![SpriteKit scrolling tutorial](/assets/2015/11/Screen-Shot-2015-11-13-at-18.14.431-1.jpg)](/assets/2015/11/Screen-Shot-2015-11-13-at-18.14.431-1.jpg)
+![SpriteKit scrolling tutorial](/assets/2015/11/Screen-Shot-2015-11-13-at-18.14.431-1.jpg)
 
 #### Replace the complete code with this snippet:
 
@@ -186,7 +186,7 @@ You can download the complete sample from my [Github repository](https://github.
 
 If you want to support me, please download my Apps from the Apple AppStore:
 
-[![AppStore Stefan Josten](/assets/2015/11/AppStore1.png)](https://itunes.apple.com/developer/stefan-josten/id949662361)
+[![AppStore](/assets/2015/11/AppStore1.png)](https://itunes.apple.com/developer/stefan-josten/id949662361)
 
  
 

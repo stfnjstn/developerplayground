@@ -32,19 +32,19 @@ tags: [iOS, SpriteKit, SWIFT]
 
 [![Video](/assets/Videos/8d8MH_gXt84.png)](https://youtu.be/8d8MH_gXt84)
 
-[![](/assets/2014/11/AppStore.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
+[![AppStore](/assets/2014/11/AppStore.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
 
 ### 1. Create a new universal project (template: game; language: Swift)
 
-[![part1-1](/assets/2014/11/part1-1.png)](/assets/2014/11/part1-1.png)
+![Part 1](/assets/2014/11/part1-1.png)
 
-[![part1-2](/assets/2014/11/part1-2.png)](/assets/2014/11/part1-2.png)
+![Part 2](/assets/2014/11/part1-2.png)
 
 ### 2. Remove the GameScene.sks file
 
 #### I'll not use the internal level editor, so this file is obsolete and can be deleted:
 
-[![part1-3](/assets/2014/11/part1-3-1.jpg)](/assets/2014/11/part1-3-1.jpg)
+![Part 3](/assets/2014/11/part1-3-1.jpg)
 
 #### Inside GameController.swift remove this code block:
 
@@ -106,7 +106,7 @@ override func supportedInterfaceOrientations() -> Int {
 
 I'll add a spaceship sprite. The sprite will automatically orient and move to a touch location on the screen:
 
-[![part1-4](/assets/2014/11/part1-4-1.jpg)](/assets/2014/11/part1-4-1.jpg)
+![Part 4](/assets/2014/11/part1-4-1.jpg)
 
 The automated orienting of the spaceship is implemented with a little trick. I'll add a SKConstraint to an invisible sprite. I case of a touch event, the invisible sprite is moved to the touch location and the spaceship is automatically oriented to this invisible sprite/touch location.
 
@@ -175,7 +175,7 @@ That's all for today. In my next part I'll add some enemies and bullets. You can
 
 You can also download my prototyping App for this tutorial series:
 
-[![](/assets/2014/11/AppStore.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
+[![AppStore](/assets/2014/11/AppStore.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
 
 Cheers,   
 Stefan

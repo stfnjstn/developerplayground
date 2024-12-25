@@ -36,37 +36,37 @@ This video gives an impression what I'll show today:
 
 First we need a background image:
 
-[![SpriteKit Scrolling Tutorial 1](/assets/2015/11/Tiles1.png)](/assets/2015/11/Tiles11-1.jpg)
+![SpriteKit Scrolling Tutorial 1](/assets/2015/11/Tiles1.png)
 
 Let's mirror this image and add the new one at the right side:
 
  
 
-[![SpriteKit Scrolling Tutorial 2](/assets/2015/11/Tiles2.png)](/assets/2015/11/Tiles21-1.jpg)
+![SpriteKit Scrolling Tutorial 2](/assets/2015/11/Tiles2.png)
 
 Copy the original image and append it at the right side. In our app we will have three sprite nodes, one for each image tile:
 
-[![SpriteKit Scrolling Tutorial 3](/assets/2015/11/Tiles3-1.jpg)](/assets/2015/11/Tiles31.png)
+![SpriteKit Scrolling Tutorial 3](/assets/2015/11/Tiles3-1.jpg)
 
 Scrolling will start at the left side:
 
-[![SpriteKit Scrolling Tutorial 4](/assets/2015/11/Tiles4-1.jpg)](/assets/2015/11/Tiles41.png)
+![SpriteKit Scrolling Tutorial 4](/assets/2015/11/Tiles4-1.jpg)
 
 Let's add a static background image:
 
-[![SpriteKit Scrolling Tutorial 5](/assets/2015/11/Tiles5-1.jpg)](/assets/2015/11/Tiles51-1.jpg)
+![SpriteKit Scrolling Tutorial 5](/assets/2015/11/Tiles5-1.jpg)
 
 To scroll right, move the background tiles in the left direction:
 
-[![SpriteKit Scrolling Tutorial 6](/assets/2015/11/Tiles6-1.jpg)](/assets/2015/11/Tiles61-1.jpg)
+![SpriteKit Scrolling Tutorial 6](/assets/2015/11/Tiles6-1.jpg)
 
 If the end at the right side is reached:
 
-[![SpriteKit Scrolling Tutorial 7](/assets/2015/11/Tiles7-1.jpg)](/assets/2015/11/Tiles71-1.jpg)
+![SpriteKit Scrolling Tutorial 7](/assets/2015/11/Tiles7-1.jpg)
 
 Move the background tiles back to the start position:
 
-[![SpriteKit Scrolling Tutorial 8](/assets/2015/11/Tiles8-1.jpg)](/assets/2015/11/Tiles81-1.jpg)
+![SpriteKit Scrolling Tutorial 8](/assets/2015/11/Tiles8-1.jpg)
 
 **The SpriteKits object hierarchy will be created this way:**
 
@@ -86,17 +86,17 @@ The worldNode will be moved to implement the scrolling.
 
 #### Create a new Sprite Kit project:
 
-[![SpriteKit Scrolling Tutorial 9](/assets/2015/11/Screen-Shot-2015-11-13-at-18.13.14.png)](/assets/2015/11/Screen-Shot-2015-11-13-at-18.13.14.png)
+![SpriteKit Scrolling Tutorial 9](/assets/2015/11/Screen-Shot-2015-11-13-at-18.13.14.png)
 
-[![SpriteKit Scrolling Tutorial 10](/assets/2015/11/Screen-Shot-2015-11-13-at-18.14.00.png)](/assets/2015/11/Screen-Shot-2015-11-13-at-18.14.00.png)
+![SpriteKit Scrolling Tutorial 10](/assets/2015/11/Screen-Shot-2015-11-13-at-18.14.00.png)
 
 #### Open Asset Catalogue and add three images (Background, LeftTile, rightTile)
 
-[![SpriteKit Scrolling Tutorial 11](/assets/2015/11/Screen-Shot-2015-11-13-at-18.27.58-1.jpg)](/assets/2015/11/Screen-Shot-2015-11-13-at-18.27.58-1.jpg)
+![SpriteKit Scrolling Tutorial 11](/assets/2015/11/Screen-Shot-2015-11-13-at-18.27.58-1.jpg)
 
 #### Open GameScene.swift:
 
-[![SpriteKit Scrolling Tutorial 12](/assets/2015/11/Screen-Shot-2015-11-13-at-18.14.43-1.jpg)](/assets/2015/11/Screen-Shot-2015-11-13-at-18.14.43-1.jpg)
+![SpriteKit Scrolling Tutorial 12](/assets/2015/11/Screen-Shot-2015-11-13-at-18.14.43-1.jpg)
 
 #### Replace the complete code with this snippet:
 
@@ -212,7 +212,7 @@ You can download the complete sample from my [Github repository](https://github.
 
 I'll show an improved version with a smoother scrolling in [part 2](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-4-collision-detection86). You can support me by downloading my Apps from the Apple AppStore:
 
-[![AppStore Stefan Josten](/assets/2015/11/AppStore1.png)](https://itunes.apple.com/developer/stefan-josten/id949662361)   
+[![AppStore](/assets/2015/11/AppStore1.png)](https://itunes.apple.com/developer/stefan-josten/id949662361)   
   
 That's all for today.
 

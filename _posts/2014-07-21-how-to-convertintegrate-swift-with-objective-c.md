@@ -34,23 +34,23 @@ I’ll reuse my example from part 6 of my blog series: [HowTo: Use the Device Mo
 
 I’ll migrate the MotionManager class to SWIFT. 
 
-[![](/assets/2014/07/SwiftObjC1.png)](/assets/2014/07/SwiftObjC1.png)
+![MotionManager](/assets/2014/07/SwiftObjC1.png)
 
 Open MotionManagerDemo project in XCode 6, add a new file of Type SWIFT and name it MotionManagerSingletonSwift:
 
-[![](/assets/2014/07/Bildschirmfoto-2014-07-15-um-21.40.28-1.jpg)](/assets/2014/07/Bildschirmfoto-2014-07-15-um-21.40.28-1.jpg)
+![MotionManagerDemo](/assets/2014/07/Bildschirmfoto-2014-07-15-um-21.40.28-1.jpg)
 
 Answer yes when XCode prompts a message, if it should configure an Objective-C bridging header. 
 
-[![](/assets/2014/07/SwiftObjC2-1.jpg)](/assets/2014/07/SwiftObjC2-1.jpg)
+![XCode](/assets/2014/07/SwiftObjC2-1.jpg)
 
 The result should look like this: 
 
-[![](/assets/2014/07/Bildschirmfoto-2014-07-15-um-21.45.21.png)](/assets/2014/07/Bildschirmfoto-2014-07-15-um-21.45.21.png)
+![result](/assets/2014/07/Bildschirmfoto-2014-07-15-um-21.45.21.png)
 
 Now copy the complete content from MotionManagerSingleton.m to MotionManagerSingletonSwift.swift. As a result XCode shows something around 38 errors.
 
-[![](/assets/2014/07/Bildschirmfoto-2014-07-15-um-21.48.29.png)](/assets/2014/07/Bildschirmfoto-2014-07-15-um-21.48.29.png)
+![MotionManagerSingleton](/assets/2014/07/Bildschirmfoto-2014-07-15-um-21.48.29.png)
 
 ### **Now let’s start with the code conversion of the MotionManagerSingleton class:**
 
@@ -300,7 +300,7 @@ NSArray *motionArray = [MotionManagerSingletonSwift getMotionVectorWithLowPass];
 
 This is much easier and I've not prepared a sample for that. Remember, when I've added the first SWIFT file, XCode promoted this message:
 
-[![](/assets/2014/07/SwiftObjC2-1.jpg)](/assets/2014/07/SwiftObjC2-1.jpg)
+![Objective-C from SWIFT](/assets/2014/07/SwiftObjC2-1.jpg)
 
 To access a custom Objective-C class from SWIFT, just add an import statement in the bridging header file like: #import ``YourCustomClass.h``
 
