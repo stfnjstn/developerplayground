@@ -13,16 +13,22 @@ tags: [Games]
 ---
 ## A Ping Pong Game (Lite):
 
-Simple Pong like casual game
+Simple Pong like casual game. Experience Classic Arcade Fun on Your Wrist, in your hand or on the big screen.
 
-Supported platforms: Apple Watch, iOS, AppleTV, Mac
+Step into the world of retro arcade gaming with a fresh twist! This modern PONG-inspired game brings the classic excitement of racket sports right to you.
 
-First Release: 04/2016
+Game Modes: Choose from Squash, Tennis, and Soccer for a variety of gameplay.
+1 or 2 Players: Play solo or challenge a friend in thrilling head-to-head matches.
+Three Difficulty Levels: Test your skills and try to beat your high score!
 
-Last Update: 11/2024
+Optimized for Apple Watch:
+Seamlessly control the paddle with the digital crown, a game controller or touches.
+Perfectly balanced for quick, intense gaming sessions.
+Download now and dive into the ultimate arcade experience, wherever you go!
 
-Current version: 8.0
+**Supported platforms:** iPhone, iPad, AppleTV, Apple Watch, Mac
 
+**First Release:** 04/2016, **Last Update:** 11/2024, **Current version:** 8.0
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <div style="text-align: center;">
@@ -40,7 +46,8 @@ Current version: 8.0
   <div></div>
 </div>
 
-![Pong Like Game](/assets/2015/04/WatchPingPongGif.gif)
+![Pong Like Game](/assets/games/PingPongGif.gif) | ![Pong Like Game](/assets/games/PingPong.png) 
+
 
 ---
 
@@ -50,20 +57,30 @@ Simple, endless, free to play space shooter:
 
 Try to survive as long as possible. A laser is moving down to destroy your ship. Collect falling objects with the correct color to move him up again. Be careful collecting the wrong objects will move the laser down again.
 
-Supported platforms: iPhone, iPad, Apple TV
+Supported platforms: iPhone, iPad, AppleTV, Apple Watch, Mac
 
-Copyright: Stefan Josten, 10/2015 
+**First Release:** 10/2015, **Last Update:** 11/2024, **Current version:** 3.0
 
-Current version: 1.4.2
+<div style="display: flex; justify-content: space-around; align-items: center;">
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/app/save-my-spaceship-lite/id1605724395">
+      <img src="/assets/Download.svg" alt="Download">
+    </a>
+    <p>Lite Version</p>
+  </div>
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/app/save-my-spaceship/id970195914?">
+      <img src="/assets/Download.svg" alt="Download" >
+    </a>
+    <p>Full Version</p>
+  </div>
+  <div></div>
+</div>
 
-**Title**
-
-[![AppStore](/assets/2015/11/AppStore1.png)](https://itunes.apple.com/us/app/save-my-spaceship/id970195914?mt=8 "Save My Spaceship")
+![sms1](/assets/games/sms1.png)| ![sms2](/assets/games/sms2.png) | ![sms3](/assets/games/sms3.jpg)
+![sms1](/assets/games/SMSWatch1.png)| ![sms2](/assets/games/SMSWatch2.png) | ![sms3](/assets/games/SMSWatch3.png)
 
 ---
-
-
-![sms1](/assets/2015/04/sms1.png)| ![sms2](/assets/2015/04/sms2.png) | ![sms3](/assets/2015/04/sms3-1.jpg)
 
 ## 15 Puzzle Game for Watch, Pad and Phone:
 
