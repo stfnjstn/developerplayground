@@ -63,6 +63,19 @@ That's all for today.
 Cheers,  
 Stefan
 
-[![AppStore](/assets/2015/11/AppStore1.png)](https://itunes.apple.com/us/app/yet-another-watch-puzzle-game/id997514879?ls=1&mt=8)
-
+<div style="display: flex; justify-content: space-around; align-items: center;">
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/app/a-15-puzzle-game-lite/id1604439133">
+      <img src="/assets/Download.svg" alt="Download">
+    </a>
+    <p>Lite Version</p>
+  </div>
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/app/a-15-puzzle-game-watch-phone/id997514879">
+      <img src="/assets/Download.svg" alt="Download" >
+    </a>
+    <p>Full Version</p>
+  </div>
+  <div></div>
+</div>
  

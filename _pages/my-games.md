@@ -38,7 +38,7 @@ Download now and dive into the ultimate arcade experience, wherever you go!
     <p>Lite Version</p>
   </div>
   <div style="text-align: center;">
-    <a href="https://apps.apple.com/app/a-ping-pong-game/id1039082864?">
+    <a href="https://apps.apple.com/app/a-ping-pong-game/id1039082864">
       <img src="/assets/Download.svg" alt="Download" >
     </a>
     <p>Full Version</p>
@@ -96,14 +96,25 @@ Best score for each mode is stored.
 
 Apple Watch Version available
 
-Supported platforms: iPhone, iPad, Apple Watch
+Supported platforms: iPhone, iPad, AppleTV, Apple Watch, Mac
 
-Copyright: Stefan Josten 05/2015
+**First Release:** 06/2015, **Last Update:** 01/2022, **Current version:** 7.0
 
-Current version: 3.6
-
-[![AppStore](/assets/2015/04/AppStore1.png)](https://itunes.apple.com/app/yet-another-watch-puzzle-game/id997514879?ls=1&amp;mt=8)
-
+<div style="display: flex; justify-content: space-around; align-items: center;">
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/app/a-15-puzzle-game-lite/id1604439133">
+      <img src="/assets/Download.svg" alt="Download">
+    </a>
+    <p>Lite Version</p>
+  </div>
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/app/a-15-puzzle-game-watch-phone/id997514879">
+      <img src="/assets/Download.svg" alt="Download" >
+    </a>
+    <p>Full Version</p>
+  </div>
+  <div></div>
+</div>
 
 | Apple Watch | iOS |  
 | --- | --- |  

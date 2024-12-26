@@ -27,4 +27,18 @@ New in version 1.3: Puzzle mode - slide image tiles instead of numbers.
 
 ![iOS Screen Shot](/assets/2015/04/iOS-Simulator-Screen-Shot-01-Jul-2015-23.47.23-1.jpg)
 
-[![AppStore](/assets/2015/04/AppStore1.png)](https://itunes.apple.com/us/app/yet-another-watch-puzzle-game/id997514879?ls=1&mt=8)
+<div style="display: flex; justify-content: space-around; align-items: center;">
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/app/a-15-puzzle-game-lite/id1604439133">
+      <img src="/assets/Download.svg" alt="Download">
+    </a>
+    <p>Lite Version</p>
+  </div>
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/app/a-15-puzzle-game-watch-phone/id997514879">
+      <img src="/assets/Download.svg" alt="Download" >
+    </a>
+    <p>Full Version</p>
+  </div>
+  <div></div>
+</div>

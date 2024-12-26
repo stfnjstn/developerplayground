@@ -21,9 +21,8 @@ tags:
 
 Welcome to my new WatchKit tutorial. Today I'll show that it is possible to use the Apple Watch as a gaming platform. First let's look back to the first WatchKit versions. They have been very limited in terms of available input controls. Using alternative hardware stuff like the Digital Crown was not supported. A typical game was usually built with a number of WkInterfaceButtons and looked like this:
 
-
 | --- | --- |  
-|[![AppStore](/assets/2016/04/Simulator-Screen-Shot-23-Apr-2016-09.40.13-1.jpg)](https://itunes.apple.com/app/15-puzzle-game-for-watch-phone/id997514879?l=en&mt=8)|[![AppStore](/assets/2016/04/WatchGame2.png)](https://itunes.apple.com/app/15-puzzle-game-for-watch-phone/id997514879?l=en&mt=8)
+|[![AppStore](/assets/2016/04/Simulator-Screen-Shot-23-Apr-2016-09.40.13-1.jpg)](https://apps.apple.com/app/a-15-puzzle-game-watch-phone/id997514879)|[![AppStore](/assets/2016/04/WatchGame2.png)](https://apps.apple.com/app/a-15-puzzle-game-watch-phone/id997514879)
 
 Since WatchKit 2 it is possible to use the Digital Crown for custom apps. This provides way more possibilities for great games, like this [Watch Ping Pong](https://apps.apple.com/app/a-ping-pong-game/id1039082864) version created by me. I'll publish the Source Code as OpenSource in my GitHub repository, once I have reached 1000 downloads. Currently only 980 to go ;-)
 
