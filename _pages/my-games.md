@@ -69,7 +69,7 @@ Supported platforms: iPhone, iPad, AppleTV, Apple Watch, Mac
     <p>Lite Version</p>
   </div>
   <div style="text-align: center;">
-    <a href="https://apps.apple.com/app/save-my-spaceship/id970195914?">
+    <a href="https://apps.apple.com/app/save-my-spaceship/id970195914">
       <img src="/assets/Download.svg" alt="Download" >
     </a>
     <p>Full Version</p>
@@ -113,21 +113,40 @@ Current version: 3.6
 
 ## Yet Another Spaceshooter:
 
-Simple touch controlled Space-shooter based on my tutorials.
+Simple touch controlled Space-shooter based on my tutorials. 
+Navigate your spaceship through the increasing number of enemies just by touching the screen. Collect extras and try to survive as long as possible.
 
-Supported platforms: iPhone, iPad, Apple TV
+Probably not one of the best games available in the AppStore, but developed completely in my spare time as a hobby project. 
 
-Copyright: Stefan Josten 01/2015
+Supported platforms: iPhone, iPad, AppleTV, Apple Watch, Mac
 
-Current version: 2.4
+**First Release:** 01/2015, **Last Update:** 10/2024, **Current version:** 8.1
 
 Related GameDev Tutorials: [SpriteKit & Swift](https://developerplayground.net)
 
-[![AppStore](/assets/2015/04/AppStore1.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
+<div style="display: flex; justify-content: space-around; align-items: center;">
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/app/just-a-small-spaceshooter-lite/id949662362">
+      <img src="/assets/Download.svg" alt="Download">
+    </a>
+    <p>Lite Version</p>
+  </div>
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/app/just-a-small-spaceshooter/id1449062544">
+      <img src="/assets/Download.svg" alt="Download" >
+    </a>
+    <p>Full Version</p>
+  </div>
+  <div></div>
+</div>
 
+**Screenshots iPhone version:**
 
 ![IMG_8533](/assets/2015/04/IMG_8533-1.jpg) | ![IMG_8534](/assets/2015/04/IMG_8534-1.jpg) | ![IMG_8599](/assets/2015/04/IMG_8599-1.jpg)
 ![IMG_8600](/assets/2015/04/IMG_8600-1.jpg) | ![IMG_8602](/assets/2015/04/IMG_8602-1.jpg)
 
+**Screenshots AppleWatch version:**
+
+![Watch1](/assets/games/YASSWatch0.png) | ![Watch2](/assets/games/YASSWatch1.png) | ![Watch3](/assets/games/YASSWatch2.png)| ![Watch3](/assets/games/YASSWatch3.png)
 
 

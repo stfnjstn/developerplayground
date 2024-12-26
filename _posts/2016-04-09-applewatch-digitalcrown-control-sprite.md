@@ -25,7 +25,7 @@ Welcome to my new WatchKit tutorial. Today I'll show that it is possible to use 
 | --- | --- |  
 |[![AppStore](/assets/2016/04/Simulator-Screen-Shot-23-Apr-2016-09.40.13-1.jpg)](https://itunes.apple.com/app/15-puzzle-game-for-watch-phone/id997514879?l=en&mt=8)|[![AppStore](/assets/2016/04/WatchGame2.png)](https://itunes.apple.com/app/15-puzzle-game-for-watch-phone/id997514879?l=en&mt=8)
 
-Since WatchKit 2 it is possible to use the Digital Crown for custom apps. This provides way more possibilities for great games, like this [Watch Ping Pong](https://itunes.apple.com/app/watch-ping-pong/id1039082864?l=en&mt=8) version created by me. I'll publish the Source Code as OpenSource in my GitHub repository, once I have reached 1000 downloads. Currently only 980 to go ;-)
+Since WatchKit 2 it is possible to use the Digital Crown for custom apps. This provides way more possibilities for great games, like this [Watch Ping Pong](https://apps.apple.com/app/a-ping-pong-game/id1039082864) version created by me. I'll publish the Source Code as OpenSource in my GitHub repository, once I have reached 1000 downloads. Currently only 980 to go ;-)
 
 ![A Ping Pong Game](/assets/2016/04/WatchPingPongGif.gif)
 
@@ -37,7 +37,7 @@ Since WatchKit 2 it is possible to use the Digital Crown for custom apps. This p
     <p>Lite Version</p>
   </div>
   <div style="text-align: center;">
-    <a href="https://apps.apple.com/app/a-ping-pong-game/id1039082864?">
+    <a href="https://apps.apple.com/app/a-ping-pong-game/id1039082864">
       <img src="/assets/Download.svg" alt="Download" >
     </a>
     <p>Full Version</p>
@@ -163,7 +163,7 @@ That's all for today.
 
 If you want to support me, please download my Apps from the Apple AppStore.
 
-[![AppStore](/assets/2015/11/AppStore1.png)](https://itunes.apple.com/developer/stefan-josten/id949662361)
+[![AppStore](/assets/Download.svg)](https://apps.apple.com/developer/stefan-josten/id949662361)
 
 Cheers,
 

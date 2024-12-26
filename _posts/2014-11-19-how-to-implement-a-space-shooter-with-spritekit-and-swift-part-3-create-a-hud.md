@@ -20,7 +20,21 @@ tags: []
 
 [![Video](/assets/Videos/8d8MH_gXt84.png)](https://youtu.be/8d8MH_gXt84)
 
-[![AppStore](/assets/2014/11/AppStore2.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
+<div style="display: flex; justify-content: space-around; align-items: center;">
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/app/just-a-small-spaceshooter-lite/id949662362">
+      <img src="/assets/Download.svg" alt="Download">
+    </a>
+    <p>Lite Version</p>
+  </div>
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/app/just-a-small-spaceshooter/id1449062544">
+      <img src="/assets/Download.svg" alt="Download" >
+    </a>
+    <p>Full Version</p>
+  </div>
+  <div></div>
+</div>
 
 #### Tutorial Overview: How to implement a space shooter with SpriteKit and SWIFT
 
@@ -160,7 +174,21 @@ That's all for today. In my next part I'll add collision detection and a basic g
 You can download the code from GitHub: [Part 3](https://github.com/stfnjstn/MySecondGame/releases/tag/v0.3) or the latest version [here](https://github.com/stfnjstn/MySecondGame/tree/master).
 You can also download my prototyping App for this tutorial series:
 
-[![AppStore](/assets/2014/11/AppStore2.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
+<div style="display: flex; justify-content: space-around; align-items: center;">
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/app/just-a-small-spaceshooter-lite/id949662362">
+      <img src="/assets/Download.svg" alt="Download">
+    </a>
+    <p>Lite Version</p>
+  </div>
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/app/just-a-small-spaceshooter/id1449062544">
+      <img src="/assets/Download.svg" alt="Download" >
+    </a>
+    <p>Full Version</p>
+  </div>
+  <div></div>
+</div>
 
 Cheers,   
 Stefan

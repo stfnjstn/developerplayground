@@ -21,7 +21,8 @@ tags:
 - SceneKit
 - Swift
 ---
-The success of [Pokemon Go™](https://itunes.apple.com/app/pokemon-go/id1094591345?mt=8 "Pokemon Go") inspired me to a new tutorial series about a simple augmented reality (AR) game.
+
+The success of [Pokemon Go™](https://apps.apple.com/app/pokemon-go/id1094591345 "Pokemon Go") inspired me to a new tutorial series about a simple augmented reality (AR) game.
 
   1. [Part 1](/implementing-an-augmented-reality-game-like-pokemon-go-part-1): 
      * Implement the camera view
@@ -258,6 +259,6 @@ That's all for today.
 
 If you want to support me, please download my Apps from the Apple AppStore.
 
-[![AppStore](/assets/2015/11/AppStore1.png)](https://itunes.apple.com/developer/stefan-josten/id949662361)
+[![AppStore](/assets/Download.svg)](https://apps.apple.com/developer/stefan-josten/id949662361)
 
 Cheers, Stefan

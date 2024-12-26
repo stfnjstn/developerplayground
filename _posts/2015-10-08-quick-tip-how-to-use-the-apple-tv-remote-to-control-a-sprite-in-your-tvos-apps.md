@@ -135,4 +135,4 @@ That's all for today.
 Cheers,  
 Stefan
 
-[![AppStore](/assets/2015/10/AppStore.png)](https://itunes.apple.com/developer/stefan-josten/id949662361)
+[![AppStore](/assets/Download.svg)](https://apps.apple.com/developer/stefan-josten/id949662361)

@@ -37,7 +37,7 @@ My goal is to implement a complete space shooter with SpriteKit and SWIFT.
 
 [![Video](/assets/Videos/yTAAR9c9pYU.png)](https://youtu.be/yTAAR9c9pYU)
 
-The sample code is available on [GitHub](https://github.com/stfnjstn/MySecondGame). The complete game can be downloaded here:  [![AppStore](/assets/2014/12/AppStore.png)](https://itunes.apple.com/us/app/mysecondgame/id956647245?ls=1&mt=8 "AppStore Link")
+The sample code is available on [GitHub](https://github.com/stfnjstn/MySecondGame).
 
 That's all for today.
 

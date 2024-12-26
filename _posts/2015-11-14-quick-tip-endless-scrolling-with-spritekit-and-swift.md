@@ -212,7 +212,7 @@ You can download the complete sample from my [Github repository](https://github.
 
 I'll show an improved version with a smoother scrolling in [part 2](/how-to-implement-a-space-shooter-with-spritekit-and-swift-part-4-collision-detection86). You can support me by downloading my Apps from the Apple AppStore:
 
-[![AppStore](/assets/2015/11/AppStore1.png)](https://itunes.apple.com/developer/stefan-josten/id949662361)   
+[![AppStore](/assets/Download.svg)](https://apps.apple.com/developer/stefan-josten/id949662361)   
   
 That's all for today.
 

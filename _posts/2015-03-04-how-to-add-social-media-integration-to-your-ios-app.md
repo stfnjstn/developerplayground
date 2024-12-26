@@ -20,7 +20,7 @@ tags:
 ---
 Welcome to my new SWIFT tutorial. Today I'll show you how to implement social media integration for Facebook and Twitter. Additionally I'll explain Email integration and how to embed a direct AppStore link to provide a convenient way for players to rate an app.
 
-My latest [game](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8) in the AppStore contains a sample.
+My latest [game](https://apps.apple.com/app/just-a-small-spaceshooter/id1449062544) in the AppStore contains a sample.
 
 The four buttons at the bottom of the screen trigger the social actions:
 
@@ -109,7 +109,7 @@ Implement the handleAppStore method. Show an alert where the user can choose to 
   let alert = UIAlertController(title: "Rate", message: "Rate my App", preferredStyle: UIAlertControllerStyle.Alert)
   alert.addAction(UIAlertAction(title: "Rate", style: UIAlertActionStyle.Default) { _ in
     // Open App in AppStore
-    let iLink = "https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8"
+    let iLink = "https://apps.apple.com/app/just-a-small-spaceshooter/id1449062544"
     UIApplication.sharedApplication().openURL(NSURL(string: iLink)!)
   })
   alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Default, handler: nil))
@@ -217,7 +217,21 @@ Instead of the text you should show icons. I cannot add them to the SourceCode b
 
 That's all for today. The SourceCode of this tutorial is available at [GitHub](https://github.com/stfnjstn/SocialMediaSample). For my next post I'm planning something about In App Purchase. To see the social media integration in action you can download my free game in the AppStore:
 
-[![AppStore](/assets/2015/04/AppStore.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
+<div style="display: flex; justify-content: space-around; align-items: center;">
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/app/just-a-small-spaceshooter-lite/id949662362">
+      <img src="/assets/Download.svg" alt="Download">
+    </a>
+    <p>Lite Version</p>
+  </div>
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/app/just-a-small-spaceshooter/id1449062544">
+      <img src="/assets/Download.svg" alt="Download" >
+    </a>
+    <p>Full Version</p>
+  </div>
+  <div></div>
+</div>
 
 Cheers,    
 Stefan 

@@ -265,7 +265,7 @@ That's all for today.
 
 If you want to support me, please download my Apps from the Apple AppStore.
 
-[![AppStore](/assets/2015/11/AppStore1.png)](https://itunes.apple.com/developer/stefan-josten/id949662361)
+[![AppStore](/assets/Download.svg)](https://apps.apple.com/us/developer/stefan-josten/id949662361)
 
 Cheers,  
 Stefan

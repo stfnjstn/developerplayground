@@ -22,7 +22,21 @@ tags:
 
 [![Video](/assets/Videos/8d8MH_gXt84.png)](https://youtu.be/8d8MH_gXt84)
 
-[![AppStore](/assets/2014/11/AppStore3.png)](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8)
+<div style="display: flex; justify-content: space-around; align-items: center;">
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/app/just-a-small-spaceshooter-lite/id949662362">
+      <img src="/assets/Download.svg" alt="Download">
+    </a>
+    <p>Lite Version</p>
+  </div>
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/app/just-a-small-spaceshooter/id1449062544">
+      <img src="/assets/Download.svg" alt="Download" >
+    </a>
+    <p>Full Version</p>
+  </div>
+  <div></div>
+</div>
 
 #### Tutorial Overview: How to implement a space shooter with SpriteKit and SWIFT
 
@@ -274,7 +288,7 @@ You need a Sandbox Test User to test the purchases. I've described the steps to 
 
 Testing is only possible on a real device. If you try a purchase in the simulator, you'll receive an error message: AppStore is not available. And don't forget to set the checkmarks on your purchases to include them to your them to your application bundle, before submitting a new version in iTunesConnect. 
 
-That's all for today. The SourceCode of this tutorial is available at [GitHub](https://github.com/stfnjstn/MySecondGame/releases/tag/v0.8). To see **In-App Purchase** in action you can download my free [game](https://itunes.apple.com/us/app/yet-another-spaceshooter/id949662362?mt=8) in the AppStore. The **In-App Purchase** update will be released in the next days.
+That's all for today. The SourceCode of this tutorial is available at [GitHub](https://github.com/stfnjstn/MySecondGame/releases/tag/v0.8). To see **In-App Purchase** in action you can download my free [game](https://apps.apple.com/app/just-a-small-spaceshooter/id1449062544) in the AppStore. The **In-App Purchase** update will be released in the next days.
 
 ![](/assets/2015/04/AppStore.png)
 
