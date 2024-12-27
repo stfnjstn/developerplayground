@@ -11,6 +11,54 @@ pin: false
 categories: [Apps]
 tags: [Games]
 ---
+
+## Lite vs Full Version 
+
+## Escape the Dungeon Maze (Lite):
+
+**[Tutorial](/etdm)**
+
+**Supported platforms:** iPhone, iPad, AppleTV, Apple Watch, Mac
+
+**First Release:** 05/2020, **Last Update:** 01/2022, **Current version:** 1.34
+
+<div style="display: flex; justify-content: space-around; align-items: center;">
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/app/escapethemaze-lite/id1606812171">
+      <img src="/assets/Download.svg" alt="Download">
+    </a>
+    <p>Lite Version</p>
+  </div>
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/app/escape-the-dungeon-maze/id1502853397">
+      <img src="/assets/Download.svg" alt="Download" >
+    </a>
+    <p>Full Version</p>
+  </div>
+  <div></div>
+</div>
+
+
+## ETDM Level Editor:
+
+**Supported platforms:** iPhone, iPad, Mac
+
+**[Tutorial](/etdm-level-editor)**
+
+**First Release:** 04/2021, **Last Update:** 12/2022, **Current version:** 1.32
+
+<div style="display: flex; justify-content: space-around; align-items: center;">
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/app/etdm-level-editor/id1561041898">
+      <img src="/assets/Download.svg" alt="Download">
+    </a>
+    <p>Lite Version</p>
+  </div>
+  <div></div>
+</div>
+
+---
+
 ## A Ping Pong Game (Lite):
 
 Simple Pong like casual game. Experience Classic Arcade Fun on Your Wrist, in your hand or on the big screen.
@@ -51,7 +99,7 @@ Download now and dive into the ultimate arcade experience, wherever you go!
 
 ---
 
-## Save My Spaceship:
+## Save My Spaceship (Lite):
 
 Simple, endless, free to play space shooter:
 
@@ -82,7 +130,7 @@ Supported platforms: iPhone, iPad, AppleTV, Apple Watch, Mac
 
 ---
 
-## 15 Puzzle Game for Watch, Pad and Phone:
+## A 15 Puzzle Game (Lite):
 
 Simple puzzle game inspired by the [15 Puzzle](https://en.wikipedia.org/wiki/15_puzzle) for Apple Watch, iPhone and iPad.
 
@@ -122,7 +170,9 @@ Supported platforms: iPhone, iPad, AppleTV, Apple Watch, Mac
 ![WatchGame1](/assets/2016/04/WatchGame1.jpg) | ![500x500bb-80](/assets/2015/04/500x500bb-80-1.jpg)
 ![15 Puzzle](/assets/2016/04/Simulator-Screen-Shot-23-Apr-2016-09.40.13-1.jpg) | ![500x500bb-80b](/assets/2015/04/500x500bb-80b-1.jpg)
 
-## Yet Another Spaceshooter:
+---
+
+## Just a small Spaceshooter (Lite):
 
 Simple touch controlled Space-shooter based on my tutorials. 
 Navigate your spaceship through the increasing number of enemies just by touching the screen. Collect extras and try to survive as long as possible.

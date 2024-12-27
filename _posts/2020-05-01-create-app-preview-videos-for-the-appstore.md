@@ -71,7 +71,7 @@ Now add the video material. iMovie will automatically scale the video during exp
 
 #### 7. Export the video
 
-![Export App Preview in iMovie](/assets/2020/05/ExportAppStore1.jpg) ![Export App Preview in iMovie](/assets/2020/05/ExportAppStore2.jpg)
+![Export App Preview in iMovie](/assets/Download.svg) ![Export App Preview in iMovie](/assets/2020/05/ExportAppStore2.jpg)
 
 #### 8. Upload the video to [Appstore Connect](https://appstoreconnect.apple.com):
 

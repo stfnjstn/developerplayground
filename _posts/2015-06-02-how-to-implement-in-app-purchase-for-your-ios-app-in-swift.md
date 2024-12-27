@@ -290,7 +290,7 @@ Testing is only possible on a real device. If you try a purchase in the simulato
 
 That's all for today. The SourceCode of this tutorial is available at [GitHub](https://github.com/stfnjstn/MySecondGame/releases/tag/v0.8). To see **In-App Purchase** in action you can download my free [game](https://apps.apple.com/app/just-a-small-spaceshooter/id1449062544) in the AppStore. The **In-App Purchase** update will be released in the next days.
 
-![](/assets/2015/04/AppStore.png)
+![](/assets/Download.svg)
 
 Cheers,   
 Stefan

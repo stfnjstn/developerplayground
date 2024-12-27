@@ -10,7 +10,7 @@ last_modified_at: 2020-05-27 16:40:55 -0000
 publish: true
 pin: false
 image:
-  path: /assets/2015/04/AppStore.png
+  path: /assets/Download.svg
 categories:
 - AdSense and Admob
 - iOS
