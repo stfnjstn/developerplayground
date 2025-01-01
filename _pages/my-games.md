@@ -12,7 +12,10 @@ categories: [Apps]
 tags: [Games]
 ---
 
-## Lite vs Full Version 
+## Lite vs. Full Version 
+The Lite version is free but supported by AdMob ads, which may involve tracking and is therefore age-restricted to 17+. On platforms that don’t support Google AdMob, like Apple Watch, Apple TV, and Maps, the Lite version limits the number of game sessions.
+
+For a better experience, consider the paid version! It’s ad-free, collects no data, and costs less than a single cup of coffee.
 
 ## Escape the Dungeon Maze (Lite):
 
@@ -94,7 +97,7 @@ Download now and dive into the ultimate arcade experience, wherever you go!
   <div></div>
 </div>
 
-![Pong Like Game](/assets/games/PingPongGif.gif) | ![Pong Like Game](/assets/games/PingPong.png) 
+![Pong Like Game](/assets/games/PPG/PingPongGif.gif) | ![Pong Like Game](/assets/games/PPG/PingPong.png) 
 
 
 ---
@@ -125,8 +128,8 @@ Supported platforms: iPhone, iPad, AppleTV, Apple Watch, Mac
   <div></div>
 </div>
 
-![sms1](/assets/games/sms1.png)| ![sms2](/assets/games/sms2.png) | ![sms3](/assets/games/sms3.jpg)
-![sms1](/assets/games/SMSWatch1.png)| ![sms2](/assets/games/SMSWatch2.png) | ![sms3](/assets/games/SMSWatch3.png)
+![sms1](/assets/games/SMS/sms1.png)| ![sms2](/assets/games/SMS/sms2.png) | ![sms3](/assets/games/SMS/sms3.jpg)
+![sms1](/assets/games/SMS/SMSWatch1.png)| ![sms2](/assets/games/SMS/SMSWatch2.png) | ![sms3](/assets/games/SMS/SMSWatch3.png)
 
 ---
 
@@ -164,11 +167,15 @@ Supported platforms: iPhone, iPad, AppleTV, Apple Watch, Mac
   <div></div>
 </div>
 
-| Apple Watch | iOS |  
-| --- | --- |  
-![WatchGame2](/assets/2016/04/WatchGame2.png) | ![Screenshot](/assets/2015/04/iOS-Simulator-Screen-Shot-23-Jun-2015-21.31.50.png)
-![WatchGame1](/assets/2016/04/WatchGame1.jpg) | ![500x500bb-80](/assets/2015/04/500x500bb-80-1.jpg)
-![15 Puzzle](/assets/2016/04/Simulator-Screen-Shot-23-Apr-2016-09.40.13-1.jpg) | ![500x500bb-80b](/assets/2015/04/500x500bb-80b-1.jpg)
+**Screenshots iPhone version:**
+
+![iPhone Screenshot](/assets/games/APG/APG1.png) | ![iPhone Screenshot](/assets/games/APG/APG2.png) 
+![iPhone Screenshot](/assets/games/APG/APG3.png) | ![iPhone Screenshot](/assets/games/APG/APG4.png)
+
+**Screenshots AppleWatch version:**
+
+![Watch1](/assets/games/APG/APGIOS1.png) | ![Watch2](/assets/games/APG/APGIOS2.png) | ![Watch3](/assets/games/APG/APGIOS3.png)| ![Watch3](/assets/games/APG/APGIOS4.png)
+
 
 ---
 
@@ -203,11 +210,11 @@ Related GameDev Tutorials: [SpriteKit & Swift](https://developerplayground.net)
 
 **Screenshots iPhone version:**
 
-![IMG_8533](/assets/2015/04/IMG_8533-1.jpg) | ![IMG_8534](/assets/2015/04/IMG_8534-1.jpg) | ![IMG_8599](/assets/2015/04/IMG_8599-1.jpg)
-![IMG_8600](/assets/2015/04/IMG_8600-1.jpg) | ![IMG_8602](/assets/2015/04/IMG_8602-1.jpg)
+![IMG_8533](/assets/games/YASS/IMG_8533-1.jpg) | ![IMG_8534](/assets/games/YASS/IMG_8534-1.jpg) | ![IMG_8599](/assets/games/YASS/IMG_8599-1.jpg)
+![IMG_8600](/assets/games/YASS/IMG_8600-1.jpg) | ![IMG_8602](/assets/games/YASS//IMG_8602-1.jpg)
 
 **Screenshots AppleWatch version:**
 
-![Watch1](/assets/games/YASSWatch0.png) | ![Watch2](/assets/games/YASSWatch1.png) | ![Watch3](/assets/games/YASSWatch2.png)| ![Watch3](/assets/games/YASSWatch3.png)
+![Watch1](/assets/games/YASS/YASSWatch0.png) | ![Watch2](/assets/games/YASS/YASSWatch1.png) | ![Watch3](/assets/games/YASS/YASSWatch2.png)| ![Watch3](/assets/games/YASS/YASSWatch3.png)
 
 
