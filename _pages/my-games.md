@@ -108,7 +108,7 @@ Simple, endless, free to play space shooter:
 
 Try to survive as long as possible. A laser is moving down to destroy your ship. Collect falling objects with the correct color to move him up again. Be careful collecting the wrong objects will move the laser down again.
 
-Supported platforms: iPhone, iPad, AppleTV, Apple Watch, Mac
+**Supported platforms:** iPhone, iPad, AppleTV, Apple Watch, Mac
 
 **First Release:** 10/2015, **Last Update:** 11/2024, **Current version:** 3.0
 
@@ -147,7 +147,7 @@ Best score for each mode is stored.
 
 Apple Watch Version available
 
-Supported platforms: iPhone, iPad, AppleTV, Apple Watch, Mac
+**Supported platforms:** iPhone, iPad, AppleTV, Apple Watch, Mac
 
 **First Release:** 06/2015, **Last Update:** 01/2022, **Current version:** 7.0
 
@@ -186,7 +186,7 @@ Navigate your spaceship through the increasing number of enemies just by touchin
 
 Probably not one of the best games available in the AppStore, but developed completely in my spare time as a hobby project. 
 
-Supported platforms: iPhone, iPad, AppleTV, Apple Watch, Mac
+**Supported platforms:** iPhone, iPad, AppleTV, Apple Watch, Mac
 
 **First Release:** 01/2015, **Last Update:** 10/2024, **Current version:** 8.1
 
