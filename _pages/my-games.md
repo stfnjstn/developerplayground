@@ -149,7 +149,7 @@ Apple Watch Version available
 
 **Supported platforms:** iPhone, iPad, AppleTV, Apple Watch, Mac
 
-**First Release:** 06/2015, **Last Update:** 01/2022, **Current version:** 7.0
+**First Release:** 06/2015, **Last Update:** 01/2024, **Current version:** 8.0
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <div style="text-align: center;">
