@@ -19,7 +19,7 @@ For a better experience, consider the paid version! It’s ad-free, collects no 
 
 ## Escape the Dungeon Maze (Lite):
 
-**[Tutorial](/etdm)**
+**[Tutorials & Productpage](/etdm)**
 
 **Supported platforms:** iPhone, iPad, AppleTV, Apple Watch, Mac
 
@@ -46,16 +46,15 @@ For a better experience, consider the paid version! It’s ad-free, collects no 
 
 **Supported platforms:** iPhone, iPad, Mac
 
-**[Tutorial](/etdm-level-editor)**
+**[Tutorials & Productpage](/ETMEditorTutorials/ETMEditorTutorials)**
 
-**First Release:** 04/2021, **Last Update:** 12/2022, **Current version:** 1.32
+**First Release:** 04/2021, **Last Update:** 1/2025, **Current version:** 3.01
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <div style="text-align: center;">
     <a href="https://apps.apple.com/app/etdm-level-editor/id1561041898">
       <img src="/assets/Download.svg" alt="Download">
     </a>
-    <p>Lite Version</p>
   </div>
   <div></div>
 </div>

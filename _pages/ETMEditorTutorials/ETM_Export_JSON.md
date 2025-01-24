@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /etdm-level-editor/
+permalink: /ETMEditorTutorials/ETM_Export_JSON
 title: Escape the Dungeon Maze Level Editor
 description: Tutorial aboutcreating own levels for my Dungeon Crawler
 date: 2024-12-26
