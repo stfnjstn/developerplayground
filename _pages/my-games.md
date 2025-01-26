@@ -46,9 +46,14 @@ For a better experience, consider the paid version! It’s ad-free, collects no 
 
 **Supported platforms:** iPhone, iPad, Mac
 
+Ever dreamed about creating your own dungeon and play it in a 3D Game? Let's start: 
+
 **[Tutorials & Productpage](/ETMEditorTutorials/ETMEditorTutorials)**
 
+![Pong Like Game](/assets/ETMEditor/DetailMain.png)
+
 **First Release:** 04/2021, **Last Update:** 1/2025, **Current version:** 3.01
+
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <div style="text-align: center;">
@@ -58,6 +63,7 @@ For a better experience, consider the paid version! It’s ad-free, collects no 
   </div>
   <div></div>
 </div>
+
 
 ---
 
