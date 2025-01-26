@@ -13,3 +13,11 @@ tags: [Games]
 
 **[Back to Tutorial Overview](/ETMEditorTutorials/ETMEditorTutorials)**
 
+![Overview Items](/assets/ETMEditor/OverviewItems.png)
+
+![Overview Items Detail Types](/assets/ETMEditor/OverviewItemsDetailType.png)
+
+![Overview Items Details](/assets/ETMEditor/OverviewItemsDetail.png)
+
+
+Work in Progress!

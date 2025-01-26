@@ -11,4 +11,9 @@ categories: [Apps]
 tags: [Games]
 ---
 
+![Detail Items](/assets/ETMEditor/DetailItems.png)
+
+
+Work in Progress!
+
 **[Back to Tutorial Overview](/ETMEditorTutorials/ETMEditorTutorials)**

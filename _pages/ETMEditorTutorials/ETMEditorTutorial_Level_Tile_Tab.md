@@ -11,4 +11,10 @@ categories: [Apps]
 tags: [Games]
 ---
 
+![Tile](/assets/ETMEditor/DetailTile.png)
+
+![Tile Triggers](/assets/ETMEditor/DetailTileTrigger.png)
+
+![Tile Textures](/assets/ETMEditor/DetailTileTexture.png)
+
 **[Back to Tutorial Overview](/ETMEditorTutorials/ETMEditorTutorials)**

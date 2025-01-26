@@ -11,4 +11,8 @@ categories: [Apps]
 tags: [Games]
 ---
 
+![Detail Select Tile](/assets/ETMEditor/DetailPaint.png)
+
+Work in Progress!
+
 **[Back to Tutorial Overview](/ETMEditorTutorials/ETMEditorTutorials)**

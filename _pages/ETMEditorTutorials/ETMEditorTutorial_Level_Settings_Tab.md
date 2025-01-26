@@ -11,4 +11,11 @@ categories: [Apps]
 tags: [Games]
 ---
 
+![Detail Level Setting](/assets/ETMEditor/DetailLevel.png)
+
+![Maze Generator](/assets/ETMEditor/MazeGenerator.png)
+
+
+Work in Progress!
+
 **[Back to Tutorial Overview](/ETMEditorTutorials/ETMEditorTutorials)**

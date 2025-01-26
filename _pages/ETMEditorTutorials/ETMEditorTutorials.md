@@ -21,7 +21,7 @@ tags: [Games]
 - [Create / Organize GameItems](/ETMEditorTutorials/ETMEditorTutorial_Overview_Items)
 - [Create / Organize Monsters](/ETMEditorTutorials/ETMEditorTutorial_Overview_Monsters)
 - [Create / Organize Languages](/ETMEditorTutorials/ETMEditorTutorial_Overview_Languages)
-- [Create a Level](/ETMEditorTutorials/ETMEditorTutorial_Level_Detail_Tab)
+- [Level](/ETMEditorTutorials/ETMEditorTutorial_Level_Detail_Tab)
 - [Level Settings](/ETMEditorTutorials/ETMEditorTutorial_Level_Settings_Tab)
 - [Tiles, Triggers and Actions](/ETMEditorTutorials/ETMEditorTutorial_Level_Tile_Tab)
 - [Tile Selection](/ETMEditorTutorials/ETMEditorTutorial_Level_Paint_Tab)

@@ -11,4 +11,8 @@ categories: [Apps]
 tags: [Games]
 ---
 
+![Detail Monster](/assets/ETMEditor/DetailMonster.png)
+
+Work in Progress!
+
 **[Back to Tutorial Overview](/ETMEditorTutorials/ETMEditorTutorials)**
