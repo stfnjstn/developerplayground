@@ -16,5 +16,5 @@ tags: [Games]
 ![Tile Triggers](/assets/ETMEditor/DetailTileTrigger.png)
 
 ![Tile Textures](/assets/ETMEditor/DetailTileTexture.png)
-
+<hr>
 **[Back to Tutorial Overview](/ETMEditorTutorials/ETMEditorTutorials)**

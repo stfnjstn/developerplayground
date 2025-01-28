@@ -12,10 +12,17 @@ tags: [Games]
 ---
 
 ![Overview Levels](/assets/ETMEditor/OverviewLevels.jpg)
+In the list you see the levels in this level pack. By swiping left, you can delete a level.
+
+**The buttons offer additional actions:**
 
 ![Overview Levels Buttons](/assets/ETMEditor/OverviewLevelsIcons.png)
+1. Add a new levl
+2. Reorder the levels
+3. Append levels of another level pack
+4. Help
 
-Work in Progress!
+Continue with [working on a level](/ETMEditorTutorials/ETMEditorTutorial_Level_Detail_Tab)
 
-
+<hr>
 **[Back to Tutorial Overview](/ETMEditorTutorials/ETMEditorTutorials)**

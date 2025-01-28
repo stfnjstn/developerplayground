@@ -14,5 +14,5 @@ tags: [Games]
 ![Detail Select Tile](/assets/ETMEditor/DetailPaint.png)
 
 Work in Progress!
-
+<hr>
 **[Back to Tutorial Overview](/ETMEditorTutorials/ETMEditorTutorials)**

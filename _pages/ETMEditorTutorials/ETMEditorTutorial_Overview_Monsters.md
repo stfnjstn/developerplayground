@@ -16,6 +16,6 @@ tags: [Games]
 ![Overview Monsters Details](/assets/ETMEditor/OverviewMonstersDetail.png)
 
 Work in Progress!
-
+<hr>
 **[Back to Tutorial Overview](/ETMEditorTutorials/ETMEditorTutorials)**
 
