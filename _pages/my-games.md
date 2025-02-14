@@ -17,13 +17,19 @@ The Lite version is free but supported by AdMob ads, which may involve tracking 
 
 For a better experience, consider the paid version! It’s ad-free, collects no data, and costs less than a single cup of coffee.
 
-## Escape the Dungeon Maze (Lite):
+## Escape the Maze (Lite):
+
+Escape the Dungeon Maze is an old school dungeon crawler. Explore a complex dungeon full of traps, teleports, riddles and monsters.
+
+A level editor for the game to create own dungeons is also available.
+
+Supports iCloud for multiple platforms: Start on your iPhone or iPad and continue on your Apple Watch.
 
 **[Tutorials & Productpage](/etdm)**
 
-**Supported platforms:** iPhone, iPad, AppleTV, Apple Watch, Mac
+**Supported platforms:** iPhone, iPad, Apple Watch, Mac
 
-**First Release:** 05/2020, **Last Update:** 01/2022, **Current version:** 1.34
+**First Release:** 05/2020, **Last Update:** 02/2025, **Current version:** 2.0
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <div style="text-align: center;">
@@ -41,6 +47,13 @@ For a better experience, consider the paid version! It’s ad-free, collects no 
   <div></div>
 </div>
 
+![ETM0](/assets/games/ETM/ETMWatch0.png)| ![ETM1](/assets/games/ETM/ETMWatch1.png) | ![ETM2](/assets/games/ETM/ETMWatch2.png)
+![ETM3](/assets/games/ETM/ETMWatch3.png)| ![ETM4](/assets/games/ETM/ETMWatch4.png) | ![ETM5](/assets/games/ETM/ETMWatch5.png)
+![ETM6](/assets/games/ETM/ETMWatch6.png)| ![ETM7](/assets/games/ETM/ETMWatch7.png) | ![ETM8](/assets/games/ETM/ETMWatch8.png)
+
+
+![ETM9](/assets/games/ETM/ETM0.png)| ![ETM10](/assets/games/ETM/ETM1.png) 
+![ETM11](/assets/games/ETM/ETM2.png)| ![ETM12](/assets/games/ETM/ETM3.png) 
 
 ## ETDM Level Editor:
 
@@ -50,20 +63,19 @@ Ever dreamed about creating your own dungeon and play it in a 3D Game? Let's sta
 
 **[Tutorials & Productpage](/ETMEditorTutorials/ETMEditorTutorials)**
 
-![Pong Like Game](/assets/ETMEditor/DetailMain.png)
-
-**First Release:** 04/2021, **Last Update:** 1/2025, **Current version:** 3.01
-
-
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <div style="text-align: center;">
     <a href="https://apps.apple.com/app/etdm-level-editor/id1561041898">
       <img src="/assets/Download.svg" alt="Download">
     </a>
+    <p></p>
   </div>
   <div></div>
 </div>
 
+![Pong Like Game](/assets/ETMEditor/DetailMain.png)
+
+**First Release:** 04/2021, **Last Update:** 01/2025, **Current version:** 3.01
 
 ---
 

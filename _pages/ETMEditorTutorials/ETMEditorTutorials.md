@@ -20,6 +20,8 @@ Once your masterpiece is ready, step into your creation and play it in Escape th
 Let your imagination run wild and create the ultimate RPG dungeon experience today!
 
 
+This tutorial is work in progress and will be improved step by step. If you need help on a not documented part, please send me an email. I'm happy to help.
+
 ### Videos
 [![Video](/assets/ETMEditor/Tutorial1.png)](https://youtu.be/I5XS9GIYqOg)
 
