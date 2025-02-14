@@ -73,7 +73,7 @@ Ever dreamed about creating your own dungeon and play it in a 3D Game? Let's sta
   <div></div>
 </div>
 
-![Pong Like Game](/assets/ETMEditor/DetailMain.png)
+![Editor](/assets/ETMEditor/DetailMain.png) | ![ETM10](/assets/games/ETM/LevelEditor0.png) 
 
 **First Release:** 04/2021, **Last Update:** 01/2025, **Current version:** 3.01
 
