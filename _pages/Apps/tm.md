@@ -36,6 +36,8 @@ Turing machines are used to understand the limits of computation and algorithm d
 - About:
   Learn more about Turing machines and this app.
 
+![TuringMachineStart](/assets/games/ATM/ATMStart.png) 
+
 ## Detail View
 The main screen is divided into the following sections:
 
@@ -43,6 +45,8 @@ The main screen is divided into the following sections:
 - Program Controls: Buttons to run, pause, reset, and step through the program.
 - Tape Display: Shows the current tape content and head position, with navigation and editing options.
 - Transitions Table: Displays the list of transitions defining the program's behavior.
+
+![TuringMachineStart](/assets/games/ATM/ATMDetail.png) 
 
 ### Edit Mode:
 
