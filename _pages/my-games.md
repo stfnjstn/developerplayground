@@ -17,6 +17,34 @@ The Lite version is free but supported by AdMob ads, which may involve tracking 
 
 For a better experience, consider the paid version! It’s ad-free, collects no data, and costs less than a single cup of coffee.
 
+## Another Turing Machine (Lite):
+
+Unlock the power of computation with this Turing Machine, a fully featured Turing machine simulator designed for learning, experimentation, and analysis.
+
+**[Tutorials & Productpage](/tm)**
+
+**Supported platforms:** iPhone, iPad
+
+**First Release:** 02/2025, **Last Update:** 03/2025, **Current version:** 1.2
+
+<div style="display: flex; justify-content: space-around; align-items: center;">
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/app/id6742148023">
+      <img src="/assets/Download.svg" alt="Download">
+    </a>
+    <p>Lite Version</p>
+  </div>
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/app/id6742148242">
+      <img src="/assets/Download.svg" alt="Download" >
+    </a>
+    <p>Full Version</p>
+  </div>
+  <div></div>
+</div>
+
+![TM0](/assets/games/ATM/ATMDetail.png)| ![TM1](/assets/games/ATM/ATMStart.png) 
+
 ## Escape the Maze (Lite):
 
 Escape the Dungeon Maze is an old school dungeon crawler. Explore a complex dungeon full of traps, teleports, riddles and monsters.
@@ -29,7 +57,7 @@ Supports iCloud for multiple platforms: Start on your iPhone or iPad and continu
 
 **Supported platforms:** iPhone, iPad, Apple Watch, Mac
 
-**First Release:** 05/2020, **Last Update:** 02/2025, **Current version:** 2.0
+**First Release:** 05/2020, **Last Update:** 02/2025, **Current version:** 2.1.1
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <div style="text-align: center;">
@@ -75,7 +103,7 @@ Ever dreamed about creating your own dungeon and play it in a 3D Game? Let's sta
 
 ![Editor](/assets/ETMEditor/DetailMain.png) | ![ETM10](/assets/games/ETM/LevelEditor0.png) 
 
-**First Release:** 04/2021, **Last Update:** 01/2025, **Current version:** 3.01
+**First Release:** 04/2021, **Last Update:** 02/2025, **Current version:** 3.1.1
 
 ---
 
@@ -166,7 +194,7 @@ Apple Watch Version available
 
 **Supported platforms:** iPhone, iPad, AppleTV, Apple Watch, Mac
 
-**First Release:** 06/2015, **Last Update:** 01/2024, **Current version:** 8.0
+**First Release:** 06/2015, **Last Update:** 01/2025, **Current version:** 8.0
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <div style="text-align: center;">

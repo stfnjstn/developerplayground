@@ -26,6 +26,13 @@ A Turing Machine is a theoretical computing device invented by Alan Turing in 19
 ### Purpose and Use Cases
 Turing machines are used to understand the limits of computation and algorithm design. They help computer scientists determine what can be computed and how efficiently.
 
+### Special Characters in the Turing Machine Alphabet
+The Turing Machine Alphabet includes special characters that have specific meanings:
+
+- '*' (Wildcard): This symbol in a transition rule matches any symbol on the tape. It is useful for defining general rules that apply regardless of the current symbol.
+
+- '_' (Blank): Represents an empty cell on the tape. The blank symbol is used to separate inputs or indicate unused parts of the tape.
+
 ## Using This App
 
 ## Start View:
