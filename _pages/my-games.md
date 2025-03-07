@@ -21,6 +21,17 @@ For a better experience, consider the paid version! It’s ad-free, collects no 
 
 Unlock the power of computation with this Turing Machine, a fully featured Turing machine simulator designed for learning, experimentation, and analysis.
 
+Key Features:
+- Single or Multi-Tape Support – Run programs on one or multiple tapes for complex simulations.
+- Flexible Alphabets – Use binary or decimal numbers or letters
+- Step-by-Step Execution – Watch the machine in action as it moves and modifies the tapes.
+- Share Your Programs – Export and share your Turing machine programs with others.
+- Generate PDF Reports – Save and share reports including your configuration, program logic, and execution results.
+
+Whether you're a student, researcher, or enthusiast exploring the fundamentals of computation, this Turing Machine provides an intuitive and powerful way to experiment with Turing machines.
+
+Download now and start exploring the world of theoretical computing!
+
 **[Tutorials & Productpage](/tm)**
 
 **Supported platforms:** iPhone, iPad
