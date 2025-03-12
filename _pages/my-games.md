@@ -36,7 +36,7 @@ Download now and start exploring the world of theoretical computing!
 
 **Supported platforms:** iPhone, iPad
 
-**First Release:** 02/2025, **Last Update:** 03/2025, **Current version:** 1.2
+**First Release:** 02/2025, **Last Update:** 03/2025, **Current version:** 1.6
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <div style="text-align: center;">
