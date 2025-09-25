@@ -3,7 +3,7 @@ layout: post
 permalink: /escape-the-dungeon-maze-new-monsters/
 title: New Monster Models for Escape the Dungeon Maze
 description: Latest updates on Escape the Dungeon Maze featuring new 3D monster models
-date: 2025-09-26 12:00:00 -0000
+date: 2025-09-25 12:00:00 -0000
 last_modified_at: 2025-09-26 12:00:00 -0000
 publish: true
 pin: false
