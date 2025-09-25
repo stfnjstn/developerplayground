@@ -17,12 +17,14 @@ I'm still working on a major update for my game "Escape The Dungeon Maze" and ex
 
 I've added two new monster 3D models to the game: the **Tetrapod** and the **Pill** monsters. These new creatures will add more variety and challenge to the dungeon exploration experience.
 
-![Tetrapod Monster](/assets/2025/09/Monster_Tetrapod.jpg)
+<div style="display: flex; gap: 10px; margin: 20px 0;">
+  <img src="/assets/2025/09/Monster_Pill1.jpg" alt="Pill Monster 1" style="width: 48%;">
+  <img src="/assets/2025/09/Monster_Tetrapod.jpg" alt="Tetrapod Monster" style="width: 48%;">
+</div>
 
-![Multiple Tetrapods](/assets/2025/09/Monster_Tetrapods.jpg)
-
-![Pill Monster 1](/assets/2025/09/Monster_Pill1.jpg)
-
-![Pill Monster 2](/assets/2025/09/Monster_Pill2.jpg)
+<div style="display: flex; gap: 10px; margin: 20px 0;">
+  <img src="/assets/2025/09/Monster_Pill2.jpg" alt="Pill Monster 2" style="width: 48%;">
+  <img src="/assets/2025/09/Monster_Tetrapods.jpg" alt="Multiple Tetrapods" style="width: 48%;">
+</div>
 
 This is just the beginning - expect many more new features, monsters, and gameplay improvements in the upcoming updates. Stay tuned for more exciting developments!
