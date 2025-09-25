@@ -19,6 +19,11 @@ tags: [Games]
 - **`id`**: A string, the identifier for the game.
 - **`playerPosition`**: An object specifying the player's current position.
 - **`levels`**: An array of objects representing individual game levels.
+- TODO: Monster Classes
+- TODO: GameItems
+- TODO: Wall Text
+- TODO: Monster Behavior
+- TODO: Learned Spells
 
 ---
 
@@ -54,7 +59,10 @@ Each monster group object contains:
 - **`id`**: A string identifier for the monster group.
 - **`homePosition`**: An object with `row` and `col` keys for the group's home position.
 - **`behavior`**: An integer representing behavior type. Behavior types are:
-  - 
+  - standForever // Stays forever on this position. Orients to hero. Attacks if hero in reach
+  - standChaseHomeStand // Stays till reaction distance activates movement. Chase till reaction distance hero reached or reaction distance deactivates movement => Scatter to
+  - case patrolChaseHomePatrol
+  - case randomChaseRandom
 - **`position`**: Similar to `homePosition`, indicates the current position.
 - **`monsters`**: An object where each key is a monster ID, and the value describes the monster.
 

@@ -4,3 +4,9 @@ _site
 .jekyll-metadata
 .DS_Store
 vendor
+
+# Claude Code files
+CLAUDE.md
+.claude/
+*claude*
+post_input_no_git
