@@ -44,4 +44,4 @@ This adds a whole new dimension to combat strategy. Players will need to adapt t
   <img src="/assets/2025/10/IMG_9624.jpg" alt="Monster Magic 8" style="width: 48%;">
 </div>
 
-The major update is progressing well with plenty of new content and features still in development. Keep watching for more updates!
+The major update is progressing well with plenty of new content and features still in development. Keep watching for more updates! 

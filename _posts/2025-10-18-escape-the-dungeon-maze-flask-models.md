@@ -15,9 +15,9 @@ tags: []
 
 I've added a new 3D model for "Flasks" to "Escape The Dungeon Maze"
 
-## New Flask Model
+## New Flask 3D Model
 
-This is laying the groundwork for exciting upcoming feature like porions
+This is laying the groundwork for exciting upcoming feature like potions
 
 <div style="display: flex; gap: 10px; margin: 20px 0;">
   <img src="/assets/2025/10/IMG_9645.jpg" alt="Flask in Game" style="width: 48%;">
