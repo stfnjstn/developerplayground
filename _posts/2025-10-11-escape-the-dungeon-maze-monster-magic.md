@@ -57,6 +57,6 @@ The major update is progressing well with plenty of new content and features sti
     <a href="https://apps.apple.com/app/etdm-level-editor/id1561041898">
       <img src="/assets/Download.svg" alt="Download" >
     </a>
-    <p>Download the level Editor</p>
+    <p>Download the Level Editor</p>
   </div>
 </div> 
