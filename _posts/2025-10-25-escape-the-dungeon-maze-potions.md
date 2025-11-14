@@ -13,7 +13,7 @@ categories:
 tags: []
 ---
 
-The potion system has arrived in "Escape The Dungeon Maze"! Following the recent addition of flask models, I've now implemented the complete potion mechanics.
+The potion system <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R3.0 - December 2025</span> has arrived in "Escape The Dungeon Maze"! Following the recent addition of flask models, I've now implemented the complete potion mechanics.
 
 ## Potion Types
 
@@ -35,3 +35,18 @@ These potions are available in both the Level Editor and the game, allowing dung
 </div>
 
 This potion system adds a new layer of strategic gameplay - players must decide when to use their precious healing items and which permanent upgrades to prioritize. The development continues with even more features and improvements planned for future updates!
+
+<div style="display: flex; justify-content: space-around; align-items: center;">
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/app/escapethemaze/id1502853397">
+      <img src="/assets/Download.svg" alt="Download">
+    </a>
+  <p>Download the Game</p>
+  </div>
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/app/etdm-level-editor/id1561041898">
+      <img src="/assets/Download.svg" alt="Download" >
+    </a>
+    <p>Download the level Editor</p>
+  </div>
+</div>

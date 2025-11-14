@@ -13,7 +13,7 @@ categories:
 tags: []
 ---
 
-The development of "Escape The Dungeon Maze" continues with significant visual enhancements! I've been working hard on improving the 3D rendering quality to create a more immersive dungeon experience.
+The development of "Escape The Dungeon Maze" continues with significant visual enhancements <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R3.0 - December 2025</span>! I've been working hard on improving the 3D rendering quality to create a more immersive dungeon experience.
 
 ## Visual Improvements
 
@@ -42,3 +42,18 @@ Below you can see the dramatic difference these improvements make. Each comparis
 *Note: These enhancements are available on iPhone and iPad versions. The Apple Watch version maintains optimized graphics for performance.*
 
 Stay tuned - there are many more exciting features and improvements on the way!
+
+<div style="display: flex; justify-content: space-around; align-items: center;">
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/app/escapethemaze/id1502853397">
+      <img src="/assets/Download.svg" alt="Download">
+    </a>
+  <p>Download the Game</p>
+  </div>
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/app/etdm-level-editor/id1561041898">
+      <img src="/assets/Download.svg" alt="Download" >
+    </a>
+    <p>Download the level Editor</p>
+  </div>
+</div>

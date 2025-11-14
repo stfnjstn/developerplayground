@@ -13,7 +13,7 @@ categories:
 tags: []
 ---
 
-Another exciting update is coming to "Escape The Dungeon Maze" - monsters can now wield magical powers!
+Another exciting update <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R3.0 - December 2025</span> is coming to "Escape The Dungeon Maze" - monsters can now wield magical powers!
 
 ## Magical Monster Abilities
 
@@ -44,4 +44,19 @@ This adds a whole new dimension to combat strategy. Players will need to adapt t
   <img src="/assets/2025/10/IMG_9624.jpg" alt="Monster Magic 8" style="width: 48%;">
 </div>
 
-The major update is progressing well with plenty of new content and features still in development. Keep watching for more updates! 
+The major update is progressing well with plenty of new content and features still in development. Keep watching for more updates!
+
+<div style="display: flex; justify-content: space-around; align-items: center;">
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/app/escapethemaze/id1502853397">
+      <img src="/assets/Download.svg" alt="Download">
+    </a>
+  <p>Download the Game</p>
+  </div>
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/app/etdm-level-editor/id1561041898">
+      <img src="/assets/Download.svg" alt="Download" >
+    </a>
+    <p>Download the level Editor</p>
+  </div>
+</div> 

@@ -13,7 +13,7 @@ categories:
 tags: []
 ---
 
-I'm excited to unveil a powerful new feature in "Escape The Dungeon Maze" - the Tinting and Texture System!
+I'm excited to unveil a new feature in "Escape The Dungeon Maze" - the Tinting and Texture System!
 
 ## Dynamic Item Customization
 
@@ -43,4 +43,19 @@ The benefits are enormous:
   <img src="/assets/2025/11/Potions.png" alt="Tinting System Overview" style="width: 100%;">
 </div>
 
-I'm continuing to work hard on this major update for both "Escape The Dungeon Maze" and the Level Editor. The release is planned for December 2025, bringing all these new features together in one comprehensive update. More exciting developments are on the way!
+I'm continuing to work hard on this major update for both "Escape The Dungeon Maze" and the Level Editor. The release <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R3.0 - December 2025</span> is bringing all these new features together in one comprehensive update. More exciting developments are on the way!
+
+<div style="display: flex; justify-content: space-around; align-items: center;">
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/app/escapethemaze/id1502853397">
+      <img src="/assets/Download.svg" alt="Download">
+    </a>
+  <p>Download the Game</p>
+  </div>
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/app/etdm-level-editor/id1561041898">
+      <img src="/assets/Download.svg" alt="Download" >
+    </a>
+    <p>Download the level Editor</p>
+  </div>
+</div>
