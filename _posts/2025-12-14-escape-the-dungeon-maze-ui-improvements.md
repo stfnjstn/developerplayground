@@ -10,7 +10,7 @@ pin: false
 categories:
 - Escape The Dungeon Maze
 - Game Development
-tags: []
+tags: [ETM]
 ---
 
 Polish and consistency matter <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R3.0 - December 2025</span>! I've reworked several key dialogs in "Escape The Dungeon Maze" to create a more consistent and polished user interface.

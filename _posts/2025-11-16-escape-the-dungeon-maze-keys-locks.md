@@ -10,7 +10,7 @@ pin: false
 categories:
 - Escape The Dungeon Maze
 - Game Development
-tags: []
+tags: [ETM]
 ---
 
 I've introduced a new Key and Lock system <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R3.0 - December 2025</span> coming to "Escape The Dungeon Maze"!

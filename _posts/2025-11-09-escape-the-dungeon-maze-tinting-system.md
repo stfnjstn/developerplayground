@@ -10,7 +10,7 @@ pin: false
 categories:
 - Escape The Dungeon Maze
 - Game Development
-tags: []
+tags: [ETM]
 ---
 
 I'm excited to unveil a new feature in "Escape The Dungeon Maze" - the Tinting and Texture System!

@@ -10,7 +10,7 @@ pin: false
 categories:
 - Escape The Dungeon Maze
 - Game Development
-tags: []
+tags: [ETM]
 ---
 
 Great news for Apple Watch users <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R3.0 - December 2025</span>! The Apple Watch version of "Escape The Dungeon Maze" now has full feature parity with iOS!

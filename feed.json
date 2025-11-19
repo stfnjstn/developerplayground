@@ -10,7 +10,8 @@ permalink: /feed.json
       "id": "{{ post.id | escape }}",
       "title": "{{ post.title | escape }}",
       "url": "{{ post.url | absolute_url }}",
-      "date": "{{ post.date | date_to_xmlschema }}"
+      "date": "{{ post.date | date_to_xmlschema }}",
+      "tags": "{{ post.tags | jsonify }}",
     }{% if forloop.last == false %},{% endif %}
     {% endfor %}
   ]
