@@ -43,7 +43,7 @@ The benefits are enormous:
   <img src="/assets/2025/11/Potions.png" alt="Tinting System Overview" style="width: 100%;">
 </div>
 
-I'm continuing to work hard on this major update for both "Escape The Dungeon Maze" and the Level Editor. The release <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R3.0 - December 2025</span> is bringing all these new features together in one comprehensive update. More exciting developments are on the way!
+I'm continuing to work hard on this major update for both "Escape The Dungeon Maze" and the Level Editor. The release <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R4.0 - December 2025</span> is bringing all these new features together in one comprehensive update. More exciting developments are on the way!
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <div style="text-align: center;">

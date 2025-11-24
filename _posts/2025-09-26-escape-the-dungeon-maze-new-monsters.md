@@ -13,7 +13,7 @@ categories:
 tags: [ETM]
 ---
 
-I'm still working on a major update <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R3.0 - December 2025</span> for my game "Escape The Dungeon Maze" and excited to share some progress with you!
+I'm still working on a major update <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R4.0 - December 2025</span> for my game "Escape The Dungeon Maze" and excited to share some progress with you!
 
 I've added two new monster 3D models to the game: the **Tetrapod** and the **Pill** monsters. These new creatures will add more variety and challenge to the dungeon exploration experience.
 

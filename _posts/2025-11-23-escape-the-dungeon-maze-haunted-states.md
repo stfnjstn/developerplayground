@@ -13,7 +13,7 @@ categories:
 tags: [ETM]
 ---
 
-Combat in "Escape The Dungeon Maze" just got a lot more strategic <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R3.0 - December 2025</span> with the introduction of the Haunted States system!
+Combat in "Escape The Dungeon Maze" just got a lot more strategic <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R4.0 - December 2025</span> with the introduction of the Haunted States system!
 
 ## Haunted Status Effects
 

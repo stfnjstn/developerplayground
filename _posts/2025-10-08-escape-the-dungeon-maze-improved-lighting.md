@@ -13,7 +13,7 @@ categories:
 tags: [ETM]
 ---
 
-The development of "Escape The Dungeon Maze" continues with significant visual enhancements <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R3.0 - December 2025</span>! I've been working hard on improving the 3D rendering quality to create a more immersive dungeon experience.
+The development of "Escape The Dungeon Maze" continues with significant visual enhancements <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R4.0 - December 2025</span>! I've been working hard on improving the 3D rendering quality to create a more immersive dungeon experience.
 
 ## Visual Improvements
 

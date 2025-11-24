@@ -13,7 +13,7 @@ categories:
 tags: [ETM]
 ---
 
-Your dungeon adventures now follow you everywhere <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R3.0 - December 2025</span>! I've enabled iCloud syncing for save games across all your Apple devices!
+Your dungeon adventures now follow you everywhere <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R4.0 - December 2025</span>! I've enabled iCloud syncing for save games across all your Apple devices!
 
 ## Cross-Device Save Game Syncing
 

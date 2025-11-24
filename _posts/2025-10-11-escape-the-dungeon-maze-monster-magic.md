@@ -13,7 +13,7 @@ categories:
 tags: [ETM]
 ---
 
-Another exciting update <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R3.0 - December 2025</span> is coming to "Escape The Dungeon Maze" - monsters can now wield magical powers!
+Another exciting update <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R4.0 - December 2025</span> is coming to "Escape The Dungeon Maze" - monsters can now wield magical powers!
 
 ## Magical Monster Abilities
 

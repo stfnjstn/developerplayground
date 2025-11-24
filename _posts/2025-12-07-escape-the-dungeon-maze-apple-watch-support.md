@@ -13,7 +13,7 @@ categories:
 tags: [ETM]
 ---
 
-Great news for Apple Watch users <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R3.0 - December 2025</span>! The Apple Watch version of "Escape The Dungeon Maze" now has full feature parity with iOS!
+Great news for Apple Watch users <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R4.0 - December 2025</span>! The Apple Watch version of "Escape The Dungeon Maze" now has full feature parity with iOS!
 
 ## Extended UI Testing and Bug Fixes
 
