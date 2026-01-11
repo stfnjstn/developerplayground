@@ -68,7 +68,7 @@ Supports iCloud for multiple platforms: Start on your iPhone or iPad and continu
 
 **Supported platforms:** iPhone, iPad, Apple Watch, Mac
 
-**First Release:** 05/2020, **Last Update:** 02/2025, **Current version:** 2.1.1
+**First Release:** 05/2020, **Last Update:** 12/2025, **Current version:** 4.0
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <div style="text-align: center;">
@@ -94,7 +94,7 @@ Supports iCloud for multiple platforms: Start on your iPhone or iPad and continu
 ![ETM9](/assets/games/ETM/ETM0.png)| ![ETM10](/assets/games/ETM/ETM1.png) 
 ![ETM11](/assets/games/ETM/ETM2.png)| ![ETM12](/assets/games/ETM/ETM3.png) 
 
-## ETDM Level Editor:
+## A Dungeon Editor for Escape the Dungeon Maze:
 
 **Supported platforms:** iPhone, iPad, Mac
 
@@ -114,7 +114,7 @@ Ever dreamed about creating your own dungeon and play it in a 3D Game? Let's sta
 
 ![Editor](/assets/ETMEditor/DetailMain.png) | ![ETM10](/assets/games/ETM/LevelEditor0.png) 
 
-**First Release:** 04/2021, **Last Update:** 02/2025, **Current version:** 3.1.1
+**First Release:** 04/2021, **Last Update:** 12/2025, **Current version:** 4.0
 
 ---
 
