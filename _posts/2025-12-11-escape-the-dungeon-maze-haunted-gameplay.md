@@ -13,7 +13,7 @@ categories:
 tags: [ETM]
 ---
 
-The Haunted States system <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R4.0 - December 2025</span> fundamentally changes how combat works in "Escape The Dungeon Maze"!
+The Haunted States system <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R4.0 - December 2025</span> fundamentally changes how combat works in "The Dungeon - Get Out"!
 
 ## Status Effects That Matter
 

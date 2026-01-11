@@ -56,9 +56,9 @@ Download now and start exploring the world of theoretical computing!
 
 ![TM0](/assets/games/ATM/ATMDetail.png)| ![TM1](/assets/games/ATM/ATMStart.png) 
 
-## Escape the Maze (Lite):
+## The Dungeon - Get Out (Lite):
 
-Escape the Dungeon Maze is an old school dungeon crawler. Explore a complex dungeon full of traps, teleports, riddles and monsters.
+The Dungeon - Get Out - Get Out is an old school dungeon crawler. Explore a complex dungeon full of traps, teleports, riddles and monsters.
 
 A level editor for the game to create own dungeons is also available.
 
@@ -94,7 +94,7 @@ Supports iCloud for multiple platforms: Start on your iPhone or iPad and continu
 ![ETM9](/assets/games/ETM/ETM0.png)| ![ETM10](/assets/games/ETM/ETM1.png) 
 ![ETM11](/assets/games/ETM/ETM2.png)| ![ETM12](/assets/games/ETM/ETM3.png) 
 
-## A Dungeon Editor for Escape the Dungeon Maze:
+## A Dungeon Editor for The Dungeon - Get Out:
 
 **Supported platforms:** iPhone, iPad, Mac
 

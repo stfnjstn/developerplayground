@@ -1,7 +1,7 @@
 ---
 layout: post
 permalink: /escape-the-dungeon-maze-haunted-states/
-title: Haunted States System for Escape the Dungeon Maze
+title: Haunted States System for The Dungeon - Get Out
 description: New status effects bring tactical depth with poison, freeze, and fear mechanics
 date: 2025-11-22 12:00:00 -0000
 last_modified_at: 2025-11-22 12:00:00 -0000
@@ -13,7 +13,7 @@ categories:
 tags: [ETM]
 ---
 
-Combat in "Escape The Dungeon Maze" just got a lot more strategic <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R4.0 - December 2025</span> with the introduction of the Haunted States system!
+Combat in "The Dungeon - Get Out" just got a lot more strategic <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R4.0 - December 2025</span> with the introduction of the Haunted States system!
 
 ## Haunted Status Effects
 

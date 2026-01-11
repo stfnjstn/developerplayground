@@ -1,7 +1,7 @@
 ---
 layout: post
 permalink: /escape-the-dungeon-maze-keys-locks/
-title: New Key and Lock System for Escape the Dungeon Maze
+title: New Key and Lock System for The Dungeon - Get Out
 description: Tintable keys and locks bring colorful puzzle variations to dungeons
 date: 2025-11-15 12:00:00 -0000
 last_modified_at: 2025-11-15 12:00:00 -0000
@@ -13,7 +13,7 @@ categories:
 tags: [ETM]
 ---
 
-I've introduced a new Key and Lock system <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R4.0 - December 2025</span> coming to "Escape The Dungeon Maze"!
+I've introduced a new Key and Lock system <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R4.0 - December 2025</span> coming to "The Dungeon - Get Out"!
 
 ## New 3D Models: Keys and Locks
 
@@ -30,7 +30,7 @@ The update includes brand new 3D models for keys and key locks, available in bot
 
 This opens up new possibilities for dungeon designers to create complex puzzles with color-coded keys, requiring players to find the right colored key for each lock. The tinting system means unlimited color variations from just one 3D model!
 
-Work continues at full speed on the major update for "Escape The Dungeon Maze" and the Level Editor, bringing together all these new systems and features. The December 2025 release is shaping up to be our biggest update yet!
+Work continues at full speed on the major update for "The Dungeon - Get Out" and the Level Editor, bringing together all these new systems and features. The December 2025 release is shaping up to be our biggest update yet!
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <div style="text-align: center;">

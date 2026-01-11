@@ -1,7 +1,7 @@
 ---
 layout: post
 permalink: /latest-updates-on-escape-the-dungeon-maze/
-title: Latest Updates on Escape the Dungeon Maze
+title: Latest Updates on The Dungeon - Get Out
 description: None
 date: 2021-04-06 22:35:00 -0000
 last_modified_at: 2021-04-13 16:35:59 -0000

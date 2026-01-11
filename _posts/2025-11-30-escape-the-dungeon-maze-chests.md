@@ -1,7 +1,7 @@
 ---
 layout: post
 permalink: /escape-the-dungeon-maze-chests/
-title: Treasure Chests Added to Escape the Dungeon Maze
+title: Treasure Chests Added to The Dungeon - Get Out
 description: New chest system brings treasure hunting and event triggers to dungeons
 date: 2025-11-29 12:00:00 -0000
 last_modified_at: 2025-11-29 12:00:00 -0000
@@ -13,7 +13,7 @@ categories:
 tags: [ETM]
 ---
 
-Treasure hunting comes to "Escape The Dungeon Maze" <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R4.0 - December 2025</span> with the addition of the new Chest system!
+Treasure hunting comes to "The Dungeon - Get Out" <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R4.0 - December 2025</span> with the addition of the new Chest system!
 
 ## New 3D Model: Treasure Chests
 

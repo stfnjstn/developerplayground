@@ -23,7 +23,7 @@ tags:
 - Swift
 - XCUI
 ---
-I've just created a few Apple Appstore preview videos for my upcoming Dungeon Crawler game: _Escape the Dungeon Maze_.
+I've just created a few Apple Appstore preview videos for my upcoming Dungeon Crawler game: _The Dungeon - Get Out_.
 
 I'll share my workflow for creating these videos in this post:
 

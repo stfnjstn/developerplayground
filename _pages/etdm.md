@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /etdm/
-title: Escape the Dungeon Maze
+title: The Dungeon Maze - Get Out
 description: Tutorial about my Dungeon Crawler
 date: 2024-12-26
 publish: true

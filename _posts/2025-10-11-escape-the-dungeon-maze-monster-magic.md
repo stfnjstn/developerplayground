@@ -1,7 +1,7 @@
 ---
 layout: post
 permalink: /escape-the-dungeon-maze-monster-magic/
-title: Monsters Learn Magic in Escape the Dungeon Maze
+title: Monsters Learn Magic in EscThe Dungeon - Get Out
 description: New monster abilities bring magical attacks to dungeon encounters
 date: 2025-10-10 12:00:00 -0000
 last_modified_at: 2025-10-10 12:00:00 -0000
@@ -13,7 +13,7 @@ categories:
 tags: [ETM]
 ---
 
-Another exciting update <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R4.0 - December 2025</span> is coming to "Escape The Dungeon Maze" - monsters can now wield magical powers!
+Another exciting update <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R4.0 - December 2025</span> is coming to "The Dungeon - Get Out" - monsters can now wield magical powers!
 
 ## Magical Monster Abilities
 

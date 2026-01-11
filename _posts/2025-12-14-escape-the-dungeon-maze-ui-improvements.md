@@ -13,7 +13,7 @@ categories:
 tags: [ETM]
 ---
 
-Polish and consistency matter <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R4.0 - December 2025</span>! I've reworked several key dialogs in "Escape The Dungeon Maze" to create a more consistent and polished user interface.
+Polish and consistency matter <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R4.0 - December 2025</span>! I've reworked several key dialogs in "The Dungeon - Get Out" to create a more consistent and polished user interface.
 
 ## Dialog Redesign
 
@@ -39,7 +39,7 @@ Here's a look at the improvements:
   <img src="/assets/2025/12/NewFileDialog.png" alt="New File Dialog" style="width: 48%;">
 </div>
 
-These UI improvements might seem small, but they significantly enhance the overall player experience. With the December release just around the corner, every detail is being refined to make this the best version of "Escape The Dungeon Maze" yet!
+These UI improvements might seem small, but they significantly enhance the overall player experience. With the December release just around the corner, every detail is being refined to make this the best version of "The Dungeon - Get Out" yet!
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <div style="text-align: center;">

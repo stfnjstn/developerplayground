@@ -2,7 +2,7 @@
 layout: page
 permalink: /ETMEditorTutorials/ETMEditorTutorials/
 title: Tutorials Dungeon Editor
-description: Editor for Escape the Dungeon Maze - Tutorials
+description: Editor for The Dungeon - Get Out - Tutorials
 date: 2025-01-22 19:02:46 -0000
 last_modified_at: 2025-01-22 22:16:14 -0000
 publish: true

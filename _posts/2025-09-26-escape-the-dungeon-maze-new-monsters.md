@@ -1,8 +1,8 @@
 ---
 layout: post
 permalink: /escape-the-dungeon-maze-new-monsters/
-title: New Monster Models for Escape the Dungeon Maze
-description: Latest updates on Escape the Dungeon Maze featuring new 3D monster models
+title: New Monster Models for The Dungeon - Get Out
+description: Latest updates on The Dungeon - Get Out featuring new 3D monster models
 date: 2025-09-25 12:00:00 -0000
 last_modified_at: 2025-09-26 12:00:00 -0000
 publish: true
@@ -13,7 +13,7 @@ categories:
 tags: [ETM]
 ---
 
-I'm still working on a major update <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R4.0 - December 2025</span> for my game "Escape The Dungeon Maze" and excited to share some progress with you!
+I'm still working on a major update <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R4.0 - December 2025</span> for my game "The Dungeon - Get Out" and excited to share some progress with you!
 
 I've added two new monster 3D models to the game: the **Tetrapod** and the **Pill** monsters. These new creatures will add more variety and challenge to the dungeon exploration experience.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 permalink: /escape-the-dungeon-maze-potions/
-title: Potion System Now Available in Escape the Dungeon Maze
+title: Potion System Now Available in The Dungeon - Get Out
 description: New potion mechanics add strategic depth with healing and permanent upgrades
 date: 2025-10-24 12:00:00 -0000
 last_modified_at: 2025-10-24 12:00:00 -0000
@@ -13,7 +13,7 @@ categories:
 tags: [ETM]
 ---
 
-The potion system <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R4.0 - December 2025</span> has arrived in "Escape The Dungeon Maze"! Following the recent addition of flask models, I've now implemented the complete potion mechanics.
+The potion system <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R4.0 - December 2025</span> has arrived in "The Dungeon - Get Out"! Following the recent addition of flask models, I've now implemented the complete potion mechanics.
 
 ## Potion Types
 

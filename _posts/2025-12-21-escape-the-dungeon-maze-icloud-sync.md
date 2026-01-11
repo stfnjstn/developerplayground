@@ -33,7 +33,7 @@ Start your adventure on iPhone during your commute, continue on iPad at home, an
 
 Your save games automatically sync through iCloud when connected to the internet. Pick up exactly where you left off on any device - your character progress, inventory, dungeon state, and all achievements carry over seamlessly.
 
-This is one of the final pieces for the December 2025 release! "Escape The Dungeon Maze" 3.0 is bringing massive improvements to gameplay, visuals, and now cross-device continuity. The wait is almost over!
+This is one of the final pieces for the December 2025 release! "The Dungeon - Get Out" 4.0 is bringing massive improvements to gameplay, visuals, and now cross-device continuity. The wait is almost over!
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <div style="text-align: center;">
