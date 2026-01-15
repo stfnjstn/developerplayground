@@ -14,10 +14,10 @@ tags: [Games]
 
 
 The main concept about adding traps, riddles or other dynamic content in the game is about triggers and actions. You can specify triggers on a tile (depending on the selected tils) and actions on another or the same tile.
-For example a "on_enter" trigger on one tile calls an "open" action on a door tile.
+For example a "on_enter" triggered on one tile calls an "open" action on a door tile.
 
 **Tile Settings**
-![Tile](/assets/ETMEditor/DetailTile.png)  
+![Tile](/assets/ETMEditor/DetailTile.png) | [Tile Triggers](/assets/ETMEditor/DetailTileTrigger.png)
 In Progress
 
 **Triggers**
@@ -27,9 +27,9 @@ Defines the types of triggers that can activate tile actions in the game. Trigge
 ![Tile Triggers](/assets/ETMEditor/DetailTileTrigger.png)
 
 ***Available triggers are:***
-- onEnter
+- **onEnter**
   Fires when the player enters the tile
-- onLeave
+- __onLeave__
   Fires when the player leaves the tile
 - onEnterLeave
   Fires both when entering AND leaving the tile (combination trigger)
