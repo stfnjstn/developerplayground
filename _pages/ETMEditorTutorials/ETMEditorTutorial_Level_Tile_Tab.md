@@ -33,62 +33,63 @@ Defines the types of triggers that can activate tile actions in the game. Trigge
 ***Available triggers are:***
 - **onEnter:**
   Fires when the player enters the tile
-- __onLeave:__
+- **onLeave:**
   Fires when the player leaves the tile
-- onEnterLeave
+- **onEnterLeave:**
   Fires both when entering AND leaving the tile (combination trigger)
-- onSwitch
+- **onSwitch:**
   Fires when a switch on the tile is toggled (either on or off)
-- onSwitchOn
+- **onSwitchOn:**
   Fires only when a switch on the tile is turned ON
-- onSwitchOff
+- **onSwitchOff:**
   Fires only when a switch on the tile is turned OFF
-- onAttacked
+- **onAttacked:**
   Fires when the tile is attacked by the player
-- onGameItemUsed
+- **onGameItemUsed:**
   Fires when a game item is used on the tile
-- onGameItemDropped
+- **onGameItemDropped:**
   Fires when a game item is dropped on the tile
-- onGameItemCollected
+- **onGameItemCollected:**
   Fires when a game item is collected/picked up from the tile
-- onMagic
+- **onMagic:**
   Fires when magic is cast on the tile
-- onTimer
+- **onTimer:**
   Fires after a specified timer delay (see timerDelayAvailable)
-- onChestOpen
+- **onChestOpen:**
   Fires when a chest on the tile is opened
-- onChestClose
+- **onChestClose:**
   Fires when a chest on the tile is closed
 
 
 
 ***Actions: (Actions that can be performed on a tile)***
-- teleport
+- **teleport:**
   Teleport action. Hero or game item will be teleported to the target position.
-- openClose
+- **openClose:**
   If the tile is closed, it will be opened. If it is open, it will be closed.
-- open
+- **open:**
   Open action. if the tile is closed, it will be opened. If it is open, it remains open. 
-- close
+- **close:**
   Close action. if the tile is open, it will be closed. If it is closed, it remains closed.
-- hideUnhide
+- **hideUnhide:**
   If the tile is hidden, it will be unhidden. If it is unhidden, it will be hidden.
-- hide
+- **hide:**
   Hide action. If the tile is visible, it will be hidden. If it is hidden, it remains hidden.
-- unhide
+- **unhide:**
   Unhide action. If the tile is hidden, it will be unhidden. If it is unhidden, it remains unhidden.
-- showWallText
+- **showWallText:**
   Show a text on a wall. Text is specified in the wallText property of the tile.
-- hideWallText
+- **hideWallText:**
   Hide a text on a wall. Text is specified in the wallText property of the tile.
-- castSpell
+- **castSpell:**
   A spell will be cast at the target position. The target psotition, the spell and for some spells like a fireball the direction must be specified 
-- spawnGameItem
+- **spawnGameItem:**
   A game item will be spawned at the target position. Target psotion and game must be selected.
-- spawnMonster
+- **spawnMonster:**
   A monster will be spawned at the target position. Target psotion and monster must be selected. Behavior is randomChaseRandom which means the monster is wandering around and chases you if you come too close.
-- gainExperience
+- **gainExperience:**
   Used to gain some extra experience points, for example if a riddle is completed. You have to specify the experience points which should be added.
+
 **Textures:**
 ![Tile Textures](/assets/ETMEditor/DetailTileTexture.png)
 In Progress
