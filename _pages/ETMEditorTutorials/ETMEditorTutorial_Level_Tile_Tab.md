@@ -17,7 +17,7 @@ The main concept about adding traps, riddles or other dynamic content in the gam
 For example a "on_enter" triggered on one tile calls an "open" action on a door tile.
 
 **Tile Settings**
-![Tile](/assets/ETMEditor/DetailTile.png) | [Tile Triggers](/assets/ETMEditor/DetailTileTrigger.png)
+![Tile](/assets/ETMEditor/DetailTile.png) | ![Tile Triggers](/assets/ETMEditor/DetailTileTrigger.png)
 In Progress
 
 **Triggers**
