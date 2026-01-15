@@ -18,7 +18,10 @@ For example a _on_enter_ triggered on one tile calls an _open_ action on a door 
 
 # Tile Settings
 ![Tile](/assets/ETMEditor/DetailTile.png) | ![Tile Triggers](/assets/ETMEditor/DetailTileTrigger.png)
-In Progress
+
+In Progress2
+
+---
 
 ## Triggers
 
@@ -62,7 +65,7 @@ Defines the types of triggers that can activate tile actions in the game. Trigge
 
 
 
-**Available Actions: (Actions that can be performed on a tile)**
+### Available Actions: (Actions that can be performed on a tile)
 - ***teleport:***
   Teleport action. Hero or game item will be teleported to the target position.
 - ***openClose:***
