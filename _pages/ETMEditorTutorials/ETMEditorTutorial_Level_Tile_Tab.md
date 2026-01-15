@@ -20,21 +20,13 @@ For example a _on_enter_ triggered on one tile calls an _open_ action on a door 
 
 ![Tile](/assets/ETMEditor/DetailTile.png) | ![Tile Triggers](/assets/ETMEditor/DetailTileTrigger.png)
 
-![iPhone Screenshot](/assets/ETMEditor/DetailTile.png) | ![iPhone Screenshot](/assets/games/APG/APG2.png) 
-
-In Progress2
+In Progress
 
 ---
 
 ## Triggers
 
 Defines the types of triggers that can activate tile actions in the game. Triggers are events that occur at specific tiles and execute associated actions on the same or another tile.
-
-![Tile Triggers](/assets/ETMEditor/DetailTileTrigger.png)
-
-<img src="/assets/ETMEditor/DetailTileTrigger.png" alt="Tile Triggers" width="200"/>
-
-<img src="/assets/ETMEditor/DetailTileTrigger.png" alt="Tile Triggers" width="100"/>
 
 ### Available triggers:
 - ***onEnter:***
