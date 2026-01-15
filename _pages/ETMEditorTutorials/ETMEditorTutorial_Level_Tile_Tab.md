@@ -30,7 +30,7 @@ Defines the types of triggers that can activate tile actions in the game. Trigge
 
 <img src="/assets/ETMEditor/DetailTileTrigger.png" alt="Tile Triggers" width="100"/>
 
-***Available triggers are:***
+***Available triggers:***
 - **onEnter:**
   Fires when the player enters the tile
 - **onLeave:**
@@ -62,7 +62,7 @@ Defines the types of triggers that can activate tile actions in the game. Trigge
 
 
 
-***Actions: (Actions that can be performed on a tile)***
+***Available Actions: (Actions that can be performed on a tile)***
 - **teleport:**
   Teleport action. Hero or game item will be teleported to the target position.
 - **openClose:**
