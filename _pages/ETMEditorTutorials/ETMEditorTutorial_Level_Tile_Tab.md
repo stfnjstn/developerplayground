@@ -14,13 +14,13 @@ tags: [Games]
 
 
 The main concept about adding traps, riddles or other dynamic content in the game is about triggers and actions. You can specify triggers on a tile (depending on the selected tils) and actions on another or the same tile.
-For example a "on_enter" triggered on one tile calls an "open" action on a door tile.
+For example a _on_enter_ triggered on one tile calls an _open_ action on a door tile.
 
-**Tile Settings**
+# Tile Settings**
 ![Tile](/assets/ETMEditor/DetailTile.png) | ![Tile Triggers](/assets/ETMEditor/DetailTileTrigger.png)
 In Progress
 
-**Triggers**
+## Triggers
 
 Defines the types of triggers that can activate tile actions in the game. Triggers are events that occur at specific tiles and execute associated actions on the same or another tile.
 
@@ -30,34 +30,34 @@ Defines the types of triggers that can activate tile actions in the game. Trigge
 
 <img src="/assets/ETMEditor/DetailTileTrigger.png" alt="Tile Triggers" width="100"/>
 
-***Available triggers:***
-- **onEnter:**
+**Available triggers:**
+- ***onEnter:***
   Fires when the player enters the tile
-- **onLeave:**
+- ***onLeave:***
   Fires when the player leaves the tile
-- **onEnterLeave:**
+- ***onEnterLeave:***
   Fires both when entering AND leaving the tile (combination trigger)
-- **onSwitch:**
+- ***onSwitch:***
   Fires when a switch on the tile is toggled (either on or off)
-- **onSwitchOn:**
+- ***onSwitchOn:***
   Fires only when a switch on the tile is turned ON
-- **onSwitchOff:**
+- ***onSwitchOff:***
   Fires only when a switch on the tile is turned OFF
-- **onAttacked:**
+- ***onAttacked:***
   Fires when the tile is attacked by the player
-- **onGameItemUsed:**
+- ***onGameItemUsed:***
   Fires when a game item is used on the tile
-- **onGameItemDropped:**
+- ***onGameItemDropped:***
   Fires when a game item is dropped on the tile
-- **onGameItemCollected:**
+- ***onGameItemCollected:***
   Fires when a game item is collected/picked up from the tile
-- **onMagic:**
+- ***onMagic:***
   Fires when magic is cast on the tile
-- **onTimer:**
+- ***onTimer:***
   Fires after a specified timer delay (see timerDelayAvailable)
-- **onChestOpen:**
+- ***onChestOpen:***
   Fires when a chest on the tile is opened
-- **onChestClose:**
+- ***onChestClose:***
   Fires when a chest on the tile is closed
 
 
