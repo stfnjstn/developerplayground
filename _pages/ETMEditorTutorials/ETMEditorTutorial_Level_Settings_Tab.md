@@ -14,9 +14,9 @@ tags: [Games]
 
 ![Detail Level Setting](/assets/ETMEditor/DetailLevel.png)
 
-- Current level number: You can change the level with the stepper.
-- Display name: It is used for savegames, maps and inside the editor.
-- Rows/Cols: Dimension of the current level. Can be changed with the steppers.
+- _Current level number_: You can change the level with the stepper.
+- _Display name_: It is used for savegames, maps and inside the editor.
+- _Rows/Cols_: Dimension of the current level. Can be changed with the steppers.
 
 ![Maze Generator](/assets/ETMEditor/MazeGenerator.png)
 
