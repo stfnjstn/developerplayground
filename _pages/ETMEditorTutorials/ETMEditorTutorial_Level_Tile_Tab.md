@@ -113,12 +113,11 @@ For example an _on_enter_ trigger on a floor switch tile calls an _open_ action 
 
 ## Textures & Wall Text
 
-![Tile Textures](/assets/ETMEditor/DetailTileTexture.png)
+
 
 On some tiles, like doors you can select another texture. On other tiles like walls you can select textures per side and/or a wall text:
 
-TODO: Image with red circle on texture button for doors 
-![Tile Textures](/assets/ETMEditor/DetailTileTexture.png) | ![Tile Textures](/assets/ETMEditor/DetailTileTexture.png)
+![Tile Textures](/assets/ETMEditor/TextureDoor.png) | ![Tile Textures](/assets/ETMEditor/TextureWall.png)
 
 <hr>
 **[Back to Tutorial Overview](/ETMEditorTutorials/ETMEditorTutorials)**
