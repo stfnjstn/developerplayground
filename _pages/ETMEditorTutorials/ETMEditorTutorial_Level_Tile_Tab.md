@@ -16,30 +16,28 @@ tags: [Games]
 
 ## Tile Settings
 
-![Tile](/assets/ETMEditor/DetailTile.png) | ![Tile Triggers](/assets/ETMEditor/DetailTileTrigger.png)
-
-In Progress
+![Tile Settings](/assets/ETMEditor/TileSettings.png)
 
 ---
 ### Selected Tile & Position:
 Shows the selected tile type and position
-todo: Image
+![Tile Position](/assets/ETMEditor/TilePos.png)
+
 ### Orientation
 Uses to specify on which side for example a torch, an alcove, a fountain, a switch ... is rendered
-todo: Image
+![Tile Orientation](/assets/ETMEditor/TileOrientation.png)
 ### ActiveOpen / InactiveClosed state
 For example for teleports, switches, pits, torches, ...
-todo: Image
+![Tile State](/assets/ETMEditor/TileState.png)
 ### Visibility
 Is an element like a teleport visible or hidden. Hidden tiles can still be active. So a hidden switch can still teleport you to somewhere else.
-todo: Image
-
+![Tile Visibility](/assets/ETMEditor/TileVisibility.png)
 ### Direction
 Needed for special tiles like stairs to specify if the go up or down
-todo: Image
+![Tile Direction](/assets/ETMEditor/TileDirection.png)
 ### Item:
 Some tiles like a door with a key lock requires the use of a specific item to opem them
-todo: Image
+![Tile Item](/assets/ETMEditor/TileItem.png)
 
 
 ---
@@ -49,8 +47,7 @@ todo: Image
 The main concept about adding traps, riddles or other dynamic content in the game is about triggers and actions. Triggers are events that occur at specific tiles and execute associated actions on the same or another tile. The available triggers and actions depend on the selected source and target tile.
 For example an _on_enter_ trigger on a floor switch tile calls an _open_ action on a door tile.
 
-//ToDo show 5 screenshots next to each other: 
-normal | magic | GameItem | Monster | gainExperience
+![Trigger 1](/assets/ETMEditor/Trigger1.png) | ![Trigger 2](/assets/ETMEditor/Trigger2.png) | ![Trigger 3](/assets/ETMEditor/Trigger3.png) | ![Trigger 4](/assets/ETMEditor/Trigger4.png) | ![Trigger 5](/assets/ETMEditor/Trigger5.png)
 
 ### Available triggers:
 - ***onEnter:***
