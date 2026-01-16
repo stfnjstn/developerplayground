@@ -21,22 +21,28 @@ tags: [Games]
 ---
 ### Selected Tile & Position:
 Shows the selected tile type and position
+
 ![Tile Position](/assets/ETMEditor/TilePos.png)
 
 ### Orientation
 Uses to specify on which side for example a torch, an alcove, a fountain, a switch ... is rendered
+
 ![Tile Orientation](/assets/ETMEditor/TileOrientation.png)
 ### ActiveOpen / InactiveClosed state
 For example for teleports, switches, pits, torches, ...
+
 ![Tile State](/assets/ETMEditor/TileState.png)
 ### Visibility
 Is an element like a teleport visible or hidden. Hidden tiles can still be active. So a hidden switch can still teleport you to somewhere else.
+
 ![Tile Visibility](/assets/ETMEditor/TileVisibility.png)
 ### Direction
 Needed for special tiles like stairs to specify if the go up or down
+
 ![Tile Direction](/assets/ETMEditor/TileDirection.png)
 ### Item:
 Some tiles like a door with a key lock requires the use of a specific item to opem them
+
 ![Tile Item](/assets/ETMEditor/TileItem.png)
 
 
