@@ -13,20 +13,44 @@ tags: [Games]
 
 
 
-The main concept about adding traps, riddles or other dynamic content in the game is about triggers and actions. You can specify triggers on a tile (depending on the selected tils) and actions on another or the same tile.
-For example a _on_enter_ triggered on one tile calls an _open_ action on a door tile.
 
-# Tile Settings
+## Tile Settings
 
 ![Tile](/assets/ETMEditor/DetailTile.png) | ![Tile Triggers](/assets/ETMEditor/DetailTileTrigger.png)
 
 In Progress
 
 ---
+### Selected Tile & Position:
+Shows the selected tile type and position
+todo: Image
+### Orientation
+Uses to specify on which side for example a torch, an alcove, a fountain, a switch ... is rendered
+todo: Image
+### ActiveOpen / InactiveClosed state
+For example for teleports, switches, pits, torches, ...
+todo: Image
+### Visibility
+Is an element like a teleport visible or hidden. Hidden tiles can still be active. So a hidden switch can still teleport you to somewhere else.
+todo: Image
 
-## Triggers
+### Direction
+Needed for special tiles like stairs to specify if the go up or down
+todo: Image
+### Item:
+Some tiles like a door with a key lock requires the use of a specific item to opem them
+todo: Image
 
-Defines the types of triggers that can activate tile actions in the game. Triggers are events that occur at specific tiles and execute associated actions on the same or another tile.
+
+---
+
+## Triggers & Actions
+
+The main concept about adding traps, riddles or other dynamic content in the game is about triggers and actions. Triggers are events that occur at specific tiles and execute associated actions on the same or another tile. The available triggers and actions depend on the selected source and target tile.
+For example an _on_enter_ trigger on a floor switch tile calls an _open_ action on a door tile.
+
+//ToDo show 5 screenshots next to each other: 
+normal | magic | GameItem | Monster | gainExperience
 
 ### Available triggers:
 - ***onEnter:***
@@ -88,9 +112,16 @@ Defines the types of triggers that can activate tile actions in the game. Trigge
 - ***gainExperience:***
   Used to gain some extra experience points, for example if a riddle is completed. You have to specify the experience points which should be added.
 
-**Textures:**
+---
+
+## Textures & Wall Text
+
 ![Tile Textures](/assets/ETMEditor/DetailTileTexture.png)
-In Progress
+
+On some tiles, like doors you can select another texture. On other tiles like walls you can select textures per side and/or a wall text:
+
+TODO: Image with red circle on texture button for doors 
+![Tile Textures](/assets/ETMEditor/DetailTileTexture.png) | ![Tile Textures](/assets/ETMEditor/DetailTileTexture.png)
 
 <hr>
 **[Back to Tutorial Overview](/ETMEditorTutorials/ETMEditorTutorials)**
