@@ -20,7 +20,7 @@ tags: [Games]
 
 ![Maze Generator](/assets/ETMEditor/MazeGenerator.png)
 
-You can add specific elements randomly in the maze or generate a complete new random maze, without special tiles (Warning: This will overwrite your existing maze).
+You can add specific elements randomly in the maze or generate a complete new random maze without special tiles (Warning: This will overwrite your existing maze).
 
 <hr>
 **[Back to Tutorial Overview](/ETMEditorTutorials/ETMEditorTutorials)**
