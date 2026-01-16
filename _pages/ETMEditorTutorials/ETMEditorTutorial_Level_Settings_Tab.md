@@ -14,7 +14,9 @@ tags: [Games]
 
 ![Detail Level Setting](/assets/ETMEditor/DetailLevel.png)
 
-Level name is visible in savegames and the level overview. With the steppers you can increase/decrease the size of the levels.
+- Current level number: You can change the level with the stepper.
+- Display name: It is used for savegames, maps and inside the editor.
+- Cos/Rows: Dimension of the current level. Can be changed with the steppers.
 
 ![Maze Generator](/assets/ETMEditor/MazeGenerator.png)
 Add single elements
