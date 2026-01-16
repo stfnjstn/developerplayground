@@ -18,6 +18,8 @@ tags: [Games]
 - _Display name_: It is used for savegames, maps and inside the editor.
 - _Rows/Cols_: Dimension of the current level. Can be changed with the steppers.
 
+## Maze Generator:
+
 ![Maze Generator](/assets/ETMEditor/MazeGenerator.png)
 
 You can add specific elements randomly in the maze or generate a complete new random maze without special tiles (Warning: This will overwrite your existing maze).
