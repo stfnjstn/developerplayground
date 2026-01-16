@@ -16,12 +16,11 @@ tags: [Games]
 
 - Current level number: You can change the level with the stepper.
 - Display name: It is used for savegames, maps and inside the editor.
-- Cos/Rows: Dimension of the current level. Can be changed with the steppers.
+- Rows/Cols: Dimension of the current level. Can be changed with the steppers.
 
 ![Maze Generator](/assets/ETMEditor/MazeGenerator.png)
-Add single elements
-Generate a new maze. Warning. this will overwrite your existing maze
 
-Work in Progress!
+You can add specific elements randomly in the maze or generate a complete new random maze, without special tiles (Warning: This will overwrite your existing maze).
+
 <hr>
 **[Back to Tutorial Overview](/ETMEditorTutorials/ETMEditorTutorials)**
