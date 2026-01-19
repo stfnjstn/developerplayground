@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: /escape-the-dungeon-maze-submitted/
+permalink: /escape-the-dungeon-maze-career/
 title: Career Progression System
 description: Comprehensive Career Progression System for the party members
 date: 2026-01-19 12:00:00 -0000
