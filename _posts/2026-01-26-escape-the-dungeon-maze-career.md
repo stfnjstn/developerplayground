@@ -15,7 +15,7 @@ tags: [ETM]
 
 # What's New: Career Progression System
 
-We're excited to introduce a comprehensive **Career Progression System** to EscapeTheMaze! Your heroes can now develop their skills and advance through multiple professions as they journey through the dungeons.
+We're excited to introduce a comprehensive **Career Progression System** to "The Dungeon - Get Out"! Your heroes can now develop their skills and advance through multiple professions as they journey through the dungeons.
 
 ## New Features
 
