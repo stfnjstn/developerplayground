@@ -3,8 +3,8 @@ layout: post
 permalink: /escape-the-dungeon-maze-submitted/
 title: Career Progression System
 description: Comprehensive Career Progression System for the party members
-date: 2026-01-20 12:00:00 -0000
-last_modified_at: 2026-01-20 12:00:00 -0000
+date: 2026-01-19 12:00:00 -0000
+last_modified_at: 2026-01-19 12:00:00 -0000
 publish: true
 pin: false
 categories:
