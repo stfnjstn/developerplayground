@@ -25,8 +25,8 @@ We're excited to introduce a comprehensive **Career Progression System** to "The
 </div>
 
 <div style="display: flex; gap: 10px; margin: 20px 0;">
-  <img src="/assets/2026/01/Watch1.png" alt="Watch1" style="width: 48%;">
-  <img src="/assets/2026/01/Watch2.png" alt="Watch2" style="width: 48%;">
+  <img src="/assets/2026/01/CareerWatch1.png" alt="Watch1" style="width: 48%;">
+  <img src="/assets/2026/01/CareerWatch2.png" alt="Watch2" style="width: 48%;">
 </div>
 
 ### Four Distinct Professions
