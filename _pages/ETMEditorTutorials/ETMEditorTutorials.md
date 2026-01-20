@@ -29,15 +29,15 @@ This tutorial is work in progress and will be improved step by step. If you need
 
 - [Levelpack Main Screen](/ETMEditorTutorials/ETMEditorTutorial_Overview)
 - [Create / Organize Levels](/ETMEditorTutorials/ETMEditorTutorial_Overview_Levels)
-- [Create / Organize GameItems](/ETMEditorTutorials/ETMEditorTutorial_Overview_Items)
-- [Create / Organize Monsters](/ETMEditorTutorials/ETMEditorTutorial_Overview_Monsters)
-- [Create / Organize Languages](/ETMEditorTutorials/ETMEditorTutorial_Overview_Languages)
-- [Level](/ETMEditorTutorials/ETMEditorTutorial_Level_Detail_Tab)
+- [Create / Organize GameItems](/ETMEditorTutorials/ETMEditorTutorial_Overview_Items) (In Progess)
+- [Create / Organize Monsters](/ETMEditorTutorials/ETMEditorTutorial_Overview_Monsters) (In Progess)
+- [Create / Organize Languages](/ETMEditorTutorials/ETMEditorTutorial_Overview_Languages) (In Progess)
+- [Level](/ETMEditorTutorials/ETMEditorTutorial_Level_Detail_Tab) (In Progess)
 - [Level Settings](/ETMEditorTutorials/ETMEditorTutorial_Level_Settings_Tab)
 - [Tiles, Triggers and Actions](/ETMEditorTutorials/ETMEditorTutorial_Level_Tile_Tab)
-- [Tile Selection](/ETMEditorTutorials/ETMEditorTutorial_Level_Paint_Tab)
-- [Add Monsters to a Level](/ETMEditorTutorials/ETMEditorTutorial_Level_Monster_Tab)
-- [Add GameItems to a Level](/ETMEditorTutorials/ETMEditorTutorial_Level_Item_Tab)
+- [Tile Selection](/ETMEditorTutorials/ETMEditorTutorial_Level_Paint_Tab) (In Progess)
+- [Add Monsters to a Level](/ETMEditorTutorials/ETMEditorTutorial_Level_Monster_Tab) (In Progess)
+- [Add GameItems to a Level](/ETMEditorTutorials/ETMEditorTutorial_Level_Item_Tab) (In Progess)
 
 ### Export Level Pack as JSON
 [JSON Structure](/ETMEditorTutorials/ETM_Export_JSON)
