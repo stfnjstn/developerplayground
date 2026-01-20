@@ -22,10 +22,10 @@ You can choose between a huge monster, placed in the center or small monsters pl
 ## Monster behaviours:
 
 ![Monster behaviour](/assets/ETMEditor/DetailMonsterBehavior.png)
-- _*Stay*_: Stay at this position. Only attack when the party is nearer then the reaction distance.
-- _*Wait*_: Wait at this position until the party is nearer then the reaction distance => Attack and chase the hero.
-- _*Patrol*_: Patrol between 2 Positions until the party is nearer then the reaction distance => Attack and chase the hero.
-- _*Random*_: Move randomly through the maze till the party is nearer then the reaction distance => Attack and chase the hero.
+- ___Stay___: Stay at this position. Only attack when the party is nearer then the reaction distance.
+- ___Wait___: Wait at this position until the party is nearer then the reaction distance => Attack and chase the hero.
+- ___Patrol___: Patrol between 2 Positions until the party is nearer then the reaction distance => Attack and chase the hero.
+- ___Random___: Move randomly through the maze till the party is nearer then the reaction distance => Attack and chase the hero.
 
 ## Add a new monster
 
