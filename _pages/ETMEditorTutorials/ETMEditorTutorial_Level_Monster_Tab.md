@@ -13,22 +13,23 @@ tags: [Games]
 
 ![Detail Monster](/assets/ETMEditor/DetailMonster.png)
 
-### Monster positioning:
+## Monster positioning:
 
 ![Monster positioning](/assets/ETMEditor/DetailMonsterPos.png)
+
 You can choose between a huge monster, placed in the center or small monsters placed in a 4x4 Grid. 
 
-### Monster behaviours:
+## Monster behaviours:
 
 ![Monster behaviour](/assets/ETMEditor/DetailMonsterBehavior.png)
-- _Stay_: Stay at this position. Only attack when the party is nearer then the reaction distance.
-- _Wait_: Wait at this position until the party is nearer then the reaction distance => Attack and chase the hero.
-- _Patrol_: Patrol between 2 Positions until the party is nearer then the reaction distance => Attack and chase the hero.
-- _Random_: Move randomly through the maze till the party is nearer then the reaction distance => Attack and chase the hero.
+- _*Stay*_: Stay at this position. Only attack when the party is nearer then the reaction distance.
+- _*Wait*_: Wait at this position until the party is nearer then the reaction distance => Attack and chase the hero.
+- _*Patrol*_: Patrol between 2 Positions until the party is nearer then the reaction distance => Attack and chase the hero.
+- _*Random*_: Move randomly through the maze till the party is nearer then the reaction distance => Attack and chase the hero.
 
-### Add a new monster
+## Add a new monster
 
-### Edit monster attributes, spells, inventory
+## Edit monster attributes, spells, inventory
 
 Work in Progress!
 <hr>
