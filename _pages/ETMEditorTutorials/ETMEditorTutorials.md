@@ -36,7 +36,7 @@ This tutorial is work in progress and will be improved step by step. If you need
 - [Level Settings](/ETMEditorTutorials/ETMEditorTutorial_Level_Settings_Tab)
 - [Tiles, Triggers and Actions](/ETMEditorTutorials/ETMEditorTutorial_Level_Tile_Tab)
 - [Tile Selection](/ETMEditorTutorials/ETMEditorTutorial_Level_Paint_Tab) (In Progress)
-- [Add Monsters to a Level](/ETMEditorTutorials/ETMEditorTutorial_Level_Monster_Tab) (In Progress)
+- [Add Monsters to a Level](/ETMEditorTutorials/ETMEditorTutorial_Level_Monster_Tab)
 - [Add GameItems to a Level](/ETMEditorTutorials/ETMEditorTutorial_Level_Item_Tab) (In Progress)
 
 ### Export Level Pack as JSON

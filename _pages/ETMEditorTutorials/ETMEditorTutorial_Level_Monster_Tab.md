@@ -12,38 +12,54 @@ tags: [Games]
 ---
 
 
-## Monster positioning:
+## Monster Positioning
 
 ![Monster positioning](/assets/ETMEditor/DetailMonsterPos.png)
 
-You can choose between one huge monster, placed in the center or up to four small monsters placed in a 4x4 Grid. 
+You can choose between two placement options:
+- **One huge monster** placed in the center of the tile
+- **Up to four small monsters** placed in a 4x4 grid 
 
-## Add a new monster
+## Add a New Monster
 
-![Monster Add](/assets/ETMEditor/DetailMonsterSelect0.jpg) | ![Monster Add](/assets/ETMEditor/DetailMonsterSelect1.jpg)
+![Monster Selection](/assets/ETMEditor/DetailMonsterSelect0.jpg) | ![Monster Selection Dialog](/assets/ETMEditor/DetailMonsterSelect1.jpg)
 
-Select a tile which allows monsters, like __empty__, __floor switches__, __closed pits__, ... and click on the __+__ button. The monster selection dialog opens, where you can select a monster.
+To add a monster to your level:
+1. Select a tile that allows monsters (such as __empty__, __floor switches__, __closed pits__, etc.)
+2. Click on the __+__ button
+3. The monster selection dialog will open, allowing you to choose from available monsters
 
-## Select Monster behaviours:
+## Monster Behaviours
 
 ![Monster behaviour](/assets/ETMEditor/DetailMonsterBehavior.png)
-- ___Stay___: Stay at this position. Only attack when the party is nearer then the reaction distance.
-- ___Wait___: Wait at this position until the party is nearer then the reaction distance => Attack and chase the hero.
-- ___Patrol___: Patrol between 2 Positions until the party is nearer then the reaction distance => Attack and chase the hero.
-- ___Random___: Move randomly through the maze till the party is nearer then the reaction distance => Attack and chase the hero.
 
-### Edit monster attributes, spells, inventory
+Choose how your monster behaves in the dungeon:
 
-![Monster Add](/assets/ETMEditor/DetailMonsterStats.jpg) | ![Monster Add](/assets/ETMEditor/DetailMonsterStatsAdd.jpg)
+- **Stay**: Remain at this position. Only attack when the party is nearer than the reaction distance.
+- **Wait**: Wait at this position until the party is nearer than the reaction distance, then attack and chase the hero.
+- **Patrol**: Patrol between two positions until the party is nearer than the reaction distance, then attack and chase the hero.
+- **Random**: Move randomly through the maze until the party is nearer than the reaction distance, then attack and chase the hero.
 
-Here you see the stats of the selected monster.
-At the bottom left you see the inventory of the monster class which means every monster of this type has these items. In the middle you can add specific game items for this monster. At the right you see the magic spells which this monster can cast.
+## Edit Monster Attributes, Spells, and Inventory
 
-### Monster SkillLevel
+![Monster Stats](/assets/ETMEditor/DetailMonsterStats.jpg) | ![Monster Inventory](/assets/ETMEditor/DetailMonsterStatsAdd.jpg)
 
-![Monster Add](/assets/ETMEditor/DetailMonsterSkill.jpg) 
+This screen displays the stats of the selected monster and allows you to customize it:
 
-The skill level provides a quick way to reuse existing monsters with a higher level (Mana, Hitpoints) to avoid the need of creating dozens of monsters. Each skill level increases the monster's hitpoints and mana by 50%. 
+- **Left panel**: Shows the inventory of the monster class. These are default items that every monster of this type carries.
+- **Middle panel**: Add specific game items for this individual monster instance.
+- **Right panel**: View and manage the magic spells this monster can cast.
+
+## Monster Skill Level
+
+![Monster Skill Level](/assets/ETMEditor/DetailMonsterSkill.jpg)
+
+The skill level feature provides a quick way to scale monster difficulty without creating multiple monster variants. Each skill level increase provides:
+
+- **+50% Hitpoints**: Makes the monster more durable in combat
+- **+50% Mana**: Allows the monster to cast more spells
+
+This is particularly useful for creating difficulty progression in later levels, where you can reuse the same monster types but make them significantly more challenging by simply adjusting their skill level. 
 
 <hr>
 **[Back to Tutorial Overview](/ETMEditorTutorials/ETMEditorTutorials)**
