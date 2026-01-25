@@ -113,7 +113,7 @@ For example an _on_enter_ trigger on a floor switch tile calls an _open_ action 
 - ***spawnMonster:***
   A monster will be spawned at the target position. Target psotion and monster must be selected. Behavior is randomChaseRandom which means the monster is wandering around and chases you if you come too close.
 - ***gainExperience:***
-  Used to gain some extra experience points, for example if a riddle is completed. You have to specify the experience points which should be added. Keep in mind to deactive the trigger element ( afloor swicth or whatever). Otherwise the player could level up again and again.
+  Used to gain some extra experience points, for example if a riddle is completed. You have to specify the experience points which should be added. Keep in mind to deactive the trigger element (a floor switch or whatever). Otherwise the player could level up again and again.
 
 ---
 
