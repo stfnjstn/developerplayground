@@ -11,7 +11,6 @@ categories: [Apps]
 tags: [Games]
 ---
 
-![Detail Monster](/assets/ETMEditor/DetailMonsterSingle.png)
 
 ## Monster positioning:
 
@@ -23,7 +22,7 @@ You can choose between one huge monster, placed in the center or up to four smal
 
 ![Monster Add](/assets/ETMEditor/DetailMonsterSelect0.jpg) | ![Monster Add](/assets/ETMEditor/DetailMonsterSelect1.jpg)
 
-Select a tile which allows monsters, like __empty__, __floor switches__, __closed pits__, ... and click on the ___+__ button. The monster selection dialog opens, where you can select a monster.
+Select a tile which allows monsters, like __empty__, __floor switches__, __closed pits__, ... and click on the __+__ button. The monster selection dialog opens, where you can select a monster.
 
 ## Select Monster behaviours:
 
@@ -35,8 +34,16 @@ Select a tile which allows monsters, like __empty__, __floor switches__, __close
 
 ### Edit monster attributes, spells, inventory
 
+![Monster Add](/assets/ETMEditor/DetailMonsterStats.jpg) | ![Monster Add](/assets/ETMEditor/DetailMonsterStatsAdd.jpg)
+
+Here you see the stats of the selected monster.
+At the bottom left you see the inventory of the monster class which means eversy monster of this type has these items. in the middle you can add specific game items for this monster. at the right you see the magic spells which this monster can cast.
+
 ### Monster SkillLevel
 
-Work in Progress!
+![Monster Add](/assets/ETMEditor/DetailMonsterSkill.jpg) 
+
+The skill level provides a quick way to reuse existing monsters with a higher level (Mana, Hitpoints, ) to avoid the need creating dozens of monstes. incres is per 25% per level 
+
 <hr>
 **[Back to Tutorial Overview](/ETMEditorTutorials/ETMEditorTutorials)**
