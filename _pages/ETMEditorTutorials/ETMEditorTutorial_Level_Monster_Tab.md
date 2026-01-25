@@ -37,13 +37,13 @@ Select a tile which allows monsters, like __empty__, __floor switches__, __close
 ![Monster Add](/assets/ETMEditor/DetailMonsterStats.jpg) | ![Monster Add](/assets/ETMEditor/DetailMonsterStatsAdd.jpg)
 
 Here you see the stats of the selected monster.
-At the bottom left you see the inventory of the monster class which means eversy monster of this type has these items. in the middle you can add specific game items for this monster. at the right you see the magic spells which this monster can cast.
+At the bottom left you see the inventory of the monster class which means every monster of this type has these items. In the middle you can add specific game items for this monster. At the right you see the magic spells which this monster can cast.
 
 ### Monster SkillLevel
 
 ![Monster Add](/assets/ETMEditor/DetailMonsterSkill.jpg) 
 
-The skill level provides a quick way to reuse existing monsters with a higher level (Mana, Hitpoints, ) to avoid the need creating dozens of monstes. incres is per 25% per level 
+The skill level provides a quick way to reuse existing monsters with a higher level (Mana, Hitpoints) to avoid the need of creating dozens of monsters. Each skill level increases the monster's hitpoints and mana by 50%. 
 
 <hr>
 **[Back to Tutorial Overview](/ETMEditorTutorials/ETMEditorTutorials)**
