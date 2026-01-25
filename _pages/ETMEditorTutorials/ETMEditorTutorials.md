@@ -38,8 +38,11 @@ This tutorial is work in progress and will be improved step by step. If you need
 - [Tile Selection](/ETMEditorTutorials/ETMEditorTutorial_Level_Paint_Tab) (In Progress)
 - [Add Monsters to a Level](/ETMEditorTutorials/ETMEditorTutorial_Level_Monster_Tab)
 - [Add GameItems to a Level](/ETMEditorTutorials/ETMEditorTutorial_Level_Item_Tab) (In Progress)
+- [Share Level Packs](/ETMEditorTutorials/ETMEditorTutorial_Share_Level_Packs)
 
-### Export Level Pack as JSON
-[JSON Structure](/ETMEditorTutorials/ETM_Export_JSON)
+### Share and Export
+
+
+- [Export Level Pack as JSON](/ETMEditorTutorials/ETM_Export_JSON)
 
    
