@@ -3,8 +3,8 @@ layout: post
 permalink: /escape-the-dungeon-maze-skill-potions/
 title: New Skill Potion System for The Dungeon - Get Out
 description: Introducing a new skill potion system that enhances gameplay with special abilities
-date: 2026-01-27 12:00:00 -0000
-last_modified_at: 2026-01-27 12:00:00 -0000
+date: 2025-01-26 12:00:00 -0000
+last_modified_at: 2026-01-25 12:00:00 -0000
 publish: true
 pin: false
 categories:
