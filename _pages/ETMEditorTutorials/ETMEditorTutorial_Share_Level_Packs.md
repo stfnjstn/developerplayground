@@ -46,7 +46,7 @@ When someone receives your `.etdm` file:
 2. The file uses Apple's URL scheme mechanism to automatically launch "The Dungeon - Get Out"
 3. The game will automatically import the level pack
 4. The imported levels will be ready to play immediately
-5. Start a new game "The Dungeon - Get Out". There you can select the new level pack
+5. When you start a new game, you can select the new level pack
 
 Players can also save the `.etdm` file and import it later by opening it whenever they're ready.
 
