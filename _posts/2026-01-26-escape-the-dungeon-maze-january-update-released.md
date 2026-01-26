@@ -3,8 +3,8 @@ layout: post
 permalink: /escape-the-dungeon-maze-january-update-released/
 title: January 2026 Update Released - Now on Apple Watch!
 description: The January update for The Dungeon - Get Out is now live with Apple Watch support and new features
-date: 2026-01-31 12:00:00 -0000
-last_modified_at: 2026-01-31 12:00:00 -0000
+date: 2026-01-26 16:30:00 -0000
+last_modified_at: 2026-01-26 16:30:00 -0000
 publish: true
 pin: false
 categories:
