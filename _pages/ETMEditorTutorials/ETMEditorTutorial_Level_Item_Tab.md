@@ -36,7 +36,7 @@ Items can be placed on various tile types including:
 - **Floor switches**
 - **Deactivated teleports**
 - **Empty tiles**
-- **Alcoves**
+- **Alcovens**
 - **Chests**
 
 If you see a __+__ button when selecting a tile, that tile type supports item placement.
