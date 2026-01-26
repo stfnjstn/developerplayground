@@ -1,10 +1,10 @@
 ---
 layout: page
 permalink: /ETMEditorTutorials/ETMEditorTutorial_Level_Settings_Tab/
-title: Tutorial - Level Settings
+title: Tutorial - Level Settings & Maze Generator
 description: Level Settings
 date: 2025-01-22 19:02:46 -0000
-last_modified_at: 2025-01-22 22:16:14 -0000
+last_modified_at: 2026-01-26 17:00:00 -0000
 publish: true
 pin: false
 categories: [Apps]

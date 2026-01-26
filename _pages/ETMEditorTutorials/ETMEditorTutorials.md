@@ -33,11 +33,11 @@ This tutorial is work in progress and will be improved step by step. If you need
 - [Create / Organize Monsters](/ETMEditorTutorials/ETMEditorTutorial_Overview_Monsters) (In Progress)
 - [Create / Organize Languages](/ETMEditorTutorials/ETMEditorTutorial_Overview_Languages) (In Progress)
 - [Level](/ETMEditorTutorials/ETMEditorTutorial_Level_Detail_Tab) (In Progress)
-- [Level Settings](/ETMEditorTutorials/ETMEditorTutorial_Level_Settings_Tab)
+- [Level Settings & Maze Generator](/ETMEditorTutorials/ETMEditorTutorial_Level_Settings_Tab)
 - [Tiles, Triggers and Actions](/ETMEditorTutorials/ETMEditorTutorial_Level_Tile_Tab)
 - [Tile Selection](/ETMEditorTutorials/ETMEditorTutorial_Level_Paint_Tab) (In Progress)
 - [Add Monsters to a Level](/ETMEditorTutorials/ETMEditorTutorial_Level_Monster_Tab)
-- [Add GameItems to a Level](/ETMEditorTutorials/ETMEditorTutorial_Level_Item_Tab) (In Progress)
+- [Add GameItems to a Level](/ETMEditorTutorials/ETMEditorTutorial_Level_Item_Tab)
 - [Share Level Packs](/ETMEditorTutorials/ETMEditorTutorial_Share_Level_Packs)
 
 ### Share and Export
