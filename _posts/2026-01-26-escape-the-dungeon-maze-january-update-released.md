@@ -28,7 +28,7 @@ This release includes all the features we've been previewing over the past few w
 
 But this is not the end! There are many more features planned for the future. Expect a new magic system, additional gameplay mechanics, enhanced editor capabilities, and much more with the next update. The adventure is just getting started!
 
-Have fun with the new features, and thank you for playing my game!
+Have fun with the new features, and thank you for playing my game! 
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <div style="text-align: center;">
