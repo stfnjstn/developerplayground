@@ -30,7 +30,7 @@ This tutorial is work in progress and will be improved step by step. If you need
 - [Levelpack Main Screen](/ETMEditorTutorials/ETMEditorTutorial_Overview)
 - [Create / Organize Levels](/ETMEditorTutorials/ETMEditorTutorial_Overview_Levels)
 - [Create / Organize GameItems](/ETMEditorTutorials/ETMEditorTutorial_Overview_Items) (In Progress)
-- [Create / Organize Monsters](/ETMEditorTutorials/ETMEditorTutorial_Overview_Monsters) (In Progress)
+- [Create / Organize Monsters](/ETMEditorTutorials/ETMEditorTutorial_Overview_Monsters)
 - [Create / Organize Languages](/ETMEditorTutorials/ETMEditorTutorial_Overview_Languages)
 - [Level Crafting](/ETMEditorTutorials/ETMEditorTutorial_Level_Detail_Tab)
 - [Level Settings & Maze Generator](/ETMEditorTutorials/ETMEditorTutorial_Level_Settings_Tab)
