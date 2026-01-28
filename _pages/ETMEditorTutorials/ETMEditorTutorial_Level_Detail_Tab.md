@@ -73,7 +73,7 @@ Place and configure individual tiles, set up triggers and actions.
 
 Quickly paint tiles using a tile palette for efficient level building.
 
-[View Tile Selection Tutorial](/ETMEditorTutorials/ETMEditorTutorial_Level_Paint_Tab)
+[View Tile Paint Tutorial](/ETMEditorTutorials/ETMEditorTutorial_Level_Paint_Tab)
 
 ### 4. Monster Placement
 ![Monster Icon](/assets/ETMEditor/DetailMonster.png)

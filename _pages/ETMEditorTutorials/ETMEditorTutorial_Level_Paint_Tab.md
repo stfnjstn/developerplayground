@@ -1,10 +1,10 @@
 ---
 layout: page
 permalink: /ETMEditorTutorials/ETMEditorTutorial_Level_Paint_Tab/
-title: Tutorial - Tile Selection
+title: Tutorial - Tile Paint
 description: Tile Selection
 date: 2025-01-22 19:02:46 -0000
-last_modified_at: 2025-01-22 22:16:14 -0000
+last_modified_at: 2026-01-28 22:16:14 -0000
 publish: true
 pin: false
 categories: [Apps]
@@ -12,7 +12,6 @@ tags: [Games]
 ---
 
 ![Detail Select Tile](/assets/ETMEditor/DetailPaint.png)
-// ToDO: Exchange screenshot use a big one
 
 At the top of the tile cooser at the right side you see the current selected tile type. simply tap in the drawing area on the tile where you want to add the new tile. 
 

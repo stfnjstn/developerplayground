@@ -4,7 +4,7 @@ permalink: /ETMEditorTutorials/ETMEditorTutorials/
 title: Tutorials Dungeon Editor
 description: Editor for The Dungeon - Get Out - Tutorials
 date: 2025-01-22 19:02:46 -0000
-last_modified_at: 2025-01-22 22:16:14 -0000
+last_modified_at: 2026-01-28 22:16:14 -0000
 publish: true
 pin: false
 categories: [Apps]
@@ -35,7 +35,7 @@ This tutorial is work in progress and will be improved step by step. If you need
 - [Level Crafting](/ETMEditorTutorials/ETMEditorTutorial_Level_Detail_Tab)
 - [Level Settings & Maze Generator](/ETMEditorTutorials/ETMEditorTutorial_Level_Settings_Tab)
 - [Tiles, Triggers and Actions](/ETMEditorTutorials/ETMEditorTutorial_Level_Tile_Tab)
-- [Tile Selection](/ETMEditorTutorials/ETMEditorTutorial_Level_Paint_Tab) (In Progress)
+- [Tile Paint](/ETMEditorTutorials/ETMEditorTutorial_Level_Paint_Tab)
 - [Add Monsters to a Level](/ETMEditorTutorials/ETMEditorTutorial_Level_Monster_Tab)
 - [Add GameItems to a Level](/ETMEditorTutorials/ETMEditorTutorial_Level_Item_Tab)
 - [Share Level Packs](/ETMEditorTutorials/ETMEditorTutorial_Share_Level_Packs)
