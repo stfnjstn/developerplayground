@@ -69,7 +69,7 @@ Place and configure individual tiles, set up triggers and actions.
 [View Tiles, Triggers and Actions Tutorial](/ETMEditorTutorials/ETMEditorTutorial_Level_Tile_Tab)
 
 ### 3. Paint Mode
-![Paint Icon](/assets/ETMEditor/DetailPaint.png)
+![Paint Icon](/assets/ETMEditor/DetailPaintSmall.jpg)
 
 Quickly paint tiles using a tile palette for efficient level building.
 
