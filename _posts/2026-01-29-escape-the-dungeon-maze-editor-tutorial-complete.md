@@ -19,7 +19,7 @@ Great news for dungeon creators! The **tutorial for the Dungeon Level Editor** i
   <img src="/assets/2026/02/DetailMainScreen.png" alt="Level Editor Main Screen" style="width: 100%;">
 </div>
 
-The tutorial is integrated directly into the editor - simply open it from within the app, and the relevant help page will be displayed based on what you're currently working on. This context-aware help system makes it easier than ever to learn the editor's features exactly when you need them.
+The tutorial is integrated directly into the editor - simply open it from within the app, and the relevant help page will be displayed based on what you're currently working on. This context-aware help system makes it easier than ever to learn the editor's features exactly when you need them. 
 
 ## Comprehensive Documentation
 
