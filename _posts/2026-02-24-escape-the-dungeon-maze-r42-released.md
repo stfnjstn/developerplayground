@@ -3,8 +3,8 @@ layout: post
 permalink: /escape-the-dungeon-maze-r42-released/
 title: R4.2 Released - Tutorial, Keyboard Support & More
 description: The February 2026 update brings a new tutorial campaign, configurable keyboard support, and editor improvements
-date: 2026-02-28 12:00:00 -0000
-last_modified_at: 2026-02-28 12:00:00 -0000
+date: 2026-02-24 06:00:00 -0000
+last_modified_at: 2026-02-24 06:00:00 -0000
 publish: true
 pin: false
 categories:
