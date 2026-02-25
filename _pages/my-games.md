@@ -68,7 +68,7 @@ Supports iCloud for multiple platforms: Start on your iPhone or iPad and continu
 
 **Supported platforms:** iPhone, iPad, Apple Watch, Mac
 
-**First Release:** 05/2020, **Last Update:** 02/2026, **Current version:** 4.2
+**First Release:** 05/2020, **Last Update:** 02/2026, **Current version:** 4.2.1
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <div style="text-align: center;">
