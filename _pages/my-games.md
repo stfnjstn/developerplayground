@@ -66,7 +66,7 @@ Supports iCloud for multiple platforms: Start on your iPhone or iPad and continu
 
 **[Tutorials & Productpage](/etdm)**
 
-**Supported platforms:** iPhone, iPad, Apple Watch, Mac
+**Supported platforms:** iPhone, iPad, Apple Watch, Mac, (AppleTV soon)
 
 **First Release:** 05/2020, **Last Update:** 02/2026, **Current version:** 4.2.1
 
