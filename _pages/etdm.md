@@ -24,7 +24,8 @@ The only way out is forward. Survive the maze, uncover the truth, and perhaps—
 
 
 ![ETM9](/assets/games/ETM/ETM0.png)| ![ETM10](/assets/games/ETM/ETM1.png) 
-![ETM11](/assets/games/ETM/ETM2.png)| ![ETM12](/assets/games/ETM/ETM3.png) 
+![ETM11](/assets/games/ETM/ETM2.png)| ![ETM12](/assets/games/ETM/ETM3.png)
+![ETM1TV0](/assets/games/ETM/ETMTV0.png)| ![ETMTV2](/assets/games/ETM/ETMTV1.png)  
 
 
 This tutorial is work in progress and will be improved step by step. If you need help on a not documented part, please send me an email. I'm happy to help.
