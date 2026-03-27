@@ -4,7 +4,7 @@ permalink: /ETMEditorTutorials/ETMEditorTutorial_Level_Tile_Tab/
 title: Tutorial - Tiles, Triggers and Actions
 description: Tiles, Triggers and Actions
 date: 2025-01-22 19:02:46 -0000
-last_modified_at: 2025-01-22 22:16:14 -0000
+last_modified_at: 2026-03-27 19:00:0 -0000
 publish: true
 pin: false
 categories: [Apps]
@@ -45,6 +45,11 @@ Some tiles like a door with a key lock requires the use of a specific item to op
 
 ![Tile Item](/assets/ETMEditor/TileItem.png)
 
+### Torches shadow priority: <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R4.4</span>
+Torches have a property if they should cast shadows or not. Due to limitations of SceneKit the number of torches casting shadows is limited. The number is calculated during runtime, depending on platform and how modern the device is. You can specify up to 3 torches in the editor with a priority. 
+Supported shadow torches per platform: Apple Watch: 0, Apple TV 0-1, Mac, iPhone, iPad: 0-3
+
+![Tile Torch Shadow](/assets/ETMEditor/TileTorchShadowPrio.jpg)
 
 ---
 
