@@ -3,8 +3,8 @@ layout: post
 permalink: /escape-the-dungeon-maze-illumination-overhaul/
 title: Fixing a Months-Long Lighting Bug - New Illumination System
 description: How I finally tracked down a non-deterministic torch shadow bug in Escape The Dungeon Maze and rebuilt the entire illumination system
-date: 2026-03-27 18:00:00 -0000
-last_modified_at: 2026-03-27 18:00:00 -0000
+date: 2026-03-27 17:00:00 -0000
+last_modified_at: 2026-03-27 17:00:00 -0000
 publish: true
 pin: false
 categories:
