@@ -40,6 +40,16 @@ This tutorial is work in progress and will be improved step by step. If you need
 - [Add GameItems to a Level](/ETMEditorTutorials/ETMEditorTutorial_Level_Item_Tab)
 - [Share Level Packs](/ETMEditorTutorials/ETMEditorTutorial_Share_Level_Packs)
 
+<div style="display: flex; justify-content: space-around; align-items: center;">
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/app/etdm-level-editor/id1561041898">
+      <img src="/assets/Download.svg" alt="Download">
+    </a>
+    <p></p>
+  </div>
+  <div></div>
+</div>
+
 ### Share and Export
 
 - [Export Level Pack as JSON](/ETMEditorTutorials/ETM_Export_JSON)
