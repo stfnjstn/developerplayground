@@ -60,6 +60,14 @@ Unfortunately both platforms have no files app or Airdrop. Therefore deploying i
 4. Open the game on AppleTV or Watch
 5. Load the game from cloud target
 
+### Import into editor
+
+![Editor Import](/assets/ETMEditor/ImportLevelPack.png)
+
+You can also import a levelpack into the level editor by touching the import button and choose the file in the files app. 
+
+
+
 
 ## JSON Export (Advanced)
 
