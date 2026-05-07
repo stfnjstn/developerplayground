@@ -56,7 +56,7 @@ Unfortunately both platforms have no files app or Airdrop. Therefore deploying i
 
 1. Import the levelpack on Mac, iPad or Iphone as described above.
 2. Start a new game for your levelpack
-3. Save the game an choose cloud as target (the switch top right)
+3. Save the game and choose cloud as target (the switch top right)
 4. Open the game on AppleTV or Watch
 5. Load the game from cloud target
 
