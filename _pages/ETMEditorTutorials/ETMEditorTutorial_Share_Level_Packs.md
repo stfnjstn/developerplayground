@@ -68,18 +68,5 @@ You can also import a levelpack into the level editor by touching the import but
 
 
 
-
-## JSON Export (Advanced)
-
-For advanced users who want to edit level packs programmatically:
-
-1. Export your level pack as usual (creates a `.etdm` file)
-2. Rename the file extension from `.etdm` to `.json`
-3. Edit the JSON file with your favorite code editor
-4. Make your changes following the JSON structure
-5. Rename back to `.etdm` to use in the game
-
-For details on the JSON structure and available fields, see the [JSON Export documentation](/ETMEditorTutorials/ETM_Export_JSON).
-
 <hr>
 **[Back to Tutorial Overview](/ETMEditorTutorials/ETMEditorTutorials)**
