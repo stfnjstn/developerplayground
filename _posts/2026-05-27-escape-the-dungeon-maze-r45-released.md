@@ -3,7 +3,7 @@ layout: post
 permalink: /escape-the-dungeon-maze-r45-released/
 title: R4.5 Released - Wearables, Weight System & Drag and Drop Improvements
 description: The May 2026 update brings a new wearable item type, a weight system, a refactored action bar, and major Drag & Drop improvements
-date: 2026-05-28 12:00:00 -0000
+date: 2026-05-27 12:00:00 -0000
 last_modified_at: 2026-05-27 12:00:00 -0000
 publish: true
 pin: false
