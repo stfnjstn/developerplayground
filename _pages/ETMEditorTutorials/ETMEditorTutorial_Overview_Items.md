@@ -4,7 +4,7 @@ permalink: /ETMEditorTutorials/ETMEditorTutorial_Overview_Items/
 title: Tutorial - Create / Organize GameItems
 description: Create / Organize GameItems
 date: 2025-01-22 19:02:46 -0000
-last_modified_at: 2026-01-28 22:16:14 -0000
+last_modified_at: 2026-05-27 00:00:00 -0000
 publish: true
 pin: false
 categories: [Apps]
@@ -39,8 +39,7 @@ The Level Editor supports several types of game items:
 - **Food**: Restore health and provide sustenance
 - **Scrolls**: Display text messages or teach magic spells
 - **Potions**: Provide temporary buffs, permanent upgrades, or healing effects
-
-**Note**: Weapons and armor are planned for future updates!
+- **Wearables**: Armor and clothing that grant defense and stat bonuses while equipped
 
 ### Filter Bar
 
@@ -54,30 +53,41 @@ To create a custom item:
 
 1. Click the **+** button at the top of the item list
 2. The item detail screen will open
-3. Select the item type and configure all properties
+3. Select the item type and configure all properties (including **weight**, which affects how much the player can carry)
 4. Save your new item
+
+If you have a filter active when you press **+**, the new item is pre-set to that filtered type — so creating several food items in a row no longer means switching the type every time.
 
 To delete a custom item, swipe left on an item row and tap delete. **Note**: Only custom items can be deleted; built-in items are permanent.
 
-## Tinting System
+## Live 3D Preview
 
-One of the most powerful features in the item system is **tinting** - the ability to create unlimited visual variations from a single 3D model by applying different colors.
+The item detail screen includes a live 3D preview alongside the icon thumbnail:
 
-### How Tinting Works
+- **Tap the preview** to switch to a different 3D model variant for the current item type
+- **Tap the expand button** in the corner to inspect the model in fullscreen (rotate and zoom freely)
+- Any change you make to materials, textures or the icon is reflected immediately in both the preview and the icon thumbnail
 
-For tintable items (like potions and keys), you can customize:
-- **Primary color**: Main body color
-- **Secondary color**: Accent details
-- **Tertiary color**: Additional highlights (model-dependent)
+## Materials System
 
-This means you can create countless unique items from one 3D model. For example:
+Each item's surfaces are described by a **materials** list. The number of material slots depends on the 3D model (most have 1, some — like bottles, flasks and gem keys — have 2). The segmented control above the editor lets you switch between slots when more than one is available.
+
+Each material exposes the following properties:
+
+- **Texture**: An image map applied to the surface (only available for models that ship with textures, such as scrolls, apples and bread).
+- **Tint Color**: A color applied to the material. On models with a tintable texture this is multiplied over the texture, letting you recolor textured items (e.g. a red, green or golden apple). On models without a texture it is used as the flat surface color.
+- **Roughness** (0–1): How matte vs. glossy the surface looks.
+- **Metalness** (0–1): How metallic the surface looks — useful for keys, weapons and armor.
+- **Opacity** (0–1): How transparent the material is — useful for liquids inside potion flasks.
+
+Texture and Tint Color are independent and can be combined on the same material. Use the **×** button next to either to clear it.
+
+### What This Enables
+
 - Multiple colored keys for complex puzzles
-- Different colored potions for various effects
-- Visually distinct food items
-
-### Non-Tintable Items
-
-Some items like scrolls and bread use fixed textures instead of tinting. For these items, you select the texture rather than choosing colors.
+- Different colored potions, flasks and liquids for various effects
+- Tinted variations of textured items (red apple, green apple, golden apple, …)
+- Metallic, glossy or matte finishes per material slot
 
 ## Icon Selection
 
@@ -93,8 +103,8 @@ When creating an item, choose an icon that represents it in the game inventory. 
 Keys are essential for dungeon puzzles. The key system uses the tinting feature to create color-coded matching:
 
 ### Creating Custom Keys
-- Select the key 3D model
-- Choose up to 3 colors for the key
+- Select the key 3D model (regular keys have 1 material slot, gem keys have 2)
+- Pick a tint color per material slot — and optionally raise metalness for a metallic look
 - Give the key a descriptive name
 - The key will only open doors/chests with matching colors
 
@@ -113,7 +123,7 @@ Food items restore the player's health and provide strategic healing opportuniti
 
 ### Creating Custom Food
 - Select a food 3D model (bread, apples, meat, etc.)
-- Choose texture or colors depending on the model
+- Pick a texture (where available) and/or a tint color — combining both lets you recolor textured foods (e.g. a red, green or golden apple)
 - Set the healing amount
 - Give it a descriptive name
 
@@ -192,12 +202,27 @@ These provide time-limited enhancements:
 
 ### Creating Custom Potions
 1. Select the potion 3D model
-2. Choose colors using the tinting system
-3. Select potion type (Restore, Permanent, or Temporary)
-4. Configure the effect and duration (for temporary)
-5. Name the potion to reflect its effect
+2. Set the **liquid** material (slot 1) — tint color, and lower the opacity for a translucent look
+3. Set the **glass / cap** material (slot 2) — typically a brown or metallic tint
+4. Select potion type (Restore, Permanent, or Temporary)
+5. Configure the effect and duration (for temporary)
+6. Name the potion to reflect its effect
 
+## Custom Wearables
 
+Wearables are armor and clothing pieces the player can equip for protection and stat bonuses.
+
+### Creating Custom Wearables
+- Pick the wearable type (helmet, armor, boots, etc.)
+- Choose the 3D model and customize its materials — raising **metalness** is handy for plate armor, while higher **roughness** suits leather or cloth
+- Configure the bonuses the wearable grants: armor value, hitpoints, stamina, mana, attribute increases and elemental resistances
+- Restrict the wearable to specific character classes (Fighter, Hunter, Priest, Mage) if needed
+- Give it a descriptive name
+
+**Design Tips**:
+- Use light cloth wearables as early-game finds, heavier armor as late-game rewards
+- Class-restricted gear encourages party diversity
+- Combine an armor bonus with elemental resistances for boss-prep items
 
 ## Using Items in Your Levels
 
