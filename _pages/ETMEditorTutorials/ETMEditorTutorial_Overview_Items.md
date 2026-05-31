@@ -68,6 +68,8 @@ The item detail screen includes a live 3D preview alongside the icon thumbnail:
 - **Tap the expand button** in the corner to inspect the model in fullscreen (rotate and zoom freely)
 - Any change you make to materials, textures or the icon is reflected immediately in both the preview and the icon thumbnail
 
+![3D Preview](/assets/ETMEditor/3DPreview.png)
+
 ## Materials System
 
 Each item's surfaces are described by a **materials** list. The number of material slots depends on the 3D model (most have 1, some — like bottles, flasks and gem keys — have 2). The segmented control above the editor lets you switch between slots when more than one is available.
@@ -97,8 +99,7 @@ When creating an item, choose an icon that represents it in the game inventory. 
 - When items are displayed on the ground
 
 ## Custom Keys
-
-![Custom Keys](/assets/ETMEditor/Items2Keys.jpg)
+![Custom Keys](/assets/ETMEditor/Items2Keys.png)
 
 Keys are essential for dungeon puzzles. The key system uses the tinting feature to create color-coded matching:
 
@@ -116,8 +117,7 @@ Keys are essential for dungeon puzzles. The key system uses the tinting feature 
 **Tip**: Use consistent color schemes across your level pack so players can recognize key-lock relationships at a glance.
 
 ## Custom Food Items
-
-![Custom Food](/assets/ETMEditor/Items3Food.jpg)
+![Custom Food](/assets/ETMEditor/Items3Food.png)
 
 Food items restore the player's health and provide strategic healing opportunities.
 
@@ -134,8 +134,7 @@ Food items restore the player's health and provide strategic healing opportuniti
 - Consider food as monster drops for sustained exploration
 
 ## Custom Scrolls
-
-![Custom Scrolls](/assets/ETMEditor/Items4Scrolls.jpg)
+![Custom Scrolls](/assets/ETMEditor/Items4Scrolls.png)
 
 Scrolls serve two purposes in the game:
 
@@ -167,8 +166,7 @@ These display custom text messages to the player. Perfect for:
 Potions add strategic depth with three distinct types:
 
 ### Restore Potions (One-Time Use)
-
-![Restore Potions](/assets/ETMEditor/Items5PotionRestore.jpg)
+![Restore Potions](/assets/ETMEditor/Items5PotionRestore.png)
 
 These provide immediate effects and are consumed:
 - **Healing potions**: Restore hitpoints
@@ -178,8 +176,7 @@ These provide immediate effects and are consumed:
 **Use Cases**: Emergency healing, preparing for boss fights, recovering after combat
 
 ### Permanent Potions
-
-![Permanent Potions](/assets/ETMEditor/Items5PotionPermanent.jpg)
+![Permanent Potions](/assets/ETMEditor/Items5PotionPermanent.png)
 
 These provide lasting upgrades like:
 - **Stat increases**: Permanently boost strength, defense, etc.
@@ -189,8 +186,7 @@ These provide lasting upgrades like:
 **Use Cases**: Character progression rewards, hidden treasures, quest completion bonuses
 
 ### Temporary Potions (Buffs)
-
-![Temporary Potions](/assets/ETMEditor/Items5PotionTemp.jpg)
+![Temporary Potions](/assets/ETMEditor/Items5PotionTemp.png)
 
 These provide time-limited enhancements:
 - **Strength buffs**: Increased attack power for a duration
@@ -213,6 +209,8 @@ These provide time-limited enhancements:
 Wearables are armor and clothing pieces the player can equip for protection and stat bonuses.
 
 ### Creating Custom Wearables
+![Wearables](/assets/ETMEditor/Items6Wearables.png)
+
 - Pick the wearable type (helmet, armor, boots, etc.)
 - Choose the 3D model and customize its materials — raising **metalness** is handy for plate armor, while higher **roughness** suits leather or cloth
 - Configure the bonuses the wearable grants: armor value, hitpoints, stamina, mana, attribute increases and elemental resistances
