@@ -23,7 +23,7 @@ Gear up your heroes for the dungeon! This release introduces a complete equipmen
   <img src="/assets/2026/06/IMG_7061.PNG" alt="Visual equipment screen with armor and accessories equipped" style="width: 100%;">
 </div>
 
-A brand new **equipment system** lets you outfit each hero with armor and accessories: helmets, body armor, gloves, leg armor, boots, shields, rings and necklaces. Every piece of gear boosts your heroes' stats, so you can plan the perfect loadout for the dangers ahead.
+A brand new **equipment system** lets you outfit each hero with armor and accessories: helmets, body armor, gloves, leg armor, boots, shields, rings and necklaces. Every piece of gear boosts your heroes' stats, so you can plan the perfect loadout for the dangers ahead of you.
 
 The new **visual equipment screen** shows detailed item info, and you can drag and drop to equip and unequip items. Discover new armor, weapons and treasure hidden throughout the maze — and enjoy the adventure on iPhone, iPad, Mac, Apple TV and Apple Watch.
 
