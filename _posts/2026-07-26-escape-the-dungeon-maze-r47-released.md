@@ -3,8 +3,8 @@ layout: post
 permalink: /escape-the-dungeon-maze-r47-released/
 title: R4.7 Released - Weapon Damage System, Career Bonuses & New Weapons
 description: The July 2026 update brings a full weapon damage system, career bonuses while equipped, combat rebalancing, and a wave of new weapons in both the game and the Level Editor
-date: 2026-07-30 12:00:00 -0000
-last_modified_at: 2026-07-30 12:00:00 -0000
+date: 2026-07-26 12:00:00 -0000
+last_modified_at: 2026-07-26 06:00:00 -0000
 publish: true
 pin: false
 categories:
