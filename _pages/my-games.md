@@ -36,7 +36,7 @@ Download now and start exploring the world of theoretical computing!
 
 **Supported platforms:** iPhone, iPad
 
-**First Release:** 02/2025, **Last Update:** 03/2025, **Current version:** 1.6
+**First Release:** 02/2025, **Last Update:** 07/2026, **Current version:** 1.7
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <div style="text-align: center;">
@@ -68,7 +68,7 @@ Supports iCloud for multiple platforms: Start on your iPhone or iPad and continu
 
 **Supported platforms:** iPhone, iPad, Apple Watch, Mac, AppleTV
 
-**First Release:** 05/2020, **Last Update:** 06/2026, **Current version:** 4.7
+**First Release:** 05/2020, **Last Update:** 07/2026, **Current version:** 4.7
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <div style="text-align: center;">
@@ -115,7 +115,7 @@ Ever dreamed about creating your own dungeon and play it in a 3D Game? Let's sta
 
 ![Editor](/assets/ETMEditor/DetailMain.png) | ![ETM10](/assets/games/ETM/LevelEditor0.png) 
 
-**First Release:** 04/2021, **Last Update:** 06/2026, **Current version:** 4.7
+**First Release:** 04/2021, **Last Update:** 07/2026, **Current version:** 4.7
 
 ---
 
@@ -136,7 +136,7 @@ Download now and dive into the ultimate arcade experience, wherever you go!
 
 **Supported platforms:** iPhone, iPad, AppleTV, Apple Watch, Mac
 
-**First Release:** 04/2016, **Last Update:** 11/2024, **Current version:** 8.0
+**First Release:** 04/2016, **Last Update:** 08/2026, **Current version:** 8.1
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <div style="text-align: center;">
@@ -206,7 +206,7 @@ Apple Watch Version available
 
 **Supported platforms:** iPhone, iPad, AppleTV, Apple Watch, Mac
 
-**First Release:** 06/2015, **Last Update:** 01/2025, **Current version:** 8.0
+**First Release:** 06/2015, **Last Update:** 08/2026, **Current version:** 8.1
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <div style="text-align: center;">
