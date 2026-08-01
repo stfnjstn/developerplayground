@@ -167,7 +167,7 @@ Try to survive as long as possible. A laser is moving down to destroy your ship.
 
 **Supported platforms:** iPhone, iPad, AppleTV, Apple Watch, Mac
 
-**First Release:** 10/2015, **Last Update:** 11/2024, **Current version:** 3.0
+**First Release:** 10/2015, **Last Update:** 08/2026, **Current version:** 3.1
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <div style="text-align: center;">
@@ -245,7 +245,7 @@ Probably not one of the best games available in the AppStore, but developed comp
 
 **Supported platforms:** iPhone, iPad, AppleTV, Apple Watch, Mac
 
-**First Release:** 01/2015, **Last Update:** 10/2024, **Current version:** 8.1
+**First Release:** 01/2015, **Last Update:** 08/2026, **Current version:** 8.2
 
 Related GameDev Tutorials: [SpriteKit & Swift](https://developerplayground.net)
 
