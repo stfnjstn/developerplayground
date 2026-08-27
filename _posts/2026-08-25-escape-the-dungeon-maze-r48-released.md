@@ -3,8 +3,8 @@ layout: post
 permalink: /escape-the-dungeon-maze-r48-released/
 title: R4.8 Released - Bows, Crossbows, Throwable Ammo & Glowing Items
 description: The August 2026 update brings ranged combat to the maze with seven distance weapons, five kinds of ammo, skill-driven throwing, glowing items, and the Level Editor tools to build them all
-date: 2026-08-30 12:00:00 -0000
-last_modified_at: 2026-08-30 12:00:00 -0000
+date: 2026-08-27 10:00:00 -0000
+last_modified_at: 2026-08-27 10:00:00 -0000
 publish: true
 pin: false
 categories:
