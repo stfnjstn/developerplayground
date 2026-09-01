@@ -35,7 +35,7 @@ Key Features:
 
 **Supported platforms:** iPhone, iPad, Apple Watch, Mac, AppleTV
 
-**First Release:** 09/2026, **Last Update:** 09/2026, **Current version:** 1.0
+**First Release:** 08/2026, **Last Update:** 08/2026, **Current version:** 1.0
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <div style="text-align: center;">
