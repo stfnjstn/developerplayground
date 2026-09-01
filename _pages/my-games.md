@@ -17,6 +17,47 @@ The Lite version is free but supported by AdMob ads, which may involve tracking 
 
 For a better experience, consider the paid version! It’s ad-free, collects no data, and costs less than a single cup of coffee.
 
+## The Last F(l)ight Home (Lite):
+
+Arcade side-scrolling space shooter. You sit in the cockpit of a lone fighter with a very long way still to go: you fly right, the world scrolls past, and none of it wants to let you through — canyon walls closing in, gun turrets dug into the rock, crawlers working along the floor and the ceiling, and squadrons coming at you out of the distance.
+
+Ten hand-built levels, getting quicker as you go, each one ending at a boss that has to be learned before it can be beaten. Shoot the right things and you fly on stronger: rapid fire, a double and a triple shot, a rear gun, a laser, a shield, a spare ship.
+
+Key Features:
+- Ten hand-built levels, each with a boss at the end
+- Eleven power-ups that change the way the ship fights
+- Three settings, Easy to Hard, each keeping its own best score
+- Game Center leaderboards, one for every setting
+- One-finger control: you steer, the guns fire themselves
+- Digital Crown on the watch, Siri Remote on the TV, game controllers and keyboard everywhere else
+
+**[Release Post](/the-last-flight-home-released/)**
+
+**Supported platforms:** iPhone, iPad, Apple Watch, Mac, AppleTV
+
+**First Release:** 09/2026, **Last Update:** 09/2026, **Current version:** 1.0
+
+<div style="display: flex; justify-content: space-around; align-items: center;">
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/us/app/the-last-f-l-ight-home/id6803927075">
+      <img src="/assets/Download.svg" alt="Download">
+    </a>
+    <p>Lite Version</p>
+  </div>
+  <div style="text-align: center;">
+    <a href="https://apps.apple.com/us/app/the-last-f-l-ight-home/id6803927075">
+      <img src="/assets/Download.svg" alt="Download" >
+    </a>
+    <p>Full Version</p>
+  </div>
+  <div></div>
+</div>
+
+![TLFH0](/assets/games/TLFH/TLFH_02_FullyArmed.png)| ![TLFH1](/assets/games/TLFH/TLFH_04_DeepRun.png)
+![TLFHWatch0](/assets/games/TLFH/TLFHWatch_01_StartScreen.png)| ![TLFHWatch1](/assets/games/TLFH/TLFHWatch_03_Firefight.png)
+
+---
+
 ## Another Turing Machine (Lite):
 
 Unlock the power of computation with this Turing Machine, a fully featured Turing machine simulator designed for learning, experimentation, and analysis.
