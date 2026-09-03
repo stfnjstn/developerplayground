@@ -39,13 +39,13 @@ Key Features:
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <div style="text-align: center;">
-    <a href="https://apps.apple.com/us/app/the-last-f-l-ight-home/id6803927075">
+    <a href="https://apps.apple.com/app/the-last-f-l-ight-home-lite/id6803927655">
       <img src="/assets/Download.svg" alt="Download">
     </a>
     <p>Lite Version</p>
   </div>
   <div style="text-align: center;">
-    <a href="https://apps.apple.com/us/app/the-last-f-l-ight-home/id6803927075">
+    <a href="https://apps.apple.com/app/the-last-f-l-ight-home/id6803927075">
       <img src="/assets/Download.svg" alt="Download" >
     </a>
     <p>Full Version</p>
