@@ -1,5 +1,5 @@
 ---
-permalink: /app-ads.txt
+permalink: /my-games/app-ads.txt
 ---
 
 google.com, pub-7702109245205594, DIRECT, f08c47fec0942fa0
