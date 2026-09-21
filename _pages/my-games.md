@@ -109,7 +109,7 @@ Supports iCloud for multiple platforms: Start on your iPhone or iPad and continu
 
 **Supported platforms:** iPhone, iPad, Apple Watch, Mac, AppleTV
 
-**First Release:** 05/2020, **Last Update:** 08/2026, **Current version:** 4.8
+**First Release:** 05/2020, **Last Update:** 09/2026, **Current version:** 4.9
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <div style="text-align: center;">
@@ -144,6 +144,8 @@ Ever dreamed about creating your own dungeon and play it in a 3D Game? Let's sta
 
 **[Tutorials & Productpage](/ETMEditorTutorials/ETMEditorTutorials)**
 
+> **Hint:** This standalone editor app will continue to be developed. However, the very same editor is now also embedded directly in the **The Dungeon - Get Out** app, available as an in-app purchase. I recommend using the embedded editor, as you can create, edit and play your levels in one app without switching.
+
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <div style="text-align: center;">
     <a href="https://apps.apple.com/app/etdm-level-editor/id1561041898">
@@ -154,9 +156,9 @@ Ever dreamed about creating your own dungeon and play it in a 3D Game? Let's sta
   <div></div>
 </div>
 
-![Editor](/assets/ETMEditor/DetailMain.png) | ![ETM10](/assets/games/ETM/LevelEditor0.png) 
+![Editor](/assets/ETMEditor/DetailMain.jpg) | ![ETM10](/assets/games/ETM/LevelEditor0.png) 
 
-**First Release:** 04/2021, **Last Update:** 08/2026, **Current version:** 4.8
+**First Release:** 04/2021, **Last Update:** 09/2026, **Current version:** 4.9
 
 ---
 

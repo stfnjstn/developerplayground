@@ -10,3 +10,4 @@ CLAUDE.md
 .claude/
 *claude*
 post_input_no_git
+assets/.DS_Store

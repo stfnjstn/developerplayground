@@ -4,7 +4,7 @@ permalink: /ETMEditorTutorials/ETMEditorTutorial_Level_Item_Tab/
 title: Tutorial - Add GameItems to a Level
 description: Add GameItems to a Level
 date: 2025-01-22 19:02:46 -0000
-last_modified_at: 2025-01-22 22:16:14 -0000
+last_modified_at: 2026-09-13 12:00:00 -0000
 publish: true
 pin: false
 categories: [Apps]
@@ -25,7 +25,7 @@ You can choose between 5 different placement positions on a tile:
 - **Bottom Left**: Places the item in the lower left corner
 - **Bottom Right**: Places the item in the lower right corner
 
-Multiple items can be placed on the same tile, either at the same position or distributed across different positions.
+Multiple items can be placed on the same tile, either at the same position or distributed across different positions. The first button of the position bar shows the items of **all** positions; to add an item, select the position it should go to. Tiles that hold their items in one spot (alcovens, chests) have no position bar.
 
 ## Add an Item
 
@@ -39,7 +39,7 @@ Items can be placed on various tile types including:
 - **Alcovens**
 - **Chests**
 
-If you see a __+__ button when selecting a tile, that tile type supports item placement.
+If you see a __+__ button after selecting a tile and a position, that tile type supports item placement.
 
 ### Item Selection
 

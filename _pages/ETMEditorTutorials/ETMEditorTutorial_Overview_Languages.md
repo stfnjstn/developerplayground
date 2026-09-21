@@ -4,14 +4,14 @@ permalink: /ETMEditorTutorials/ETMEditorTutorial_Overview_Languages/
 title: Tutorial - Create / Organize Languages
 description: Create / Organize Languages
 date: 2025-01-22 19:02:46 -0000
-last_modified_at: 2026-01-28 22:16:14 -0000
+last_modified_at: 2026-09-13 12:00:00 -0000
 publish: true
 pin: false
 categories: [Apps]
 tags: [Games]
 ---
 
-![Overview Languages](/assets/ETMEditor/OverviewLanguages.png)
+![Overview Languages](/assets/ETMEditor/OverviewLanguages.jpg)
 
 The Language feature allows you to localize your level pack for players around the world. By adding translations, you can make your dungeons accessible to a global audience. The localization system is designed to be simple and efficient, focusing on the most important text elements that players will encounter.
 
@@ -34,7 +34,7 @@ To add a new language to your level pack:
 
 1. Open the **Languages** tab in the level pack overview
 2. Click the **+** button to add a new language
-3. Select the language you want to add from the language picker
+3. Select the language you want to add from the language picker — the list shows every language by its own name and code, and the search field filters it
 4. The new language will appear in the overview list
 
 Once added, the language will be available for translation in your level pack.
@@ -51,23 +51,18 @@ To translate content for a specific language:
 
 ### Translation Interface
 
-For each translatable element, you'll see two rows:
+Each translatable element is one row with two lines:
 
-- **First Row (English)**: The original text in English (default language)
-- **Second Row (Translation)**: The currently used translated text
+- **Small line (English)**: The original text in English (default language)
+- **Text field (Translation)**: The translation, editable in place
 
 If no translation has been entered, the English version will be used as the default fallback.
 
 ### Enter a Translation
 
-To add or edit a translation:
+Simply type into the row's text field. There is nothing to confirm: the translation is applied as you type and stored with the level pack when you save it. Clearing a field leaves the previous translation in place, so an accidental delete does not wipe a good value.
 
-1. Tap on the element you want to translate
-2. A text input field will appear at the top of the screen
-3. Enter your translation in the selected language
-4. Confirm or save the translation
-
-The translation will be stored and used in-game when a player selects that language.
+The translation is used in-game when a player selects that language.
 
 <hr>
 **[Back to Tutorial Overview](/ETMEditorTutorials/ETMEditorTutorials)**

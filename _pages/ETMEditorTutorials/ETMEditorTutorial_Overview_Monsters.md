@@ -4,7 +4,7 @@ permalink: /ETMEditorTutorials/ETMEditorTutorial_Overview_Monsters/
 title: Tutorial - Create / Organize Monsters
 description: Create / Organize Monsters
 date: 2025-01-22 19:02:46 -0000
-last_modified_at: 2026-01-28 22:16:14 -0000
+last_modified_at: 2026-09-13 12:00:00 -0000
 publish: true
 pin: false
 categories: [Apps]
@@ -33,7 +33,7 @@ You have two options when working with monsters:
 
 ## Monster Overview List
 
-![Overview Monsters](/assets/ETMEditor/OverviewMonsters.png)
+![Overview Monsters](/assets/ETMEditor/OverviewMonsters.jpg)
 
 The overview screen displays all available monsters for your level pack. You can see:
 - Monster name
@@ -48,13 +48,13 @@ To create a custom monster:
 1. Click the **+** button at the top of the monster list
 2. The monster detail screen will open
 3. Configure all monster properties (described below)
-4. Save your new monster
+4. Close the editor — every change is applied immediately; save the level pack to keep it
 
 To delete a custom monster, swipe left on a monster row and tap delete. **Note**: Only custom monsters can be deleted; built-in monsters are permanent.
 
 ## Configure Monster Properties
 
-![Overview Monsters Details](/assets/ETMEditor/OverviewMonstersDetail.png)
+![Overview Monsters Details](/assets/ETMEditor/OverviewMonstersDetail.jpg)
 
 When creating or editing a custom monster, you can configure the following properties:
 
@@ -76,9 +76,13 @@ Customize your monster's appearance by choosing color(s). Depending on the selec
 
 ### Monster Stats
 
-Configure the combat statistics for your monster
+Configure the combat statistics for your monster:
 
+- **Hitpoints**, **Mana**, **Stamina**: The monster's pools
+- **Strength**, **Dexterity**, **Wizardry**, **Faith**: Its attributes for melee, ranged and magic attacks
 - **Speed**: How fast the monster moves and attacks
+- **Armor**: Reduces the damage it takes
+- **Resist Fire / Air / Earth / Water (%)**: How well it withstands spells of each element — including the haunting spells, whose chance to freeze, frighten or poison the monster drops with its resistance
 
 **Balance Tip**: Early-level monsters should have lower stats, gradually increasing for later levels to create proper difficulty progression.
 
@@ -86,7 +90,7 @@ Configure the combat statistics for your monster
 
 Add items that the monster drops when defeated:
 
-![Monster Inventory](/assets/ETMEditor/DetailMonsterStatsAdd.jpg)
+![Monster Inventory](/assets/ETMEditor/OverviewMonsterItemAdd.jpg)
 
 - **Generic items**: Food, potions, or treasure that all monsters of this type drop
 - **Common drops**: Items players can expect to receive regularly

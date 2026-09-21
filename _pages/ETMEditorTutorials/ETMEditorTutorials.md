@@ -22,12 +22,24 @@ Let your imagination run wild and create the ultimate RPG dungeon experience tod
 
 This tutorial is work in progress and will be improved step by step. If you need help on a not documented part, please send me an email. I'm happy to help.
 
+## Starting the Editor
+
+The editor can be used in two ways:
+
+| Standalone app | Inside the game |
+|:---:|:---:|
+| Start the **Dungeon Editor** app from your home screen. | Open **The Dungeon - Get Out** and tap **Level Editor** in the main menu. |
+![App](/assets/ETMEditor/EditorAppIcon.jpg) | ![Integrated in Game](/assets/ETMEditor/InGameMenu.jpg)
+
+> **Hint:** The standalone editor app will continue to be developed. However, the very same editor is now also embedded directly in the **The Dungeon - Get Out** app, available as an in-app purchase. We recommend using the embedded editor, as you can create, edit and play your levels in one app without switching.
+
 ### Videos
 [![Video](/assets/ETMEditor/Tutorial1.png)](https://youtu.be/I5XS9GIYqOg)
 
 ### Help Pages
 
-- [Levelpack Main Screen](/ETMEditorTutorials/ETMEditorTutorial_Overview)
+- [Start Page](/ETMEditorTutorials/ETMEditorTutorial_StartDialog)
+- [Levelpack Main Screen](/ETMEditorTutorials/ETMEditorTutorial_DetailDialog)
 - [Create / Organize Levels](/ETMEditorTutorials/ETMEditorTutorial_Overview_Levels)
 - [Create / Organize GameItems](/ETMEditorTutorials/ETMEditorTutorial_Overview_Items)
 - [Create / Organize Monsters](/ETMEditorTutorials/ETMEditorTutorial_Overview_Monsters)
@@ -50,8 +62,6 @@ This tutorial is work in progress and will be improved step by step. If you need
   <div></div>
 </div>
 
-### Share and Export
 
-- [Export Level Pack as JSON](/ETMEditorTutorials/ETM_Export_JSON)
 
    

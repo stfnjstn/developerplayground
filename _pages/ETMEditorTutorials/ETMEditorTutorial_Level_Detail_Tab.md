@@ -4,14 +4,14 @@ permalink: /ETMEditorTutorials/ETMEditorTutorial_Level_Detail_Tab/
 title: Level Crafting
 description: Create a Level
 date: 2025-01-22 19:02:46 -0000
-last_modified_at: 2026-01-28 22:16:14 -0000
+last_modified_at: 2026-09-13 12:00:00 -0000
 publish: true
 pin: false
 categories: [Apps]
 tags: [Games]
 ---
 
-![Detail Screen](/assets/ETMEditor/DetailMain.png)
+![Detail Screen](/assets/ETMEditor/DetailMain.jpg)
 
 The Level Detail screen is the main workspace where you design and edit your dungeon levels. This screen provides all the tools you need to create intricate maze layouts, place monsters and items, configure triggers, and fine-tune every aspect of your dungeon.
 
@@ -27,18 +27,20 @@ The Level Detail screen is divided into three main areas:
 
 The drawing area on the left displays your current level in a top-down view. This is where you can:
 
-- **View your entire level layout** at a glance
-- **Select individual tiles** by clicking on them
-- **See visual indicators** showing monsters, gamitems, ... based on the current edit mode
+- **View your entire level layout** at a glance — the map is scaled to fit when a level opens
+- **Select individual tiles** by tapping them (in Paint Mode a tap paints instead, see below)
+- **Zoom** with a pinch gesture or the magnifier buttons in the header, and scroll the map when it is larger than the screen
+- **See visual indicators** showing monsters, game items, triggers, ... based on the current edit mode
 
 ### Mode-Specific Indicators
 
-Depending on which edit mode you have active, the drawing area displays different visual markers:
+Depending on which edit mode you have active, the drawing area displays different visual markers. The selected tile is always outlined in red.
 
-- **Tile Mode**: Shows all tile types and their current state
-- **Monster Mode**: Highlights tiles containing monsters
-- **Item Mode**: Highlights tiles containing game items
-- **Trigger Mode**: Shows tiles with triggers and their action targets
+- **Level Settings**: Shows everything at once — monsters (red **M**), tiles holding game items (yellow) and trigger targets (green)
+- **Tile Mode**: Outlines the targets of all triggers in green; the targets of the selected tile's own triggers get a thick green outline. On the textures tab, tiles carrying a wall text are outlined in blue
+- **Paint Mode**: Shows only the tiles, so you see what you paint
+- **Monster Mode**: Marks tiles containing monsters with a red **M**
+- **Item Mode**: Outlines tiles containing game items in yellow, and marks monsters
 
 ### Coordinate Display
 
@@ -49,20 +51,20 @@ Enable the coordinate display using the **X/Y** button in the header to show gri
 
 ## Edit Modes
 
-![Detail Tabs](/assets/ETMEditor/DetailIcons.png)
+![Detail Tabs](/assets/ETMEditor/DetailIcons.jpg)
 
 The right panel contains five different edit modes, each providing specialized tools for different aspects of level design:
 
 ### 1. Level Settings & Maze Generator
 
-![Level Icon](/assets/ETMEditor/DetailLevel.png)
+![Level Icon](/assets/ETMEditor/DetailLevel.jpg)
 
 Configure basic level properties and use the maze generator.
 
 [View Level Settings Tutorial](/ETMEditorTutorials/ETMEditorTutorial_Level_Settings_Tab)
 
 ### 2. Tile Editor
-![Tile Icon](/assets/ETMEditor/DetailTile.png)
+![Tile Icon](/assets/ETMEditor/DetailTile.jpg)
 
 Place and configure individual tiles, set up triggers and actions.
 
@@ -76,7 +78,7 @@ Quickly paint tiles using a tile palette for efficient level building.
 [View Tile Paint Tutorial](/ETMEditorTutorials/ETMEditorTutorial_Level_Paint_Tab)
 
 ### 4. Monster Placement
-![Monster Icon](/assets/ETMEditor/DetailMonster.png)
+![Monster Icon](/assets/ETMEditor/DetailMonster.jpg)
 
 Add monsters to your level and configure their behavior.
 
@@ -91,22 +93,31 @@ Place game items like keys, potions, weapons, and treasure throughout your dunge
 
 ## Header Controls
 
-![Header Buttons](/assets/ETMEditor/DetailMenuButtons.png)
+![Header Buttons](/assets/ETMEditor/DetailMenuButtons.jpg)
 
 The header contains essential navigation and utility buttons:
 
+### Back
+Returns to the level pack screen. Your edits are kept; the level pack screen asks whether to save them when you leave it.
+
+### Zoom In / Zoom Out
+Scale the map up or down. You can also pinch the map directly.
+
 ### X/Y Coordinate Toggle
-Shows or hides the coordinate grid overlay on the drawing area. This is essential when working with triggers and actions that target specific tile positions.
+Shows or hides the column/row numbers on every tile of the drawing area. This is essential when working with triggers and actions that target specific tile positions.
 
-### Cancel Button
-Discards all changes made since the last save and returns to the level pack overview screen. Use this if you want to abandon your current edits.
+### Revert Button (✕)
+Discards all changes made since the level editor was opened or since the last save, and stays in the editor. Use this if you want to abandon your current edits.
 
-**Warning**: All unsaved changes will be lost when you cancel.
+**Warning**: All unsaved changes to the whole level pack will be lost when you revert.
 
 ### Save Button
-Saves all changes made to the current level. Always save your work regularly to avoid losing progress.
+Saves the level pack. Always save your work regularly to avoid losing progress.
 
 **Best Practice**: Save frequently, especially after completing major changes or adding complex trigger systems.
+
+### Help (?)
+Opens the tutorial page for the edit mode you are currently in.
 
 ## Workflow Tips
 
