@@ -17,8 +17,7 @@ categories:
 tags:
 - Apple
 - Appstore Connect
-- Escape the Dungeon Maze
-- Escape The Maze
+- The Dungeon - Get Out
 - RPG
 - Swift
 - XCUI

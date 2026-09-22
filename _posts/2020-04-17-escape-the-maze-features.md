@@ -1,7 +1,7 @@
 ---
 layout: post
 permalink: /escape-the-maze-features/
-title: Escape The Maze - Features
+title: "The Dungeon - Get Out: Features"
 description: None
 date: 2020-04-17 09:59:09 -0000
 last_modified_at: 2020-06-17 21:59:38 -0000
@@ -11,14 +11,14 @@ image:
   path: /assets/2020/03/ETMMAC.jpg
 categories:
 - Apple Watch
-- Escape The Dungeon Maze
+- The Dungeon - Get Out
 - iOS
 - My Games
 - SceneKit
 - SWIFT
 tags:
 - Dungeon Master
-- Escape The Maze
+- The Dungeon - Get Out
 - RPG
 - SceneKit
 - XCUI

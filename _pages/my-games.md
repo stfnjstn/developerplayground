@@ -99,7 +99,7 @@ Download now and start exploring the world of theoretical computing!
 
 ## The Dungeon - Get Out (Lite):
 
-The Dungeon - Get Out - Get Out is an old school dungeon crawler. Explore a complex dungeon full of traps, teleports, riddles and monsters.
+The Dungeon - Get Out is an old school dungeon crawler. Explore a complex dungeon full of traps, teleports, riddles and monsters.
 
 A level editor for the game to create own dungeons is also available.
 
@@ -113,13 +113,13 @@ Supports iCloud for multiple platforms: Start on your iPhone or iPad and continu
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <div style="text-align: center;">
-    <a href="https://apps.apple.com/app/escapethemaze-lite/id1606812171">
+    <a href="https://apps.apple.com/app/id1606812171">
       <img src="/assets/Download.svg" alt="Download">
     </a>
     <p>Lite Version</p>
   </div>
   <div style="text-align: center;">
-    <a href="https://apps.apple.com/app/escape-the-dungeon-maze/id1502853397">
+    <a href="https://apps.apple.com/app/id1502853397">
       <img src="/assets/Download.svg" alt="Download" >
     </a>
     <p>Full Version</p>
@@ -148,7 +148,7 @@ Ever dreamed about creating your own dungeon and play it in a 3D Game? Let's sta
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <div style="text-align: center;">
-    <a href="https://apps.apple.com/app/etdm-level-editor/id1561041898">
+    <a href="https://apps.apple.com/app/id1561041898">
       <img src="/assets/Download.svg" alt="Download">
     </a>
     <p></p>

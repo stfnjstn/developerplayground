@@ -10,7 +10,7 @@ categories: [Apps]
 tags: [Games]
 ---
 
-# JSON Structure Documentation: Escape The Maze
+# JSON Structure Documentation: The Dungeon - Get Out
 
 ## Top-Level Structure
 - **`heroes`**: An array of objects representing game heroes.

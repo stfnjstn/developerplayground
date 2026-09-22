@@ -8,12 +8,12 @@ last_modified_at: 2026-07-26 06:00:00 -0000
 publish: true
 pin: false
 categories:
-- Escape The Dungeon Maze
+- The Dungeon - Get Out
 - Game Development
 tags: [ETM]
 ---
 
-The July 2026 update <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R4.7 - July 2026</span> for "Escape The Dungeon Maze" and the corresponding Level Editor is now **officially released**!
+The July 2026 update <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R4.7 - July 2026</span> for "The Dungeon - Get Out" and the corresponding Level Editor is now **officially released**!
 
 Weapons finally get real weight in this release — literally, in the new damage math, and figuratively, in how much they now shape your strategy. Every weapon class hits differently, gear can level up your career while it's worn, and the Level Editor gained a whole toolbox for building new weapons from scratch.
 
@@ -51,13 +51,13 @@ Thank you for playing! More adventures await in the maze. Development is still o
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <div style="text-align: center;">
-    <a href="https://apps.apple.com/app/escapethemaze/id1502853397">
+    <a href="https://apps.apple.com/app/id1502853397">
       <img src="/assets/Download.svg" alt="Download">
     </a>
   <p>Download the Game</p>
   </div>
   <div style="text-align: center;">
-    <a href="https://apps.apple.com/app/etdm-level-editor/id1561041898">
+    <a href="https://apps.apple.com/app/id1561041898">
       <img src="/assets/Download.svg" alt="Download" >
     </a>
     <p>Download the Level Editor</p>

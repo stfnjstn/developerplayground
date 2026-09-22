@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /etdm/
-title: The Dungeon Maze - Get Out
+title: The Dungeon - Get Out
 description: Tutorial about my Dungeon Crawler
 date: 2024-12-26
 publish: true
@@ -32,13 +32,13 @@ This tutorial is work in progress and will be improved step by step. If you need
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <div style="text-align: center;">
-    <a href="https://apps.apple.com/app/escapethemaze-lite/id1606812171">
+    <a href="https://apps.apple.com/app/id1606812171">
       <img src="/assets/Download.svg" alt="Download">
     </a>
     <p>Lite Version</p>
   </div>
   <div style="text-align: center;">
-    <a href="https://apps.apple.com/app/escape-the-dungeon-maze/id1502853397">
+    <a href="https://apps.apple.com/app/id1502853397">
       <img src="/assets/Download.svg" alt="Download" >
     </a>
     <p>Full Version</p>

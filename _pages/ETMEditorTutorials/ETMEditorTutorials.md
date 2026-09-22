@@ -15,7 +15,7 @@ tags: [Games]
 
 Ever dreamed of designing your own old-school RPG dungeons? Relive the nostalgia with our powerful and easy-to-use level editor. Build intricate mazes filled with pits, teleports, keys, doors, stairways, magic, monsters, and more! Whether you're crafting devious traps or epic adventures, the possibilities are endless.
 
-Once your masterpiece is ready, step into your creation and play it in Escape the Maze—a free RPG designed to bring your levels to life. Challenge yourself, share your dungeons, and explore the creations of others.
+Once your masterpiece is ready, step into your creation and play it in The Dungeon - Get Out—a free RPG designed to bring your levels to life. Challenge yourself, share your dungeons, and explore the creations of others.
 
 Let your imagination run wild and create the ultimate RPG dungeon experience today!
 
@@ -54,13 +54,13 @@ The editor can be used in two ways:
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <div style="text-align: center;">
-    <a href="https://apps.apple.com/app/escapethemaze/id1502853397">
+    <a href="https://apps.apple.com/app/id1502853397">
       <img src="/assets/Download.svg" alt="Download">
     </a>
     <p>Game with integrated Editor</p>
   </div>
   <div>
-      <a href="https://apps.apple.com/app/etdm-level-editor/id1561041898">
+      <a href="https://apps.apple.com/app/id1561041898">
       <img src="/assets/Download.svg" alt="Download">
     </a>
     <p>Standalone Editor</p>

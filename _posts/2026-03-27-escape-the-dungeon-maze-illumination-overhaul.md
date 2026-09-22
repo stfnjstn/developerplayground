@@ -2,13 +2,13 @@
 layout: post
 permalink: /escape-the-dungeon-maze-illumination-overhaul/
 title: Fixing a Months-Long Lighting Bug - New Illumination System
-description: How I finally tracked down a non-deterministic torch shadow bug in Escape The Dungeon Maze and rebuilt the entire illumination system
+description: How I finally tracked down a non-deterministic torch shadow bug in The Dungeon - Get Out and rebuilt the entire illumination system
 date: 2026-03-27 17:00:00 -0000
 last_modified_at: 2026-03-27 17:00:00 -0000
 publish: true
 pin: false
 categories:
-- Escape The Dungeon Maze
+- The Dungeon - Get Out
 - Game Development
 tags: [ETM]
 ---
@@ -60,13 +60,13 @@ The fix will ship with **R4.4 in April**. There is plenty more in the pipeline â
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <div style="text-align: center;">
-    <a href="https://apps.apple.com/app/escapethemaze/id1502853397">
+    <a href="https://apps.apple.com/app/id1502853397">
       <img src="/assets/Download.svg" alt="Download">
     </a>
   <p>Download the Game</p>
   </div>
   <div style="text-align: center;">
-    <a href="https://apps.apple.com/app/etdm-level-editor/id1561041898">
+    <a href="https://apps.apple.com/app/id1561041898">
       <img src="/assets/Download.svg" alt="Download" >
     </a>
     <p>Download the Level Editor</p>

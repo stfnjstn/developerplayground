@@ -1,7 +1,7 @@
 ---
 layout: post
 permalink: /escape-the-maze/
-title: Escape The Maze
+title: "The Dungeon - Get Out: Project Start"
 description: "Is it possible to create a Dungeon Master clone on limited hardware\
   \ like an \_Apple Watch?"
 date: 2020-03-08 16:33:44 -0000
@@ -11,7 +11,7 @@ pin: false
 image:
   path: /assets/2020/03/ETMWatch.jpg
 categories:
-- Escape The Dungeon Maze
+- The Dungeon - Get Out
 - My Games
 - Uncategorized
 tags:
@@ -21,7 +21,7 @@ tags:
 - SceneKit
 - XCUI
 ---
-I haven't blogged for a while, because I was busy with my new game project. Working title: "Escape The Maze"
+I haven't blogged for a while, because I was busy with my new game project. Working title: "The Dungeon - Get Out"
 
 Grown up with 16 Bit Home Computers like Atari ST & Amiga and being also fan of the demo scene, I wondered if it is possible to create a Dungeon Master clone on limited hardware like an  Apple Watch. The Game will also run on iPhones, iPads, Macs & Apple TVs. 
 

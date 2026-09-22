@@ -8,7 +8,7 @@ last_modified_at: 2025-11-08 12:00:00 -0000
 publish: true
 pin: false
 categories:
-- Escape The Dungeon Maze
+- The Dungeon - Get Out
 - Game Development
 tags: [ETM]
 ---
@@ -47,13 +47,13 @@ I'm continuing to work hard on this major update for both "The Dungeon - Get Out
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <div style="text-align: center;">
-    <a href="https://apps.apple.com/app/escapethemaze/id1502853397">
+    <a href="https://apps.apple.com/app/id1502853397">
       <img src="/assets/Download.svg" alt="Download">
     </a>
   <p>Download the Game</p>
   </div>
   <div style="text-align: center;">
-    <a href="https://apps.apple.com/app/etdm-level-editor/id1561041898">
+    <a href="https://apps.apple.com/app/id1561041898">
       <img src="/assets/Download.svg" alt="Download" >
     </a>
     <p>Download the Level Editor</p>

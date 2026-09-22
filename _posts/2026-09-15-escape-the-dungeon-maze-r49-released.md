@@ -2,18 +2,18 @@
 layout: post
 permalink: /escape-the-dungeon-maze-r49-released/
 title: R4.9 Released - The Level Editor Moves Into the Game, Plus Spanish & French
-description: The September 2026 update builds the Level Editor right into Escape The Dungeon Maze as a one-time in-app purchase, adds Spanish and French, and ships the standalone editor with a completely reworked interface
+description: The September 2026 update builds the Level Editor right into The Dungeon - Get Out as a one-time in-app purchase, adds Spanish and French, and ships the standalone editor with a completely reworked interface
 date: 2026-09-20 12:00:00 -0000
 last_modified_at: 2026-09-20 12:00:00 -0000
 publish: true
 pin: false
 categories:
-- Escape The Dungeon Maze
+- The Dungeon - Get Out
 - Game Development
 tags: [ETM]
 ---
 
-The September 2026 update <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R4.9 - September 2026</span> for "Escape The Dungeon Maze" and the corresponding Level Editor is now **officially released**!
+The September 2026 update <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R4.9 - September 2026</span> for "The Dungeon - Get Out" and the corresponding Level Editor is now **officially released**!
 
 This one is less about new things to find in the maze and more about where the maze itself comes from. For years the Level Editor has been a separate companion app: build a dungeon there, export it, import it into the game, go and play. As of this release that round trip is gone — the **editor lives inside the game**. Along the way the editor got a completely new interface, and the game learned two new languages.
 
@@ -52,13 +52,13 @@ Thank you for playing! More adventures await in the maze. Development is still o
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <div style="text-align: center;">
-    <a href="https://apps.apple.com/app/escapethemaze/id1502853397">
+    <a href="https://apps.apple.com/app/id1502853397">
       <img src="/assets/Download.svg" alt="Download">
     </a>
   <p>Download the Game</p>
   </div>
   <div style="text-align: center;">
-    <a href="https://apps.apple.com/app/etdm-level-editor/id1561041898">
+    <a href="https://apps.apple.com/app/id1561041898">
       <img src="/assets/Download.svg" alt="Download" >
     </a>
     <p>Download the Level Editor</p>

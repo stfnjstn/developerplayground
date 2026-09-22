@@ -8,12 +8,12 @@ last_modified_at: 2026-02-06 12:00:00 -0000
 publish: true
 pin: false
 categories:
-- Escape The Dungeon Maze
+- The Dungeon - Get Out
 - Game Development
 tags: [ETM]
 ---
 
-I've been listening to your feedback! Work continues on the next update <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R4.2 - End of February 2026</span> for "Escape The Dungeon Maze" and the Level Editor, and I'm happy to announce a new feature that addresses one of the most common suggestions from reviews.
+I've been listening to your feedback! Work continues on the next update <span style="background-color: #4CAF50; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.85em; margin-left: 5px;">R4.2 - End of February 2026</span> for "The Dungeon - Get Out" and the Level Editor, and I'm happy to announce a new feature that addresses one of the most common suggestions from reviews.
 
 While I always tried to keep the user interface simple and self-explanatory, I agree that a short tutorial campaign could help new players get started more confidently. So here it is - a brand new **Tutorial Campaign**!
 
@@ -39,13 +39,13 @@ Thank you to everyone who provided feedback - your suggestions help make the gam
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <div style="text-align: center;">
-    <a href="https://apps.apple.com/app/escapethemaze/id1502853397">
+    <a href="https://apps.apple.com/app/id1502853397">
       <img src="/assets/Download.svg" alt="Download">
     </a>
   <p>Download the Game</p>
   </div>
   <div style="text-align: center;">
-    <a href="https://apps.apple.com/app/etdm-level-editor/id1561041898">
+    <a href="https://apps.apple.com/app/id1561041898">
       <img src="/assets/Download.svg" alt="Download" >
     </a>
     <p>Download the Level Editor</p>
