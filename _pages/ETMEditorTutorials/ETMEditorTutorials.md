@@ -54,12 +54,17 @@ The editor can be used in two ways:
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <div style="text-align: center;">
-    <a href="https://apps.apple.com/app/etdm-level-editor/id1561041898">
+    <a href="https://apps.apple.com/app/escapethemaze/id1502853397">
       <img src="/assets/Download.svg" alt="Download">
     </a>
-    <p></p>
+    <p>Game with integrated Editor</p>
   </div>
-  <div></div>
+  <div>
+      <a href="https://apps.apple.com/app/etdm-level-editor/id1561041898">
+      <img src="/assets/Download.svg" alt="Download">
+    </a>
+    <p>Standalone Editor</p>
+  </div>
 </div>
 
 
