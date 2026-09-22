@@ -31,7 +31,7 @@ The editor can be used in two ways:
 | Start the **Dungeon Editor** app from your home screen. | Open **The Dungeon - Get Out** and tap **Level Editor** in the main menu. |
 ![App](/assets/ETMEditor/EditorAppIcon.jpg) | ![Integrated in Game](/assets/ETMEditor/InGameMenu.jpg)
 
-> **Hint:** The standalone editor app will continue to be developed. However, the very same editor is now also embedded directly in the **The Dungeon - Get Out** app, available as an in-app purchase. We recommend using the embedded editor, as you can create, edit and play your levels in one app without switching.
+> **Hint:** The very same editor is also embedded directly in the **The Dungeon - Get Out** app, available as an in-app purchase. Both have exactly the same features, and level packs move between them as `.etdm` files — so use whichever suits you. For a more integrated experience, where you create, edit and play your levels in one app without switching, you can also use the embedded editor in the game.
 
 ### Videos
 [![Video](/assets/ETMEditor/Tutorial1.png)](https://youtu.be/I5XS9GIYqOg)

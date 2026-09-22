@@ -144,7 +144,7 @@ Ever dreamed about creating your own dungeon and play it in a 3D Game? Let's sta
 
 **[Tutorials & Productpage](/ETMEditorTutorials/ETMEditorTutorials)**
 
-> **Hint:** This standalone editor app will continue to be developed. However, the very same editor is now also embedded directly in the **The Dungeon - Get Out** app, available as an in-app purchase. I recommend using the embedded editor, as you can create, edit and play your levels in one app without switching.
+> **Hint:** The very same editor is also embedded directly in the **The Dungeon - Get Out** app, available as an in-app purchase. Both have exactly the same features, and level packs move between them as `.etdm` files — so use whichever suits you. For a more integrated experience, where you create, edit and play your levels in one app without switching, you can also use the embedded editor in the game.
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <div style="text-align: center;">

@@ -38,7 +38,7 @@ The game itself stays free to download and play, as it always has been. The purc
 
 Building the editor into the game meant rebuilding it, and that is what this release delivers on both sides. Every screen of the Level Editor — the start page, the level pack overview, the level editor itself, the tile and trigger inspectors, the monster and item editors — has been **rebuilt from the ground up**. The map sits on the left, a sidebar with the tools on the right, and the inspectors switch between settings, textures, monsters and items with a single tap. Pickers are sheets, edits apply immediately, and the whole thing finally feels like one app rather than a stack of forms.
 
-The **standalone Level Editor app** ships this same reworked interface and has exactly the same features as the built-in version. I will keep maintaining it for the near future, so nothing you have built there is going anywhere. That said, if you are starting fresh, I recommend unlocking the editor inside the game instead — editing and playing your dungeons in one place is simply the better integrated experience, and it is where the editor's future lies.
+The **standalone Level Editor app** ships this same reworked interface and has exactly the same features as the built-in version. Both are fully supported, and level packs move between them as `.etdm` files, so nothing you have built anywhere is going to be stranded. Use whichever fits how you work: the standalone app if you like keeping building and playing separate, or — for a more integrated experience, editing and playing your dungeons in one place without switching apps — the embedded editor in the game.
 
 ## Spanish and French
 
