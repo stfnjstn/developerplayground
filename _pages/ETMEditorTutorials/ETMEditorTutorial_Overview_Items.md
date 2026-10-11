@@ -236,11 +236,12 @@ Weapons are held in a hero's weapon hand and decide what an attack does. There a
 ### Creating Custom Weapons
 - Choose the 3D model — swords, knife, stick, club, mace and axe for melee; bows, crossbows and the slingshot for distance weapons. Most weapon models have two material slots (blade and grip), so you can tint them independently, and raising **metalness** gives blades a proper shine
 - Set the **Damage** — the base damage of a hit. For a distance weapon this is the damage of the *shot*, not of the ammo: a bow with damage 18 fires every arrow with 18 as its base
-- Pick the **Weapon Class**, which decides which profession trains with the weapon and grants its proficiency bonus:
-  - **Light** (dagger, short sword) — Hunter
-  - **Heavy** (long sword, axe, mace) — Fighter
-  - **Staff** — Mage
-  - **Ranged** — Hunter. This class is bound to the model: picking a bow, crossbow or slingshot locks the class to Ranged, and a sword can never be made ranged. Choose a different model to release it
+- Pick the **Weapon Class**. It decides three things: which profession gains experience when the weapon is used, whose career level grants the proficiency bonus (an untrained hero gets only 40 % of the weapon's damage, a master up to 120 %), and which attributes scale the hit:
+  - **Light** (dagger, short sword) — Hunter; mostly dexterity (30 % strength / 70 % dexterity)
+  - **Heavy** (long sword, axe, mace) — Fighter; mostly strength (80 % strength / 20 % dexterity)
+  - **Staff** — Mage; mostly wizardry (10 % strength / 20 % dexterity / 70 % wizardry)
+  - **Ranged** — Hunter; mostly dexterity (20 % strength / 80 % dexterity). This class is bound to the model: picking a bow, crossbow or slingshot locks the class to Ranged, and a sword can never be made ranged. Choose a different model to release it
+  - **No class selected** is allowed and is the default for a new melee weapon: a generic weapon trains the Fighter and scales evenly with strength and dexterity (50 % / 50 %)
 - For a ranged weapon, pick the **Accepted Ammo** type (Bow, Crossbow, Sling or Hand). Only ammo of that type can be fired from it; the model preselects the matching one
 - Optionally grant the same bonuses a wearable can: **+1 profession level**, HP, mana, stamina, attributes and elemental magic — they apply while the weapon is held
 - Set the **weight** — heavy weapons burden the party more, and a thrown weapon (dragged off the floor) flies farther the lighter it is
@@ -256,6 +257,7 @@ Weapons are held in a hero's weapon hand and decide what an attack does. There a
 - Keep the built-in progression in mind: the knife does 10 damage at 150 g, the long sword 26 at 1900 g — damage should cost weight
 - A distance weapon without ammo nearby is a puzzle, not a reward; put a quiver in the same room or shortly after
 - A light, low-damage sword with a Hunter +1 bonus is a nice early find for a hunter; a staff with mana and fire magic bonuses suits a mage
+- Give a weapon a class whenever its role is clear — a staff left generic scales with strength instead of wizardry, so a mage gains little from it
 
 ## Custom Ammo
 ![Ammo](/assets/ETMEditor/Items8Ammo.jpg)
