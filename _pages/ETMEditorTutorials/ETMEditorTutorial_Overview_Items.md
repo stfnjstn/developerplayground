@@ -4,7 +4,7 @@ permalink: /ETMEditorTutorials/ETMEditorTutorial_Overview_Items/
 title: Tutorial - Create / Organize GameItems
 description: Create / Organize GameItems
 date: 2025-01-22 19:02:46 -0000
-last_modified_at: 2026-09-18 12:00:00 -0000
+last_modified_at: 2026-10-14 12:00:00 -0000
 publish: true
 pin: false
 categories: [Apps]
@@ -42,6 +42,7 @@ The Level Editor supports several types of game items:
 - **Wearables**: Armor and clothing that grant defense and stat bonuses while equipped
 - **Weapons**: Melee weapons and distance weapons like a bow, with their damage and weapon class
 - **Ammo**: Throwing stars, arrows, bolts and stones — thrown by hand or fired from a matching distance weapon
+- **Special Items**: Objects with no effect of their own, like the empty flask — made for quests and riddles
 
 The row of icons at the top of the item editor is the type selector; the editor's lower part changes with the type.
 
@@ -49,7 +50,7 @@ The row of icons at the top of the item editor is the type selector; the editor'
 
 ![Filtered Items](/assets/ETMEditor/Items1Filtered.jpg)
 
-Use the filter bar at the top of the item list to show only specific item types. This makes it easier to find the item you're looking for when you have many custom items.
+Use the filter bar at the top of the item list to show only specific item types — special items have their own filter, marked with sparkles. This makes it easier to find the item you're looking for when you have many custom items.
 
 ## Create a New Item
 
@@ -283,6 +284,27 @@ Ammo is the projectile side of ranged combat. A stack of ammo is equipped as a w
 - Throwing stars are the easiest way to give a party ranged attacks early — no launcher needed
 - Match ammo to the launchers in your pack: a crossbow with only arrows to find is a dead end
 - Spent ammo lands on the monster's tile, so a careful player can pick it up again after the fight — reward that with a tight ammo budget in long dungeons
+
+## Special Items
+
+Special items are objects that do nothing by themselves: they cannot be eaten, worn, wielded or read, and using them never uses them up. Their job is to be found, carried and handed over at the right place or used for a special purpose.
+
+The game ships one built-in special item, the **Empty Flask**.
+
+### Creating Special Items
+- Pick the **Special Items** type (the sparkles icon) in the item editor
+- Choose the 3D model — currently the empty flask — and tint its materials (the glass and the cork can be coloured independently)
+- Set the **weight**; a heavy quest object is a real burden for the party
+- Give it a descriptive name — for a riddle the name is often the only hint the player gets
+
+### How Special Items Work in the Game
+- Heroes carry them in their inventory like any other item, and can drop or throw them
+- They can be put into an alcove, which fires that alcove's **On game item dropped** triggers. A trigger that names the item fires only for that one item, so "bring the empty flask to the altar" works without revealing the answer
+- Monsters can carry them and drop them when defeated
+
+**Design Tips**:
+- Use special items for fetch quests: hide the item in one part of the dungeon and the alcove that wants it in another
+- Combine several special items with several drop triggers on one alcove for multi-step riddles
 
 ## Using Items in Your Levels
 
