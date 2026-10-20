@@ -4,7 +4,7 @@ permalink: /ETMEditorTutorials/ETMEditorTutorial_Overview_Items/
 title: Tutorial - Create / Organize GameItems
 description: Create / Organize GameItems
 date: 2025-01-22 19:02:46 -0000
-last_modified_at: 2026-10-14 12:00:00 -0000
+last_modified_at: 2026-10-19 12:00:00 -0000
 publish: true
 pin: false
 categories: [Apps]
@@ -40,7 +40,7 @@ The Level Editor supports several types of game items:
 - **Scrolls**: Display text messages or teach magic spells
 - **Potions**: Provide temporary buffs, permanent upgrades, or healing effects
 - **Wearables**: Armor and clothing that grant defense and stat bonuses while equipped
-- **Weapons**: Melee weapons and distance weapons like a bow, with their damage and weapon class
+- **Weapons**: Melee weapons, distance weapons like a bow and magic sticks, with their damage and weapon class
 - **Ammo**: Throwing stars, arrows, bolts and stones — thrown by hand or fired from a matching distance weapon
 - **Special Items**: Objects with no effect of their own, like the empty flask — made for quests and riddles
 
@@ -232,7 +232,7 @@ Wearables are armor and clothing pieces the player can equip for protection and 
 ## Custom Weapons
 ![Weapons](/assets/ETMEditor/Items7Weapons.jpg)
 
-Weapons are held in a hero's weapon hand and decide what an attack does. There are two kinds: **melee weapons** swing at the monster in front of the party, **distance weapons** (bow, crossbow, slingshot) fire a piece of ammo across several tiles.
+Weapons are held in a hero's weapon hand and decide what an attack does. There are three kinds: **melee weapons** swing at the monster in front of the party, **distance weapons** (bow, crossbow, slingshot) fire a piece of ammo across several tiles, and **magic sticks** cast a spell.
 
 ### Creating Custom Weapons
 - Choose the 3D model — swords, knife, stick, club, mace and axe for melee; bows, crossbows and the slingshot for distance weapons. Most weapon models have two material slots (blade and grip), so you can tint them independently, and raising **metalness** gives blades a proper shine
@@ -247,8 +247,9 @@ Weapons are held in a hero's weapon hand and decide what an attack does. There a
   - **Heavy** melee (long sword, axe, mace) — Fighter; 80 % strength / 20 % dexterity
   - **Light** ranged (bow, light crossbow, sling) — Hunter; 20 % strength / 80 % dexterity
   - **Heavy** ranged (long bow, heavy crossbow) — Hunter; 50 % strength / 50 % dexterity
-  - **Magic** staff — Mage; 10 % strength / 20 % dexterity / 70 % wizardry
+  - **Magic** staff — Mage; this turns the stick into a **magic stick** (see below), whose attack is a spell rather than a hit
 - For a ranged weapon, pick the **Accepted Ammo** type (Bow, Crossbow, Sling or Hand). Only ammo of that type can be fired from it; the model preselects the matching one
+- For a magic stick, set the **Spell Charges** (1–50) and pick the **Spell** it casts: Fireball, Lightning Bolt, Poison Bolt, Poison Cloud or Restore All. A magic stick carries no attribute bonuses, so those settings are hidden, and it glows violet to mark it as magical — you can change or switch off the glow in the render settings
 - Optionally grant the same bonuses a wearable can: **+1 profession level**, HP, mana, stamina, attributes and elemental magic — they apply while the weapon is held
 - Set the **weight** — heavy weapons burden the party more, and a thrown weapon (dragged off the floor) flies farther the lighter it is
 - Give it a descriptive name
@@ -259,11 +260,18 @@ Weapons are held in a hero's weapon hand and decide what an attack does. There a
 - The shot reaches up to six tiles regardless of the ammo's weight, and the monster's armor reduces the damage like a melee hit
 - An **unloaded** distance weapon does nothing at all — it never falls back to a swing, so remember to place ammo where a bow is found
 
+### How Magic Sticks Work in the Game
+- Held in the **right** hand, every attack casts the stick's spell and spends one charge; the attack button shows the charges left
+- The stick supplies the magic, not the hero: casting costs **no mana**, and the spell does the same damage whoever holds it — even a fighter can use one
+- Each stick keeps its own charges, also when it is dropped, put in a chest, thrown or handed to another hero. The item info shows how many are left
+- When the last charge is spent the stick stops glowing and becomes an ordinary light stick that swings like any light weapon
+- The game ships one built-in magic stick, the **Magic Stick** (Fireball, 10 charges)
+
 **Design Tips**:
 - Keep the built-in progression in mind: the knife does 10 damage at 150 g, the long sword 26 at 1900 g — damage should cost weight
 - A distance weapon without ammo nearby is a puzzle, not a reward; put a quiver in the same room or shortly after
-- A light, low-damage sword with a Hunter +1 bonus is a nice early find for a hunter; a staff with mana and fire magic bonuses suits a mage
-- Light weapons train the Hunter and Heavy melee weapons the Fighter — set a big blade to Heavy, or a fighter gains nothing from it. A stick set to Magic is the mage's weapon
+- A light, low-damage sword with a Hunter +1 bonus is a nice early find for a hunter
+- Light weapons train the Hunter and Heavy melee weapons the Fighter — set a big blade to Heavy, or a fighter gains nothing from it. A magic stick with a few charges is an emergency weapon for any hero; give a Restore All stick as a rare reward before a hard fight
 
 ## Custom Ammo
 ![Ammo](/assets/ETMEditor/Items8Ammo.jpg)
