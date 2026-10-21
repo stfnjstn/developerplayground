@@ -298,8 +298,8 @@ Ammo is the projectile side of ranged combat. A stack of ammo is equipped as a w
 A potion bomb is a flask that bursts where it strikes. Equip a stack in the weapon hand and every attack throws one, tumbling end over end in a short arc.
 
 - **It hits a monster:** it explodes on the whole group — every monster in it takes the full elemental damage, reduced only by its resistance to that element (not by armor)
-- **It hits a wall** (or a closed door): it explodes there, harmlessly
-- **It hits nothing:** it simply lands on the floor at the end of its range, intact, and can be picked up again
+- **It hits a wall** (or a closed door): it explodes in front of the wall. Careful at close range — thrown at the wall right next to the party, the blast hits your own heroes
+- **It hits nothing:** it simply lands on the floor at the end of its range (at most two tiles), intact, and can be picked up again
 
 Either explosion uses the bomb up. The game comes with four:
 
@@ -310,7 +310,7 @@ Either explosion uses the bomb up. The game comes with four:
 | Poison Bomb | 12 earth | can poison |
 | Fear Bomb | 12 air | can frighten |
 
-**Creating a custom bomb:** choose the flask model as ammo, set the type to **Bomb**, and give it elemental damage. The strongest element decides the status it can cause: water freezes, earth poisons, air frightens, fire only burns. Whether the status takes hold depends on the monster's resistance to that same element. Weight still sets the range — a 300 g bomb flies four tiles.
+**Creating a custom bomb:** choose the flask model as ammo, set the type to **Bomb**, and give it elemental damage. The strongest element decides the status it can cause: water freezes, earth poisons, air frightens, fire only burns. Whether the status takes hold depends on the monster's resistance to that same element. A bomb is lobbed, not hurled: it flies at most two tiles, so the party has to get close — and a heavy bomb may fall even shorter.
 
 **Design Tips**:
 - A bomb is a one-shot answer to a group — put them before a room full of monsters rather than as loot after it
