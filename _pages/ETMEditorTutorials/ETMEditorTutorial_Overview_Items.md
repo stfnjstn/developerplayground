@@ -41,7 +41,7 @@ The Level Editor supports several types of game items:
 - **Potions**: Provide temporary buffs, permanent upgrades, or healing effects
 - **Wearables**: Armor and clothing that grant defense and stat bonuses while equipped
 - **Weapons**: Melee weapons, distance weapons like a bow and magic sticks, with their damage and weapon class
-- **Ammo**: Throwing stars, arrows, bolts and stones — thrown by hand or fired from a matching distance weapon
+- **Ammo**: Throwing stars, arrows, bolts, stones and potion bombs — thrown by hand or fired from a matching distance weapon
 - **Special Items**: Objects with no effect of their own, like the empty flask — made for quests and riddles
 
 The row of icons at the top of the item editor is the type selector; the editor's lower part changes with the type.
@@ -279,12 +279,13 @@ Weapons are held in a hero's weapon hand and decide what an attack does. There a
 Ammo is the projectile side of ranged combat. A stack of ammo is equipped as a whole and spent piece by piece; the last piece unequips the stack.
 
 ### Creating Custom Ammo
-- Choose the 3D model — arrow, bolt, stone, throwing star or throwing dagger
+- Choose the 3D model — arrow, bolt, stone, throwing star, throwing dagger or flask (for a potion bomb)
 - Pick the **Ammo Type**, which decides how it is used:
   - **Bow**, **Crossbow** and **Sling** ammo is fired from a distance weapon that accepts the same type — arrows need a bow, bolts a crossbow, stones a slingshot
   - **Hand** ammo (throwing stars, throwing daggers) needs no launcher: equipped in the weapon hand, each attack throws one piece
+  - **Bomb** ammo is a potion bomb, also thrown by hand — see below. Picking the flask model selects it for you
 - Set the **weight** — for hand-thrown ammo this is what matters: a light piece flies farther (a 120 g throwing star reaches four tiles) and a heavy one hits harder, since thrown damage is based on mass plus the hero's strength and dexterity. Fired ammo takes its range and damage from the launcher instead
-- **Damage** and the elemental **Fire / Air / Earth / Water Damage** are stored with the item but not yet applied by the game — a thrown piece hits by its weight, a fired piece by its launcher's damage
+- **Damage** and the elemental **Fire / Air / Earth / Water Damage** are stored with the item. For stars, daggers and fired ammo the game does not apply them yet — a thrown piece hits by its weight, a fired piece by its launcher's damage. For a **bomb** the elemental damage is exactly what it deals
 - Give it a descriptive name
 
 **Design Tips**:
@@ -292,6 +293,29 @@ Ammo is the projectile side of ranged combat. A stack of ammo is equipped as a w
 - Throwing stars are the easiest way to give a party ranged attacks early — no launcher needed
 - Match ammo to the launchers in your pack: a crossbow with only arrows to find is a dead end
 - Spent ammo lands on the monster's tile, so a careful player can pick it up again after the fight — reward that with a tight ammo budget in long dungeons
+
+### Potion Bombs
+A potion bomb is a flask that bursts where it strikes. Equip a stack in the weapon hand and every attack throws one, tumbling end over end in a short arc.
+
+- **It hits a monster:** it explodes on the whole group — every monster in it takes the full elemental damage, reduced only by its resistance to that element (not by armor)
+- **It hits a wall** (or a closed door): it explodes there, harmlessly
+- **It hits nothing:** it simply lands on the floor at the end of its range, intact, and can be picked up again
+
+Either explosion uses the bomb up. The game comes with four:
+
+| Bomb | Damage | Effect |
+|---|---|---|
+| Fireball Bomb | 20 fire | — |
+| Ice Bomb | 12 water | can freeze |
+| Poison Bomb | 12 earth | can poison |
+| Fear Bomb | 12 air | can frighten |
+
+**Creating a custom bomb:** choose the flask model as ammo, set the type to **Bomb**, and give it elemental damage. The strongest element decides the status it can cause: water freezes, earth poisons, air frightens, fire only burns. Whether the status takes hold depends on the monster's resistance to that same element. Weight still sets the range — a 300 g bomb flies four tiles.
+
+**Design Tips**:
+- A bomb is a one-shot answer to a group — put them before a room full of monsters rather than as loot after it
+- Match the element to the monsters: a fire-resistant enemy shrugs off a Fireball Bomb but may still freeze
+- A missed throw is not wasted — the bomb lies at the end of the corridor, waiting to be picked up
 
 ## Special Items
 
