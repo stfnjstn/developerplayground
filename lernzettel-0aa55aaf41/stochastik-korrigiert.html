@@ -119,6 +119,10 @@
       font-size: 8pt;
     }
 
+    /* Brüche: Zähler über Nenner */
+    .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; margin: 0 .15em; line-height: 1.2; }
+    .frac > span { padding: 0 .25em; }
+    .frac > span + span { border-top: 1px solid currentColor; }
     @page { size: A4; margin: 0; }
     @media print {
       body { background: white; font-size: 9.5pt; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
@@ -162,7 +166,7 @@
         </div>
         <div class="card">
           <h3>Bedingte Wahrscheinlichkeit</h3>
-          <div class="formula">P<sub>B</sub>(A) = P(A|B) = P(A ∩ B) / P(B), &nbsp;P(B) &gt; 0</div>
+          <div class="formula">P<sub>B</sub>(A) = P(A|B) = <span class="frac"><span>P(A ∩ B)</span><span>P(B)</span></span>, &nbsp;P(B) &gt; 0</div>
           <div class="formula">P(A ∩ B) = P(B) · P(A|B)</div>
           <p>Die Bedingung B schränkt die betrachtete Ergebnismenge auf B ein. Im Baum stehen ab der 2. Stufe bedingte Wahrscheinlichkeiten.</p>
           <p class="small">Schreibweise P<sub>B</sub>(A) und P(A|B) bedeuten dasselbe.</p>
@@ -183,11 +187,11 @@
           <h3>Unabhängigkeit und Bayes</h3>
           <div class="formula">A, B unabhängig ⇔ P(A ∩ B) = P(A) · P(B)</div>
           <p>Gleichwertig: P(A|B) = P(A). Unabhängig ≠ disjunkt (disjunkte Ereignisse mit P &gt; 0 sind sogar <b>abhängig</b>).</p>
-          <div class="formula">P(A|B) = P(A) · P(B|A) / P(B)</div>
+          <div class="formula">P(A|B) = <span class="frac"><span>P(A) · P(B|A)</span><span>P(B)</span></span></div>
           <p>Bayes kehrt die Bedingung um („umgekehrter Baum“); P(B) mit der 2. Pfadregel berechnen.</p>
         </div>
       </div>
-      <div class="note"><b>Typischer Denkfehler:</b> P(A|B) ≠ P(B|A). Bei Tests/Diagnosen: P(krank | positiv) ist meist viel kleiner als P(positiv | krank), wenn die Krankheit selten ist.</div>
+      <div class="note"><b>Typischer Denkfehler:</b> P(A|B) ≠ P(B|A). Bei Tests und Diagnosen: P(krank | positiv) ist meist viel kleiner als P(positiv | krank), wenn die Krankheit selten ist.</div>
 
       <h2>Vierfeldertafel</h2>
       <div class="grid">
@@ -209,7 +213,7 @@
       </table>
       <p class="small">Erst fragen: Mit oder ohne Zurücklegen? Spielt die Reihenfolge eine Rolle?</p>
 
-      <div class="footer"><span>Stochastik · kompakte Übersicht</span><span>1 / 4</span></div>
+      <div class="footer"><span>Stochastik · kompakte Übersicht</span><span>Seite 1 von 4</span></div>
     </section>
 
     <!-- ============ BLATT 2 ============ -->
@@ -241,7 +245,7 @@
           <h3>Wann binomial? (Bernoulli-Kette)</h3>
           <ol>
             <li>Feste Anzahl n von Versuchen.</li>
-            <li>Je Versuch nur Treffer / Niete.</li>
+            <li>Je Versuch nur zwei Ausgänge: Treffer oder Niete.</li>
             <li>Trefferwahrscheinlichkeit p konstant.</li>
             <li>Versuche unabhängig (z. B. mit Zurücklegen).</li>
           </ol>
@@ -268,10 +272,10 @@
 
       <h2>„Mindestens-mindestens“-Aufgabe</h2>
       <p>Wie oft muss man mindestens ziehen, damit mit Wahrscheinlichkeit mindestens P<sub>0</sub> mindestens ein Treffer dabei ist?</p>
-      <div class="formula">1 − (1 − p)<sup>n</sup> ≥ P<sub>0</sub> &nbsp;⇔&nbsp; (1 − p)<sup>n</sup> ≤ 1 − P<sub>0</sub> &nbsp;⇔&nbsp; n ≥ ln(1 − P<sub>0</sub>) / ln(1 − p)</div>
+      <div class="formula">1 − (1 − p)<sup>n</sup> ≥ P<sub>0</sub> &nbsp;⇔&nbsp; (1 − p)<sup>n</sup> ≤ 1 − P<sub>0</sub> &nbsp;⇔&nbsp; n ≥ <span class="frac"><span>ln(1 − P<sub>0</sub>)</span><span>ln(1 − p)</span></span></div>
       <p>Beim Teilen durch ln(1 − p) &lt; 0 dreht sich das Ungleichheitszeichen! <b>Beispiel:</b> p = 0,1, P<sub>0</sub> = 0,9: n ≥ ln 0,1 / ln 0,9 ≈ 21,85 ⇒ <b>n = 22</b> (Probe: 1 − 0,9²² ≈ 0,902).</p>
 
-      <div class="footer"><span>Stochastik · kompakte Übersicht</span><span>2 / 4</span></div>
+      <div class="footer"><span>Stochastik · kompakte Übersicht</span><span>Seite 2 von 4</span></div>
     </section>
 
     <!-- ============ BLATT 3 ============ -->
@@ -285,13 +289,13 @@
         <div class="card">
           <h3>Modell</h3>
           <p>N Objekte, davon K „Treffer“; n werden ohne Zurücklegen gezogen. X = Anzahl Treffer.</p>
-          <div class="formula">P(X = k) = (K über k) · (N−K über n−k) / (N über n)</div>
+          <div class="formula">P(X = k) = <span class="frac"><span>(K über k) · (N−K über n−k)</span><span>(N über n)</span></span></div>
           <p class="small">„Treffer auswählen · Nieten auswählen / alle Auswahlen“. Gilt für max(0; n−(N−K)) ≤ k ≤ min(n; K).</p>
         </div>
         <div class="card">
           <h3>Kennwerte und Näherung</h3>
-          <div class="formula">E(X) = n · K/N</div>
-          <div class="formula">V(X) = n · (K/N) · (1 − K/N) · (N − n)/(N − 1)</div>
+          <div class="formula">E(X) = n · <span class="frac"><span>K</span><span>N</span></span></div>
+          <div class="formula">V(X) = n · <span class="frac"><span>K</span><span>N</span></span> · (1 − <span class="frac"><span>K</span><span>N</span></span>) · <span class="frac"><span>N − n</span><span>N − 1</span></span></div>
           <p>Der Faktor (N − n)/(N − 1) &lt; 1: kleinere Streuung als im Binomialmodell. Ist N groß gegenüber n, gilt näherungsweise B(n; K/N).</p>
         </div>
       </div>
@@ -306,7 +310,7 @@
         </div>
         <div class="card">
           <h3>Normalverteilung N(μ; σ)</h3>
-          <div class="formula">φ<sub>μ;σ</sub>(x) = 1/(σ√(2π)) · e<sup>−(x−μ)²/(2σ²)</sup></div>
+          <div class="formula">φ<sub>μ;σ</sub>(x) = <span class="frac"><span>1</span><span>σ√(2π)</span></span> · e<sup>−(x−μ)²/(2σ²)</sup></div>
           <p>Glockenkurve, symmetrisch zu x = μ (Maximum), Wendestellen bei μ ± σ. Größeres σ: flacher und breiter.</p>
           <div class="formula">P(a ≤ X ≤ b): normalcdf(a, b, μ, σ)</div>
           <p class="small">Standardisieren: Z = (X − μ)/σ ~ N(0; 1), P(X ≤ x) = Φ((x − μ)/σ), Φ(−z) = 1 − Φ(z). Quantil: P(X ≤ x) = r ⇒ x = invNorm(r, μ, σ).</p>
@@ -335,7 +339,7 @@
       <div class="formula">P(X ≤ k) ≈ P(Y ≤ k + 0,5), &nbsp;P(X ≥ k) ≈ P(Y ≥ k − 0,5), &nbsp;P(X = k) ≈ P(k − 0,5 ≤ Y ≤ k + 0,5)</div>
       <div class="note"><b>Wichtig:</b> Wenn der Taschenrechner binomcdf kann, ist die exakte Binomialrechnung immer erlaubt und genauer. Die Näherung nur verwenden, wenn sie verlangt ist.</div>
 
-      <div class="footer"><span>Stochastik · kompakte Übersicht</span><span>3 / 4</span></div>
+      <div class="footer"><span>Stochastik · kompakte Übersicht</span><span>Seite 3 von 4</span></div>
     </section>
 
     <!-- ============ BLATT 4 ============ -->
@@ -405,7 +409,7 @@
         </ul>
       </div>
 
-      <div class="footer"><span>Stochastik · kompakte Übersicht</span><span>4 / 4</span></div>
+      <div class="footer"><span>Stochastik · kompakte Übersicht</span><span>Seite 4 von 4</span></div>
     </section>
   </main>
   <script id="auto-print">

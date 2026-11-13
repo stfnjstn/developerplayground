@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Lernzettel – Vektorarten</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17243b;
+      --muted: #52627a;
+      --line: #cbd5e1;
+      --accent: #155e75;
+      --soft: #eef6f8;
+      --warm: #fff7e8;
+      --new: #f1f8ee;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #e8edf2;
+      color: var(--ink);
+      font: 10pt/1.35 "Aptos", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    }
+
+    .sheet {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 12mm auto;
+      padding: 14mm 15mm 13mm;
+      background: white;
+      box-shadow: 0 2mm 8mm #17243b20;
+      position: relative;
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { font-size: 22pt; line-height: 1.1; margin-bottom: 2mm; }
+    h2 {
+      color: var(--accent);
+      font-size: 14pt;
+      margin: 5mm 0 2mm;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 1mm;
+    }
+    h3 { font-size: 10.5pt; margin: 2.5mm 0 1mm; }
+    p { margin-bottom: 1.5mm; }
+    ul, ol { margin: 1mm 0 2mm; padding-left: 5mm; }
+    li { margin: 0.6mm 0; }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: 8pt;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: 2mm;
+    }
+    .subtitle { color: var(--muted); margin-bottom: 4mm; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; }
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 2mm;
+      padding: 2.5mm 3mm;
+      break-inside: avoid;
+    }
+    .card h3 { margin-top: 0; }
+    .formula {
+      background: var(--soft);
+      border-left: 2px solid var(--accent);
+      padding: 1.5mm 2.5mm;
+      margin: 1.5mm 0;
+      font-family: "Cambria Math", "STIX Two Math", "Times New Roman", serif;
+      font-size: 10.5pt;
+    }
+    .note {
+      background: var(--warm);
+      border: 1px solid #f0d7a8;
+      border-radius: 2mm;
+      padding: 2mm 3mm;
+      margin: 2mm 0;
+      break-inside: avoid;
+    }
+    .small { color: var(--muted); font-size: 8.5pt; }
+    .tag {
+      display: inline-block;
+      font-size: 8pt;
+      color: var(--accent);
+      font-weight: 700;
+      border: 1px solid #9dbbc4;
+      border-radius: 10mm;
+      padding: .3mm 1.7mm;
+      margin-right: 1mm;
+    }
+    .sketch {
+      width: 100%;
+      height: 36mm;
+      display: block;
+      margin: 1mm auto;
+    }
+    table.steps {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 9.5pt;
+      margin: 1mm 0 2mm;
+    }
+    table.steps td {
+      border-top: 1px solid var(--line);
+      padding: 1mm 1.5mm;
+      vertical-align: top;
+    }
+    table.steps td:first-child { width: 33%; font-weight: 600; }
+    .footer {
+      position: absolute;
+      bottom: 6mm;
+      left: 15mm;
+      right: 15mm;
+      display: flex;
+      justify-content: space-between;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      padding-top: 1.5mm;
+      font-size: 8pt;
+    }
+
+    /* Vektorpfeil über dem Namen (statt Unicode-Kombinationszeichen, das nicht jede Schrift kann) */
+    .vec { position: relative; display: inline-block; padding-top: .28em; line-height: 1; }
+    .vec::before {
+      content: ""; position: absolute; left: .05em; right: .22em; top: .1em;
+      border-top: .07em solid currentColor;
+    }
+    .vec::after {
+      content: ""; position: absolute; right: .02em; top: -.02em;
+      border-left: .28em solid currentColor;
+      border-top: .14em solid transparent; border-bottom: .14em solid transparent;
+    }
+    /* Vektorarten: Farben je Typ */
+    .vt { border-left: 4px solid var(--vt, var(--accent)); }
+    .vt.orts { --vt: #b45309; }
+    .vt.verb { --vt: #155e75; }
+    .vt.norm { --vt: #7c3aed; }
+    .vt h3 { display: flex; align-items: center; gap: 2mm; }
+    .vt .dot { width: 3mm; height: 3mm; border-radius: 50%; background: var(--vt); display: inline-block; }
+    .pill {
+      display: inline-block;
+      font-size: 7.5pt;
+      font-weight: 700;
+      color: #155e75;
+      background: #e3f0f3;
+      border-radius: 10mm;
+      padding: .2mm 1.6mm;
+      white-space: nowrap;
+    }
+    .pill.orts { color: #92400e; background: #fdf0de; }
+    .pill.norm { color: #6d28d9; background: #efe9fd; }
+    .pill.einh { color: #166534; background: #e4f4e8; }
+    .sketch.tall { height: auto; max-height: 52mm; }
+    ol.tight li { margin: 1mm 0; }
+    table.steps td:first-child { width: 31%; }
+
+    .par { font-family: "STIX Two Math", "Cambria Math", "Apple Symbols", "Times New Roman", serif; }
+    @page { size: A4; margin: 0; }
+    @media print {
+      body { background: white; font-size: 9.5pt; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      /* Keine feste Seitenhöhe: Safari/Druckränder würden sonst je Blatt eine Leerseite erzeugen. */
+      .sheet {
+        width: auto;
+        height: auto;
+        min-height: 0;
+        margin: 0;
+        padding: 10mm 14mm 0;
+        box-shadow: none;
+        page-break-after: always;
+        break-after: page;
+      }
+      .footer { position: static; margin-top: 3mm; }
+      /* Etwas verkleinern, damit jedes Blatt auch mit Druckrändern (z. B. Safari-Kopf-/Fußzeilen) auf eine Seite passt. */
+      .sheet { zoom: 0.9; }
+      .sheet:last-child { page-break-after: auto; break-after: auto; }
+      h2 { margin-top: 4mm; }
+      .card, .note, .formula { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <!-- ============ BLATT 1 ============ -->
+    <section class="sheet">
+      <div class="eyebrow">Mathe-Leistungskurs · Vorabi · Rheinland-Pfalz</div>
+      <h1>Analytische Geometrie: Vektorarten</h1>
+      <p class="subtitle">Blatt 1 von 4 · Punkt oder Pfeil? Ortsvektor, Verbindungsvektor und Spezialfälle</p>
+
+      <div class="note"><b>Grundidee:</b> Ein Vektor ist eine <b>Verschiebung</b> (Richtung + Länge), kein fester Pfeil. Alle gleich langen, gleich gerichteten Pfeile sind derselbe Vektor. Ob ein Vektor als Ortsvektor, Richtungsvektor oder Normalenvektor gilt, hängt davon ab, <b>wofür man ihn benutzt</b>. Rechnen tut man mit allen gleich.</div>
+
+      <svg class="sketch tall" viewBox="0 0 680 210" role="img" aria-label="Skizze: Ortsvektoren von O zu A und B, Verbindungsvektor von A nach B und derselbe Vektor an anderer Stelle">
+        <defs>
+          <marker id="mo" markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto"><path d="M0,0 L0,7 L8,3.5 z" fill="#b45309"/></marker>
+          <marker id="mv" markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto"><path d="M0,0 L0,7 L8,3.5 z" fill="#155e75"/></marker>
+        </defs>
+        <line x1="60" y1="185" x2="400" y2="185" stroke="#cbd5e1" stroke-width="1.5"/>
+        <line x1="60" y1="185" x2="60" y2="15" stroke="#cbd5e1" stroke-width="1.5"/>
+        <circle cx="60" cy="185" r="4" fill="#17243b"/>
+        <text x="40" y="203" font-size="15" fill="#17243b">O</text>
+        <line x1="60" y1="185" x2="170" y2="110" stroke="#b45309" stroke-width="2.5" marker-end="url(#mo)"/>
+        <line x1="60" y1="185" x2="335" y2="50" stroke="#b45309" stroke-width="2.5" marker-end="url(#mo)"/>
+        <circle cx="175" cy="107" r="4.5" fill="#17243b"/>
+        <circle cx="340" cy="47" r="4.5" fill="#17243b"/>
+        <text x="160" y="96" font-size="15" fill="#17243b">A</text>
+        <text x="348" y="44" font-size="15" fill="#17243b">B</text>
+        <text x="92" y="125" font-size="13" fill="#b45309">OA</text>
+        <text x="228" y="140" font-size="13" fill="#b45309">OB</text>
+        <line x1="175" y1="107" x2="333" y2="50" stroke="#155e75" stroke-width="2.5" marker-end="url(#mv)"/>
+        <text x="352" y="80" font-size="13" fill="#155e75">AB = OB − OA</text>
+        <line x1="430" y1="170" x2="588" y2="113" stroke="#155e75" stroke-width="2.5" stroke-dasharray="6 4" marker-end="url(#mv)"/>
+        <text x="455" y="185" font-size="13" fill="#155e75">derselbe Vektor AB,</text>
+        <text x="455" y="201" font-size="13" fill="#155e75">nur verschoben</text>
+        <text x="420" y="40" font-size="13" fill="#52627a">Ortsvektoren starten im Ursprung,</text>
+        <text x="420" y="57" font-size="13" fill="#52627a">alle anderen „schweben frei“.</text>
+      </svg>
+
+      <div class="grid">
+        <div class="card vt orts">
+          <h3><span class="dot"></span>Ortsvektor <span class="vec">OP</span></h3>
+          <p><b>Was:</b> Pfeil vom Ursprung O zum Punkt P. Er hat dieselben Koordinaten wie der Punkt: P(3|−1|2) ⇒ <span class="vec">OP</span> = (3 | −1 | 2).</p>
+          <p><b>Wofür:</b></p>
+          <ul>
+            <li><b>Stützvektor</b> in Geraden- und Ebenengleichungen („wo fange ich an?“)</li>
+            <li>Punkte als Vektoren einsetzen, z. B. bei der Punktprobe</li>
+            <li>Neue Punkte berechnen: <span class="vec">OQ</span> = <span class="vec">OP</span> + (Verschiebung)</li>
+            <li>Mittelpunkt <span class="vec">OM</span> = ½(<span class="vec">OA</span> + <span class="vec">OB</span>), Schwerpunkt <span class="vec">OS</span> = ⅓(<span class="vec">OA</span> + <span class="vec">OB</span> + <span class="vec">OC</span>)</li>
+          </ul>
+          <p class="small">Nur der Ortsvektor ist an einen festen Startpunkt (O) gebunden.</p>
+        </div>
+        <div class="card vt verb">
+          <h3><span class="dot"></span>Verbindungsvektor <span class="vec">AB</span></h3>
+          <div class="formula"><span class="vec">AB</span> = <span class="vec">OB</span> − <span class="vec">OA</span> &nbsp;(„Spitze minus Fuß“)</div>
+          <p><b>Wofür:</b></p>
+          <ul>
+            <li><b>Abstand zweier Punkte</b> = Länge |<span class="vec">AB</span>|</li>
+            <li>wird zum <b>Richtungsvektor</b> der Geraden AB bzw. zum <b>Spannvektor</b> einer Ebene</li>
+            <li>Figuren prüfen: Parallelogramm ⇔ <span class="vec">AB</span> = <span class="vec">DC</span>; rechter Winkel ⇔ <span class="vec">AB</span> · <span class="vec">AC</span> = 0</li>
+            <li>Kollinearität: A, B, C auf einer Geraden ⇔ <span class="vec">AC</span> = r · <span class="vec">AB</span></li>
+            <li>Verschiebung: Punkt D = C + <span class="vec">AB</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>Spezielle Vektoren</h2>
+      <table class="steps">
+        <tr><td><span class="pill einh">Einheitsvektor</span> <span class="vec">a</span>₀ = <span class="vec">a</span> / |<span class="vec">a</span>|</td><td>Länge 1, gleiche Richtung. <b>Wofür:</b> Hesse-Normalform; Punkt in gegebenem Abstand: Q = P + s · <span class="vec">a</span>₀ hat von P genau den Abstand s.</td></tr>
+        <tr><td><span class="pill">Gegenvektor</span> −<span class="vec">a</span></td><td>Gleiche Länge, umgekehrte Richtung: <span class="vec">BA</span> = −<span class="vec">AB</span>. <b>Wofür:</b> Richtung umdrehen, z. B. Spiegelung „auf die andere Seite“.</td></tr>
+        <tr><td><span class="pill">Nullvektor</span> <span class="vec">0</span> = (0|0|0)</td><td>Hat keine Richtung. Darf <b>nie</b> Richtungs- oder Normalenvektor sein. <span class="vec">a</span> × <span class="vec">b</span> = <span class="vec">0</span> ⇔ <span class="vec">a</span> und <span class="vec">b</span> sind parallel.</td></tr>
+        <tr><td><span class="pill">Vielfache</span> r · <span class="vec">a</span></td><td>Gleiche Richtung (r &gt; 0) bzw. Gegenrichtung (r &lt; 0), Länge |r|·|<span class="vec">a</span>|. Richtungs- und Normalenvektoren darf man beliebig kürzen oder erweitern: (6|−3|−6) → (2|−1|−2).</td></tr>
+      </table>
+
+      <div class="footer"><span>Analytische Geometrie · Vektorarten</span><span>Seite 1 von 4</span></div>
+    </section>
+
+    <!-- ============ BLATT 2 ============ -->
+    <section class="sheet">
+      <div class="eyebrow">Analytische Geometrie · Vektorarten</div>
+      <h1>Richtung, Spannweite, Senkrechte</h1>
+      <p class="subtitle">Blatt 2 von 4 · Richtungsvektor, Spannvektoren, Normalenvektor und Kreuzprodukt</p>
+
+      <div class="grid">
+        <div class="card vt verb">
+          <h3><span class="dot"></span>Richtungsvektor <span class="vec">u</span> (Gerade)</h3>
+          <div class="formula">g: <span class="vec">x</span> = <span class="vec">OP</span> + t · <span class="vec">u</span> &nbsp;(<span class="vec">u</span> ≠ <span class="vec">0</span>)</div>
+          <p>Gibt an, <b>in welche Richtung</b> die Gerade läuft. Jedes Vielfache r·<span class="vec">u</span> (r ≠ 0) beschreibt dieselbe Gerade.</p>
+          <p><b>Wofür:</b></p>
+          <ul>
+            <li>Lage zweier Geraden: <span class="vec">u</span> <span class="par">∥</span> <span class="vec">v</span>? → parallel oder identisch, sonst schneidend oder windschief</li>
+            <li>Winkel zwischen Geraden: cos α = |<span class="vec">u</span> · <span class="vec">v</span>| / (|<span class="vec">u</span>|·|<span class="vec">v</span>|)</li>
+            <li>Gerade <span class="par">∥</span> Ebene ⇔ <span class="vec">u</span> · <span class="vec">n</span> = 0</li>
+            <li>Gerade ⟂ Ebene ⇔ <span class="vec">u</span> <span class="par">∥</span> <span class="vec">n</span> (Lotgerade: <span class="vec">u</span> = <span class="vec">n</span>)</li>
+            <li>Lotfußpunkt auf g: Bedingung (X − H) · <span class="vec">u</span> = 0</li>
+          </ul>
+        </div>
+        <div class="card vt verb">
+          <h3><span class="dot"></span>Spannvektoren <span class="vec">u</span>, <span class="vec">v</span> (Ebene)</h3>
+          <div class="formula">E: <span class="vec">x</span> = <span class="vec">OP</span> + r · <span class="vec">u</span> + s · <span class="vec">v</span></div>
+          <p>Zwei Richtungsvektoren, die <b>nicht parallel</b> sein dürfen (linear unabhängig). Sie „spannen“ die Ebene auf.</p>
+          <p><b>Wofür:</b></p>
+          <ul>
+            <li>Ebene durch drei Punkte: <span class="vec">u</span> = <span class="vec">AB</span>, <span class="vec">v</span> = <span class="vec">AC</span></li>
+            <li>Normalenvektor bestimmen: <span class="vec">n</span> = <span class="vec">u</span> × <span class="vec">v</span></li>
+            <li>Ebene durch g parallel zu h: Spannvektoren = Richtungsvektoren von g und h</li>
+            <li>Flächen: |<span class="vec">u</span> × <span class="vec">v</span>| = Parallelogramm, ½|<span class="vec">u</span> × <span class="vec">v</span>| = Dreieck</li>
+          </ul>
+        </div>
+      </div>
+
+      <svg class="sketch tall" viewBox="0 0 680 190" role="img" aria-label="Skizze: Ebene mit Stützpunkt P, Spannvektoren u und v und senkrecht darauf stehendem Normalenvektor n">
+        <defs>
+          <marker id="mv2" markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto"><path d="M0,0 L0,7 L8,3.5 z" fill="#155e75"/></marker>
+          <marker id="mn" markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto"><path d="M0,0 L0,7 L8,3.5 z" fill="#7c3aed"/></marker>
+        </defs>
+        <polygon points="110,165 470,165 570,85 210,85" fill="#eef6f8" stroke="#9dbbc4" stroke-width="1.5"/>
+        <text x="520" y="160" font-size="16" fill="#52627a">E</text>
+        <circle cx="250" cy="140" r="4.5" fill="#17243b"/>
+        <text x="225" y="160" font-size="14" fill="#17243b">P</text>
+        <line x1="250" y1="140" x2="385" y2="140" stroke="#155e75" stroke-width="2.5" marker-end="url(#mv2)"/>
+        <text x="395" y="145" font-size="14" fill="#155e75">u</text>
+        <line x1="250" y1="140" x2="305" y2="98" stroke="#155e75" stroke-width="2.5" marker-end="url(#mv2)"/>
+        <text x="306" y="93" font-size="14" fill="#155e75">v</text>
+        <line x1="250" y1="140" x2="250" y2="20" stroke="#7c3aed" stroke-width="2.5" marker-end="url(#mn)"/>
+        <text x="260" y="30" font-size="14" fill="#7c3aed">n = u × v</text>
+        <path d="M250 126 L262 126 L262 140" fill="none" stroke="#7c3aed" stroke-width="1.3"/>
+        <text x="420" y="40" font-size="13" fill="#52627a">n · u = 0 und n · v = 0:</text>
+        <text x="420" y="57" font-size="13" fill="#52627a">n steht senkrecht auf der ganzen Ebene.</text>
+      </svg>
+
+      <div class="grid">
+        <div class="card vt norm">
+          <h3><span class="dot"></span>Normalenvektor <span class="vec">n</span></h3>
+          <p>Steht <b>senkrecht</b> auf der Ebene, also auf allen Spannvektoren. Er beschreibt die „Stellung“ der Ebene.</p>
+          <div class="formula">E: n₁x₁ + n₂x₂ + n₃x₃ = d &nbsp;⇒&nbsp; <span class="vec">n</span> = (n₁ | n₂ | n₃)</div>
+          <p><b>Bestimmen:</b> aus der Koordinatenform ablesen, oder <span class="vec">n</span> = <span class="vec">u</span> × <span class="vec">v</span>, oder das LGS <span class="vec">n</span> · <span class="vec">u</span> = 0, <span class="vec">n</span> · <span class="vec">v</span> = 0 lösen (eine Koordinate frei wählen).</p>
+        </div>
+        <div class="card vt norm">
+          <h3><span class="dot"></span>Wofür der Normalenvektor?</h3>
+          <ul>
+            <li>Koordinatenform aufstellen: d = <span class="vec">n</span> · <span class="vec">OP</span></li>
+            <li><b>Abstand</b> Punkt–Ebene: |<span class="vec">n</span> · <span class="vec">OX</span> − d| / |<span class="vec">n</span>|</li>
+            <li><b>Lotgerade</b> durch X: <span class="vec">x</span> = <span class="vec">OX</span> + t · <span class="vec">n</span> (Lotfußpunkt, Spiegelung)</li>
+            <li>Winkel Ebene–Ebene (cos, mit <span class="vec">n</span>₁, <span class="vec">n</span>₂) und Gerade–Ebene (sin, mit <span class="vec">n</span> und <span class="vec">u</span>)</li>
+            <li>Lage: <span class="vec">n</span>₁ <span class="par">∥</span> <span class="vec">n</span>₂ ⇒ Ebenen parallel oder identisch; <span class="vec">u</span> · <span class="vec">n</span> = 0 ⇒ g <span class="par">∥</span> E</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="note"><b>Kreuzprodukt <span class="vec">a</span> × <span class="vec">b</span> = (a₂b₃ − a₃b₂ | a₃b₁ − a₁b₃ | a₁b₂ − a₂b₁)</b> liefert einen Vektor, der senkrecht auf <span class="vec">a</span> und <span class="vec">b</span> steht (→ Normalenvektor) und dessen Länge die Parallelogrammfläche ist. Probe: Skalarprodukt mit <span class="vec">a</span> und <span class="vec">b</span> muss 0 sein.</div>
+
+      <div class="footer"><span>Analytische Geometrie · Vektorarten</span><span>Seite 2 von 4</span></div>
+    </section>
+
+    <!-- ============ BLATT 3 ============ -->
+    <section class="sheet">
+      <div class="eyebrow">Analytische Geometrie · Vektorarten</div>
+      <h1>Beziehungen und Rechenoperationen</h1>
+      <p class="subtitle">Blatt 3 von 4 · Was sagt welche Rechnung über die Vektoren aus?</p>
+
+      <h2>Wie stehen zwei oder drei Vektoren zueinander?</h2>
+      <table class="steps">
+        <tr><td>parallel (kollinear)</td><td><span class="vec">a</span> = r · <span class="vec">b</span> (jede Koordinate liefert dasselbe r) ⇔ <span class="vec">a</span> × <span class="vec">b</span> = <span class="vec">0</span>. → Geraden parallel, Punkte auf einer Geraden, Ebenen parallel.</td></tr>
+        <tr><td>orthogonal (senkrecht)</td><td><span class="vec">a</span> · <span class="vec">b</span> = 0. → rechter Winkel, Lot, Normalenvektor prüfen, „steht senkrecht auf“.</td></tr>
+        <tr><td>komplanar (in einer Ebene)</td><td>Einer ist Linearkombination der anderen: <span class="vec">c</span> = r · <span class="vec">a</span> + s · <span class="vec">b</span> ⇔ (<span class="vec">a</span> × <span class="vec">b</span>) · <span class="vec">c</span> = 0. → Vier Punkte in einer Ebene? Zwei Geraden schneidend (statt windschief)?</td></tr>
+        <tr><td>linear unabhängig</td><td>r · <span class="vec">a</span> + s · <span class="vec">b</span> + t · <span class="vec">c</span> = <span class="vec">0</span> hat nur die Lösung r = s = t = 0. Drei unabhängige Vektoren bilden eine Basis des Raums.</td></tr>
+      </table>
+
+      <h2>Was liefert welche Operation?</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Addition und Vielfache → <i>Vektor</i></h3>
+          <ul>
+            <li>Punkte verschieben: <span class="vec">OQ</span> = <span class="vec">OP</span> + <span class="vec">a</span></li>
+            <li>Punkte auf Geraden und Ebenen erzeugen (Parameter einsetzen)</li>
+            <li>Mittelpunkt, Schwerpunkt, Teilpunkte: <span class="vec">OT</span> = <span class="vec">OA</span> + ⅓ · <span class="vec">AB</span></li>
+            <li>Spiegeln: P' = P + 2 · <span class="vec">PF</span> (F = Lotfußpunkt bzw. Spiegelzentrum)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Betrag |<span class="vec">a</span>| → <i>Zahl (Länge)</i></h3>
+          <div class="formula">|<span class="vec">a</span>| = √(a₁² + a₂² + a₃²)</div>
+          <ul>
+            <li>Abstand zweier Punkte = |<span class="vec">AB</span>|</li>
+            <li>Seitenlängen, Umfang, gleichschenklig?</li>
+            <li>Normieren (Einheitsvektor)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Skalarprodukt <span class="vec">a</span> · <span class="vec">b</span> → <i>Zahl</i></h3>
+          <div class="formula"><span class="vec">a</span> · <span class="vec">b</span> = a₁b₁ + a₂b₂ + a₃b₃ = |<span class="vec">a</span>| · |<span class="vec">b</span>| · cos φ</div>
+          <ul>
+            <li>= 0 ⇒ senkrecht</li>
+            <li>Winkel zwischen Vektoren, Geraden, Ebenen</li>
+            <li>Koordinatenform: <span class="vec">n</span> · <span class="vec">x</span> = d</li>
+            <li>Vorzeichen: &gt; 0 spitzer Winkel, &lt; 0 stumpfer Winkel</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Kreuzprodukt <span class="vec">a</span> × <span class="vec">b</span> → <i>Vektor</i></h3>
+          <ul>
+            <li>Richtung: senkrecht auf <span class="vec">a</span> und <span class="vec">b</span> → Normalenvektor; Richtung der Schnittgeraden zweier Ebenen: <span class="vec">n</span>₁ × <span class="vec">n</span>₂</li>
+            <li>Länge: Parallelogrammfläche, Dreieck = Hälfte</li>
+            <li>= <span class="vec">0</span> ⇒ <span class="vec">a</span> <span class="par">∥</span> <span class="vec">b</span></li>
+          </ul>
+          <h3>Spatprodukt (<span class="vec">a</span> × <span class="vec">b</span>) · <span class="vec">c</span> → <i>Zahl</i></h3>
+          <p>Betrag = Volumen des Spats; dreiseitige Pyramide (Tetraeder) = ⅙ davon. = 0 ⇒ komplanar.</p>
+        </div>
+      </div>
+
+      <div class="note"><b>Typische Verwechslung:</b> Punkte und Vektoren nicht mischen. „A + B“ ergibt keinen sinnvollen Punkt, ½(<span class="vec">OA</span> + <span class="vec">OB</span>) schon (Mittelpunkt). Und: Verbindungsvektor immer „Ende minus Anfang“. <span class="vec">AB</span> = B − A, nicht A − B.</div>
+
+      <div class="footer"><span>Analytische Geometrie · Vektorarten</span><span>Seite 3 von 4</span></div>
+    </section>
+
+    <!-- ============ BLATT 4 ============ -->
+    <section class="sheet">
+      <div class="eyebrow">Analytische Geometrie · Vektorarten</div>
+      <h1>Welcher Vektor für welche Aufgabe?</h1>
+      <p class="subtitle">Blatt 4 von 4 · Übersicht und ein Beispiel, in dem alle Vektorarten vorkommen</p>
+
+      <table class="steps">
+        <tr><td>Aufgabe</td><td><b>Benötigte Vektoren → Rechnung</b></td></tr>
+        <tr><td>Gerade durch A und B</td><td><span class="pill orts">Ortsvektor</span> <span class="vec">OA</span> + <span class="pill">Verbindung</span> <span class="vec">AB</span> als Richtung</td></tr>
+        <tr><td>Ebene durch A, B, C</td><td><span class="pill orts">Ortsvektor</span> <span class="vec">OA</span> + <span class="pill">Spannvektoren</span> <span class="vec">AB</span>, <span class="vec">AC</span> → <span class="pill norm">Normale</span> <span class="vec">AB</span> × <span class="vec">AC</span></td></tr>
+        <tr><td>Länge, Abstand Punkt–Punkt</td><td><span class="pill">Verbindung</span> |<span class="vec">AB</span>|</td></tr>
+        <tr><td>Abstand Punkt–Ebene, Lot, Spiegelung</td><td><span class="pill norm">Normale</span> <span class="vec">n</span> (Formel oder Lotgerade <span class="vec">x</span> = <span class="vec">OX</span> + t·<span class="vec">n</span>)</td></tr>
+        <tr><td>Abstand Punkt–Gerade</td><td><span class="pill">Richtung</span> <span class="vec">u</span> und Verbindung zum Lotfuß: (X − H) · <span class="vec">u</span> = 0</td></tr>
+        <tr><td>Abstand windschiefer Geraden</td><td><span class="pill norm">gemeinsame Normale</span> <span class="vec">u</span> × <span class="vec">v</span> und Verbindung <span class="vec">PQ</span> der Stützpunkte</td></tr>
+        <tr><td>Winkel Gerade–Gerade</td><td><span class="vec">u</span> und <span class="vec">v</span>, mit cos</td></tr>
+        <tr><td>Winkel Ebene–Ebene</td><td><span class="vec">n</span>₁ und <span class="vec">n</span>₂, mit cos</td></tr>
+        <tr><td>Winkel Gerade–Ebene</td><td><span class="vec">u</span> und <span class="vec">n</span>, mit <b>sin</b></td></tr>
+        <tr><td>Punkt im Abstand s von P in Richtung <span class="vec">a</span></td><td><span class="pill einh">Einheitsvektor</span> <span class="vec">OQ</span> = <span class="vec">OP</span> ± s · <span class="vec">a</span>₀</td></tr>
+        <tr><td>Fläche und Volumen</td><td>Kreuzprodukt der <span class="pill">Kantenvektoren</span>; Spatprodukt</td></tr>
+      </table>
+
+      <h2>Durchgerechnetes Beispiel</h2>
+      <p>Gegeben: A(1|1|1), B(3|3|2), C(2|−1|3) und die Spitze S(7|0|−3) einer Pyramide ABCS.</p>
+      <div class="grid">
+        <div class="card">
+          <ol class="tight">
+            <li><span class="pill">Verbindung</span> <span class="vec">AB</span> = (2|2|1), <span class="vec">AC</span> = (1|−2|2); |<span class="vec">AB</span>| = |<span class="vec">AC</span>| = √9 = 3.</li>
+            <li><span class="pill">Skalarprodukt</span> <span class="vec">AB</span> · <span class="vec">AC</span> = 2 − 4 + 2 = 0 ⇒ rechter Winkel bei A.</li>
+            <li><span class="pill norm">Normale</span> <span class="vec">AB</span> × <span class="vec">AC</span> = (6|−3|−6), gekürzt <span class="vec">n</span> = (2|−1|−2), |<span class="vec">n</span>| = 3.</li>
+            <li><span class="pill orts">Ortsvektor</span> d = <span class="vec">n</span> · <span class="vec">OA</span> = 2 − 1 − 2 = −1 ⇒ E: 2x₁ − x₂ − 2x₃ = −1. Probe mit B und C: −1 ✓.</li>
+            <li><span class="pill einh">Einheitsvektor</span> <span class="vec">AB</span>₀ = ⅓(2|2|1). Punkt auf dem Strahl AB im Abstand 6 von A: <span class="vec">OA</span> + 6 · <span class="vec">AB</span>₀ = (5|5|3).</li>
+          </ol>
+        </div>
+        <div class="card">
+          <ol class="tight" start="6">
+            <li>Dreiecksfläche: ½ · |<span class="vec">AB</span> × <span class="vec">AC</span>| = ½ · 9 = 4,5.</li>
+            <li>Höhe = Abstand S–E: |2·7 − 0 − 2·(−3) − (−1)| / 3 = 21/3 = 7.</li>
+            <li>Volumen: ⅓ · 4,5 · 7 = 10,5. Kontrolle Spatprodukt: (<span class="vec">AB</span> × <span class="vec">AC</span>) · <span class="vec">AS</span> = (6|−3|−6) · (6|−1|−4) = 63, ⅙ · 63 = 10,5 ✓.</li>
+            <li><span class="pill norm">Lotgerade</span> <span class="vec">x</span> = (7|0|−3) + t·(2|−1|−2) in E: 20 + 9t = −1 ⇒ t = −7/3 ⇒ Lotfußpunkt F(7/3 | 7/3 | 5/3).</li>
+            <li>Schwerpunkt des Dreiecks: ⅓(<span class="vec">OA</span> + <span class="vec">OB</span> + <span class="vec">OC</span>) = (2|1|2).</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="note"><b>Merksatz:</b> <span class="pill orts">Ortsvektor</span> = <i>wo?</i> &nbsp;·&nbsp; <span class="pill">Richtungs- bzw. Verbindungsvektor</span> = <i>wohin und wie weit?</i> &nbsp;·&nbsp; <span class="pill norm">Normalenvektor</span> = <i>senkrecht zu was?</i> &nbsp;·&nbsp; <span class="pill einh">Einheitsvektor</span> = <i>genau 1 lang</i></div>
+
+      <div class="footer"><span>Analytische Geometrie · Vektorarten</span><span>Seite 4 von 4</span></div>
+    </section>
+  </main>
+  <script id="auto-print">
+    // Wird die Seite mit #print geöffnet (z. B. von index.html), startet direkt der Druckdialog.
+    if (location.hash === "#print") {
+      window.addEventListener("load", function () { setTimeout(function () { window.print(); }, 300); });
+    }
+  </script>
+</body>
+</html>

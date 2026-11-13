@@ -63,22 +63,6 @@
       font-weight: 600;
     }
 
-    .version {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      color: var(--muted);
-      font-size: 9.5pt;
-    }
-    .version select {
-      font: inherit;
-      padding: 5px 6px;
-      border: 1px solid var(--line);
-      border-radius: 6px;
-      background: white;
-      color: var(--ink);
-    }
-
     .export {
       font: inherit;
       font-weight: 600;
@@ -124,39 +108,35 @@
       <button role="tab" data-topic="analysis">Analysis</button>
       <button role="tab" data-topic="stochastik">Stochastik</button>
       <button role="tab" data-topic="geometrie">Analytische Geometrie</button>
+      <button role="tab" data-topic="vektoren">Vektorarten</button>
+      <button role="tab" data-topic="abstaende">Abstände</button>
     </nav>
-
-    <label class="version">Fassung
-      <select id="version">
-        <option value="korrigiert" selected>Claude</option>
-        <option value="original">Copilot</option>
-      </select>
-    </label>
 
     <button class="export" id="export" title="Ausgewähltes Themengebiet als PDF speichern">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
       Als PDF exportieren
     </button>
 
-    <p class="hint">Tipp: Im Druckdialog unten links „PDF“ → „Als PDF sichern“ wählen (Chrome: Ziel „Als PDF speichern“), Format A4. „Kopf- und Fußzeilen drucken“ ausschalten, damit URL und Datum nicht mitgedruckt werden. Tasten 1–3 wechseln das Thema.</p>
+    <p class="hint">Tipp: Im Druckdialog unten links „PDF“ → „Als PDF sichern“ wählen (Chrome: Ziel „Als PDF speichern“), Format A4. „Kopf- und Fußzeilen drucken“ ausschalten, damit URL und Datum nicht mitgedruckt werden. Tasten 1–5 wechseln das Thema.</p>
   </header>
 
   <iframe id="viewer" title="Lernzettel"></iframe>
 
   <script>
     var TOPICS = {
-      analysis:   { name: "Analysis",              original: "analysis.html",              korrigiert: "analysis-korrigiert.html" },
-      stochastik: { name: "Stochastik",            original: "stochastik.html",            korrigiert: "stochastik-korrigiert.html" },
-      geometrie:  { name: "Analytische Geometrie", original: "analytische-geometrie.html", korrigiert: "analytische-geometrie-korrigiert.html" }
+      analysis:   { name: "Analysis",              file: "analysis-korrigiert.html" },
+      stochastik: { name: "Stochastik",            file: "stochastik-korrigiert.html" },
+      geometrie:  { name: "Analytische Geometrie", file: "analytische-geometrie-korrigiert.html" },
+      vektoren:   { name: "Vektorarten",           file: "analytische-geometrie-vektoren.html" },
+      abstaende:  { name: "Abstände",              file: "analytische-geometrie-abstaende.html" }
     };
-    var ORDER = ["analysis", "stochastik", "geometrie"];
+    var ORDER = ["analysis", "stochastik", "geometrie", "vektoren", "abstaende"];
 
     var viewer = document.getElementById("viewer");
-    var versionSelect = document.getElementById("version");
     var tabs = document.querySelectorAll("nav.tabs button");
     var current = "analysis";
 
-    function fileFor(topic) { return TOPICS[topic][versionSelect.value]; }
+    function fileFor(topic) { return TOPICS[topic].file; }
 
     function show(topic) {
       if (!TOPICS[topic]) topic = "analysis";
@@ -179,28 +159,20 @@
         return;
       } catch (e) {}
       // 2. Fallback: Lernzettel in neuem Tab öffnen.
-      var file = fileFor(current);
-      if (versionSelect.value === "korrigiert") {
-        window.open(file + "#print", "_blank"); // startet dort automatisch den Druckdialog
-      } else {
-        window.open(file, "_blank");
-        alert("Die Copilot-Fassung wurde in einem neuen Tab geöffnet. Dort mit ⌘P (Strg+P) drucken und „Als PDF sichern“ wählen.");
-      }
+      window.open(fileFor(current) + "#print", "_blank"); // startet dort automatisch den Druckdialog
     }
 
     tabs.forEach(function (b) {
       b.addEventListener("click", function () { show(b.dataset.topic); });
     });
-    versionSelect.addEventListener("change", function () { show(current); });
     document.getElementById("export").addEventListener("click", exportPdf);
     document.addEventListener("keydown", function (e) {
-      if (e.target.tagName === "SELECT" || e.metaKey || e.ctrlKey || e.altKey) return;
-      var i = ["1", "2", "3"].indexOf(e.key);
+      if (e.metaKey || e.ctrlKey || e.altKey) return;
+      var i = ["1", "2", "3", "4", "5"].indexOf(e.key);
       if (i >= 0) show(ORDER[i]);
     });
     window.addEventListener("hashchange", function () { show(location.hash.slice(1)); });
 
-    versionSelect.value = "korrigiert"; // Standard: Claude-Fassung
     show(location.hash.slice(1) || "analysis");
   </script>
 </body>

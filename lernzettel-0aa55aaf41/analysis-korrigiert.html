@@ -119,6 +119,10 @@
       font-size: 8pt;
     }
 
+    /* Brüche: Zähler über Nenner */
+    .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; margin: 0 .15em; line-height: 1.2; }
+    .frac > span { padding: 0 .25em; }
+    .frac > span + span { border-top: 1px solid currentColor; }
     @page { size: A4; margin: 0; }
     @media print {
       body { background: white; font-size: 9.5pt; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
@@ -155,7 +159,7 @@
           <h3>Ableitungsregeln</h3>
           <div class="formula">(u ± v)' = u' ± v' &nbsp;&nbsp; (c·u)' = c·u'</div>
           <div class="formula">Produktregel: (u·v)' = u'·v + u·v'</div>
-          <div class="formula">Quotientenregel: (u/v)' = (u'·v − u·v') / v²</div>
+          <div class="formula">Quotientenregel: (<span class="frac"><span>u</span><span>v</span></span>)' = <span class="frac"><span>u'·v − u·v'</span><span>v²</span></span></div>
           <div class="formula">Kettenregel: (f(g(x)))' = f'(g(x))·g'(x)</div>
           <p class="small">„Äußere Ableitung mal innere Ableitung.“ Quotientenregel: im Zähler <b>minus</b>, Reihenfolge u'v zuerst!</p>
         </div>
@@ -169,7 +173,8 @@
             <tr><td>a<sup>x</sup></td><td>ln(a)·a<sup>x</sup></td></tr>
             <tr><td>ln x</td><td>1/x &nbsp;(x &gt; 0)</td></tr>
             <tr><td>ln(u(x))</td><td>u'(x) / u(x)</td></tr>
-            <tr><td>sin x &nbsp;/&nbsp; cos x</td><td>cos x &nbsp;/&nbsp; −sin x</td></tr>
+            <tr><td>sin x</td><td>cos x</td></tr>
+            <tr><td>cos x</td><td>−sin x</td></tr>
           </table>
         </div>
       </div>
@@ -208,7 +213,7 @@
         <tr><td>7. Skizze</td><td>Alle Punkte und Asymptoten eintragen; Plausibilität prüfen.</td></tr>
       </table>
 
-      <div class="footer"><span>Analysis · kompakte Übersicht</span><span>1 / 4</span></div>
+      <div class="footer"><span>Analysis · kompakte Übersicht</span><span>Seite 1 von 4</span></div>
     </section>
 
     <!-- ============ BLATT 2 ============ -->
@@ -250,7 +255,7 @@
         <div class="card">
           <h3>Geraden am Graphen im Punkt (x₀ | f(x₀))</h3>
           <div class="formula">Tangente: y = f'(x₀)·(x − x₀) + f(x₀)</div>
-          <div class="formula">Normale: y = −1/f'(x₀) · (x − x₀) + f(x₀)</div>
+          <div class="formula">Normale: y = −<span class="frac"><span>1</span><span>f'(x₀)</span></span> · (x − x₀) + f(x₀)</div>
           <p>Normale nur für f'(x₀) ≠ 0; bei waagerechter Tangente ist die Normale x = x₀. Senkrecht: m₁·m₂ = −1.</p>
           <p class="small">Tangente von einem Punkt P außerhalb: Tangente in allgemeiner Stelle u aufstellen, P einsetzen, nach u lösen.</p>
         </div>
@@ -279,7 +284,7 @@
         </div>
       </div>
 
-      <div class="footer"><span>Analysis · kompakte Übersicht</span><span>2 / 4</span></div>
+      <div class="footer"><span>Analysis · kompakte Übersicht</span><span>Seite 2 von 4</span></div>
     </section>
 
     <!-- ============ BLATT 3 ============ -->
@@ -298,7 +303,8 @@
             <tr><td>1/x</td><td>ln|x|</td></tr>
             <tr><td>e<sup>x</sup></td><td>e<sup>x</sup></td></tr>
             <tr><td>e<sup>kx+b</sup> (k ≠ 0)</td><td>(1/k)·e<sup>kx+b</sup></td></tr>
-            <tr><td>sin x &nbsp;/&nbsp; cos x</td><td>−cos x &nbsp;/&nbsp; sin x</td></tr>
+            <tr><td>sin x</td><td>−cos x</td></tr>
+            <tr><td>cos x</td><td>sin x</td></tr>
             <tr><td>f(kx + b) (lineare Verkettung)</td><td>(1/k)·F(kx + b)</td></tr>
           </table>
           <p>Linearität: ∫(a·f + b·g) dx = a·∫f dx + b·∫g dx.</p>
@@ -307,7 +313,7 @@
           <h3>Verkettungen</h3>
           <div class="formula">∫ g'(x)·f(g(x)) dx = F(g(x)) + C</div>
           <p>Erkennbar daran, dass die innere Ableitung als Faktor dasteht. Beispiel: ∫ 2x·e<sup>x²</sup> dx = e<sup>x²</sup> + C.</p>
-          <div class="formula">∫ u'(x)/u(x) dx = ln|u(x)| + C</div>
+          <div class="formula">∫ <span class="frac"><span>u'(x)</span><span>u(x)</span></span> dx = ln|u(x)| + C</div>
           <p class="small">Falls im Unterricht behandelt – partielle Integration: ∫ u'·v dx = u·v − ∫ u·v' dx (z. B. für x·e<sup>x</sup>).</p>
           <p><b>Probe:</b> F ableiten – es muss f herauskommen.</p>
         </div>
@@ -341,7 +347,7 @@
           <h3>Integralfunktion</h3>
           <div class="formula">I<sub>a</sub>(x) = ∫<sub>a</sub><sup>x</sup> f(t) dt &nbsp;⇒&nbsp; I<sub>a</sub>'(x) = f(x), &nbsp;I<sub>a</sub>(a) = 0</div>
           <p>I steigt, wo f &gt; 0; Extremstellen von I bei Vorzeichenwechseln von f; Wendestellen von I bei Extremstellen von f.</p>
-          <div class="formula">Mittelwert: m = 1/(b − a) · ∫<sub>a</sub><sup>b</sup> f(x) dx</div>
+          <div class="formula">Mittelwert: m = <span class="frac"><span>1</span><span>b − a</span></span> · ∫<sub>a</sub><sup>b</sup> f(x) dx</div>
         </div>
         <div class="card">
           <h3>Uneigentliche Integrale &amp; Rotation</h3>
@@ -352,7 +358,7 @@
         </div>
       </div>
 
-      <div class="footer"><span>Analysis · kompakte Übersicht</span><span>3 / 4</span></div>
+      <div class="footer"><span>Analysis · kompakte Übersicht</span><span>Seite 3 von 4</span></div>
     </section>
 
     <!-- ============ BLATT 4 ============ -->
@@ -363,7 +369,7 @@
 
       <h2>Optimierungsaufgaben (Extremwertprobleme)</h2>
       <ol>
-        <li><b>Zielgröße</b> festlegen: Was soll maximal/minimal werden? Formel mit (zunächst) mehreren Variablen.</li>
+        <li><b>Zielgröße</b> festlegen: Was soll maximal oder minimal werden? Formel mit (zunächst) mehreren Variablen.</li>
         <li><b>Nebenbedingung</b> nach einer Variablen auflösen und einsetzen → <b>Zielfunktion</b> in einer Variablen.</li>
         <li><b>Definitionsbereich</b> aus dem Sachkontext (Längen &gt; 0 usw.).</li>
         <li>Ableiten, f' = 0, hinreichendes Kriterium; <b>Randwerte</b> vergleichen.</li>
@@ -373,7 +379,7 @@
       <h2>Wachstumsmodelle</h2>
       <div class="grid">
         <div class="card">
-          <h3>Exponentielles Wachstum / Zerfall</h3>
+          <h3>Exponentielles Wachstum und Zerfall</h3>
           <div class="formula">f(t) = c·e<sup>k·t</sup>, &nbsp;f'(t) = k·f(t)</div>
           <ul>
             <li>c = f(0): Anfangswert; k &gt; 0 Wachstum, k &lt; 0 Zerfall.</li>
@@ -409,7 +415,7 @@
           <div class="formula">Bestand(b) = Bestand(a) + ∫<sub>a</sub><sup>b</sup> r(t) dt</div>
           <ul>
             <li>Mittlere Änderungsrate: (f(b) − f(a)) / (b − a); momentane: f'(x₀).</li>
-            <li>Einheiten: Liter/min · min = Liter.</li>
+            <li>Einheiten: (Liter pro Minute) · Minuten = Liter.</li>
             <li>Bestand maximal, wo die Rate r von + nach − wechselt.</li>
             <li>Schnittpunkte f(x) = g(x); <b>Berührung</b>: f(a) = g(a) und f'(a) = g'(a).</li>
           </ul>
@@ -424,12 +430,12 @@
           <li>Integral: Flächenbilanz oder Flächeninhalt? Nullstellen und Schnittstellen als Grenzen beachten.</li>
           <li>Stammfunktion durch Ableiten kontrollieren.</li>
           <li>Bei Scharen: Fallunterscheidung für den Parameter nicht vergessen.</li>
-          <li>Taschenrechner bei sin/cos auf <b>RAD</b> stellen; exakt rechnen, erst am Ende runden; Antwortsatz mit Einheit.</li>
+          <li>Taschenrechner bei sin und cos auf <b>RAD</b> stellen; exakt rechnen, erst am Ende runden; Antwortsatz mit Einheit.</li>
         </ul>
       </div>
       <p class="small">Notation: C ist die Integrationskonstante; bei bestimmten Integralen fällt sie in F(b) − F(a) weg.</p>
 
-      <div class="footer"><span>Analysis · kompakte Übersicht</span><span>4 / 4</span></div>
+      <div class="footer"><span>Analysis · kompakte Übersicht</span><span>Seite 4 von 4</span></div>
     </section>
   </main>
   <script id="auto-print">
