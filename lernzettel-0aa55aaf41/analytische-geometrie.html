@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Lernzettel – Analytische Geometrie</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17243b;
+      --muted: #52627a;
+      --line: #cbd5e1;
+      --accent: #155e75;
+      --soft: #eef6f8;
+      --warm: #fff7e8;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #e8edf2;
+      color: var(--ink);
+      font: 10pt/1.35 "Aptos", "Segoe UI", Arial, sans-serif;
+    }
+
+    .sheet {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 12mm auto;
+      padding: 14mm 15mm 13mm;
+      background: white;
+      box-shadow: 0 2mm 8mm #17243b20;
+      position: relative;
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { font-size: 22pt; line-height: 1.1; margin-bottom: 2mm; }
+    h2 {
+      color: var(--accent);
+      font-size: 14pt;
+      margin: 5mm 0 2mm;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 1mm;
+    }
+    h3 { font-size: 10.5pt; margin: 2.5mm 0 1mm; }
+    p { margin-bottom: 1.5mm; }
+    ul, ol { margin: 1mm 0 2mm; padding-left: 5mm; }
+    li { margin: 0.6mm 0; }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: 8pt;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: 2mm;
+    }
+    .subtitle { color: var(--muted); margin-bottom: 4mm; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; }
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 2mm;
+      padding: 2.5mm 3mm;
+      break-inside: avoid;
+    }
+    .card h3 { margin-top: 0; }
+    .formula {
+      background: var(--soft);
+      border-left: 2px solid var(--accent);
+      padding: 1.5mm 2.5mm;
+      margin: 1.5mm 0;
+      font-family: "Cambria Math", "Times New Roman", serif;
+      font-size: 10.5pt;
+    }
+    .note {
+      background: var(--warm);
+      border: 1px solid #f0d7a8;
+      border-radius: 2mm;
+      padding: 2mm 3mm;
+      margin: 2mm 0;
+      break-inside: avoid;
+    }
+    .small { color: var(--muted); font-size: 8.5pt; }
+    .tag {
+      display: inline-block;
+      font-size: 8pt;
+      color: var(--accent);
+      font-weight: 700;
+      border: 1px solid #9dbbc4;
+      border-radius: 10mm;
+      padding: .3mm 1.7mm;
+      margin-right: 1mm;
+    }
+    .sketch {
+      width: 100%;
+      height: 39mm;
+      display: block;
+      margin: 1mm auto;
+    }
+    .footer {
+      position: absolute;
+      bottom: 6mm;
+      left: 15mm;
+      right: 15mm;
+      display: flex;
+      justify-content: space-between;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      padding-top: 1.5mm;
+      font-size: 8pt;
+    }
+
+    @page { size: A4; margin: 0; }
+    @media print {
+      body { background: white; font-size: 9.5pt; }
+      .sheet {
+        width: 210mm;
+        height: 297mm;
+        min-height: 0;
+        margin: 0;
+        padding: 13mm 15mm 13mm;
+        box-shadow: none;
+        page-break-after: always;
+        break-after: page;
+      }
+      .sheet:last-child { page-break-after: auto; break-after: auto; }
+      h2 { margin-top: 4mm; }
+      .card, .note, .formula { break-inside: avoid; }
+      a { color: inherit; text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="sheet">
+      <div class="eyebrow">Mathe-Leistungskurs · Vorabi · Rheinland-Pfalz</div>
+      <h1>Analytische Geometrie</h1>
+      <p class="subtitle">Blatt 1 von 3 · Vektoren, Geraden und Abstände</p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Vektor-Werkzeugkasten</h3>
+          <p>Für <b>a</b> = (a₁,a₂,a₃):</p>
+          <div class="formula">|a| = √(a₁² + a₂² + a₃²)</div>
+          <div class="formula">a · b = a₁b₁ + a₂b₂ + a₃b₃</div>
+          <ul>
+            <li><b>Skalarprodukt</b>: Winkel und Orthogonalität. a ⟂ b genau dann, wenn a · b = 0.</li>
+            <li><b>Vektorprodukt</b>: a × b steht senkrecht auf a und b; |a × b| ist die Parallelogrammfläche.</li>
+            <li><b>Spatprodukt</b>: a · (b × c) ist das orientierte Volumen; Betrag 0 bedeutet Koplanarität.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Geradengleichung</h3>
+          <div class="formula">g: x = p + t·u, &nbsp;t ∈ ℝ</div>
+          <p><b>p</b> ist ein Stützvektor (Punkt auf g), <b>u ≠ 0</b> ein Richtungsvektor. Für eine Gerade durch A und B: u = B − A.</p>
+          <div class="formula">Winkel: cos(α) = |u · v| / (|u| |v|)</div>
+          <p class="small">Der Betrag liefert den kleineren, nicht-stumpfen Schnittwinkel zweier Geraden. Für gerichtete Vektoren ohne Betrag erhält man den orientierten Winkel.</p>
+        </div>
+      </div>
+
+      <h2>Lagebeziehung zweier Geraden</h2>
+      <ol>
+        <li>Gleichung <b>p + t·u = q + s·v</b> komponentenweise lösen.</li>
+        <li>Eine Lösung (t,s): Geraden schneiden sich; einsetzen ergibt den Schnittpunkt.</li>
+        <li>Keine Lösung: Richtung prüfen. Sind u und v parallel, sind die Geraden echt parallel; sonst windschief.</li>
+      </ol>
+      <div class="note"><b>Parallel-Test:</b> u = λv für ein λ. Bei parallelen Richtungen zusätzlich prüfen, ob q − p ebenfalls parallel zu u ist: dann identisch, sonst echt parallel. In ℝ³ sind zwei nicht parallele Geraden genau dann koplanar, wenn (q − p) · (u × v) = 0.</div>
+
+      <h2>Abstände zu Geraden</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Punkt X zu g: x = p + t·u</h3>
+          <div class="formula">d(X,g) = |(X − p) × u| / |u|</div>
+          <p>Alternativ den Lotfuß H bestimmen: (X − H) · u = 0 und H ∈ g; dann d = |X − H|.</p>
+        </div>
+        <div class="card">
+          <h3>Zwei Geraden g₁, g₂</h3>
+          <div class="formula">schneidend: d = 0</div>
+          <div class="formula">parallel: d = |(q − p) × u| / |u|</div>
+          <div class="formula">windschief: d = |(q − p) · (u × v)| / |u × v|</div>
+          <p class="small">Dabei g₁: p + t·u und g₂: q + s·v; bei windschiefen Geraden ist u × v ≠ 0.</p>
+        </div>
+      </div>
+
+      <h2>Abstandsbild: Punkt und Gerade</h2>
+      <svg class="sketch" viewBox="0 0 680 145" role="img" aria-label="Skizze: Lotabstand von einem Punkt zu einer Geraden">
+        <defs>
+          <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L7,3 z" fill="#155e75"/>
+          </marker>
+        </defs>
+        <line x1="70" y1="115" x2="610" y2="115" stroke="#52627a" stroke-width="2"/>
+        <line x1="315" y1="30" x2="315" y2="115" stroke="#155e75" stroke-width="2" stroke-dasharray="5 4"/>
+        <circle cx="315" cy="30" r="5" fill="#b45309"/>
+        <circle cx="315" cy="115" r="5" fill="#155e75"/>
+        <text x="329" y="34" fill="#17243b" font-size="16">X</text>
+        <text x="329" y="110" fill="#17243b" font-size="16">H (Lotfuß)</text>
+        <text x="325" y="78" fill="#155e75" font-size="14">d(X,g)</text>
+        <text x="555" y="106" fill="#17243b" font-size="16">g</text>
+        <path d="M315 101 L329 101 L329 115" fill="none" stroke="#155e75" stroke-width="1.5"/>
+        <line x1="145" y1="104" x2="220" y2="104" stroke="#155e75" stroke-width="2" marker-end="url(#arrow)"/>
+        <text x="151" y="94" fill="#155e75" font-size="14">Richtung u</text>
+      </svg>
+      <p class="small">Der kürzeste Abstand steht immer senkrecht auf der Geraden (bzw. auf beiden windschiefen Geraden).</p>
+
+      <div class="footer"><span>Analytische Geometrie · kompakte Übersicht</span><span>1 / 3</span></div>
+    </section>
+
+    <section class="sheet">
+      <div class="eyebrow">Analytische Geometrie</div>
+      <h1>Ebenen und Gerade–Ebene</h1>
+      <p class="subtitle">Blatt 2 von 3 · Darstellungen erkennen und passend einsetzen</p>
+
+      <h2>Ebenengleichungen: drei wichtige Formen</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Parameterform</h3>
+          <div class="formula">E: x = p + r·u + s·v</div>
+          <p>Stützvektor p liegt in E; u und v sind unabhängige Richtungsvektoren der Ebene.</p>
+          <p><span class="tag">Gut für</span>Punkte einsetzen, Ebene aus drei Punkten aufstellen; Richtungen direkt ablesen.</p>
+        </div>
+        <div class="card">
+          <h3>Normalenform</h3>
+          <div class="formula">E: n · (x − p) = 0</div>
+          <p>n ist ein Normalenvektor senkrecht zur Ebene; p liegt auf E.</p>
+          <p><span class="tag">Gut für</span>Orthogonalität, Punktprobe, Abstände und Lagechecks.</p>
+        </div>
+        <div class="card">
+          <h3>Koordinatenform</h3>
+          <div class="formula">E: ax + by + cz = d, &nbsp;n = (a,b,c)</div>
+          <p>Der Normalenvektor lässt sich direkt ablesen. Aus der Parameterform: n = u × v, dann d = n · p.</p>
+          <p><span class="tag">Gut für</span>Schnittberechnungen und Punktprobe: Koordinaten einsetzen.</p>
+        </div>
+        <div class="card">
+          <h3>Hesse-Normalform</h3>
+          <div class="formula">n₀ · (x − p) = 0, &nbsp;n₀ = n / |n|</div>
+          <p>Der Normalenvektor ist normiert. Die linke Seite ist der <b>orientierte</b> Abstand; der Abstand ist ihr Betrag.</p>
+          <p><span class="tag">Gut für</span>Abstände ohne zusätzlichen Nenner.</p>
+        </div>
+      </div>
+      <div class="note"><b>Umformen:</b> Parameterform → n = u × v → n · (x − p) = 0 → Koordinatenform. Die Koordinatenform lässt sich durch |n| dividieren zur Hesseform. Eine Ebene ist eindeutig durch drei nicht kollineare Punkte bestimmt.</div>
+
+      <h2>Punkt–Ebene und Ebene–Ebene</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Punkt X zu Ebene E</h3>
+          <div class="formula">E: n · x = d &nbsp;⇒&nbsp; d(X,E) = |n · X − d| / |n|</div>
+          <p>Bei Hesse-Normalform entfällt der Nenner. Punktprobe: n · X = d.</p>
+        </div>
+        <div class="card">
+          <h3>Zwei Ebenen E₁, E₂</h3>
+          <ul>
+            <li>Normalen n₁, n₂ nicht parallel: Schnittgerade.</li>
+            <li>n₁ ∥ n₂: Ebenen identisch oder echt parallel; Punktprobe zur Unterscheidung.</li>
+          </ul>
+          <div class="formula">Schnittwinkel: cos(α) = |n₁ · n₂| / (|n₁| |n₂|)</div>
+          <p>Bei parallelen Ebenen: Abstand mit einem beliebigen Punkt p₂ ∈ E₂ berechnen: d = |n₁ · p₂ − d₁| / |n₁| (E₁: n₁ · x = d₁).</p>
+        </div>
+      </div>
+
+      <h2>Gerade und Ebene</h2>
+      <p>Für g: x = p + t·u und E: n · x = d wird die Gerade eingesetzt:</p>
+      <div class="formula">n · (p + t·u) = d &nbsp;⇒&nbsp; t = (d − n · p) / (n · u)</div>
+      <div class="grid">
+        <div class="card">
+          <h3>Lage und Schnittpunkt</h3>
+          <ul>
+            <li>n · u ≠ 0: genau ein Schnittpunkt; t berechnen und in g einsetzen.</li>
+            <li>n · u = 0: g ist parallel zu E oder liegt in E. Punktprobe mit p: n · p = d bedeutet g ⊂ E; sonst echt parallel.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Winkel und Abstand</h3>
+          <div class="formula">sin(α) = |n · u| / (|n| |u|)</div>
+          <p>α ist der kleinere Winkel zwischen Gerade und Ebene (0° bis 90°). Merke: Er ist der Ergänzungswinkel zum Winkel zwischen u und n.</p>
+          <p>Schneidet g die Ebene oder liegt g darin: Abstand 0. Bei echter Parallelität: d(g,E) = |n · p − d| / |n|.</p>
+        </div>
+      </div>
+
+      <div class="note"><b>Häufiger Vorzeichenfehler:</b> Für E: n · (x − p) = 0 gilt d = n · p, also n · x = d. In der eingesetzten Geradengleichung ist die rechte Seite d, nicht 0 (außer die Ebene steht bereits als n · x = 0).</div>
+
+      <div class="footer"><span>Analytische Geometrie · kompakte Übersicht</span><span>2 / 3</span></div>
+    </section>
+
+    <section class="sheet">
+      <div class="eyebrow">Analytische Geometrie</div>
+      <h1>Schnittgeraden &amp; Lösungsstrategie</h1>
+      <p class="subtitle">Blatt 3 von 3 · Ebene–Ebene, Rechenwege und Checkliste</p>
+
+      <h2>Schnittgerade zweier Ebenen bestimmen</h2>
+      <p>Bei nicht parallelen Ebenen ist die Schnittgerade g. Vorgehen mit Koordinatenformen:</p>
+      <ol>
+        <li>Ein Gleichungssystem aus den beiden Ebenengleichungen bilden und eine Variable als Parameter setzen.</li>
+        <li>Die übrigen Variablen in Abhängigkeit vom Parameter bestimmen.</li>
+        <li>In Vektorform schreiben: <b>x = p + t·u</b>.</li>
+      </ol>
+      <div class="grid">
+        <div class="card">
+          <h3>Richtung schnell finden</h3>
+          <div class="formula">u = n₁ × n₂</div>
+          <p>Die Schnittgerade liegt in beiden Ebenen, also steht ihre Richtung senkrecht auf beiden Normalen. Bei n₁ ∥ n₂ ist u = 0: Es gibt keine eindeutige Schnittgerade (parallel oder identisch).</p>
+        </div>
+        <div class="card">
+          <h3>Punkt der Schnittgeraden</h3>
+          <p>Einen Parameter, z. B. z = 0, wählen und das verbleibende Gleichungssystem lösen. Falls das nicht möglich ist, eine andere Koordinate festsetzen. Punkt p durch Einsetzen in <b>beide</b> Ebenen prüfen.</p>
+        </div>
+      </div>
+
+      <h2>Winkel und Lage auf einen Blick</h2>
+      <div class="card">
+        <ul>
+          <li><b>Gerade–Gerade:</b> Richtungsvektoren u,v vergleichen; Schnittpunkt durch Gleichsetzen, Winkel über cos(α) = |u·v|/(|u||v|).</li>
+          <li><b>Gerade–Ebene:</b> n·u entscheidet: ungleich 0 → Schnitt; gleich 0 → parallel oder enthalten. Winkel über sin(α) = |n·u|/(|n||u|).</li>
+          <li><b>Ebene–Ebene:</b> n₁×n₂ entscheidet: ungleich 0 → Schnittgerade; gleich 0 → parallel oder identisch. Winkel über cos(α) = |n₁·n₂|/(|n₁||n₂|).</li>
+        </ul>
+      </div>
+
+      <h2>Welche Methode passt?</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Zum Aufstellen</h3>
+          <ul>
+            <li>Gerade durch zwei Punkte: Stützvektor + Differenzvektor.</li>
+            <li>Ebene durch drei Punkte: Parameterform; dann u × v für die Normale.</li>
+            <li>Ebene mit Normalenvektor n durch P: n · (x − P) = 0.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Zum Rechnen</h3>
+          <ul>
+            <li>Gleichsetzen: Gerade–Gerade; Parameterform einsetzen: Gerade–Ebene.</li>
+            <li>Koordinatenformen lösen: Schnitt Gerade–Ebene oder Ebene–Ebene.</li>
+            <li>Winkel: Skalarprodukt. Normale aus zwei Richtungen: Vektorprodukt.</li>
+            <li>Abstand: immer kürzeste Strecke; Lotbedingung oder passende Abstandsformel.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>Mini-Check vor der Abgabe</h2>
+      <div class="note">
+        <ul>
+          <li>Ist jeder Richtungsvektor ungleich 0? Sind zwei Ebenen-Richtungen linear unabhängig?</li>
+          <li>Habe ich bei „parallel“ auch „identisch“ geprüft?</li>
+          <li>Stimmt der gefundene Schnittpunkt nach Einsetzen in alle Ausgangsgleichungen?</li>
+          <li>Für einen Winkel: Betrag verwenden, wenn der kleinere Winkel gemeint ist; Gerade–Ebene mit <b>sin</b>, Gerade–Gerade/Ebene–Ebene mit <b>cos</b>.</li>
+          <li>Für Abstände Normalen- bzw. Richtungsvektoren korrekt normieren (durch ihre Länge teilen).</li>
+          <li>Einheiten und sinnvolle Genauigkeit angeben; Zwischenergebnisse möglichst nicht zu früh runden.</li>
+        </ul>
+      </div>
+      <p class="small">Symbolik: x ist der Ortsvektor eines beliebigen Punkts; p,q sind Stützvektoren; u,v sind Richtungsvektoren; n,n₁,n₂ sind Normalenvektoren.</p>
+
+      <div class="footer"><span>Analytische Geometrie · kompakte Übersicht</span><span>3 / 3</span></div>
+    </section>
+  </main>
+</body>
+</html>

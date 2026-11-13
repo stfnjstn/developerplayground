@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Lernzettel – Analysis</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17243b;
+      --muted: #52627a;
+      --line: #cbd5e1;
+      --accent: #155e75;
+      --soft: #eef6f8;
+      --warm: #fff7e8;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #e8edf2;
+      color: var(--ink);
+      font: 10pt/1.35 "Aptos", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    }
+
+    .sheet {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 12mm auto;
+      padding: 14mm 15mm 13mm;
+      background: white;
+      box-shadow: 0 2mm 8mm #17243b20;
+      position: relative;
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { font-size: 22pt; line-height: 1.1; margin-bottom: 2mm; }
+    h2 {
+      color: var(--accent);
+      font-size: 14pt;
+      margin: 5mm 0 2mm;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 1mm;
+    }
+    h3 { font-size: 10.5pt; margin: 2.5mm 0 1mm; }
+    p { margin-bottom: 1.5mm; }
+    ul, ol { margin: 1mm 0 2mm; padding-left: 5mm; }
+    li { margin: 0.6mm 0; }
+    sup, sub { font-size: 70%; line-height: 0; }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: 8pt;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: 2mm;
+    }
+    .subtitle { color: var(--muted); margin-bottom: 4mm; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; }
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 2mm;
+      padding: 2.5mm 3mm;
+      break-inside: avoid;
+    }
+    .card h3 { margin-top: 0; }
+    .formula {
+      background: var(--soft);
+      border-left: 2px solid var(--accent);
+      padding: 1.5mm 2.5mm;
+      margin: 1.5mm 0;
+      font-family: "Cambria Math", "STIX Two Math", "Times New Roman", serif;
+      font-size: 10.5pt;
+    }
+    .note {
+      background: var(--warm);
+      border: 1px solid #f0d7a8;
+      border-radius: 2mm;
+      padding: 2mm 3mm;
+      margin: 2mm 0;
+      break-inside: avoid;
+    }
+    .small { color: var(--muted); font-size: 8.5pt; }
+    .tag {
+      display: inline-block;
+      font-size: 8pt;
+      color: var(--accent);
+      font-weight: 700;
+      border: 1px solid #9dbbc4;
+      border-radius: 10mm;
+      padding: .3mm 1.7mm;
+      margin-right: 1mm;
+    }
+    table.steps {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 9.5pt;
+      margin: 1mm 0 2mm;
+    }
+    table.steps td {
+      border-top: 1px solid var(--line);
+      padding: 1mm 1.5mm;
+      vertical-align: top;
+    }
+    table.steps td:first-child { width: 30%; font-weight: 600; }
+    .footer {
+      position: absolute;
+      bottom: 6mm;
+      left: 15mm;
+      right: 15mm;
+      display: flex;
+      justify-content: space-between;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      padding-top: 1.5mm;
+      font-size: 8pt;
+    }
+
+    @page { size: A4; margin: 0; }
+    @media print {
+      body { background: white; font-size: 9.5pt; }
+      .sheet {
+        width: 210mm;
+        height: 297mm;
+        min-height: 0;
+        margin: 0;
+        padding: 13mm 15mm 13mm;
+        box-shadow: none;
+        page-break-after: always;
+        break-after: page;
+      }
+      .sheet:last-child { page-break-after: auto; break-after: auto; }
+      h2 { margin-top: 4mm; }
+      .card, .note, .formula { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <!-- ============ BLATT 1 ============ -->
+    <section class="sheet">
+      <div class="eyebrow">Mathe-Leistungskurs · Vorabi · Rheinland-Pfalz</div>
+      <h1>Analysis</h1>
+      <p class="subtitle">Blatt 1 von 4 · Ableitungen, Grenzwerte und Kurvendiskussion</p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Ableitungsregeln</h3>
+          <div class="formula">(u ± v)' = u' ± v' &nbsp;&nbsp; (c·u)' = c·u'</div>
+          <div class="formula">Produktregel: (u·v)' = u'·v + u·v'</div>
+          <div class="formula">Quotientenregel: (u/v)' = (u'·v − u·v') / v²</div>
+          <div class="formula">Kettenregel: (f(g(x)))' = f'(g(x))·g'(x)</div>
+          <p class="small">„Äußere Ableitung mal innere Ableitung.“ Quotientenregel: im Zähler <b>minus</b>, Reihenfolge u'v zuerst!</p>
+        </div>
+        <div class="card">
+          <h3>Wichtige Ableitungen</h3>
+          <table class="steps">
+            <tr><td>x<sup>n</sup></td><td>n·x<sup>n−1</sup> &nbsp;(n ∈ ℝ)</td></tr>
+            <tr><td>√x</td><td>1 / (2√x) &nbsp;(x &gt; 0)</td></tr>
+            <tr><td>e<sup>x</sup></td><td>e<sup>x</sup></td></tr>
+            <tr><td>e<sup>u(x)</sup></td><td>u'(x)·e<sup>u(x)</sup></td></tr>
+            <tr><td>a<sup>x</sup></td><td>ln(a)·a<sup>x</sup></td></tr>
+            <tr><td>ln x</td><td>1/x &nbsp;(x &gt; 0)</td></tr>
+            <tr><td>ln(u(x))</td><td>u'(x) / u(x)</td></tr>
+            <tr><td>sin x &nbsp;/&nbsp; cos x</td><td>cos x &nbsp;/&nbsp; −sin x</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <h2>Grenzwerte und Asymptoten</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>„e gewinnt“ – wichtige Grenzwerte</h3>
+          <ul>
+            <li>x<sup>n</sup>·e<sup>−x</sup> → 0 für x → ∞ (e<sup>x</sup> wächst schneller als jede Potenz).</li>
+            <li>e<sup>x</sup> → 0 für x → −∞, also auch x<sup>n</sup>·e<sup>x</sup> → 0.</li>
+            <li>ln(x)/x → 0 für x → ∞; x·ln(x) → 0 für x → 0⁺; ln x → −∞ für x → 0⁺.</li>
+            <li>Ganzrationale Funktion: Verhalten für x → ±∞ bestimmt der Summand mit der höchsten Potenz.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Gebrochen-rationale Funktion f = Z/N</h3>
+          <ul>
+            <li><b>Polstelle</b>: N(x₀) = 0, Z(x₀) ≠ 0 → senkrechte Asymptote x = x₀. Ungerade Vielfachheit: Vorzeichenwechsel.</li>
+            <li>Z(x₀) = 0 und N(x₀) = 0: kürzen → evtl. <b>hebbare Lücke</b>.</li>
+            <li>Grad Z &lt; Grad N: Asymptote y = 0.</li>
+            <li>Grad Z = Grad N: y = Quotient der Leitkoeffizienten.</li>
+            <li>Grad Z = Grad N + 1: schiefe Asymptote (Polynomdivision).</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>Kurvendiskussion: Reihenfolge</h2>
+      <table class="steps">
+        <tr><td>1. Definitionsbereich</td><td>Nenner ≠ 0, Argument von ln &gt; 0, unter der Wurzel ≥ 0.</td></tr>
+        <tr><td>2. Symmetrie</td><td>f(−x) = f(x): achsensymmetrisch zur y-Achse; f(−x) = −f(x): punktsymmetrisch zum Ursprung. Ganzrational: nur gerade bzw. nur ungerade Exponenten.</td></tr>
+        <tr><td>3. Achsenschnittpunkte</td><td>Nullstellen: f(x) = 0 (Ausklammern, Satz vom Nullprodukt, Substitution z = x², pq-Formel). y-Achse: f(0). e<sup>x</sup> ist nie 0!</td></tr>
+        <tr><td>4. Grenzverhalten</td><td>x → ±∞ und an Definitionslücken; Asymptoten angeben.</td></tr>
+        <tr><td>5. Extrempunkte</td><td>f'(x) = 0 und Nachweis (siehe Blatt 2), y-Koordinate mit f berechnen.</td></tr>
+        <tr><td>6. Wendepunkte</td><td>f''(x) = 0 und Nachweis, y-Koordinate mit f berechnen.</td></tr>
+        <tr><td>7. Skizze</td><td>Alle Punkte und Asymptoten eintragen; Plausibilität prüfen.</td></tr>
+      </table>
+
+      <div class="footer"><span>Analysis · kompakte Übersicht</span><span>1 / 4</span></div>
+    </section>
+
+    <!-- ============ BLATT 2 ============ -->
+    <section class="sheet">
+      <div class="eyebrow">Analysis</div>
+      <h1>Extrema, Wendepunkte, Scharen</h1>
+      <p class="subtitle">Blatt 2 von 4 · Kriterien, Tangenten und Funktionenscharen</p>
+
+      <h2>Extrempunkte und Monotonie</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Notwendig und hinreichend</h3>
+          <p><b>Notwendig</b> (innere Stelle, f differenzierbar): f'(x₀) = 0.</p>
+          <div class="formula">f'(x₀) = 0 und f''(x₀) &lt; 0 → Hochpunkt</div>
+          <div class="formula">f'(x₀) = 0 und f''(x₀) &gt; 0 → Tiefpunkt</div>
+          <p>Bei f''(x₀) = 0 entscheidet der <b>Vorzeichenwechsel von f'</b>: + → − Hochpunkt, − → + Tiefpunkt, kein VZW → Sattelpunkt.</p>
+          <p class="small">Globale Extrema: lokale Extremwerte mit den Randwerten bzw. dem Grenzverhalten vergleichen.</p>
+        </div>
+        <div class="card">
+          <h3>Monotonie und Krümmung</h3>
+          <ul>
+            <li>f' &gt; 0 auf einem Intervall ⇒ f streng monoton steigend; f' &lt; 0 ⇒ streng monoton fallend.</li>
+            <li>Umkehrung gilt nicht: f(x) = x³ ist streng monoton steigend, obwohl f'(0) = 0.</li>
+            <li>f'' &gt; 0: linksgekrümmt (konvex); f'' &lt; 0: rechtsgekrümmt (konkav).</li>
+            <li>Monotonieintervalle zwischen den Nullstellen von f' (und Definitionslücken) ablesen.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>Wendepunkte, Tangente und Normale</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Wendepunkt W(x₀ | f(x₀))</h3>
+          <p><b>Notwendig:</b> f''(x₀) = 0.</p>
+          <div class="formula">f''(x₀) = 0 und f'''(x₀) ≠ 0 → Wendestelle</div>
+          <p>Ist f'''(x₀) = 0, entscheidet der <b>Vorzeichenwechsel von f''</b>. Gilt zusätzlich f'(x₀) = 0: <b>Sattelpunkt</b> (Wendepunkt mit waagerechter Tangente).</p>
+          <p class="small">Am Wendepunkt ist die Steigung lokal am größten bzw. kleinsten (z. B. „stärkste Zunahme“).</p>
+        </div>
+        <div class="card">
+          <h3>Geraden am Graphen im Punkt (x₀ | f(x₀))</h3>
+          <div class="formula">Tangente: y = f'(x₀)·(x − x₀) + f(x₀)</div>
+          <div class="formula">Normale: y = −1/f'(x₀) · (x − x₀) + f(x₀)</div>
+          <p>Normale nur für f'(x₀) ≠ 0; bei waagerechter Tangente ist die Normale x = x₀. Senkrecht: m₁·m₂ = −1.</p>
+          <p class="small">Tangente von einem Punkt P außerhalb: Tangente in allgemeiner Stelle u aufstellen, P einsetzen, nach u lösen.</p>
+        </div>
+      </div>
+      <div class="note"><b>Merke:</b> f'(x₀) = 0 allein beweist kein Extremum, f''(x₀) = 0 allein keinen Wendepunkt. Immer ein hinreichendes Kriterium angeben und die y-Koordinate berechnen.</div>
+
+      <h2>Funktionenscharen</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Rechnen mit Parameter</h3>
+          <ul>
+            <li>Der Parameter (z. B. a) ist beim Ableiten eine <b>Konstante</b>.</li>
+            <li>Fallunterscheidungen beachten: a &gt; 0, a = 0, a &lt; 0 (z. B. bei √a, Division durch a, Vorzeichen von f'').</li>
+            <li>„Gemeinsame Punkte aller Graphen“: f<sub>a</sub>(x) = f<sub>b</sub>(x) für a ≠ b lösen – oder den Term so umformen, dass der Parameter wegfällt.</li>
+            <li>„Für welches a …“: Bedingung aufstellen und nach a auflösen.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Ortskurve (Ortslinie)</h3>
+          <ol>
+            <li>Extrem- bzw. Wendepunkt in Abhängigkeit von a: x = x(a), y = y(a).</li>
+            <li>x = x(a) nach a auflösen.</li>
+            <li>In y = y(a) einsetzen → Gleichung y = … nur in x.</li>
+          </ol>
+          <p><b>Beispiel:</b> f<sub>a</sub>(x) = x³ − a·x, a &gt; 0: f<sub>a</sub>'(x) = 3x² − a = 0 ⇒ x = ±√(a/3), also a = 3x². Einsetzen: y = x³ − 3x²·x = −2x³. Alle Extrempunkte liegen auf y = −2x³.</p>
+        </div>
+      </div>
+
+      <div class="footer"><span>Analysis · kompakte Übersicht</span><span>2 / 4</span></div>
+    </section>
+
+    <!-- ============ BLATT 3 ============ -->
+    <section class="sheet">
+      <div class="eyebrow">Analysis</div>
+      <h1>Integrale und Flächen</h1>
+      <p class="subtitle">Blatt 3 von 4 · Stammfunktionen, Hauptsatz und Anwendungen</p>
+
+      <h2>Stammfunktionen und Integrationsregeln</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Wichtige Stammfunktionen</h3>
+          <table class="steps">
+            <tr><td>f(x)</td><td>F(x) (+ C)</td></tr>
+            <tr><td>x<sup>n</sup> (n ≠ −1)</td><td>x<sup>n+1</sup> / (n+1)</td></tr>
+            <tr><td>1/x</td><td>ln|x|</td></tr>
+            <tr><td>e<sup>x</sup></td><td>e<sup>x</sup></td></tr>
+            <tr><td>e<sup>kx+b</sup> (k ≠ 0)</td><td>(1/k)·e<sup>kx+b</sup></td></tr>
+            <tr><td>sin x &nbsp;/&nbsp; cos x</td><td>−cos x &nbsp;/&nbsp; sin x</td></tr>
+            <tr><td>f(kx + b) (lineare Verkettung)</td><td>(1/k)·F(kx + b)</td></tr>
+          </table>
+          <p>Linearität: ∫(a·f + b·g) dx = a·∫f dx + b·∫g dx.</p>
+        </div>
+        <div class="card">
+          <h3>Verkettungen</h3>
+          <div class="formula">∫ g'(x)·f(g(x)) dx = F(g(x)) + C</div>
+          <p>Erkennbar daran, dass die innere Ableitung als Faktor dasteht. Beispiel: ∫ 2x·e<sup>x²</sup> dx = e<sup>x²</sup> + C.</p>
+          <div class="formula">∫ u'(x)/u(x) dx = ln|u(x)| + C</div>
+          <p class="small">Falls im Unterricht behandelt – partielle Integration: ∫ u'·v dx = u·v − ∫ u·v' dx (z. B. für x·e<sup>x</sup>).</p>
+          <p><b>Probe:</b> F ableiten – es muss f herauskommen.</p>
+        </div>
+      </div>
+
+      <h2>Hauptsatz der Differential- und Integralrechnung</h2>
+      <div class="formula">f stetig auf [a; b], F' = f &nbsp;⇒&nbsp; ∫<sub>a</sub><sup>b</sup> f(x) dx = F(b) − F(a) = [F(x)]<sub>a</sub><sup>b</sup></div>
+      <ul>
+        <li>Das Integral ist eine <b>Flächenbilanz</b>: Flächen oberhalb der x-Achse zählen positiv, unterhalb negativ.</li>
+        <li>Grenzen vertauschen ändert das Vorzeichen: ∫ von b bis a = −∫ von a bis b. Intervalle lassen sich aneinanderhängen: ∫<sub>a</sub><sup>b</sup> + ∫<sub>b</sub><sup>c</sup> = ∫<sub>a</sub><sup>c</sup>.</li>
+      </ul>
+
+      <h2>Flächen</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Zwischen Graph und x-Achse</h3>
+          <p>Nullstellen im Intervall bestimmen, dort aufteilen, Beträge der Teilintegrale addieren:</p>
+          <div class="formula">A = |∫<sub>a</sub><sup>x₁</sup> f dx| + |∫<sub>x₁</sub><sup>b</sup> f dx|</div>
+        </div>
+        <div class="card">
+          <h3>Zwischen zwei Graphen</h3>
+          <div class="formula">A = ∫<sub>a</sub><sup>b</sup> (f(x) − g(x)) dx, &nbsp;f oberhalb von g</div>
+          <p>Grenzen = Schnittstellen (f(x) = g(x)). Bei mehreren Schnittstellen aufteilen und Beträge addieren. Die x-Achse spielt dabei keine Rolle.</p>
+        </div>
+      </div>
+      <div class="note"><b>Typischer Fehler:</b> ∫<sub>a</sub><sup>b</sup> f dx ist nicht automatisch der Flächeninhalt. Bei Vorzeichenwechsel aufteilen, sonst heben sich Teilflächen auf.</div>
+
+      <h2>Integralfunktion, Mittelwert, Volumen</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Integralfunktion</h3>
+          <div class="formula">I<sub>a</sub>(x) = ∫<sub>a</sub><sup>x</sup> f(t) dt &nbsp;⇒&nbsp; I<sub>a</sub>'(x) = f(x), &nbsp;I<sub>a</sub>(a) = 0</div>
+          <p>I steigt, wo f &gt; 0; Extremstellen von I bei Vorzeichenwechseln von f; Wendestellen von I bei Extremstellen von f.</p>
+          <div class="formula">Mittelwert: m = 1/(b − a) · ∫<sub>a</sub><sup>b</sup> f(x) dx</div>
+        </div>
+        <div class="card">
+          <h3>Uneigentliche Integrale &amp; Rotation</h3>
+          <div class="formula">∫<sub>a</sub><sup>∞</sup> f(x) dx = lim<sub>z→∞</sub> ∫<sub>a</sub><sup>z</sup> f(x) dx</div>
+          <p>Erst mit fester Grenze z rechnen, dann den Grenzwert bilden. Existiert er, hat die unbegrenzte Fläche einen endlichen Inhalt.</p>
+          <div class="formula">Rotation um die x-Achse: V = π · ∫<sub>a</sub><sup>b</sup> (f(x))² dx</div>
+          <p class="small">Rotationskörper nur, falls im Unterricht behandelt.</p>
+        </div>
+      </div>
+
+      <div class="footer"><span>Analysis · kompakte Übersicht</span><span>3 / 4</span></div>
+    </section>
+
+    <!-- ============ BLATT 4 ============ -->
+    <section class="sheet">
+      <div class="eyebrow">Analysis</div>
+      <h1>Modelle und Anwendungen</h1>
+      <p class="subtitle">Blatt 4 von 4 · Optimierung, Wachstum, Rekonstruktion und Checkliste</p>
+
+      <h2>Optimierungsaufgaben (Extremwertprobleme)</h2>
+      <ol>
+        <li><b>Zielgröße</b> festlegen: Was soll maximal/minimal werden? Formel mit (zunächst) mehreren Variablen.</li>
+        <li><b>Nebenbedingung</b> nach einer Variablen auflösen und einsetzen → <b>Zielfunktion</b> in einer Variablen.</li>
+        <li><b>Definitionsbereich</b> aus dem Sachkontext (Längen &gt; 0 usw.).</li>
+        <li>Ableiten, f' = 0, hinreichendes Kriterium; <b>Randwerte</b> vergleichen.</li>
+        <li>Alle gesuchten Größen berechnen, Antwortsatz mit Einheit.</li>
+      </ol>
+
+      <h2>Wachstumsmodelle</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Exponentielles Wachstum / Zerfall</h3>
+          <div class="formula">f(t) = c·e<sup>k·t</sup>, &nbsp;f'(t) = k·f(t)</div>
+          <ul>
+            <li>c = f(0): Anfangswert; k &gt; 0 Wachstum, k &lt; 0 Zerfall.</li>
+            <li>Aus einem zweiten Wert f(t₁) = y: k = ln(y/c) / t₁.</li>
+            <li>Verdopplungszeit T₂ = ln 2 / k; Halbwertszeit T<sub>½</sub> = ln 2 / |k|.</li>
+            <li>Wachstumsfaktor pro Zeiteinheit: q = e<sup>k</sup>, also k = ln q (z. B. +5 % → q = 1,05).</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Beschränktes Wachstum</h3>
+          <div class="formula">f(t) = S − (S − f(0))·e<sup>−k·t</sup>, &nbsp;k &gt; 0</div>
+          <div class="formula">f'(t) = k·(S − f(t))</div>
+          <p>S ist die Schranke (Sättigungswert); die Änderungsrate ist proportional zum <b>Restbestand</b> S − f(t). Beispiel: Abkühlung auf Raumtemperatur.</p>
+          <p class="small">Probe: f(0) einsetzen, f(t) → S für t → ∞.</p>
+        </div>
+      </div>
+
+      <h2>Weitere Standardaufgaben</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Rekonstruktion („Steckbriefaufgabe“)</h3>
+          <p>Ansatz wählen (z. B. f(x) = ax³ + bx² + cx + d: 4 Unbekannte → 4 Bedingungen) und übersetzen:</p>
+          <ul>
+            <li>Punkt P(a | y): f(a) = y</li>
+            <li>Extremum bei a: f'(a) = 0 · Steigung m bei a: f'(a) = m</li>
+            <li>Wendestelle bei a: f''(a) = 0</li>
+            <li>Symmetrie zur y-Achse: nur gerade Exponenten</li>
+          </ul>
+          <p>LGS lösen, danach prüfen, ob die Bedingungen wirklich erfüllt sind (z. B. tatsächlich ein Extremum).</p>
+        </div>
+        <div class="card">
+          <h3>Änderungsrate und Bestand</h3>
+          <div class="formula">Bestand(b) = Bestand(a) + ∫<sub>a</sub><sup>b</sup> r(t) dt</div>
+          <ul>
+            <li>Mittlere Änderungsrate: (f(b) − f(a)) / (b − a); momentane: f'(x₀).</li>
+            <li>Einheiten: Liter/min · min = Liter.</li>
+            <li>Bestand maximal, wo die Rate r von + nach − wechselt.</li>
+            <li>Schnittpunkte f(x) = g(x); <b>Berührung</b>: f(a) = g(a) und f'(a) = g'(a).</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>Checkliste für jede Aufgabe</h2>
+      <div class="note">
+        <ul>
+          <li>Definitionsbereich und Sachkontext beachten; Lösungen auf Zulässigkeit prüfen.</li>
+          <li>Extrem- und Wendestellen: hinreichendes Kriterium angeben und <b>Punktkoordinaten</b> berechnen.</li>
+          <li>Integral: Flächenbilanz oder Flächeninhalt? Nullstellen und Schnittstellen als Grenzen beachten.</li>
+          <li>Stammfunktion durch Ableiten kontrollieren.</li>
+          <li>Bei Scharen: Fallunterscheidung für den Parameter nicht vergessen.</li>
+          <li>Taschenrechner bei sin/cos auf <b>RAD</b> stellen; exakt rechnen, erst am Ende runden; Antwortsatz mit Einheit.</li>
+        </ul>
+      </div>
+      <p class="small">Notation: C ist die Integrationskonstante; bei bestimmten Integralen fällt sie in F(b) − F(a) weg.</p>
+
+      <div class="footer"><span>Analysis · kompakte Übersicht</span><span>4 / 4</span></div>
+    </section>
+  </main>
+  <script id="auto-print">
+    // Wird die Seite mit #print geöffnet (z. B. von index.html), startet direkt der Druckdialog.
+    if (location.hash === "#print") {
+      window.addEventListener("load", function () { setTimeout(function () { window.print(); }, 300); });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Lernzettel – Stochastik</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17243b;
+      --muted: #52627a;
+      --line: #cbd5e1;
+      --accent: #155e75;
+      --soft: #eef6f8;
+      --warm: #fff7e8;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #e8edf2;
+      color: var(--ink);
+      font: 10pt/1.35 "Aptos", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    }
+
+    .sheet {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 12mm auto;
+      padding: 14mm 15mm 13mm;
+      background: white;
+      box-shadow: 0 2mm 8mm #17243b20;
+      position: relative;
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { font-size: 22pt; line-height: 1.1; margin-bottom: 2mm; }
+    h2 {
+      color: var(--accent);
+      font-size: 14pt;
+      margin: 5mm 0 2mm;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 1mm;
+    }
+    h3 { font-size: 10.5pt; margin: 2.5mm 0 1mm; }
+    p { margin-bottom: 1.5mm; }
+    ul, ol { margin: 1mm 0 2mm; padding-left: 5mm; }
+    li { margin: 0.6mm 0; }
+    sup, sub { font-size: 70%; line-height: 0; }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: 8pt;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: 2mm;
+    }
+    .subtitle { color: var(--muted); margin-bottom: 4mm; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; }
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 2mm;
+      padding: 2.5mm 3mm;
+      break-inside: avoid;
+    }
+    .card h3 { margin-top: 0; }
+    .formula {
+      background: var(--soft);
+      border-left: 2px solid var(--accent);
+      padding: 1.5mm 2.5mm;
+      margin: 1.5mm 0;
+      font-family: "Cambria Math", "STIX Two Math", "Times New Roman", serif;
+      font-size: 10.5pt;
+    }
+    .note {
+      background: var(--warm);
+      border: 1px solid #f0d7a8;
+      border-radius: 2mm;
+      padding: 2mm 3mm;
+      margin: 2mm 0;
+      break-inside: avoid;
+    }
+    .small { color: var(--muted); font-size: 8.5pt; }
+    .tag {
+      display: inline-block;
+      font-size: 8pt;
+      color: var(--accent);
+      font-weight: 700;
+      border: 1px solid #9dbbc4;
+      border-radius: 10mm;
+      padding: .3mm 1.7mm;
+      margin-right: 1mm;
+    }
+    table.steps {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 9.5pt;
+      margin: 1mm 0 2mm;
+    }
+    table.steps td {
+      border-top: 1px solid var(--line);
+      padding: 1mm 1.5mm;
+      vertical-align: top;
+    }
+    table.steps td:first-child { width: 33%; font-weight: 600; }
+    .footer {
+      position: absolute;
+      bottom: 6mm;
+      left: 15mm;
+      right: 15mm;
+      display: flex;
+      justify-content: space-between;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      padding-top: 1.5mm;
+      font-size: 8pt;
+    }
+
+    @page { size: A4; margin: 0; }
+    @media print {
+      body { background: white; font-size: 9.5pt; }
+      .sheet {
+        width: 210mm;
+        height: 297mm;
+        min-height: 0;
+        margin: 0;
+        padding: 13mm 15mm 13mm;
+        box-shadow: none;
+        page-break-after: always;
+        break-after: page;
+      }
+      .sheet:last-child { page-break-after: auto; break-after: auto; }
+      h2 { margin-top: 4mm; }
+      .card, .note, .formula { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <!-- ============ BLATT 1 ============ -->
+    <section class="sheet">
+      <div class="eyebrow">Mathe-Leistungskurs · Vorabi · Rheinland-Pfalz</div>
+      <h1>Stochastik</h1>
+      <p class="subtitle">Blatt 1 von 4 · Ereignisse, bedingte Wahrscheinlichkeit und Zählen</p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Ereignisse und Grundregeln</h3>
+          <p>Ω: Ergebnismenge; A ⊆ Ω: Ereignis; A̅: Gegenereignis.</p>
+          <div class="formula">P(Ω) = 1, &nbsp;P(A̅) = 1 − P(A)</div>
+          <div class="formula">P(A ∪ B) = P(A) + P(B) − P(A ∩ B)</div>
+          <p>Disjunkt (A ∩ B = ∅): P(A ∪ B) = P(A) + P(B).</p>
+          <p>Laplace-Experiment: P(A) = |A| / |Ω| („günstige durch mögliche“).</p>
+          <p><b>Gegenereignis nutzen:</b> „mindestens einmal“ = 1 − P(keinmal).</p>
+        </div>
+        <div class="card">
+          <h3>Bedingte Wahrscheinlichkeit</h3>
+          <div class="formula">P<sub>B</sub>(A) = P(A|B) = P(A ∩ B) / P(B), &nbsp;P(B) &gt; 0</div>
+          <div class="formula">P(A ∩ B) = P(B) · P(A|B)</div>
+          <p>Die Bedingung B schränkt die betrachtete Ergebnismenge auf B ein. Im Baum stehen ab der 2. Stufe bedingte Wahrscheinlichkeiten.</p>
+          <p class="small">Schreibweise P<sub>B</sub>(A) und P(A|B) bedeuten dasselbe.</p>
+        </div>
+      </div>
+
+      <h2>Baumdiagramm, Unabhängigkeit und Satz von Bayes</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Pfadregeln</h3>
+          <ul>
+            <li><b>1. Pfadregel:</b> entlang eines Pfads multiplizieren: P(A ∩ B) = P(A) · P(B|A).</li>
+            <li><b>2. Pfadregel:</b> Pfade, die zum Ereignis gehören, addieren. Totale Wahrscheinlichkeit: P(B) = P(A)·P(B|A) + P(A̅)·P(B|A̅).</li>
+            <li>Kontrolle: Die Äste einer Verzweigung ergeben zusammen 1.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Unabhängigkeit und Bayes</h3>
+          <div class="formula">A, B unabhängig ⇔ P(A ∩ B) = P(A) · P(B)</div>
+          <p>Gleichwertig: P(A|B) = P(A). Unabhängig ≠ disjunkt (disjunkte Ereignisse mit P &gt; 0 sind sogar <b>abhängig</b>).</p>
+          <div class="formula">P(A|B) = P(A) · P(B|A) / P(B)</div>
+          <p>Bayes kehrt die Bedingung um („umgekehrter Baum“); P(B) mit der 2. Pfadregel berechnen.</p>
+        </div>
+      </div>
+      <div class="note"><b>Typischer Denkfehler:</b> P(A|B) ≠ P(B|A). Bei Tests/Diagnosen: P(krank | positiv) ist meist viel kleiner als P(positiv | krank), wenn die Krankheit selten ist.</div>
+
+      <h2>Vierfeldertafel</h2>
+      <div class="grid">
+        <table class="steps">
+          <tr><td></td><td><b>B</b></td><td><b>B̅</b></td><td><b>Σ</b></td></tr>
+          <tr><td>A</td><td>P(A ∩ B)</td><td>P(A ∩ B̅)</td><td>P(A)</td></tr>
+          <tr><td>A̅</td><td>P(A̅ ∩ B)</td><td>P(A̅ ∩ B̅)</td><td>P(A̅)</td></tr>
+          <tr><td>Σ</td><td>P(B)</td><td>P(B̅)</td><td>1</td></tr>
+        </table>
+        <p>Innen stehen nur <b>Schnitt</b>-Wahrscheinlichkeiten, keine bedingten! Zeilen und Spalten summieren sich zu den Randwerten. Bedingt: Feld durch passenden Randwert teilen, z. B. P(A|B) = P(A ∩ B) / P(B). Unabhängigkeit prüfen: Feld = Produkt der Randwerte?</p>
+      </div>
+
+      <h2>Kombinatorik (Ziehen von k aus n)</h2>
+      <table class="steps">
+        <tr><td>Mit Zurücklegen, Reihenfolge wichtig</td><td>n<sup>k</sup> &nbsp;(z. B. 4-stellige PIN: 10⁴)</td></tr>
+        <tr><td>Ohne Zurücklegen, Reihenfolge wichtig</td><td>n · (n−1) · … · (n−k+1) = n! / (n−k)!</td></tr>
+        <tr><td>Ohne Zurücklegen, Reihenfolge egal</td><td>(n über k) = n! / (k! · (n−k)!) &nbsp;(z. B. Lotto 6 aus 49)</td></tr>
+        <tr><td>Alle n anordnen (Permutation)</td><td>n! &nbsp;(0! = 1)</td></tr>
+      </table>
+      <p class="small">Erst fragen: Mit oder ohne Zurücklegen? Spielt die Reihenfolge eine Rolle?</p>
+
+      <div class="footer"><span>Stochastik · kompakte Übersicht</span><span>1 / 4</span></div>
+    </section>
+
+    <!-- ============ BLATT 2 ============ -->
+    <section class="sheet">
+      <div class="eyebrow">Stochastik</div>
+      <h1>Zufallsgrößen und Binomialverteilung</h1>
+      <p class="subtitle">Blatt 2 von 4 · Kennwerte, Bernoulli-Kette und typische Fragestellungen</p>
+
+      <h2>Zufallsgröße, Erwartungswert, Streuung</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Verteilung und Erwartungswert</h3>
+          <p>X ordnet jedem Ergebnis eine Zahl zu. Wahrscheinlichkeitsverteilung: Tabelle xᵢ | P(X = xᵢ), Summe = 1.</p>
+          <div class="formula">E(X) = μ = Σ xᵢ · P(X = xᵢ)</div>
+          <p>Langfristiger Mittelwert; muss kein möglicher Wert sein. <b>Faires Spiel:</b> E(Gewinn) = 0 (Einsatz abziehen!).</p>
+        </div>
+        <div class="card">
+          <h3>Varianz und Standardabweichung</h3>
+          <div class="formula">V(X) = Σ (xᵢ − μ)² · P(X = xᵢ), &nbsp;σ = √V(X)</div>
+          <div class="formula">E(aX + b) = a·E(X) + b, &nbsp;V(aX + b) = a²·V(X)</div>
+          <p>σ hat dieselbe Einheit wie X und misst die typische Abweichung von μ.</p>
+        </div>
+      </div>
+
+      <h2>Binomialverteilung B(n; p)</h2>
+      <div class="formula">P(X = k) = (n über k) · p<sup>k</sup> · (1 − p)<sup>n−k</sup>, &nbsp;k = 0, 1, …, n</div>
+      <div class="grid">
+        <div class="card">
+          <h3>Wann binomial? (Bernoulli-Kette)</h3>
+          <ol>
+            <li>Feste Anzahl n von Versuchen.</li>
+            <li>Je Versuch nur Treffer / Niete.</li>
+            <li>Trefferwahrscheinlichkeit p konstant.</li>
+            <li>Versuche unabhängig (z. B. mit Zurücklegen).</li>
+          </ol>
+          <p class="small">In Begründungen diese Punkte im Sachkontext nennen; bei „ohne Zurücklegen“ aus großer Grundgesamtheit: „näherungsweise binomialverteilt“.</p>
+        </div>
+        <div class="card">
+          <h3>Kennwerte</h3>
+          <div class="formula">μ = E(X) = n · p</div>
+          <div class="formula">V(X) = n · p · (1 − p), &nbsp;σ = √(n · p · (1 − p))</div>
+          <p>Die Verteilung hat ihr Maximum in der Nähe von n·p; für p = 0,5 ist sie symmetrisch.</p>
+        </div>
+      </div>
+
+      <h2>Formulierungen übersetzen (Taschenrechner: binomcdf = P(X ≤ k))</h2>
+      <table class="steps">
+        <tr><td>genau k</td><td>P(X = k)</td></tr>
+        <tr><td>höchstens k</td><td>P(X ≤ k)</td></tr>
+        <tr><td>weniger als k</td><td>P(X ≤ k − 1)</td></tr>
+        <tr><td>mindestens k</td><td>P(X ≥ k) = 1 − P(X ≤ k − 1)</td></tr>
+        <tr><td>mehr als k</td><td>P(X &gt; k) = 1 − P(X ≤ k)</td></tr>
+        <tr><td>zwischen a und b (einschließlich)</td><td>P(a ≤ X ≤ b) = P(X ≤ b) − P(X ≤ a − 1)</td></tr>
+      </table>
+      <div class="note"><b>Randwerte genau beachten:</b> „mindestens 5“ enthält 5, „mehr als 5“ beginnt bei 6.</div>
+
+      <h2>„Mindestens-mindestens“-Aufgabe</h2>
+      <p>Wie oft muss man mindestens ziehen, damit mit Wahrscheinlichkeit mindestens P<sub>0</sub> mindestens ein Treffer dabei ist?</p>
+      <div class="formula">1 − (1 − p)<sup>n</sup> ≥ P<sub>0</sub> &nbsp;⇔&nbsp; (1 − p)<sup>n</sup> ≤ 1 − P<sub>0</sub> &nbsp;⇔&nbsp; n ≥ ln(1 − P<sub>0</sub>) / ln(1 − p)</div>
+      <p>Beim Teilen durch ln(1 − p) &lt; 0 dreht sich das Ungleichheitszeichen! <b>Beispiel:</b> p = 0,1, P<sub>0</sub> = 0,9: n ≥ ln 0,1 / ln 0,9 ≈ 21,85 ⇒ <b>n = 22</b> (Probe: 1 − 0,9²² ≈ 0,902).</p>
+
+      <div class="footer"><span>Stochastik · kompakte Übersicht</span><span>2 / 4</span></div>
+    </section>
+
+    <!-- ============ BLATT 3 ============ -->
+    <section class="sheet">
+      <div class="eyebrow">Stochastik</div>
+      <h1>Hypergeometrische und Normalverteilung</h1>
+      <p class="subtitle">Blatt 3 von 4 · Ziehen ohne Zurücklegen, stetige Zufallsgrößen, Sigma-Regeln</p>
+
+      <h2>Ohne Zurücklegen: hypergeometrische Verteilung</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Modell</h3>
+          <p>N Objekte, davon K „Treffer“; n werden ohne Zurücklegen gezogen. X = Anzahl Treffer.</p>
+          <div class="formula">P(X = k) = (K über k) · (N−K über n−k) / (N über n)</div>
+          <p class="small">„Treffer auswählen · Nieten auswählen / alle Auswahlen“. Gilt für max(0; n−(N−K)) ≤ k ≤ min(n; K).</p>
+        </div>
+        <div class="card">
+          <h3>Kennwerte und Näherung</h3>
+          <div class="formula">E(X) = n · K/N</div>
+          <div class="formula">V(X) = n · (K/N) · (1 − K/N) · (N − n)/(N − 1)</div>
+          <p>Der Faktor (N − n)/(N − 1) &lt; 1: kleinere Streuung als im Binomialmodell. Ist N groß gegenüber n, gilt näherungsweise B(n; K/N).</p>
+        </div>
+      </div>
+
+      <h2>Stetige Zufallsgrößen und Normalverteilung</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Dichtefunktion</h3>
+          <p>Eine Dichte f mit f(x) ≥ 0 und ∫ f(x) dx = 1 (über ganz ℝ) beschreibt eine stetige Zufallsgröße:</p>
+          <div class="formula">P(a ≤ X ≤ b) = ∫<sub>a</sub><sup>b</sup> f(x) dx, &nbsp;P(X = a) = 0</div>
+          <p class="small">Daher ist bei stetigem X egal, ob ≤ oder &lt;.</p>
+        </div>
+        <div class="card">
+          <h3>Normalverteilung N(μ; σ)</h3>
+          <div class="formula">φ<sub>μ;σ</sub>(x) = 1/(σ√(2π)) · e<sup>−(x−μ)²/(2σ²)</sup></div>
+          <p>Glockenkurve, symmetrisch zu x = μ (Maximum), Wendestellen bei μ ± σ. Größeres σ: flacher und breiter.</p>
+          <div class="formula">P(a ≤ X ≤ b): normalcdf(a, b, μ, σ)</div>
+          <p class="small">Standardisieren: Z = (X − μ)/σ ~ N(0; 1), P(X ≤ x) = Φ((x − μ)/σ), Φ(−z) = 1 − Φ(z). Quantil: P(X ≤ x) = r ⇒ x = invNorm(r, μ, σ).</p>
+        </div>
+      </div>
+
+      <h2>Sigma-Regeln</h2>
+      <div class="grid">
+        <table class="steps">
+          <tr><td>Umgebung</td><td>Wahrscheinlichkeit</td></tr>
+          <tr><td>μ ± 1σ</td><td>≈ 68,3 %</td></tr>
+          <tr><td>μ ± 2σ</td><td>≈ 95,4 %</td></tr>
+          <tr><td>μ ± 3σ</td><td>≈ 99,7 %</td></tr>
+        </table>
+        <table class="steps">
+          <tr><td>Wahrscheinlichkeit</td><td>Umgebung</td></tr>
+          <tr><td>90 %</td><td>μ ± 1,64σ</td></tr>
+          <tr><td>95 %</td><td>μ ± 1,96σ</td></tr>
+          <tr><td>99 %</td><td>μ ± 2,58σ</td></tr>
+        </table>
+      </div>
+      <p>Exakt für die Normalverteilung; für die Binomialverteilung gute Näherung, wenn die <b>Laplace-Bedingung σ &gt; 3</b> erfüllt ist. Bei B(n; p) die Grenzen auf ganze Zahlen runden: untere Grenze aufrunden, obere abrunden (Intervall „nach innen“).</p>
+
+      <h2>Binomialverteilung durch Normalverteilung annähern</h2>
+      <p>Bei σ = √(n·p·(1−p)) &gt; 3: B(n; p) ≈ N(μ = n·p; σ). Stetigkeitskorrektur für ganzzahliges X:</p>
+      <div class="formula">P(X ≤ k) ≈ P(Y ≤ k + 0,5), &nbsp;P(X ≥ k) ≈ P(Y ≥ k − 0,5), &nbsp;P(X = k) ≈ P(k − 0,5 ≤ Y ≤ k + 0,5)</div>
+      <div class="note"><b>Wichtig:</b> Wenn der Taschenrechner binomcdf kann, ist die exakte Binomialrechnung immer erlaubt und genauer. Die Näherung nur verwenden, wenn sie verlangt ist.</div>
+
+      <div class="footer"><span>Stochastik · kompakte Übersicht</span><span>3 / 4</span></div>
+    </section>
+
+    <!-- ============ BLATT 4 ============ -->
+    <section class="sheet">
+      <div class="eyebrow">Stochastik</div>
+      <h1>Hypothesentests</h1>
+      <p class="subtitle">Blatt 4 von 4 · Entscheidungsregel, Fehlerarten und Teststärke</p>
+
+      <h2>Vorgehen beim Binomialtest</h2>
+      <ol>
+        <li><b>Testgröße:</b> X = Anzahl der Treffer bei n Versuchen, unter H₀ X ~ B(n; p₀).</li>
+        <li><b>Hypothesen:</b> H₀: p = p₀ (oder p ≤ p₀ bzw. p ≥ p₀) und H₁: p &gt; p₀, p &lt; p₀ oder p ≠ p₀. Gerechnet wird immer mit p₀.</li>
+        <li><b>Signifikanzniveau α</b> (z. B. 5 %) vorher festlegen.</li>
+        <li><b>Ablehnungsbereich</b> K bestimmen: P<sub>p₀</sub>(X ∈ K) ≤ α, K möglichst groß.</li>
+        <li><b>Entscheidungsregel</b> formulieren und im Sachzusammenhang deuten.</li>
+      </ol>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Rechtsseitig: H₁: p &gt; p₀</h3>
+          <p>Viele Treffer sprechen gegen H₀. Kleinstes k mit</p>
+          <div class="formula">P(X ≥ k) ≤ α ⇔ P(X ≤ k − 1) ≥ 1 − α</div>
+          <p>Ablehnungsbereich K = {k; …; n}.</p>
+        </div>
+        <div class="card">
+          <h3>Linksseitig: H₁: p &lt; p₀</h3>
+          <p>Wenige Treffer sprechen gegen H₀. Größtes k mit</p>
+          <div class="formula">P(X ≤ k) ≤ α</div>
+          <p>Ablehnungsbereich K = {0; …; k}.</p>
+        </div>
+      </div>
+      <p><b>Zweiseitig (H₁: p ≠ p₀):</b> α auf beide Seiten verteilen: größtes k₁ mit P(X ≤ k₁) ≤ α/2 und kleinstes k₂ mit P(X ≥ k₂) ≤ α/2. K = {0; …; k₁} ∪ {k₂; …; n}.</p>
+
+      <div class="note"><b>Beispiel:</b> n = 50, H₀: p = 0,3, H₁: p &gt; 0,3, α = 5 %. &nbsp;P(X ≥ 20) ≈ 0,085 &gt; 0,05, aber P(X ≥ 21) ≈ 0,048 ≤ 0,05 ⇒ <b>K = {21; …; 50}</b>. Bei 21 oder mehr Treffern wird H₀ abgelehnt.<br>
+        Fehler 2. Art für p₁ = 0,45: β = P<sub>0,45</sub>(X ≤ 20) ≈ 0,286; Teststärke 1 − β ≈ 0,714.</div>
+
+      <h2>Fehlerarten und Teststärke</h2>
+      <table class="steps">
+        <tr><td></td><td><b>H₀ ist wahr</b></td><td><b>H₁ ist wahr</b></td></tr>
+        <tr><td>H₀ wird abgelehnt</td><td>Fehler 1. Art (≤ α)</td><td>richtig (Teststärke 1 − β)</td></tr>
+        <tr><td>H₀ wird nicht abgelehnt</td><td>richtig</td><td>Fehler 2. Art (β)</td></tr>
+      </table>
+      <div class="grid">
+        <div class="card">
+          <h3>Berechnen</h3>
+          <ul>
+            <li>Fehler 1. Art: α' = P<sub>p₀</sub>(X ∈ K) – das tatsächliche Niveau ist oft kleiner als α.</li>
+            <li>Fehler 2. Art: β = P<sub>p₁</sub>(X ∉ K) – nur für ein <b>konkretes</b> p₁ berechenbar.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Zusammenhänge</h3>
+          <ul>
+            <li>Kleineres α ⇒ kleinerer Ablehnungsbereich ⇒ größeres β.</li>
+            <li>Größeres n ⇒ bei gleichem α meist kleineres β.</li>
+            <li>Je weiter p₁ von p₀ entfernt, desto kleiner β.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>Interpretation</h2>
+      <div class="note">
+        <ul>
+          <li>Wahl von H₀: Der Fehler, der schlimmere Folgen hätte, soll der Fehler 1. Art sein (nur er ist durch α begrenzt). Was man <b>nachweisen</b> will, gehört in H₁.</li>
+          <li>„H₀ wird nicht abgelehnt“ heißt <b>nicht</b>, dass H₀ bewiesen ist – die Daten sprechen nur nicht deutlich genug dagegen.</li>
+          <li>Antwortsatz: Entscheidung + Signifikanzniveau + Bedeutung im Sachkontext.</li>
+        </ul>
+      </div>
+
+      <div class="footer"><span>Stochastik · kompakte Übersicht</span><span>4 / 4</span></div>
+    </section>
+  </main>
+  <script id="auto-print">
+    // Wird die Seite mit #print geöffnet (z. B. von index.html), startet direkt der Druckdialog.
+    if (location.hash === "#print") {
+      window.addEventListener("load", function () { setTimeout(function () { window.print(); }, 300); });
+    }
+  </script>
+</body>
+</html>
