@@ -121,17 +121,21 @@
 
     @page { size: A4; margin: 0; }
     @media print {
-      body { background: white; font-size: 9.5pt; }
+      body { background: white; font-size: 9.5pt; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      /* Keine feste Seitenhöhe: Safari/Druckränder würden sonst je Blatt eine Leerseite erzeugen. */
       .sheet {
-        width: 210mm;
-        height: 297mm;
+        width: auto;
+        height: auto;
         min-height: 0;
         margin: 0;
-        padding: 13mm 15mm 13mm;
+        padding: 10mm 14mm 0;
         box-shadow: none;
         page-break-after: always;
         break-after: page;
       }
+      .footer { position: static; margin-top: 3mm; }
+      /* Etwas verkleinern, damit jedes Blatt auch mit Druckrändern (z. B. Safari-Kopf-/Fußzeilen) auf eine Seite passt. */
+      .sheet { zoom: 0.9; }
       .sheet:last-child { page-break-after: auto; break-after: auto; }
       h2 { margin-top: 4mm; }
       .card, .note, .formula { break-inside: avoid; }
