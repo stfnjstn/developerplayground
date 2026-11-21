@@ -59,6 +59,14 @@ To change the quantity of an item:
 2. A popup will appear allowing you to adjust the quantity
 3. Set the desired number of items
 
+## Item Levels
+
+Potions that restore or cure (healing, mana, stamina, the cures, the temporary potions) and potion bombs come in **levels 1 to 6**. A higher level makes the same item stronger: more hitpoints or mana restored, more poison, freeze or fear time removed, a longer boost, a harder-hitting bomb — up to three times the effect at level 6. The level shows on the item's icon from level 2 up, and as a roman numeral in its name (*Mana Potion IV*).
+
+To change the level, tap the placed item and choose **Level +1** or **Level −1**. Every place that holds items offers this — tiles, chests, monster classes and individual monsters. Items of different levels are kept apart, so a chest can hold a level 1 and a level 4 healing potion side by side. Items from older level packs are level 1.
+
+*Hitpoints Potion Big*, *Mana Potion Big* and *Stamina Potion Big* are no longer offered: use the normal potion at level 2 or higher instead. Packs that already contain them keep working.
+
 ## View Item Details
 
 ![Item Details](/assets/ETMEditor/DetailItems6.jpg)

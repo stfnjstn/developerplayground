@@ -100,6 +100,8 @@ Add items that the monster drops when defeated:
 ### Magic Abilities (optional)
 Choose which spells the monster can cast. Common Spells are: Fireball, lightning bolt, poison cloud, etc.
 
+As soon as the monster has a spell, a **Spell Strength** field appears in the stats (1–6, default 1). The monster casts all its spells at that strength: a stronger Fireball, Lightning Bolt, Poison Bolt or Poison Cloud deals more damage, and a stronger Freeze, Fear or Poison holds the party longer (up to three times as long at level 6, which a weak cure only shortens). Each cast also costs more mana (up to 4.5 times at level 6), so a strong caster runs dry sooner unless you raise its **Mana** as well. Monster classes from older level packs have no strength and cast at level 1.
+
 **Strategy Tip**: Spell-casting monsters create more dynamic combat encounters and require players to use strategy rather than brute force.
 
 ## Using Monsters in Your Levels

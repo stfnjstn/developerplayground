@@ -116,9 +116,10 @@ The triggers of the selected tile are listed at the bottom of the tile settings.
 - ***hideWallText:***
   Hide a text on a wall. Text is specified in the wallText property of the tile.
 - ***castSpell:***
-  A spell will be cast at the target position. The target psotition, the spell and for some spells like a fireball the direction must be specified 
+  A spell will be cast at the target position. The target position, the spell and for some spells like a fireball the direction must be specified.
+  For spells that grow with their strength you can also set the **Spell Strength** from 1 to 6. Level 1 is the plain spell; higher levels make it stronger: more damage for Fire Ball, Lightning Bolt, Poison Bolt and Poison Cloud, a longer effect for Freeze, Fear, Poison, the boost spells, Invisibility and Look Through Wall, and a bigger dimming step for Darkness (up to three times the effect at level 6). Spells without strength show no stepper and are always cast at level 1. Triggers from older level packs have no strength and are cast at level 1.
 - ***spawnGameItem:***
-  A game item will be spawned at the target position. Target psotion and game must be selected.
+  A game item will be spawned at the target position. Target position and game item must be selected. For a potion or bomb that comes in levels, a **Level** stepper (1–6) sets the level of the spawned item.
 - ***spawnMonster:***
   A monster will be spawned at the target position. Target psotion and monster must be selected. Behavior is randomChaseRandom which means the monster is wandering around and chases you if you come too close.
 - ***gainExperience:***

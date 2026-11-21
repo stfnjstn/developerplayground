@@ -147,3 +147,6 @@ Each trigger object contains:
   - spawnGameItem = 13
   - spawnMonster = 14
 - **`targetPos3D`**: An object with `row`, `col`, and `level` keys for the target's position.
+- **`targetSpell`**, **`targetOrientation`**: For _castSpell_, the spell to cast and the direction a flying spell takes.
+- **`targetGameItemLevel`**: Optional, for _spawnGameItem_: the level (1–6) of a spawned potion or bomb. Missing means 1.
+- **`targetSpellStrength`**: Optional, for _castSpell_: the strength the spell is cast at, 1–6. Missing means 1, the plain spell. Only spells that grow with their strength use it (attack, haunting, boost spells, Invisibility, Look Through Wall, Darkness).
